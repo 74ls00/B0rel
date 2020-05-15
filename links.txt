@@ -1,0 +1,11 @@
+Реле поворотов или поиск решения
+https://www.radiokot.ru/circuit/digital/automat/37/
+
+Повышающий dc-dc преобразователь на UC3843
+https://audio-cxem.ru/shemyi/istochniki-pitaniya/dc-dc-preobrazovateli/povyishayushhiy-dc-dc-preobrazovatel-na-uc3843.html
+
+http://pgurovich.com/prostoy-izolirovannyiy-4-h-kanalnyiy-dc-dc-konverter/
+
+
+
+

@@ -14262,10 +14262,10 @@ Source: avr.lbr</description>
 <net name="N$49" class="0">
 <segment>
 <pinref part="IC6" gate="G$1" pin="PD5(T1)"/>
-<wire x1="0" y1="-170.18" x2="76.2" y2="-170.18" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="-170.18" x2="76.2" y2="-264.16" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="-264.16" x2="210.82" y2="-264.16" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="-264.16" x2="210.82" y2="-182.88" width="0.1524" layer="91"/>
+<wire x1="0" y1="-170.18" x2="27.94" y2="-170.18" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-170.18" x2="66.04" y2="-243.84" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-243.84" x2="220.98" y2="-236.22" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-236.22" x2="210.82" y2="-182.88" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="G$1" pin="(TCK)PC2"/>
 <wire x1="210.82" y1="-182.88" x2="147.32" y2="-182.88" width="0.1524" layer="91"/>
 </segment>

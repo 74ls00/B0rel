@@ -14777,6 +14777,123 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 </deviceset>
 </devicesets>
 </library>
+<library name="arduino_jw">
+<description>&lt;font size="+1"&gt;&lt;b&gt;Jim's Arduino Header Library&lt;/b&gt;&lt;/font&gt;
+
+&lt;p&gt;This library contains custom connectors for the Arduino Uno R3 for use in making custom shields.  Please feel free to use and modify as you like.&lt;/p&gt;
+
+&lt;p&gt; No guarantees!  This is my first attempt to make custom parts in Eagle and they're simple enough, but I haven't actually fabricated a board using them so use at your own risk.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;~Jim Watts&lt;/i&gt;&lt;br&gt;18-March-2015&lt;/p&gt;</description>
+<packages>
+<package name="CONN-2X03">
+<description>2x3 DIP header with pin 1 marked by a square pad.</description>
+<pad name="1" x="0" y="0" drill="1.2" diameter="1.8288" shape="square" rot="R270"/>
+<pad name="3" x="0" y="-2.54" drill="1.2" diameter="1.8288" shape="octagon" rot="R270"/>
+<pad name="5" x="0" y="-5.08" drill="1.2" diameter="1.8288" shape="octagon" rot="R270"/>
+<pad name="6" x="2.54" y="-5.08" drill="1.2" diameter="1.8288" shape="octagon" rot="R270"/>
+<pad name="4" x="2.54" y="-2.54" drill="1.2" diameter="1.8288" shape="octagon" rot="R270"/>
+<pad name="2" x="2.54" y="0" drill="1.2" diameter="1.8288" shape="octagon" rot="R270"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="3.81" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-3.175" x2="3.175" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-3.81" x2="3.81" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-4.445" x2="3.81" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-5.715" x2="3.175" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-6.35" x2="1.905" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-6.35" x2="1.27" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-5.715" x2="0.635" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-6.35" x2="-0.635" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-6.35" x2="-1.27" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-5.715" x2="-1.27" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-4.445" x2="-0.635" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-3.81" x2="-1.27" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-3.175" x2="-1.27" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="0" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-3.81" x2="0" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="0.635" x2="-1.651" y2="-0.635" width="0.127" layer="21"/>
+<text x="-1.27" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-8.255" size="1.27" layer="25">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ISCP">
+<description>&lt;font size="+1"&gt;&lt;b&gt;Arduino ICSP I/O Header Symbol&lt;/b&gt;&lt;/font&gt;</description>
+<wire x1="11.43" y1="0" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="7.62" x2="10.16" y2="7.62" width="0.6096" layer="94"/>
+<wire x1="8.89" y1="5.08" x2="10.16" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="8.89" y1="2.54" x2="10.16" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="0" y1="17.78" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="0" y1="17.78" x2="11.43" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="12.7" x2="10.16" y2="12.7" width="0.6096" layer="94"/>
+<wire x1="8.89" y1="10.16" x2="10.16" y2="10.16" width="0.6096" layer="94"/>
+<wire x1="8.89" y1="15.24" x2="10.16" y2="15.24" width="0.6096" layer="94"/>
+<text x="0" y="-2.54" size="1.778" layer="96">ICSP</text>
+<text x="0" y="18.542" size="1.778" layer="95">&gt;NAME</text>
+<pin name="6" x="15.24" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="15.24" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="15.24" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="15.24" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="15.24" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="15.24" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="7.62" y="15.24" size="1.27" layer="94" align="center-right">MISO</text>
+<text x="7.62" y="12.7" size="1.27" layer="94" align="center-right">+5V</text>
+<text x="7.62" y="10.16" size="1.27" layer="94" align="center-right">SCK</text>
+<text x="7.62" y="7.62" size="1.27" layer="94" align="center-right">MOSI</text>
+<text x="7.62" y="5.08" size="1.27" layer="94" align="center-right">RESET</text>
+<text x="7.62" y="2.54" size="1.27" layer="94" align="center-right">GND</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ARDUINO_CONN-ICSP" prefix="JP" uservalue="yes">
+<description>&lt;font size="+1"&gt;&lt;b&gt;Arduino ICSP I/O Header&lt;/b&gt;&lt;/font&gt;
+
+&lt;p&gt;This is the ICSP I/O header on the Arduino Uno R3.&lt;/p&gt;
+
+&lt;p&gt;This connector is labeled with the following pin assignments:
+&lt;ol&gt;
+&lt;li&gt;MISO&lt;/li&gt;
+&lt;li&gt;+5V&lt;/li&gt;
+&lt;li&gt;SCK&lt;/li&gt;
+&lt;li&gt;MOSI&lt;/li&gt;
+&lt;li&gt;RESET&lt;/li&gt;
+&lt;li&gt;GND&lt;/li&gt;
+&lt;/ol&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;NOTE:&lt;/b&gt; Be sure you install this connector with the correct orientation on your PCB layout.  Pin 1 has a square pad to assist with orientation.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ISCP" x="-2.54" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="CONN-2X03">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14840,9 +14957,16 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <part name="SJ6" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ7" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ8" library="jumper" deviceset="SJ" device=""/>
-<part name="M2" library="diy-modules" deviceset="ARDUINO-NANO-3.0#ISP" device=""/>
+<part name="M1" library="diy-modules" deviceset="ARDUINO-NANO-3.0#ISP" device=""/>
 <part name="ARDUINO1" library="arduinopromini" deviceset="ARDUINO_PRO_MINI" device=""/>
 <part name="LCD1" library="b0l2" deviceset="12864B" device="" value="LCD_128x64_ST7920"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="5k1"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="5k1"/>
+<part name="P+5" library="supply1v" deviceset="+5V" device=""/>
+<part name="GND9" library="supply1v" deviceset="GND" device=""/>
+<part name="GND10" library="supply1v" deviceset="GND" device=""/>
+<part name="JP1" library="arduino_jw" deviceset="ARDUINO_CONN-ICSP" device=""/>
+<part name="IC3" library="atmel" deviceset="MEGA8" device="-AI"/>
 </parts>
 <sheets>
 <sheet>
@@ -14856,7 +14980,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <instance part="P+3" gate="1" x="195.58" y="157.48"/>
 <instance part="P-1" gate="1" x="195.58" y="124.46"/>
 <instance part="GND3" gate="1" x="236.22" y="124.46"/>
-<instance part="IC4" gate="G$1" x="114.3" y="88.9"/>
+<instance part="IC4" gate="G$1" x="408.94" y="101.6"/>
 <instance part="IC5" gate="G$1" x="127" y="-165.1"/>
 <instance part="IC6" gate="G$1" x="-25.4" y="-160.02"/>
 <instance part="C5" gate="G$1" x="-66.04" y="-165.1"/>
@@ -14868,11 +14992,33 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <instance part="SJ6" gate="1" x="165.1" y="-137.16"/>
 <instance part="SJ7" gate="1" x="154.94" y="-139.7"/>
 <instance part="SJ8" gate="1" x="165.1" y="-142.24"/>
-<instance part="M2" gate="G$1" x="388.62" y="-104.14"/>
-<instance part="ARDUINO1" gate="G$1" x="330.2" y="-111.76"/>
-<instance part="LCD1" gate="G$1" x="33.02" y="147.32"/>
+<instance part="M1" gate="G$1" x="60.96" y="48.26" smashed="yes">
+<attribute name="NAME" x="45.72" y="12.7" size="1.778" layer="95"/>
+<attribute name="VALUE" x="45.72" y="10.16" size="1.778" layer="96"/>
+</instance>
+<instance part="ARDUINO1" gate="G$1" x="340.36" y="12.7"/>
+<instance part="LCD1" gate="G$1" x="50.8" y="144.78"/>
+<instance part="R7" gate="G$1" x="68.58" y="116.84" rot="R90"/>
+<instance part="R8" gate="G$1" x="38.1" y="116.84" rot="R90"/>
+<instance part="P+5" gate="1" x="53.34" y="116.84"/>
+<instance part="GND9" gate="1" x="63.5" y="121.92"/>
+<instance part="GND10" gate="1" x="20.32" y="58.42" rot="R270"/>
+<instance part="JP1" gate="G$1" x="50.8" y="104.14" rot="R270"/>
+<instance part="IC3" gate="G$1" x="-71.12" y="121.92"/>
 </instances>
 <busses>
+<bus name="DB[0..7],RS,E,RST">
+<segment>
+<wire x1="91.44" y1="127" x2="25.4" y2="127" width="0.762" layer="92"/>
+<wire x1="25.4" y1="127" x2="25.4" y2="109.22" width="0.762" layer="92"/>
+<wire x1="25.4" y1="109.22" x2="25.4" y2="27.94" width="0.762" layer="92"/>
+<wire x1="91.44" y1="127" x2="91.44" y2="30.48" width="0.762" layer="92"/>
+<wire x1="25.4" y1="109.22" x2="-20.32" y2="109.22" width="0.762" layer="92"/>
+<wire x1="-20.32" y1="109.22" x2="-20.32" y2="83.82" width="0.762" layer="92"/>
+<wire x1="-20.32" y1="83.82" x2="-25.4" y2="83.82" width="0.762" layer="92"/>
+<wire x1="-25.4" y1="83.82" x2="-25.4" y2="149.86" width="0.762" layer="92"/>
+</segment>
+</bus>
 </busses>
 <nets>
 <net name="+12V" class="0">
@@ -14898,6 +15044,28 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="236.22" y1="152.4" x2="236.22" y2="154.94" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="LCD1" gate="G$1" pin="VCC"/>
+<wire x1="71.12" y1="137.16" x2="71.12" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="121.92" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="121.92" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="109.22" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="109.22" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="109.22" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="109.22" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="1" pin="+5V"/>
+<wire x1="53.34" y1="114.3" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
+<junction x="53.34" y="109.22"/>
+<junction x="68.58" y="109.22"/>
+<pinref part="M1" gate="G$1" pin="5V"/>
+<wire x1="78.74" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="58.42" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
+<junction x="73.66" y="109.22"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -14905,6 +15073,21 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="233.68" y1="129.54" x2="236.22" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="236.22" y1="129.54" x2="236.22" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LCD1" gate="G$1" pin="RW"/>
+<wire x1="63.5" y1="137.16" x2="63.5" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="63.5" y1="134.62" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="134.62" x2="73.66" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="LCD1" gate="G$1" pin="GND"/>
+<wire x1="73.66" y1="134.62" x2="73.66" y2="137.16" width="0.1524" layer="91"/>
+<junction x="63.5" y="134.62"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="GND.1"/>
+<wire x1="40.64" y1="58.42" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -15307,47 +15490,231 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="160.02" y1="-127" x2="147.32" y2="-127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$58" class="0">
+<net name="N$1" class="0">
 <segment>
-<wire x1="307.34" y1="-93.98" x2="307.34" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="-68.58" x2="340.36" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="-68.58" x2="358.14" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="M2" gate="G$1" pin="D0/TXD"/>
-<wire x1="358.14" y1="-86.36" x2="368.3" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="LCD1" gate="G$1" pin="VO"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="137.16" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="LCD1" gate="G$1" pin="PSB"/>
+<wire x1="38.1" y1="121.92" x2="38.1" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RST" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="RST"/>
+<wire x1="33.02" y1="127" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
+<label x="33.02" y="129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="A1"/>
+<wire x1="91.44" y1="40.64" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
+<label x="83.82" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RS" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="RS"/>
+<wire x1="66.04" y1="127" x2="66.04" y2="137.16" width="0.1524" layer="91"/>
+<label x="66.04" y="129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="A3"/>
+<wire x1="91.44" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
+<label x="86.36" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="E" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="E"/>
+<wire x1="60.96" y1="127" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
+<label x="60.96" y="129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="A4"/>
+<wire x1="91.44" y1="48.26" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
+<label x="86.36" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB0" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="DB0"/>
+<wire x1="58.42" y1="127" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
+<label x="58.42" y="129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="D5"/>
+<wire x1="25.4" y1="48.26" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
+<label x="27.94" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="PD5(T1)"/>
+<wire x1="-25.4" y1="111.76" x2="-45.72" y2="111.76" width="0.1524" layer="91"/>
+<label x="-33.02" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB1" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="DB1"/>
+<wire x1="55.88" y1="127" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
+<label x="55.88" y="129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="D6"/>
+<wire x1="25.4" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
+<label x="27.94" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="PD6(AIN0)"/>
+<wire x1="-25.4" y1="109.22" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
+<label x="-33.02" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB2" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="DB2"/>
+<wire x1="53.34" y1="127" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
+<label x="53.34" y="129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="D7"/>
+<wire x1="25.4" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
+<label x="27.94" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="PD7(AIN1)"/>
+<wire x1="-25.4" y1="106.68" x2="-45.72" y2="106.68" width="0.1524" layer="91"/>
+<label x="-33.02" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB3" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="DB3"/>
+<wire x1="50.8" y1="127" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
+<label x="50.8" y="129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="D8"/>
+<wire x1="25.4" y1="40.64" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
+<label x="27.94" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB4" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="DB4"/>
+<wire x1="48.26" y1="127" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
+<label x="48.26" y="129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="D9"/>
+<wire x1="25.4" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
+<label x="27.94" y="38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB5" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="DB5"/>
+<wire x1="45.72" y1="127" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
+<label x="45.72" y="129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="D10"/>
+<wire x1="25.4" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<label x="27.94" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB6" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="DB6"/>
+<wire x1="43.18" y1="127" x2="43.18" y2="137.16" width="0.1524" layer="91"/>
+<label x="43.18" y="129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="D11/MOSI"/>
+<wire x1="25.4" y1="33.02" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
+<label x="27.94" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DB7" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="DB7"/>
+<wire x1="40.64" y1="127" x2="40.64" y2="137.16" width="0.1524" layer="91"/>
+<label x="40.64" y="129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="D12/MISO"/>
+<wire x1="25.4" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+<label x="27.94" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$59" class="0">
 <segment>
-<wire x1="307.34" y1="-96.52" x2="304.8" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="-93.98" x2="304.8" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="-68.58" x2="307.34" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="-66.04" x2="340.36" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="-66.04" x2="363.22" y2="-88.9" width="0.1524" layer="91"/>
-<pinref part="M2" gate="G$1" pin="D1/RXD"/>
-<wire x1="363.22" y1="-88.9" x2="368.3" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="6"/>
+<pinref part="M1" gate="G$1" pin="ISP_GND"/>
+<wire x1="53.34" y1="88.9" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$60" class="0">
 <segment>
-<wire x1="307.34" y1="-99.06" x2="302.26" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-93.98" x2="302.26" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-68.58" x2="307.34" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="-63.5" x2="332.74" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="-63.5" x2="360.68" y2="-91.44" width="0.1524" layer="91"/>
-<pinref part="M2" gate="G$1" pin="RST.1"/>
-<wire x1="360.68" y1="-91.44" x2="368.3" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="5"/>
+<pinref part="M1" gate="G$1" pin="ISP_RST"/>
+<wire x1="55.88" y1="88.9" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$61" class="0">
 <segment>
-<wire x1="304.8" y1="-104.14" x2="302.26" y2="-104.14" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-104.14" x2="297.18" y2="-99.06" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="-99.06" x2="297.18" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="-68.58" x2="307.34" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="-58.42" x2="322.58" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="-58.42" x2="358.14" y2="-93.98" width="0.1524" layer="91"/>
-<pinref part="M2" gate="G$1" pin="GND.1"/>
-<wire x1="358.14" y1="-93.98" x2="368.3" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="4"/>
+<pinref part="M1" gate="G$1" pin="ISP_MOSI"/>
+<wire x1="58.42" y1="88.9" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$62" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="3"/>
+<pinref part="M1" gate="G$1" pin="ISP_SCK"/>
+<wire x1="60.96" y1="88.9" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$63" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="M1" gate="G$1" pin="ISP_5V"/>
+<wire x1="63.5" y1="88.9" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="M1" gate="G$1" pin="ISP_MISO"/>
+<wire x1="66.04" y1="88.9" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$1" gate="D" pin="RA1"/>
+<wire x1="193.04" y1="149.86" x2="198.12" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<pinref part="U$1" gate="D" pin="RY1"/>
+<wire x1="233.68" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$65" class="0">
+<segment>
+<pinref part="U$1" gate="D" pin="DA1"/>
+<wire x1="233.68" y1="142.24" x2="238.76" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="U$1" gate="D" pin="DY1"/>
+<wire x1="198.12" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

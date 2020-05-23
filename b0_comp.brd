@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1399,6 +1399,22 @@ grid 2.032 mm, diameter 5 mm</description>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 </package>
+<package name="R0805">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
 </packages>
 </library>
 <library name="m_transistor">
@@ -2519,6 +2535,57 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 </package>
 </packages>
 </library>
+<library name="arduino_jw">
+<description>&lt;font size="+1"&gt;&lt;b&gt;Jim's Arduino Header Library&lt;/b&gt;&lt;/font&gt;
+
+&lt;p&gt;This library contains custom connectors for the Arduino Uno R3 for use in making custom shields.  Please feel free to use and modify as you like.&lt;/p&gt;
+
+&lt;p&gt; No guarantees!  This is my first attempt to make custom parts in Eagle and they're simple enough, but I haven't actually fabricated a board using them so use at your own risk.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;~Jim Watts&lt;/i&gt;&lt;br&gt;18-March-2015&lt;/p&gt;</description>
+<packages>
+<package name="CONN-2X03">
+<description>2x3 DIP header with pin 1 marked by a square pad.</description>
+<pad name="1" x="0" y="0" drill="1.2" diameter="1.8288" shape="square" rot="R270"/>
+<pad name="3" x="0" y="-2.54" drill="1.2" diameter="1.8288" shape="octagon" rot="R270"/>
+<pad name="5" x="0" y="-5.08" drill="1.2" diameter="1.8288" shape="octagon" rot="R270"/>
+<pad name="6" x="2.54" y="-5.08" drill="1.2" diameter="1.8288" shape="octagon" rot="R270"/>
+<pad name="4" x="2.54" y="-2.54" drill="1.2" diameter="1.8288" shape="octagon" rot="R270"/>
+<pad name="2" x="2.54" y="0" drill="1.2" diameter="1.8288" shape="octagon" rot="R270"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="3.81" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-3.175" x2="3.175" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-3.81" x2="3.81" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-4.445" x2="3.81" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-5.715" x2="3.175" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-6.35" x2="1.905" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-6.35" x2="1.27" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-5.715" x2="0.635" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-6.35" x2="-0.635" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-6.35" x2="-1.27" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-5.715" x2="-1.27" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-4.445" x2="-0.635" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-3.81" x2="-1.27" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-3.175" x2="-1.27" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="0" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-3.81" x2="0" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="0.635" x2="-1.651" y2="-0.635" width="0.127" layer="21"/>
+<text x="-1.27" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-8.255" size="1.27" layer="25">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2740,7 +2807,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <element name="JP4" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="79.375" y="21.59"/>
 <element name="JP5" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="59.69" y="13.335"/>
 <element name="IC2" library="v-reg" package="DIL08" value="UC3843N" x="-38.1" y="12.065"/>
-<element name="U$1" library="GD75232" package="SSOP20D8" value="GD75232DB" x="18.415" y="11.43" rot="MR270"/>
+<element name="U$1" library="GD75232" package="SSOP20D8" value="GD75232DB" x="19.05" y="28.575" rot="MR180"/>
 <element name="IC4" library="atmel" package="DIL40" value="MEGA16-P" x="5.76" y="-119.105">
 <attribute name="OC_NEWARK" value="01M6885" x="5.76" y="-119.105" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="ATMEGA16-16PU" x="5.76" y="-119.105" size="1.778" layer="27" display="off"/>
@@ -2779,9 +2846,18 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <element name="SJ6" library="jumper" package="SJ" value="" x="-45.4025" y="-60.325" rot="MR270"/>
 <element name="SJ7" library="jumper" package="SJ" value="" x="-47.625" y="-60.325" rot="MR270"/>
 <element name="SJ8" library="jumper" package="SJ" value="" x="-50.165" y="-60.325" rot="MR270"/>
-<element name="M2" library="diy-modules" package="ARDUINO-NANO-3.0#ISP" value="ARDUINO-NANO-3.0#ISP" x="45.085" y="-47.9425" rot="R180"/>
-<element name="ARDUINO1" library="arduinopromini" package="ARDUINO_PRO_MINI" value="" x="42.545" y="-73.9775" rot="R90"/>
+<element name="M1" library="diy-modules" package="ARDUINO-NANO-3.0#ISP" value="ARDUINO-NANO-3.0#ISP" x="-10.875" y="-7.2525" rot="R180"/>
+<element name="ARDUINO1" library="arduinopromini" package="ARDUINO_PRO_MINI" value="" x="22.105" y="-56.2675" rot="R90"/>
 <element name="LCD1" library="b0l2" package="12864B" value="LCD_128x64_ST7920" x="0" y="0"/>
+<element name="R7" library="rcl" package="R0805" value="5k1" x="8.22" y="-24.94" rot="MR270"/>
+<element name="R8" library="rcl" package="R0805" value="5k1" x="-19.68" y="-25.55" rot="MR270"/>
+<element name="JP1" library="arduino_jw" package="CONN-2X03" value="" x="-41.91" y="-5.08"/>
+<element name="IC3" library="atmel" package="TQFP32-08" value="MEGA8-AI" x="-7.62" y="-21.59" rot="MR0">
+<attribute name="OC_NEWARK" value="73M8863" x="-7.62" y="-21.59" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="ATMEGA8-16AU" x="-7.62" y="-21.59" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="" x="-7.62" y="-21.59" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="OC_FARNELL" value="9171371" x="-7.62" y="-21.59" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="N$5">
@@ -2830,19 +2906,39 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <contactref element="ARDUINO1" pad="GND@1"/>
 <contactref element="ARDUINO1" pad="GND@3"/>
 <contactref element="ARDUINO1" pad="GND@2"/>
-<wire x1="59.69" y1="13.335" x2="59.25" y2="19.735" width="0" layer="19" extent="16-16"/>
-<wire x1="15.1638" y1="8.509" x2="59.69" y2="13.335" width="0" layer="19" extent="16-16"/>
-<wire x1="4.49" y1="-111.485" x2="15.1638" y2="8.509" width="0" layer="19" extent="16-16"/>
-<wire x1="7.03" y1="-126.725" x2="4.49" y2="-111.485" width="0" layer="19" extent="1-1"/>
-<wire x1="-34.925" y1="13.015" x2="4.49" y2="-111.485" width="0" layer="19" extent="16-16"/>
-<wire x1="-37.15" y1="13.335" x2="-34.925" y2="13.015" width="0" layer="19" extent="16-16"/>
-<wire x1="-37.785" y1="10.795" x2="-37.15" y2="13.335" width="0" layer="19" extent="16-16"/>
+<contactref element="LCD1" pad="5"/>
+<contactref element="LCD1" pad="5@"/>
+<contactref element="LCD1" pad="1"/>
+<contactref element="LCD1" pad="1@"/>
+<wire x1="15.76" y1="-29.96" x2="15.76" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="5.6" y1="-29.96" x2="5.6" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="15.76" y1="-29.96" x2="15.76" y2="-27.94" width="0.6096" layer="16"/>
+<wire x1="15.76" y1="-27.94" x2="5.6" y2="-27.94" width="0.6096" layer="1"/>
+<wire x1="5.6" y1="-27.94" x2="5.6" y2="-29.96" width="0.6096" layer="16"/>
+<contactref element="M1" pad="J1.4"/>
+<via x="15.76" y="-27.94" extent="1-16" drill="0.6" diameter="2.3"/>
+<via x="5.6" y="-27.94" extent="1-16" drill="0.6" diameter="2.3"/>
+<contactref element="IC3" pad="3"/>
+<contactref element="IC3" pad="5"/>
+<contactref element="IC3" pad="21"/>
+<wire x1="4.49" y1="-111.485" x2="7.03" y2="-126.725" width="0" layer="19" extent="1-1"/>
+<wire x1="20.835" y1="-60.0775" x2="4.49" y2="-111.485" width="0" layer="19" extent="1-1"/>
+<wire x1="10.675" y1="-48.6475" x2="20.835" y2="-60.0775" width="0" layer="19" extent="1-1"/>
+<wire x1="15.755" y1="-44.8375" x2="10.675" y2="-48.6475" width="0" layer="19" extent="1-1"/>
+<wire x1="15.76" y1="-32.5" x2="15.755" y2="-44.8375" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.3274" y1="-20.39" x2="5.6" y2="-32.5" width="0" layer="19" extent="16-16"/>
+<wire x1="-3.3274" y1="-21.99" x2="-3.3274" y2="-20.39" width="0" layer="19" extent="16-16"/>
+<wire x1="-11.9126" y1="-21.19" x2="-3.3274" y2="-20.39" width="0" layer="19" extent="16-16"/>
+<wire x1="41.155" y1="-52.4575" x2="20.835" y2="-60.0775" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.035" y1="-14.8725" x2="-3.3274" y2="-20.39" width="0" layer="19" extent="16-16"/>
+<wire x1="-37.785" y1="10.795" x2="-21.035" y2="-14.8725" width="0" layer="19" extent="16-16"/>
+<wire x1="-37.15" y1="13.335" x2="-37.785" y2="10.795" width="0" layer="19" extent="16-16"/>
+<wire x1="-34.925" y1="13.015" x2="-37.15" y2="13.335" width="0" layer="19" extent="16-16"/>
 <wire x1="-34.29" y1="15.875" x2="-34.925" y2="13.015" width="0" layer="19" extent="16-16"/>
 <wire x1="-31.115" y1="16.19" x2="-34.29" y2="15.875" width="0" layer="19" extent="16-16"/>
-<wire x1="31.115" y1="-66.3575" x2="7.03" y2="-126.725" width="0" layer="19" extent="1-1"/>
-<wire x1="36.195" y1="-62.5475" x2="31.115" y2="-66.3575" width="0" layer="19" extent="1-1"/>
-<wire x1="41.275" y1="-77.7875" x2="31.115" y2="-66.3575" width="0" layer="19" extent="1-1"/>
-<wire x1="61.595" y1="-70.1675" x2="41.275" y2="-77.7875" width="0" layer="19" extent="1-1"/>
+<wire x1="21.971" y1="25.3238" x2="15.76" y2="-27.94" width="0" layer="19" extent="16-16"/>
+<wire x1="59.25" y1="19.735" x2="21.971" y2="25.3238" width="0" layer="19" extent="16-16"/>
+<wire x1="59.69" y1="13.335" x2="59.25" y2="19.735" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+12V">
 <contactref element="VT1" pad="D"/>
@@ -2850,8 +2946,8 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <contactref element="U$1" pad="1"/>
 <contactref element="R6" pad="2"/>
 <wire x1="66.69" y1="21.16" x2="79.375" y2="21.59" width="0" layer="19" extent="16-16"/>
-<wire x1="21.7678" y1="14.224" x2="66.69" y2="21.16" width="0" layer="19" extent="16-16"/>
-<wire x1="-35.88" y1="19.685" x2="21.7678" y2="14.224" width="0" layer="19" extent="16-16"/>
+<wire x1="16.256" y1="31.9278" x2="66.69" y2="21.16" width="0" layer="19" extent="16-16"/>
+<wire x1="-35.88" y1="19.685" x2="16.256" y2="31.9278" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$9">
 <contactref element="IC1" pad="4"/>
@@ -2879,17 +2975,33 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <contactref element="IC4" pad="10"/>
 <contactref element="ARDUINO1" pad="VCC"/>
 <contactref element="ARDUINO1" pad="VCC@1"/>
-<wire x1="41.275" y1="-62.5475" x2="31.115" y2="-68.8975" width="0" layer="19" extent="1-1"/>
-<wire x1="4.49" y1="-126.725" x2="31.115" y2="-68.8975" width="0" layer="19" extent="1-1"/>
+<wire x1="10.675" y1="-51.1875" x2="4.49" y2="-126.725" width="0" layer="19" extent="1-1"/>
+<wire x1="20.835" y1="-44.8375" x2="10.675" y2="-51.1875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AVCC">
 <contactref element="IC4" pad="30"/>
+<contactref element="IC3" pad="18"/>
+<wire x1="-11.9126" y1="-23.59" x2="7.03" y2="-111.485" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="-12V">
 <contactref element="U$1" pad="10"/>
 </signal>
 <signal name="+5V">
 <contactref element="U$1" pad="20"/>
+<contactref element="LCD1" pad="2@"/>
+<contactref element="LCD1" pad="2"/>
+<contactref element="R7" pad="1"/>
+<contactref element="R8" pad="1"/>
+<wire x1="13.22" y1="-29.96" x2="13.22" y2="-32.5" width="1.27" layer="16"/>
+<contactref element="M1" pad="J2.4"/>
+<contactref element="IC3" pad="4"/>
+<contactref element="IC3" pad="6"/>
+<wire x1="-3.3274" y1="-21.19" x2="-3.3274" y2="-22.79" width="0" layer="19" extent="16-16"/>
+<wire x1="-19.68" y1="-24.6" x2="-3.3274" y2="-21.19" width="0" layer="19" extent="16-16"/>
+<wire x1="-21.035" y1="0.3675" x2="-19.68" y2="-24.6" width="0" layer="19" extent="16-16"/>
+<wire x1="8.22" y1="-23.99" x2="-19.68" y2="-24.6" width="0" layer="19" extent="16-16"/>
+<wire x1="13.22" y1="-29.96" x2="8.22" y2="-23.99" width="0" layer="19" extent="16-16"/>
+<wire x1="16.256" y1="25.3238" x2="-21.035" y2="0.3675" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$20">
 <contactref element="IC2" pad="6"/>
@@ -3239,28 +3351,152 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="-34.925" y1="-57.9755" x2="-34.925" y2="-57.785" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GND.2">
-<contactref element="M2" pad="J2.2"/>
+<contactref element="M1" pad="J2.2"/>
 </signal>
 <signal name="VIN">
-<contactref element="M2" pad="J2.1"/>
-</signal>
-<signal name="5V">
-<contactref element="M2" pad="J2.4"/>
+<contactref element="M1" pad="J2.1"/>
 </signal>
 <signal name="3V3">
-<contactref element="M2" pad="J2.14"/>
+<contactref element="M1" pad="J2.14"/>
 </signal>
-<signal name="N$58">
-<contactref element="M2" pad="J1.1"/>
+<signal name="N$1">
+<contactref element="LCD1" pad="3@"/>
+<contactref element="LCD1" pad="3"/>
+<contactref element="R7" pad="2"/>
+<wire x1="10.68" y1="-29.96" x2="10.68" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="10.68" y1="-29.96" x2="8.22" y2="-25.89" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$2">
+<contactref element="R8" pad="2"/>
+<contactref element="LCD1" pad="15"/>
+<contactref element="LCD1" pad="15@"/>
+<wire x1="-19.8" y1="-29.96" x2="-19.8" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="-19.68" y1="-26.5" x2="-19.8" y2="-29.96" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="RST">
+<contactref element="LCD1" pad="17@"/>
+<contactref element="LCD1" pad="17"/>
+<contactref element="M1" pad="J2.11"/>
+<wire x1="-24.88" y1="-29.96" x2="-24.88" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="-3.255" y1="0.3675" x2="-24.88" y2="-29.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RS">
+<contactref element="LCD1" pad="4@"/>
+<contactref element="LCD1" pad="4"/>
+<contactref element="M1" pad="J2.9"/>
+<wire x1="8.14" y1="-29.96" x2="8.14" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="-8.335" y1="0.3675" x2="8.14" y2="-29.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="E">
+<contactref element="LCD1" pad="6"/>
+<contactref element="LCD1" pad="6@"/>
+<contactref element="M1" pad="J2.8"/>
+<wire x1="3.06" y1="-32.5" x2="3.06" y2="-29.96" width="1.27" layer="16"/>
+<wire x1="-10.875" y1="0.3675" x2="3.06" y2="-29.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DB0">
+<contactref element="LCD1" pad="7"/>
+<contactref element="LCD1" pad="7@"/>
+<contactref element="M1" pad="J1.8"/>
+<wire x1="0.52" y1="-32.5" x2="0.52" y2="-29.96" width="1.27" layer="16"/>
+<contactref element="IC3" pad="9"/>
+<wire x1="0.52" y1="-32.5" x2="-4.82" y2="-25.8826" width="0" layer="19" extent="16-16"/>
+<wire x1="-10.875" y1="-14.8725" x2="0.52" y2="-29.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DB1">
+<contactref element="LCD1" pad="8@"/>
+<contactref element="LCD1" pad="8"/>
+<contactref element="M1" pad="J1.9"/>
+<wire x1="-2.02" y1="-29.96" x2="-2.02" y2="-32.5" width="1.27" layer="16"/>
+<contactref element="IC3" pad="10"/>
+<wire x1="-2.02" y1="-32.5" x2="-5.62" y2="-25.8826" width="0" layer="19" extent="16-16"/>
+<wire x1="-8.335" y1="-14.8725" x2="-2.02" y2="-29.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DB2">
+<contactref element="LCD1" pad="9"/>
+<contactref element="LCD1" pad="9@"/>
+<contactref element="M1" pad="J1.10"/>
+<wire x1="-4.56" y1="-29.96" x2="-4.56" y2="-32.5" width="1.27" layer="16"/>
+<contactref element="IC3" pad="11"/>
+<wire x1="-4.56" y1="-32.5" x2="-6.42" y2="-25.8826" width="0" layer="19" extent="16-16"/>
+<wire x1="-5.795" y1="-14.8725" x2="-4.56" y2="-29.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DB3">
+<contactref element="LCD1" pad="10@"/>
+<contactref element="LCD1" pad="10"/>
+<contactref element="M1" pad="J1.11"/>
+<wire x1="-7.1" y1="-29.96" x2="-7.1" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="-3.255" y1="-14.8725" x2="-7.1" y2="-29.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DB4">
+<contactref element="LCD1" pad="11@"/>
+<contactref element="LCD1" pad="11"/>
+<contactref element="M1" pad="J1.12"/>
+<wire x1="-9.64" y1="-29.96" x2="-9.64" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="-0.715" y1="-14.8725" x2="-9.64" y2="-29.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DB5">
+<contactref element="LCD1" pad="12@"/>
+<contactref element="LCD1" pad="12"/>
+<contactref element="M1" pad="J1.13"/>
+<wire x1="-12.18" y1="-29.96" x2="-12.18" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="1.825" y1="-14.8725" x2="-12.18" y2="-29.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DB6">
+<contactref element="LCD1" pad="13@"/>
+<contactref element="LCD1" pad="13"/>
+<contactref element="M1" pad="J1.14"/>
+<wire x1="-14.72" y1="-29.96" x2="-14.72" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="4.365" y1="-14.8725" x2="-14.72" y2="-29.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DB7">
+<contactref element="LCD1" pad="14@"/>
+<contactref element="LCD1" pad="14"/>
+<contactref element="M1" pad="J1.15"/>
+<wire x1="-17.26" y1="-29.96" x2="-17.26" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="6.905" y1="-14.8725" x2="-17.26" y2="-29.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$59">
-<contactref element="M2" pad="J1.2"/>
+<contactref element="JP1" pad="6"/>
+<contactref element="M1" pad="J4.6"/>
+<wire x1="-28.655" y1="-9.7925" x2="-39.37" y2="-10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$60">
-<contactref element="M2" pad="J1.3"/>
+<contactref element="JP1" pad="5"/>
+<contactref element="M1" pad="J4.5"/>
+<wire x1="-31.195" y1="-9.7925" x2="-41.91" y2="-10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$61">
-<contactref element="M2" pad="J1.4"/>
+<contactref element="JP1" pad="4"/>
+<contactref element="M1" pad="J4.4"/>
+<wire x1="-28.655" y1="-7.2525" x2="-39.37" y2="-7.62" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$62">
+<contactref element="JP1" pad="3"/>
+<contactref element="M1" pad="J4.3"/>
+<wire x1="-31.195" y1="-7.2525" x2="-41.91" y2="-7.62" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$63">
+<contactref element="JP1" pad="2"/>
+<contactref element="M1" pad="J4.2"/>
+<wire x1="-28.655" y1="-4.7125" x2="-39.37" y2="-5.08" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$64">
+<contactref element="JP1" pad="1"/>
+<contactref element="M1" pad="J4.1"/>
+<wire x1="-31.195" y1="-4.7125" x2="-41.91" y2="-5.08" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="U$1" pad="2"/>
+</signal>
+<signal name="N$58">
+<contactref element="U$1" pad="19"/>
+</signal>
+<signal name="N$65">
+<contactref element="U$1" pad="16"/>
+</signal>
+<signal name="N$66">
+<contactref element="U$1" pad="5"/>
 </signal>
 </signals>
 </board>

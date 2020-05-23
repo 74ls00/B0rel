@@ -15011,7 +15011,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <segment>
 <wire x1="91.44" y1="127" x2="25.4" y2="127" width="0.762" layer="92"/>
 <wire x1="25.4" y1="127" x2="25.4" y2="109.22" width="0.762" layer="92"/>
-<wire x1="25.4" y1="109.22" x2="25.4" y2="27.94" width="0.762" layer="92"/>
+<wire x1="25.4" y1="109.22" x2="25.4" y2="30.48" width="0.762" layer="92"/>
 <wire x1="91.44" y1="127" x2="91.44" y2="30.48" width="0.762" layer="92"/>
 <wire x1="25.4" y1="109.22" x2="-20.32" y2="109.22" width="0.762" layer="92"/>
 <wire x1="-20.32" y1="109.22" x2="-20.32" y2="83.82" width="0.762" layer="92"/>
@@ -15547,14 +15547,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <label x="58.42" y="129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="M1" gate="G$1" pin="D5"/>
-<wire x1="25.4" y1="48.26" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
-<label x="27.94" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="PD5(T1)"/>
-<wire x1="-25.4" y1="111.76" x2="-45.72" y2="111.76" width="0.1524" layer="91"/>
-<label x="-33.02" y="111.76" size="1.778" layer="95"/>
+<pinref part="M1" gate="G$1" pin="D12/MISO"/>
+<wire x1="25.4" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+<label x="27.94" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB1" class="0">
@@ -15564,14 +15559,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <label x="55.88" y="129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="M1" gate="G$1" pin="D6"/>
-<wire x1="25.4" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
-<label x="27.94" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="PD6(AIN0)"/>
-<wire x1="-25.4" y1="109.22" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
-<label x="-33.02" y="109.22" size="1.778" layer="95"/>
+<pinref part="M1" gate="G$1" pin="D11/MOSI"/>
+<wire x1="25.4" y1="33.02" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
+<label x="27.94" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB2" class="0">
@@ -15581,14 +15571,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <label x="53.34" y="129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="M1" gate="G$1" pin="D7"/>
-<wire x1="25.4" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
-<label x="27.94" y="43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="PD7(AIN1)"/>
-<wire x1="-25.4" y1="106.68" x2="-45.72" y2="106.68" width="0.1524" layer="91"/>
-<label x="-33.02" y="106.68" size="1.778" layer="95"/>
+<pinref part="M1" gate="G$1" pin="D10"/>
+<wire x1="25.4" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<label x="27.94" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB3" class="0">
@@ -15598,9 +15583,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <label x="50.8" y="129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="M1" gate="G$1" pin="D8"/>
-<wire x1="25.4" y1="40.64" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
-<label x="27.94" y="40.64" size="1.778" layer="95"/>
+<pinref part="M1" gate="G$1" pin="D9"/>
+<wire x1="25.4" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
+<label x="27.94" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB4" class="0">
@@ -15610,9 +15595,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <label x="48.26" y="129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="M1" gate="G$1" pin="D9"/>
-<wire x1="25.4" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
-<label x="27.94" y="38.1" size="1.778" layer="95"/>
+<pinref part="M1" gate="G$1" pin="D8"/>
+<wire x1="25.4" y1="40.64" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
+<label x="27.94" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB5" class="0">
@@ -15622,9 +15607,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <label x="45.72" y="129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="M1" gate="G$1" pin="D10"/>
-<wire x1="25.4" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
-<label x="27.94" y="35.56" size="1.778" layer="95"/>
+<pinref part="M1" gate="G$1" pin="D7"/>
+<wire x1="25.4" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
+<label x="27.94" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB6" class="0">
@@ -15634,9 +15619,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <label x="43.18" y="129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="M1" gate="G$1" pin="D11/MOSI"/>
-<wire x1="25.4" y1="33.02" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
-<label x="27.94" y="33.02" size="1.778" layer="95"/>
+<pinref part="M1" gate="G$1" pin="D6"/>
+<wire x1="25.4" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
+<label x="27.94" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB7" class="0">
@@ -15646,9 +15631,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <label x="40.64" y="129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="M1" gate="G$1" pin="D12/MISO"/>
-<wire x1="25.4" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
-<label x="27.94" y="30.48" size="1.778" layer="95"/>
+<pinref part="M1" gate="G$1" pin="D5"/>
+<wire x1="25.4" y1="48.26" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
+<label x="27.94" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$59" class="0">

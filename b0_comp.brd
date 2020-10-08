@@ -3202,9 +3202,9 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <element name="0V10" library="m_transistor" package="TO92" value="П306ОС" x="-145" y="-20.5" rot="R270"/>
 <element name="0R6" library="rcl" package="M0805" value="10k" x="-150.5" y="-20.5" rot="R270"/>
 <element name="0V4" library="diode" package="DO34Z7" value="11.5v" x="-173.5" y="-28"/>
-<element name="!RSPD" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-143" y="-30" rot="R180"/>
+<element name="!RSPD" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-150" y="-30.5" rot="R180"/>
 <element name="!BSPD" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-144" y="-13" rot="R180"/>
-<element name="0V9" library="diode" package="SMB" value="" x="-152" y="-29.5"/>
+<element name="0V9" library="diode" package="SMB" value="" x="-154" y="-30" rot="R270"/>
 <element name="0V6" library="diode" package="SMB" value="" x="-151" y="-13"/>
 <element name="IGND" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-172" y="-32"/>
 <element name="+BAT" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-143.5" y="-25.5" rot="R90"/>
@@ -3212,7 +3212,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <element name="0V7" library="diode" package="SMB" value="" x="-154" y="-18.5" rot="R270"/>
 <element name="0V8" library="diode" package="SMB" value="" x="-153" y="-24.5"/>
 <element name="0V5" library="uln-udn" package="DIL16" value="К1109КТ22" x="-162" y="-22.5" rot="R270"/>
-<element name="0C1" library="rcl" package="C0805" value="100n" x="-216" y="-132"/>
+<element name="0C1" library="rcl" package="C0805" value="100n" x="-147" y="-31" rot="R270"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -3959,7 +3959,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <contactref element="0V5" pad="4"/>
 <contactref element="0V5" pad="6"/>
 <wire x1="-165.81" y1="-26.31" x2="-170.19" y2="-24" width="0" layer="19" extent="1-1"/>
-<wire x1="-165.81" y1="-21.23" x2="-170.19" y2="-24" width="0" layer="19" extent="1-1"/>
+<wire x1="-165.81" y1="-21.23" x2="-165.81" y2="-26.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$82">
 <contactref element="0R3" pad="2"/>
@@ -4024,7 +4024,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <signal name="N$92">
 <contactref element="0V9" pad="C"/>
 <contactref element="0V5" pad="11"/>
-<wire x1="-158.19" y1="-26.31" x2="-154.2" y2="-29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-154" y1="-27.8" x2="-158.19" y2="-26.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$90">
 <contactref element="!BSPD" pad="1"/>
@@ -4034,7 +4034,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <signal name="N$93">
 <contactref element="!RSPD" pad="1"/>
 <contactref element="0V9" pad="A"/>
-<wire x1="-143" y1="-30" x2="-149.8" y2="-29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-150" y1="-30.5" x2="-154" y2="-32.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$94">
 <contactref element="0V6" pad="C"/>
@@ -4046,7 +4046,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <contactref element="0V5" pad="8"/>
 <contactref element="0C1" pad="2"/>
 <wire x1="-165.81" y1="-31.39" x2="-172" y2="-32" width="0" layer="19" extent="1-1"/>
-<wire x1="-215.05" y1="-132" x2="-172" y2="-32" width="0" layer="19" extent="1-1"/>
+<wire x1="-147" y1="-31.95" x2="-165.81" y2="-31.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$96">
 <contactref element="0V10" pad="3"/>
@@ -4068,9 +4068,9 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <contactref element="0V8" pad="A"/>
 <contactref element="0R6" pad="2"/>
 <contactref element="0C1" pad="1"/>
-<wire x1="-150.5" y1="-21.45" x2="-154" y2="-20.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-150.8" y1="-24.5" x2="-150.5" y2="-21.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-216.95" y1="-132" x2="-150.8" y2="-24.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-150.8" y1="-24.5" x2="-147" y2="-30.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-150.5" y1="-21.45" x2="-150.8" y2="-24.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-154" y1="-20.7" x2="-150.5" y2="-21.45" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

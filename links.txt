@@ -6,6 +6,11 @@ https://audio-cxem.ru/shemyi/istochniki-pitaniya/dc-dc-preobrazovateli/povyishay
 
 http://pgurovich.com/prostoy-izolirovannyiy-4-h-kanalnyiy-dc-dc-konverter/
 
+Стабилизатор тока светодиодов на микросхеме МС34063
+http://open.e-voron.dp.ua/stabilizator-toka-svetodiodov-na-mikrosheme-ms34063/
+
+Влияние номинала подтягивающих резисторов на сигнал шины I2C
+https://19dx.ru/2014/08/vliyanie-nominala-podtyagivayushhih-rezistorov-na-signal-shiny-i2c/
 
 my
 https://electrotransport.ru/ussr/index.php?topic=62447.new#new

@@ -1,5 +1,4 @@
 cls
-rem set "bdfconv_2_22=G:\home\Documents\Projects\0-Electronics\E-bike\0-Display\u8g2\tools\font\bdfconv\bdfconv_2_22.exe"
 set "bdfconv_2_22=%~d0%~p0bdfconv\bdfconv_2_22.exe"
 
 rem set font_name=u8g2_font_18d
@@ -9,10 +8,7 @@ rem set font_name=u8g_font_04b_03b
 set font_name=u8g2_font_7x13B
 
 
-
-rem set "file_c=G:\home\Documents\Projects\0-Electronics\E-bike\0-Display\LCD12864_ST7920_u8g2\pTest_g2_v2\fonts\%font_name%.h"
 set "file_c=%~d0%~p0%font_name%.h"
-
 del "%file_c%"
 
 rem set "font_bdf=G:\home\Documents\Projects\0-Electronics\E-bike\0-Display\LCD12864_ST7920_u8g2\pTest_g2_v2\font_arduino-1.8.13p\ncenB18m.bdf"

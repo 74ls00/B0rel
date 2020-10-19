@@ -5,8 +5,8 @@
 #include "RTClib.h" //RTClib 1.2.1 https://github.com/adafruit/RTClib
 
 #include "fonts/Fonts.h" 
+#include "fonts/u8g_font_04b_03b.h" 
 #include "fonts/u8g2_font_ncenB18m.h" 
-
 
 //U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 5, 6, 7, 8, 9, 10, 11, 12, /*en=*/ 18 /* A4 */, U8X8_PIN_NONE, /*rs=*/ 17 /* A3 */, /*rst=*/ 15 /* A1 */);  // R/W соединить с общим
 //U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 12,11,10,9,8,7,6,5, 18,U8X8_PIN_NONE,17,15); // nano
@@ -189,22 +189,12 @@ u8g2.setCursor(50, 61); u8g2.print("E"); //ток электроники
 //u8g2.setFont(u8g2_font_chroma48medium8_8u);
 u8g2.setFont(u8g2_font_7d); //u8g2_font_blipfest_07_tr
 
-//u8g2.setCursor(110, 62); u8g2.print("2019");
-u8g2.setCursor(88, 64); u8g2.print(now.year());
-u8g2.setCursor(108, 64); u8g2.print(".");
-
-//u8g2.setCursor(110, 55); u8g2.print("12");
-u8g2.setCursor(109, 64); u8g2.print(now.month());
-//u8g2.setCursor(95, 28); u8g2.print("23:59:00");
-
-
-u8g2.setCursor(117, 64); u8g2.print(".");
-//u8g2.setCursor(119, 64); u8g2.print("32");
-u8g2.setCursor(120, 64); u8g2.print(now.day());
+u8g2.setCursor(88, 64); u8g2.print(now.year()); u8g2.print(".");
+//u8g2.setCursor(109, 64); 
+u8g2.print(now.month()); u8g2.print("."); u8g2.print(now.day());
 
 u8g2.setCursor(95, 55); u8g2.print(now.hour()); u8g2.print(":");
-//u8g2.setCursor(95, 55); u8g2.print("23");
-//u8g2.setCursor(105, 55); 
+
 
 
 

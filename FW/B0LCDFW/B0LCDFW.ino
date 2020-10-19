@@ -5,8 +5,8 @@
 #include "RTClib.h" //RTClib 1.2.1 https://github.com/adafruit/RTClib
 
 #include "fonts/Fonts.h" 
-#include "fonts/u8g_font_04b_03b.h" 
-#include "fonts/u8g2_font_ncenB18m.h" 
+#include "fonts/u8g_font_04b_03b.h" //Шрифт Мелкие цифры Батарея V, ..
+#include "fonts/u8g2_font_ncenB18m.h"  //Шрифт больших цифр скорости расхода
 
 //U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 5, 6, 7, 8, 9, 10, 11, 12, /*en=*/ 18 /* A4 */, U8X8_PIN_NONE, /*rs=*/ 17 /* A3 */, /*rst=*/ 15 /* A1 */);  // R/W соединить с общим
 //U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 12,11,10,9,8,7,6,5, 18,U8X8_PIN_NONE,17,15); // nano
@@ -21,7 +21,7 @@ RTC_DS1307 rtc; // "rtc" используется в начале функций
  
 //int val = 0 ;
 //float adcv = 0.00 ;
-float vmax = 55.0 ; // максимальное напряжение измерения
+float vmax = 54.85 ; // максимальное напряжение измерения
 int vvalue = 0 ;
 float vout = 0.0 ;
 
@@ -55,14 +55,21 @@ void draw(void) {
 // u8g2.setFont(u8x8_font_5x7_r); u8g2.setCursor(0, 10); u8g2.print(lup);
 //u8g2.setFont(u8g2_font_micro_mr);  u8g2.drawStr(15,20,lup);
 u8g2.setFont(u8g_font_04b_03b);
-//u8g2.setFont(u8g2_font_04b_03b_1BB2B29C);
 
-
-//u8g2.setFont(u8g2_font_04b_03b);
-
- vvalue = analogRead(A0);
+ vvalue = analogRead(A6);
  vout = (vvalue * vmax) / 1024.0 ;
- u8g2.setCursor(0, 10);u8g2.print(vout);
+ u8g2.setCursor(2, 10);u8g2.print(vout);
+
+/*
+max*adc/1024 adc=954 max= 54.84947589098528 ≈ 54.85
+max/1024*adc alt.
+
+Uout=Uin*(R2/(R1+R2)) Uin=54.84947589098528 Uout=5
+R1=10k  R2≈1k+3 , R1=9.1k R2≈912.74 ; R1=47k  R2≈4k7+120+21.92 , R1=33k  R2≈3k3+120+9.9
+R2=10k/2 R1≈47k+2k8+47+ 0.93ma(51.1v)
+
+
+ */
 
   
   // graphic commands to redraw the complete screen should be placed here  
@@ -183,34 +190,31 @@ u8g2.setCursor(50, 61); u8g2.print("E"); //ток электроники
 
 
 
-// 1307
+// RTC 1307
    DateTime now = rtc.now();
 
-//u8g2.setFont(u8g2_font_chroma48medium8_8u);
-u8g2.setFont(u8g2_font_7d); //u8g2_font_blipfest_07_tr
 
-u8g2.setCursor(88, 64); u8g2.print(now.year()); u8g2.print(".");
-//u8g2.setCursor(109, 64); 
+
+
+//u8g2.setFont(u8g2_font_chroma48medium8_8u);
+u8g2.setFont(u8g_font_04b_03b); //u8g2_font_blipfest_07_tr
+
+u8g2.setCursor(87, 64); u8g2.print(now.year()); u8g2.print(".");
 u8g2.print(now.month()); u8g2.print("."); u8g2.print(now.day());
 
+u8g2.setFont(u8g2_font_7d); //u8g2_font_blipfest_07_tr
 u8g2.setCursor(95, 55); u8g2.print(now.hour()); u8g2.print(":");
 
+//int min = now.minute() ;
+//if ( min < 10 ) { u8g2.print("0"); u8g2.print(min); } u8g2.print(min); u8g2.print(":");
+if ( now.minute() < 10 ) { u8g2.print("0"); u8g2.print(now.minute()); } u8g2.print(now.minute()); u8g2.print(":");
 
-
-
-//u8g2.setCursor(107, 55); 
-u8g2.print(now.minute()); 
-//u8g2.print("16");
-
-//u8g2.setCursor(117, 55);
-u8g2.print(":");
-//u8g2.setCursor(119, 55); 
-u8g2.print(now.second());
-
+//int sec = now.second() ;
+//if ( sec < 10 ) { u8g2.print("0"); } u8g2.print(sec); 
+if ( now.second() < 10 ) { u8g2.print("0"); } u8g2.print(now.second()); 
 
 // батарейки СЦ установлены 2020.10.18
-   
-// end 1307
+// End RTC 1307
 
 
 

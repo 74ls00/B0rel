@@ -206,8 +206,7 @@ u8g2.setFont(u8g2_font_7d); //u8g2_font_blipfest_07_tr
 u8g2.setCursor(95, 55); u8g2.print(now.hour()); u8g2.print(":");
 
 //int min = now.minute() ;
-//if ( min < 10 ) { u8g2.print("0"); u8g2.print(min); } u8g2.print(min); u8g2.print(":");
-if ( now.minute() < 10 ) { u8g2.print("0"); u8g2.print(now.minute()); } u8g2.print(now.minute()); u8g2.print(":");
+if ( now.minute() < 10 ) { u8g2.print("0"); } u8g2.print(now.minute()); u8g2.print(":");
 
 //int sec = now.second() ;
 //if ( sec < 10 ) { u8g2.print("0"); } u8g2.print(sec); 

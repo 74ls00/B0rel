@@ -19422,8 +19422,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="AWJLEagleLib">
-<description>AWJ Logan Eagle Library v1.001</description>
+<library name="TL431">
 <packages>
 <package name="SOT-23">
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -19442,28 +19441,27 @@ Source: Epson Toyocom FC-12M.pdf</description>
 </packages>
 <symbols>
 <symbol name="TL431">
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0.635" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-0.635" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="0.635" y2="1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="-1.27" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="5.08" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
-<text x="-3.81" y="-3.81" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-5.715" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="R" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<wire x1="-1.27" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<text x="1.27" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="0" y="-5.08" visible="off" length="point" direction="pas"/>
+<pin name="C" x="0" y="5.08" visible="off" length="point" direction="pas"/>
+<pin name="R" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="1.27" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TL431" prefix="IC" uservalue="yes">
-<description>TL431 shunt regulator
-
-CARE: not a standard pinout. This part has 1: cathode, 2: REF, 3: anode</description>
+<deviceset name="TL432">
 <gates>
 <gate name="G$1" symbol="TL431" x="0" y="0"/>
 </gates>
@@ -19471,8 +19469,8 @@ CARE: not a standard pinout. This part has 1: cathode, 2: REF, 3: anode</descrip
 <device name="" package="SOT-23">
 <connects>
 <connect gate="G$1" pin="A" pad="3"/>
-<connect gate="G$1" pin="C" pad="1"/>
-<connect gate="G$1" pin="R" pad="2"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="R" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19618,20 +19616,20 @@ CARE: not a standard pinout. This part has 1: cathode, 2: REF, 3: anode</descrip
 <part name="R16" library="opto-resistor" deviceset="R_O" device="" value="5506"/>
 <part name="R1**" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="R1**1" library="rcl" deviceset="R-EU_" device="R0805" value="640"/>
-<part name="R18" library="rcl" deviceset="R-EU_" device="R0805" value="1k20"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="R0805" value="15k"/>
 <part name="R19" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R17" library="rcl" deviceset="R-EU_" device="R0805" value="1k0"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="R20" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="R21" library="rcl" deviceset="R-EU_" device="R0805" value="1k0"/>
-<part name="R22" library="rcl" deviceset="R-EU_" device="R0805" value="390k0"/>
-<part name="R23" library="rcl" deviceset="R-EU_" device="R0805" value="0"/>
+<part name="R21" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="VMETER_IN" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
-<part name="DA2" library="AWJLEagleLib" deviceset="TL431" device=""/>
-<part name="R24" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R24" library="rcl" deviceset="R-EU_" device="R0805" value="150"/>
 <part name="GND18" library="supply1v" deviceset="GND" device=""/>
 <part name="P+9" library="supply1v" deviceset="+5V" device=""/>
 <part name="R25" library="rcl" deviceset="R-EU_" device="R0805" value="5k1"/>
+<part name="R26" library="rcl" deviceset="R-EU_" device="R0805" value="3k"/>
+<part name="R27" library="rcl" deviceset="R-EU_" device="R0805" value="2k2*"/>
+<part name="DA2" library="TL431" deviceset="TL432" device="" value="[431] (TL432)"/>
+<part name="R28" library="rcl" deviceset="R-EU_" device="R0805" value="560*"/>
+<part name="R29" library="rcl" deviceset="R-EU_" device="R0805" value="560*"/>
 </parts>
 <sheets>
 <sheet>
@@ -19674,10 +19672,13 @@ CARE: not a standard pinout. This part has 1: cathode, 2: REF, 3: anode</descrip
 <text x="68.58" y="132.08" size="1.778" layer="98" rot="MR0">R1* min
 60ma</text>
 <text x="162.56" y="63.5" size="1.778" layer="98">R[]*=ADC954/51.1Vin</text>
-<text x="198.12" y="93.98" size="1.778" layer="94">4.31v</text>
+<text x="198.12" y="104.14" size="1.778" layer="94"> 4.6375v
+ (=4.474)</text>
 <text x="91.44" y="30.48" size="1.778" layer="94">20</text>
 <wire x1="0" y1="104.14" x2="73.66" y2="104.14" width="0.1524" layer="90" style="longdash"/>
 <wire x1="73.66" y1="104.14" x2="73.66" y2="190.5" width="0.1524" layer="90" style="longdash"/>
+<text x="210.82" y="109.22" size="1.778" layer="94">4.00v
+(=3.995)</text>
 </plain>
 <instances>
 <instance part="U$1" gate="D" x="205.74" y="167.64" rot="MR0"/>
@@ -19803,39 +19804,39 @@ CARE: not a standard pinout. This part has 1: cathode, 2: REF, 3: anode</descrip
 <attribute name="NAME" x="163.83" y="52.2986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="163.83" y="50.038" size="1.778" layer="96"/>
 </instance>
-<instance part="R17" gate="G$1" x="157.48" y="78.74" smashed="yes" rot="MR90">
-<attribute name="NAME" x="156.21" y="82.7786" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="156.21" y="80.518" size="1.778" layer="96" rot="MR0"/>
-</instance>
 <instance part="C9" gate="G$1" x="170.18" y="50.8"/>
-<instance part="R20" gate="G$1" x="162.56" y="83.82" smashed="yes" rot="R90">
-<attribute name="NAME" x="163.83" y="87.8586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="163.83" y="85.598" size="1.778" layer="96"/>
-</instance>
-<instance part="R21" gate="G$1" x="157.48" y="91.44" smashed="yes" rot="MR90">
-<attribute name="NAME" x="156.21" y="95.4786" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="156.21" y="93.218" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="R22" gate="G$1" x="162.56" y="106.68" smashed="yes" rot="R90">
-<attribute name="NAME" x="163.83" y="110.7186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="163.83" y="108.458" size="1.778" layer="96"/>
-</instance>
-<instance part="R23" gate="G$1" x="157.48" y="63.5" smashed="yes" rot="MR90">
-<attribute name="NAME" x="156.21" y="67.5386" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="156.21" y="65.278" size="1.778" layer="96" rot="MR0"/>
+<instance part="R21" gate="G$1" x="157.48" y="93.98" smashed="yes" rot="MR90">
+<attribute name="NAME" x="156.21" y="98.0186" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="156.21" y="95.758" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="VMETER_IN" gate="G$1" x="157.48" y="137.16" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.37" y="141.605" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="162.56" y="130.81" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="DA2" gate="G$1" x="185.42" y="91.44" rot="R90"/>
-<instance part="R24" gate="G$1" x="185.42" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="186.69" y="108.1786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="186.69" y="105.918" size="1.778" layer="96"/>
+<instance part="R24" gate="G$1" x="193.04" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="194.31" y="125.9586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="194.31" y="123.698" size="1.778" layer="96"/>
 </instance>
-<instance part="GND18" gate="1" x="185.42" y="81.28"/>
-<instance part="P+9" gate="1" x="185.42" y="114.3" rot="MR0"/>
-<instance part="R25" gate="G$1" x="193.04" y="96.52"/>
+<instance part="GND18" gate="1" x="198.12" y="63.5"/>
+<instance part="P+9" gate="1" x="193.04" y="132.08" rot="MR0"/>
+<instance part="R25" gate="G$1" x="205.74" y="114.3"/>
+<instance part="R26" gate="G$1" x="193.04" y="76.2" smashed="yes" rot="MR90">
+<attribute name="NAME" x="191.77" y="80.2386" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="191.77" y="77.978" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="R27" gate="G$1" x="193.04" y="106.68" smashed="yes" rot="MR90">
+<attribute name="NAME" x="191.77" y="110.7186" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="191.77" y="108.458" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="DA2" gate="G$1" x="198.12" y="83.82"/>
+<instance part="R28" gate="G$1" x="193.04" y="91.44" smashed="yes" rot="MR90">
+<attribute name="NAME" x="191.77" y="95.4786" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="191.77" y="93.218" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="R29" gate="G$1" x="185.42" y="91.44" smashed="yes" rot="MR90">
+<attribute name="NAME" x="184.15" y="95.4786" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="184.15" y="93.218" size="1.778" layer="96" rot="MR0"/>
+</instance>
 </instances>
 <busses>
 <bus name="B$1">
@@ -19937,7 +19938,7 @@ CARE: not a standard pinout. This part has 1: cathode, 2: REF, 3: anode</descrip
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
-<wire x1="185.42" y1="109.22" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="127" x2="193.04" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -20019,8 +20020,13 @@ CARE: not a standard pinout. This part has 1: cathode, 2: REF, 3: anode</descrip
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="198.12" y1="66.04" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="68.58" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="DA2" gate="G$1" pin="A"/>
-<wire x1="185.42" y1="83.82" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="71.12" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="68.58" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
+<junction x="198.12" y="68.58"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -20453,8 +20459,8 @@ CARE: not a standard pinout. This part has 1: cathode, 2: REF, 3: anode</descrip
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="55.88" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
 <junction x="162.56" y="55.88"/>
-<pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="58.42" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="88.9" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BLA" class="0">
@@ -20540,46 +20546,7 @@ CARE: not a standard pinout. This part has 1: cathode, 2: REF, 3: anode</descrip
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="116.84" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="114.3" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="114.3" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
-<junction x="157.48" y="114.3"/>
-<pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="111.76" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$107" class="0">
-<segment>
-<pinref part="R17" gate="G$1" pin="2"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="83.82" x2="157.48" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$108" class="0">
-<segment>
-<pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="96.52" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="99.06" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="99.06" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
-<junction x="157.48" y="99.06"/>
-<pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="101.6" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
-<junction x="162.56" y="99.06"/>
-</segment>
-</net>
-<net name="N$109" class="0">
-<segment>
-<pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="78.74" x2="162.56" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="73.66" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="71.12" x2="162.56" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="68.58" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
-<junction x="157.48" y="71.12"/>
+<wire x1="157.48" y1="111.76" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$110" class="0">
@@ -20591,28 +20558,62 @@ CARE: not a standard pinout. This part has 1: cathode, 2: REF, 3: anode</descrip
 </net>
 <net name="AREF2V5" class="0">
 <segment>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="81.28" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="DA2" gate="G$1" pin="R"/>
-<wire x1="180.34" y1="96.52" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="96.52" x2="185.42" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="DA2" gate="G$1" pin="C"/>
-<wire x1="185.42" y1="96.52" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="96.52" x2="185.42" y2="99.06" width="0.1524" layer="91"/>
-<junction x="185.42" y="96.52"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="96.52" x2="185.42" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="83.82" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="86.36" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
+<junction x="193.04" y="83.82"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="86.36" x2="185.42" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="83.82" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AREF" class="0">
 <segment>
 <pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="96.52" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
-<label x="198.12" y="96.52" size="1.778" layer="95"/>
+<wire x1="210.82" y1="114.3" x2="218.44" y2="114.3" width="0.1524" layer="91"/>
+<label x="210.82" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="33.02" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="30.48" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
 <label x="78.74" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$111" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="1"/>
+<junction x="198.12" y="114.3"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="114.3" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="114.3" x2="198.12" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="111.76" x2="193.04" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="114.3" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="DA2" gate="G$1" pin="C"/>
+<wire x1="193.04" y1="116.84" x2="193.04" y2="114.3" width="0.1524" layer="91"/>
+<junction x="193.04" y="114.3"/>
+</segment>
+</net>
+<net name="N$102" class="0">
+<segment>
+<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="96.52" x2="193.04" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="99.06" x2="193.04" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="96.52" x2="185.42" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="99.06" x2="193.04" y2="99.06" width="0.1524" layer="91"/>
+<junction x="193.04" y="99.06"/>
+</segment>
+</net>
+<net name="N$103" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="101.6" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

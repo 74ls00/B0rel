@@ -12,6 +12,26 @@ http://open.e-voron.dp.ua/stabilizator-toka-svetodiodov-na-mikrosheme-ms34063/
 Влияние номинала подтягивающих резисторов на сигнал шины I2C
 https://19dx.ru/2014/08/vliyanie-nominala-podtyagivayushhih-rezistorov-na-signal-shiny-i2c/
 
+TL431 калькулятор
+https://cxem.net/calc/tl431_calc.php
+https://vip-cxema.org/index.php/online-raschjoty/395-raschjot-dlya-tl431
+Tl431 Не Могу Понять Почему Не Работает
+https://forum.cxem.net/index.php?/topic/135900-tl431-не-могу-понять-почему-не-работает/
+Источник опорного напряжения TL431
+https://chipenable.ru/index.php/programming-avr/item/202
+
+
+
+
+
+
+
+
+
+
+
+
+
 my
 https://electrotransport.ru/ussr/index.php?topic=62447.new#new
 https://electrotransport.ru/ussr/index.php?topic=12358.new#new

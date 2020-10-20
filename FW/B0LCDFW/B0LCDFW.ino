@@ -21,7 +21,9 @@ RTC_DS1307 rtc; // "rtc" используется в начале функций
  
 //int val = 0 ;
 //float adcv = 0.00 ;
-float vmax = 54.85 ; // максимальное напряжение измерения
+//float vmax = 54.8500 ; // максимальное напряжение измерения = 54.85
+const float vmax = 54.85;
+//float vmax = 52.5 ; 
 int vvalue = 0 ;
 float vout = 0.0 ;
 
@@ -30,8 +32,13 @@ float vout = 0.0 ;
 void setup(void) {
   u8g2.begin();
 
-pinMode(A0, INPUT);
-//analogReference(INTERNAL); // выбираем внутреннее опорное напряжение 1.1В
+//pinMode(A0, INPUT);
+pinMode(A7, INPUT);
+
+analogReference(INTERNAL); // выбираем внутреннее опорное напряжение 1.1В
+// DEFAULT: стандартное опорное напряжение 5 В (на платформах с напряжением питания 5 В) или 3.3 В (на платформах с напряжением питания 3.3 В)
+// INTERNAL: встроенное опорное напряжение 1.1 В на микроконтроллерах ATmega168 и ATmega328, и 2.56 В на ATmega8.
+// EXTERNAL: внешний источник опорного напряжения, подключенный к выводу AREF
 
 
 //1307
@@ -54,23 +61,7 @@ void draw(void) {
 //debug
 // u8g2.setFont(u8x8_font_5x7_r); u8g2.setCursor(0, 10); u8g2.print(lup);
 //u8g2.setFont(u8g2_font_micro_mr);  u8g2.drawStr(15,20,lup);
-u8g2.setFont(u8g_font_04b_03b);
-
- vvalue = analogRead(A6);
- vout = (vvalue * vmax) / 1024.0 ;
- u8g2.setCursor(2, 10);u8g2.print(vout);
-
-/*
-max*adc/1024 adc=954 max= 54.84947589098528 ≈ 54.85
-max/1024*adc alt.
-
-Uout=Uin*(R2/(R1+R2)) Uin=54.84947589098528 Uout=5
-R1=10k  R2≈1k+3 , R1=9.1k R2≈912.74 ; R1=47k  R2≈4k7+120+21.92 , R1=33k  R2≈3k3+120+9.9
-R2=10k/2 R1≈47k+2k8+47+ 0.93ma(51.1v)
-
-
- */
-
+//
   
   // graphic commands to redraw the complete screen should be placed here  
   //u8g2.setFont(u8g2_font_fur17n); //km/h
@@ -145,12 +136,39 @@ u8g2.setFont(u8g2_font_7x13B); u8g2.setCursor(8, 54); u8g2.print("200");u8g2.pri
 //u8g2.setFont(u8g2_font_blipfest_07_tr); 
 //u8g2.setFont(u8g2_font_trixel_square_tr  ); 
 //u8g2.setFont(u8g2_font_trixel_square_tf ); 
-u8g2.setFont(u8g_font_04b_03b  );
+//u8g2.setFont(u8g_font_04b_03b  );
 
-float ran2 = random(311,611)/1;
+//float ran2 = random(311,611)/1;
 // ran2 = ran2 / 10
 
-u8g2.setCursor(3, 61); u8g2.print(ran2); u8g2.print("V");
+
+u8g2.setFont(u8g_font_04b_03b);
+
+ vvalue = analogRead(A7);
+ vout = vmax * vvalue / 1024.0 ;
+ u8g2.setCursor(3, 61);u8g2.print(vout); u8g2.print("V");
+ 
+u8g2.setCursor(0, 10); u8g2.print(vvalue);
+
+//u8g2.setCursor(3, 61); u8g2.print(ran2); u8g2.print("V");
+//u8g2.setCursor(3, 61); u8g2.print(ran2); u8g2.print("V");
+
+/*
+max*adc/1024 adc=954 max= 54.84947589098528 ≈ 54.85
+max/1024*adc alt.
+
+for 5v
+Uout=Uin*(R2/(R1+R2)) Uin=54.84947589098528 Uout=5
+R1=10k  R2≈1k+3 , R1=9.1k R2≈912.74 ; R1=47k  R2≈4k7+120+21.92 , R1=33k  R2≈3k3+120+9.9
+R2=10k/2 R1≈47k+2k7+150- 0.93ma(51.1v)
+
+
+ */
+
+
+
+
+
 
 //u8g2.setCursor(25, 61); u8g2.print("150");u8g2.print("C°");
 
@@ -202,14 +220,13 @@ u8g2.setFont(u8g_font_04b_03b); //u8g2_font_blipfest_07_tr
 u8g2.setCursor(87, 64); u8g2.print(now.year()); u8g2.print(".");
 u8g2.print(now.month()); u8g2.print("."); u8g2.print(now.day());
 
-u8g2.setFont(u8g2_font_7d); //u8g2_font_blipfest_07_tr
+u8g2.setFont(u8g2_font_7d);
 u8g2.setCursor(95, 55); u8g2.print(now.hour()); u8g2.print(":");
 
 //int min = now.minute() ;
-if ( now.minute() < 10 ) { u8g2.print("0"); } u8g2.print(now.minute()); u8g2.print(":");
-
 //int sec = now.second() ;
 //if ( sec < 10 ) { u8g2.print("0"); } u8g2.print(sec); 
+if ( now.minute() < 10 ) { u8g2.print("0"); } u8g2.print(now.minute()); u8g2.print(":");
 if ( now.second() < 10 ) { u8g2.print("0"); } u8g2.print(now.second()); 
 
 // батарейки СЦ установлены 2020.10.18

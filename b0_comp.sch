@@ -19609,6 +19609,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <wire x1="73.025" y1="132.715" x2="74.295" y2="131.445" width="0.1524" layer="94"/>
 <text x="71.12" y="129.54" size="1.778" layer="98" rot="MR0">R1* min
 60ma</text>
+<text x="170.18" y="66.04" size="1.778" layer="98">R[]*=ADC954/51.1Vin</text>
 </plain>
 <instances>
 <instance part="U$1" gate="D" x="205.74" y="167.64" rot="MR0"/>

@@ -23,6 +23,7 @@ RTC_DS1307 rtc; // "rtc" используется в начале функций
 //float adcv = 0.00 ;
 //float vmax = 54.8500 ; // максимальное напряжение измерения = 54.85
 const float vmax = 54.85;
+
 //float vmax = 52.5 ; 
 int vvalue = 0 ;
 float vout = 0.0 ;

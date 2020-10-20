@@ -245,8 +245,8 @@
 <text x="-50" y="46" size="1.778" layer="21">70x93 
 90x 110
 </text>
-<dimension x1="-183.07" y1="-40.12" x2="-140.5" y2="-37" x3="-161.785" y3="-6" textsize="1.778" layer="21" dtype="horizontal"/>
-<dimension x1="-138.5" y1="-10.5" x2="-135" y2="-35" x3="-191.5" y3="-22.75" textsize="1.778" layer="21" dtype="vertical"/>
+<dimension x1="-137.07" y1="13.38" x2="-94.5" y2="16.5" x3="-115.785" y3="47.5" textsize="1.778" layer="21" dtype="horizontal"/>
+<dimension x1="-92.5" y1="43" x2="-89" y2="18.5" x3="-145.5" y3="30.75" textsize="1.778" layer="21" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="Разъёмы штырьковые 2.54мм">
@@ -2896,6 +2896,25 @@ Source: Epson Toyocom FC-12M.pdf</description>
 </package>
 </packages>
 </library>
+<library name="AWJLEagleLib">
+<description>AWJ Logan Eagle Library v1.001</description>
+<packages>
+<package name="SOT-23">
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3165,28 +3184,28 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <attribute name="MF" value="" x="70.35" y="-18.28" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="70.35" y="-18.28" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="INIGN" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-181.115" y="-28.015" rot="R90"/>
-<element name="IGNITION" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-142.5" y="-18.5" rot="R270"/>
-<element name="0V3" library="diode" package="DO34Z7" value="11v" x="-174" y="-24"/>
-<element name="0R2" library="rcl" package="M0805" value="" x="-181" y="-21.5"/>
-<element name="0V2" library="diode" package="DO34Z7" value="8v" x="-173.5" y="-18.5"/>
-<element name="0R3" library="rcl" package="M0805" value="" x="-181.5" y="-19"/>
-<element name="0V1" library="diode" package="DO34Z7" value="5v" x="-173" y="-16.5"/>
-<element name="0R4" library="rcl" package="M0805" value="" x="-180.5" y="-16.5"/>
-<element name="0V10" library="m_transistor" package="TO92" value="П306ОС" x="-145" y="-20.5" rot="R270"/>
-<element name="0R6" library="rcl" package="M0805" value="10k" x="-150.5" y="-20.5" rot="R270"/>
-<element name="0V4" library="diode" package="DO34Z7" value="11.5v" x="-173.5" y="-28"/>
-<element name="!RSPD" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-150" y="-30.5" rot="R180"/>
-<element name="!BSPD" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-144" y="-13" rot="R180"/>
-<element name="0V9" library="diode" package="SMB" value="" x="-154" y="-30" rot="R270"/>
-<element name="0V6" library="diode" package="SMB" value="" x="-151" y="-13"/>
-<element name="IGND" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-172" y="-32"/>
-<element name="+BAT" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-143.5" y="-25.5" rot="R90"/>
-<element name="0R7" library="rcl" package="M0805" value="" x="-162" y="-30" rot="R90"/>
-<element name="0V7" library="diode" package="SMB" value="" x="-154" y="-18.5" rot="R270"/>
-<element name="0V8" library="diode" package="SMB" value="" x="-153" y="-24.5"/>
-<element name="0V5" library="uln-udn" package="DIL16" value="К1109КТ22" x="-162" y="-22.5" rot="R270"/>
-<element name="0C1" library="rcl" package="C0805" value="100n" x="-147" y="-31" rot="R270"/>
+<element name="INIGN" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-135.115" y="25.485" rot="R90"/>
+<element name="IGNITION" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-96.5" y="35" rot="R270"/>
+<element name="0V3" library="diode" package="DO34Z7" value="11v" x="-128" y="29.5"/>
+<element name="0R2" library="rcl" package="M0805" value="" x="-135" y="32"/>
+<element name="0V2" library="diode" package="DO34Z7" value="8v" x="-127.5" y="35"/>
+<element name="0R3" library="rcl" package="M0805" value="" x="-135.5" y="34.5"/>
+<element name="0V1" library="diode" package="DO34Z7" value="5v" x="-127" y="37"/>
+<element name="0R4" library="rcl" package="M0805" value="" x="-134.5" y="37"/>
+<element name="0V10" library="m_transistor" package="TO92" value="П306ОС" x="-99" y="33" rot="R270"/>
+<element name="0R6" library="rcl" package="M0805" value="10k" x="-104.5" y="33" rot="R270"/>
+<element name="0V4" library="diode" package="DO34Z7" value="11.5v" x="-127.5" y="25.5"/>
+<element name="!RSPD" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-104" y="23" rot="R180"/>
+<element name="!BSPD" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-98" y="40.5" rot="R180"/>
+<element name="0V9" library="diode" package="SMB" value="" x="-108" y="23.5" rot="R270"/>
+<element name="0V6" library="diode" package="SMB" value="" x="-105" y="40.5"/>
+<element name="IGND" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-126" y="21.5"/>
+<element name="+BAT" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-97.5" y="28" rot="R90"/>
+<element name="0R7" library="rcl" package="M0805" value="" x="-116" y="23.5" rot="R90"/>
+<element name="0V7" library="diode" package="SMB" value="" x="-108" y="35" rot="R270"/>
+<element name="0V8" library="diode" package="SMB" value="" x="-107" y="29"/>
+<element name="0V5" library="uln-udn" package="DIL16" value="К1109КТ22" x="-116" y="31" rot="R270"/>
+<element name="0C1" library="rcl" package="C0805" value="100n" x="-101" y="22.5" rot="R270"/>
 <element name="DD2" library="ds1307_pcf8583" package="DIL08" value="DS1307" x="8.5" y="-16.5" rot="R90"/>
 <element name="Z2" library="zq" package="FC-12M" value="32.768" x="16.5" y="-18.5" rot="R90"/>
 <element name="DA1" library="MC34063" package="DIL08" value="MC34063(ON)" x="-39" y="-22.5" rot="R180"/>
@@ -3210,14 +3229,18 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <element name="R16" library="opto-resistor" package="R_O" value="5506" x="-22" y="71" rot="R90"/>
 <element name="R1**" library="rcl" package="R0805" value="1k" x="-16.5" y="70.5" rot="R90"/>
 <element name="R1**1" library="rcl" package="R0805" value="640" x="-10" y="70.5" rot="R90"/>
-<element name="R18" library="rcl" package="R0805" value="1k20" x="-192" y="-130"/>
-<element name="R19" library="rcl" package="R0805" value="10k" x="-192" y="-136.5"/>
-<element name="R17" library="rcl" package="R0805" value="1k0" x="-192" y="-143"/>
-<element name="C9" library="rcl" package="C0805" value="100n" x="-192" y="-149.5"/>
-<element name="R20" library="rcl" package="R0805" value="1k" x="-192" y="-156"/>
-<element name="R21" library="rcl" package="R0805" value="1k0" x="-192" y="-162.5"/>
-<element name="R22" library="rcl" package="R0805" value="390k0" x="-192" y="-169"/>
-<element name="R23" library="rcl" package="R0805" value="*" x="-192" y="-175.5"/>
+<element name="R18" library="rcl" package="R0805" value="1k20" x="-110" y="-10"/>
+<element name="R19" library="rcl" package="R0805" value="10k" x="-110" y="-16.5"/>
+<element name="R17" library="rcl" package="R0805" value="1k0" x="-110" y="-23"/>
+<element name="C9" library="rcl" package="C0805" value="100n" x="-110" y="-29.5"/>
+<element name="R20" library="rcl" package="R0805" value="1k" x="-110" y="-36"/>
+<element name="R21" library="rcl" package="R0805" value="1k0" x="-110" y="-42.5"/>
+<element name="R22" library="rcl" package="R0805" value="390k0" x="-110" y="-49"/>
+<element name="R23" library="rcl" package="R0805" value="0" x="-110" y="-55.5"/>
+<element name="VMETER_IN" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-110.5" y="-62.5"/>
+<element name="DA2" library="AWJLEagleLib" package="SOT-23" value="" x="-119" y="-56" rot="R180"/>
+<element name="R24" library="rcl" package="R0805" value="1k" x="-114.5" y="-51.5"/>
+<element name="R25" library="rcl" package="R0805" value="5k1" x="-119.5" y="-49.5" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -3260,15 +3283,11 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
 <contactref element="C4" pad="1"/>
-<contactref element="LCD1" pad="5"/>
-<contactref element="LCD1" pad="5@"/>
 <contactref element="LCD1" pad="1"/>
 <contactref element="LCD1" pad="1@"/>
 <wire x1="15.76" y1="-29.96" x2="15.76" y2="-32.5" width="1.27" layer="16"/>
-<wire x1="5.6" y1="-29.96" x2="5.6" y2="-32.5" width="1.27" layer="16"/>
 <wire x1="15.76" y1="-29.96" x2="15.76" y2="-27.94" width="0.6096" layer="16"/>
 <wire x1="15.76" y1="-27.94" x2="5.6" y2="-27.94" width="0.6096" layer="1"/>
-<wire x1="5.6" y1="-27.94" x2="5.6" y2="-29.96" width="0.6096" layer="16"/>
 <contactref element="M1" pad="J1.4"/>
 <via x="15.76" y="-27.94" extent="1-16" drill="0.6" diameter="2.3"/>
 <via x="5.6" y="-27.94" extent="1-16" drill="0.6" diameter="2.3"/>
@@ -3292,7 +3311,14 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <contactref element="R14" pad="1"/>
 <contactref element="R19" pad="1"/>
 <contactref element="C9" pad="2"/>
-<wire x1="-97.55" y1="-58.5" x2="-90.45" y2="-70.5" width="0" layer="19" extent="1-1"/>
+<contactref element="DA2" pad="3"/>
+<contactref element="LCD1" pad="5"/>
+<contactref element="LCD1" pad="5@"/>
+<wire x1="5.6" y1="-29.96" x2="5.6" y2="-32.5" width="1.27" layer="16"/>
+<wire x1="-97.55" y1="-58.5" x2="-119" y2="-57.1" width="0" layer="19" extent="1-1"/>
+<wire x1="-90.45" y1="-70.5" x2="-97.55" y2="-58.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-109.05" y1="-29.5" x2="-119" y2="-57.1" width="0" layer="19" extent="1-1"/>
+<wire x1="-110.95" y1="-16.5" x2="-109.05" y2="-29.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.81" y1="-26.31" x2="-97.55" y2="-58.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.81" y1="-18.69" x2="-42.81" y2="-26.31" width="0" layer="19" extent="1-1"/>
 <wire x1="-43.95" y1="-14.5" x2="-42.81" y2="-18.69" width="0" layer="19" extent="1-1"/>
@@ -3303,6 +3329,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <wire x1="-19.935" y1="-23.2775" x2="-30.095" y2="-11.8475" width="0" layer="19" extent="1-1"/>
 <wire x1="0.385" y1="-15.6575" x2="-19.935" y2="-23.2775" width="0" layer="19" extent="1-1"/>
 <wire x1="5.6" y1="-27.94" x2="4" y2="-25.5" width="0" layer="19" extent="16-16"/>
+<wire x1="5.6" y1="-29.96" x2="5.6" y2="-27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="12.31" y1="-12.69" x2="0.385" y2="-15.6575" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.785" y1="10.795" x2="-25.015" y2="-8.0375" width="0" layer="19" extent="16-16"/>
 <wire x1="-37.15" y1="13.335" x2="-37.785" y2="10.795" width="0" layer="19" extent="16-16"/>
@@ -3314,8 +3341,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <wire x1="59.25" y1="19.735" x2="59.69" y2="13.335" width="0" layer="19" extent="16-16"/>
 <wire x1="90.17" y1="-2.54" x2="59.4267" y2="-12.7428" width="0" layer="19" extent="1-1"/>
 <wire x1="-36.575" y1="-115.9925" x2="-90.45" y2="-70.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-192.95" y1="-136.5" x2="-90.45" y2="-70.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-191.05" y1="-149.5" x2="-192.95" y2="-136.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
 <contactref element="VT1" pad="D"/>
@@ -3369,16 +3394,16 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <contactref element="IC7" pad="14"/>
 <contactref element="ARDUINO1" pad="VCC"/>
 <contactref element="ARDUINO1" pad="VCC@1"/>
-<contactref element="DD2" pad="8"/>
 <contactref element="R11" pad="2"/>
 <contactref element="R12" pad="2"/>
-<contactref element="C7" pad="1"/>
-<contactref element="R13" pad="2"/>
 <contactref element="ISP1" pad="2"/>
 <contactref element="R" pad="P$1"/>
-<wire x1="-98.05" y1="-54.5" x2="-99.45" y2="-58.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-101.55" y1="-49.5" x2="-98.05" y2="-54.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-93.55" y1="-68" x2="-99.45" y2="-58.5" width="0" layer="19" extent="1-1"/>
+<contactref element="R24" pad="2"/>
+<contactref element="DD2" pad="8"/>
+<contactref element="C7" pad="1"/>
+<wire x1="-101.55" y1="-49.5" x2="-113.55" y2="-51.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-98.05" y1="-54.5" x2="-101.55" y2="-49.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-99.45" y1="-58.5" x2="-98.05" y2="-54.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.865" y1="-8.94" x2="-98.05" y2="-54.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.095" y1="-14.3875" x2="-35.865" y2="-8.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.935" y1="-8.0375" x2="-30.095" y2="-14.3875" width="0" layer="19" extent="1-1"/>
@@ -3959,145 +3984,149 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <signal name="RESET">
 <contactref element="U$1" pad="12"/>
 <contactref element="ISP1" pad="5"/>
-<wire x1="48.0488" y1="-15.994" x2="-38.405" y2="-14.02" width="0" layer="19" extent="1-1"/>
+<contactref element="ARDUINO1" pad="RST@1"/>
+<contactref element="ARDUINO1" pad="RST"/>
+<wire x1="-22.475" y1="-8.0375" x2="-38.405" y2="-14.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.475" y1="-23.2775" x2="-22.475" y2="-8.0375" width="0" layer="19" extent="1-1"/>
+<wire x1="48.0488" y1="-15.994" x2="-22.475" y2="-23.2775" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="0V7" pad="C"/>
 <contactref element="0V5" pad="15"/>
 <contactref element="0V5" pad="14"/>
 <contactref element="0V5" pad="13"/>
-<wire x1="-158.19" y1="-18.69" x2="-158.19" y2="-21.23" width="0" layer="19" extent="1-1"/>
-<wire x1="-158.19" y1="-16.15" x2="-158.19" y2="-18.69" width="0" layer="19" extent="1-1"/>
-<wire x1="-154" y1="-16.3" x2="-158.19" y2="-16.15" width="0" layer="19" extent="1-1"/>
+<wire x1="-112.19" y1="34.81" x2="-112.19" y2="32.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-112.19" y1="37.35" x2="-112.19" y2="34.81" width="0" layer="19" extent="1-1"/>
+<wire x1="-108" y1="37.2" x2="-112.19" y2="37.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$79">
 <contactref element="0V3" pad="A"/>
 <contactref element="0V5" pad="4"/>
 <contactref element="0V5" pad="6"/>
-<wire x1="-165.81" y1="-26.31" x2="-170.19" y2="-24" width="0" layer="19" extent="1-1"/>
-<wire x1="-165.81" y1="-21.23" x2="-165.81" y2="-26.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.81" y1="27.19" x2="-124.19" y2="29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.81" y1="32.27" x2="-119.81" y2="27.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$82">
 <contactref element="0R3" pad="2"/>
 <contactref element="0V2" pad="C"/>
-<wire x1="-177.31" y1="-18.5" x2="-180.55" y2="-19" width="0" layer="19" extent="1-1"/>
+<wire x1="-131.31" y1="35" x2="-134.55" y2="34.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$83">
 <contactref element="0R3" pad="1"/>
 <contactref element="0R2" pad="1"/>
 <contactref element="0R4" pad="1"/>
 <contactref element="INIGN" pad="1"/>
-<wire x1="-181.95" y1="-21.5" x2="-181.115" y2="-28.015" width="0" layer="19" extent="1-1"/>
-<wire x1="-182.45" y1="-19" x2="-181.95" y2="-21.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-181.45" y1="-16.5" x2="-182.45" y2="-19" width="0" layer="19" extent="1-1"/>
+<wire x1="-135.95" y1="32" x2="-135.115" y2="25.485" width="0" layer="19" extent="1-1"/>
+<wire x1="-136.45" y1="34.5" x2="-135.95" y2="32" width="0" layer="19" extent="1-1"/>
+<wire x1="-135.45" y1="37" x2="-136.45" y2="34.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$84">
 <contactref element="0V1" pad="A"/>
 <contactref element="0V5" pad="1"/>
 <contactref element="0V5" pad="2"/>
-<wire x1="-165.81" y1="-16.15" x2="-169.19" y2="-16.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-165.81" y1="-13.61" x2="-165.81" y2="-16.15" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.81" y1="37.35" x2="-123.19" y2="37" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.81" y1="39.89" x2="-119.81" y2="37.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$85">
 <contactref element="0R4" pad="2"/>
 <contactref element="0V1" pad="C"/>
-<wire x1="-176.81" y1="-16.5" x2="-179.55" y2="-16.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-130.81" y1="37" x2="-133.55" y2="37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$86">
 <contactref element="0V10" pad="2"/>
 <contactref element="0R6" pad="1"/>
-<wire x1="-146.27" y1="-20.5" x2="-150.5" y2="-19.55" width="0" layer="19" extent="1-1"/>
+<wire x1="-100.27" y1="33" x2="-104.5" y2="33.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$87">
 <contactref element="0V10" pad="1"/>
 <contactref element="IGNITION" pad="1"/>
-<wire x1="-142.5" y1="-18.5" x2="-146.27" y2="-17.96" width="0" layer="19" extent="1-1"/>
+<wire x1="-96.5" y1="35" x2="-100.27" y2="35.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$88">
 <contactref element="0V4" pad="A"/>
 <contactref element="0V5" pad="7"/>
-<wire x1="-165.81" y1="-28.85" x2="-169.69" y2="-28" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.81" y1="24.65" x2="-123.69" y2="25.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$89">
 <contactref element="0V4" pad="C"/>
 <contactref element="0R2" pad="2"/>
 <contactref element="0V3" pad="C"/>
-<wire x1="-177.81" y1="-24" x2="-177.31" y2="-28" width="0" layer="19" extent="1-1"/>
-<wire x1="-180.05" y1="-21.5" x2="-177.81" y2="-24" width="0" layer="19" extent="1-1"/>
+<wire x1="-131.81" y1="29.5" x2="-131.31" y2="25.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-134.05" y1="32" x2="-131.81" y2="29.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$91">
 <contactref element="0R7" pad="2"/>
 <contactref element="0V5" pad="5"/>
 <contactref element="0V5" pad="10"/>
-<wire x1="-158.19" y1="-28.85" x2="-162" y2="-29.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-165.81" y1="-23.77" x2="-162" y2="-29.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-112.19" y1="24.65" x2="-116" y2="24.45" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.81" y1="29.73" x2="-116" y2="24.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$81">
 <contactref element="0V2" pad="A"/>
 <contactref element="0V5" pad="3"/>
-<wire x1="-165.81" y1="-18.69" x2="-169.69" y2="-18.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.81" y1="34.81" x2="-123.69" y2="35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$92">
 <contactref element="0V9" pad="C"/>
 <contactref element="0V5" pad="11"/>
-<wire x1="-154" y1="-27.8" x2="-158.19" y2="-26.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-108" y1="25.7" x2="-112.19" y2="27.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$90">
 <contactref element="!BSPD" pad="1"/>
 <contactref element="0V6" pad="A"/>
-<wire x1="-144" y1="-13" x2="-148.8" y2="-13" width="0" layer="19" extent="1-1"/>
+<wire x1="-98" y1="40.5" x2="-102.8" y2="40.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$93">
 <contactref element="!RSPD" pad="1"/>
 <contactref element="0V9" pad="A"/>
-<wire x1="-150" y1="-30.5" x2="-154" y2="-32.2" width="0" layer="19" extent="1-1"/>
+<wire x1="-104" y1="23" x2="-108" y2="21.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$94">
 <contactref element="0V6" pad="C"/>
 <contactref element="0V5" pad="16"/>
-<wire x1="-153.2" y1="-13" x2="-158.19" y2="-13.61" width="0" layer="19" extent="1-1"/>
+<wire x1="-107.2" y1="40.5" x2="-112.19" y2="39.89" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$95">
 <contactref element="IGND" pad="1"/>
 <contactref element="0V5" pad="8"/>
 <contactref element="0C1" pad="2"/>
-<wire x1="-165.81" y1="-31.39" x2="-172" y2="-32" width="0" layer="19" extent="1-1"/>
-<wire x1="-147" y1="-31.95" x2="-165.81" y2="-31.39" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.81" y1="22.11" x2="-126" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-101" y1="21.55" x2="-119.81" y2="22.11" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$96">
 <contactref element="0V10" pad="3"/>
 <contactref element="+BAT" pad="1"/>
-<wire x1="-143.5" y1="-25.5" x2="-146.27" y2="-23.04" width="0" layer="19" extent="1-1"/>
+<wire x1="-97.5" y1="28" x2="-100.27" y2="30.46" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$97">
 <contactref element="0R7" pad="1"/>
 <contactref element="0V5" pad="9"/>
-<wire x1="-158.19" y1="-31.39" x2="-162" y2="-30.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-112.19" y1="22.11" x2="-116" y2="22.55" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$99">
 <contactref element="0V8" pad="C"/>
 <contactref element="0V5" pad="12"/>
-<wire x1="-155.2" y1="-24.5" x2="-158.19" y2="-23.77" width="0" layer="19" extent="1-1"/>
+<wire x1="-109.2" y1="29" x2="-112.19" y2="29.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$80">
 <contactref element="0V7" pad="A"/>
 <contactref element="0V8" pad="A"/>
 <contactref element="0R6" pad="2"/>
 <contactref element="0C1" pad="1"/>
-<wire x1="-150.5" y1="-21.45" x2="-154" y2="-20.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-150.8" y1="-24.5" x2="-150.5" y2="-21.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-147" y1="-30.05" x2="-150.8" y2="-24.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-104.5" y1="32.05" x2="-108" y2="32.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-104.8" y1="29" x2="-104.5" y2="32.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-101" y1="23.45" x2="-104.8" y2="29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="ARDUINO1" pad="A5"/>
 <contactref element="DD2" pad="6"/>
-<contactref element="A5" pad="1"/>
-<wire x1="0.27" y1="-20.77" x2="2.5" y2="-19" width="0.3048" layer="16"/>
 <wire x1="2.5" y1="-19" x2="3" y2="-19" width="0.3048" layer="16"/>
 <wire x1="3" y1="-19" x2="4.69" y2="-15.23" width="0.3048" layer="16"/>
 <contactref element="R12" pad="1"/>
+<contactref element="A5" pad="1"/>
 <wire x1="-18.665" y1="-10.5775" x2="-99.95" y2="-54.5" width="0" layer="19" extent="1-1"/>
 <wire x1="0.27" y1="-20.77" x2="-18.665" y2="-10.5775" width="0" layer="19" extent="1-1"/>
+<wire x1="2.5" y1="-19" x2="0.27" y2="-20.77" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$67">
 <contactref element="M1" pad="J2.4"/>
@@ -4105,13 +4134,13 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <signal name="SDA">
 <contactref element="ARDUINO1" pad="A4"/>
 <contactref element="DD2" pad="5"/>
-<contactref element="A5" pad="2"/>
-<wire x1="-2.27" y1="-20.77" x2="-0.5" y2="-19" width="0.3048" layer="16"/>
 <wire x1="-0.5" y1="-19" x2="2.5" y2="-17" width="0.3048" layer="16"/>
 <wire x1="2.5" y1="-17" x2="4.69" y2="-12.69" width="0.3048" layer="16"/>
 <contactref element="R11" pad="1"/>
+<contactref element="A5" pad="2"/>
 <wire x1="-16.125" y1="-10.5775" x2="-103.45" y2="-49.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.27" y1="-20.77" x2="-16.125" y2="-10.5775" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.5" y1="-19" x2="-2.27" y2="-20.77" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$68">
 <contactref element="DD2" pad="1"/>
@@ -4150,7 +4179,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <contactref element="C6" pad="1"/>
 <wire x1="-42.05" y1="-14.5" x2="-40.27" y2="-18.69" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$102">
+<signal name="VBAT">
 <contactref element="DD2" pad="3"/>
 </signal>
 <signal name="VMETR">
@@ -4159,15 +4188,10 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <contactref element="R19" pad="2"/>
 <contactref element="C9" pad="1"/>
 <contactref element="R23" pad="1"/>
+<wire x1="-110.95" y1="-29.5" x2="-110.95" y2="-55.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-109.05" y1="-16.5" x2="-110.95" y2="-29.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-88.55" y1="-70.5" x2="-110.95" y2="-55.5" width="0" layer="19" extent="1-1"/>
 <wire x1="0.385" y1="-10.5775" x2="-88.55" y2="-70.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-191.05" y1="-136.5" x2="-88.55" y2="-70.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-192.95" y1="-149.5" x2="-191.05" y2="-136.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-192.95" y1="-175.5" x2="-192.95" y2="-149.5" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$103">
-<contactref element="ARDUINO1" pad="RST@1"/>
-<contactref element="ARDUINO1" pad="RST"/>
-<wire x1="-22.475" y1="-8.0375" x2="-22.475" y2="-23.2775" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BLA">
 <contactref element="LCD1" pad="19@"/>
@@ -4219,26 +4243,47 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <signal name="N$73">
 <contactref element="R13" pad="1"/>
 <contactref element="R18" pad="2"/>
-<wire x1="-191.05" y1="-130" x2="-95.45" y2="-68" width="0" layer="19" extent="1-1"/>
+<contactref element="R22" pad="2"/>
+<wire x1="-109.05" y1="-49" x2="-95.45" y2="-68" width="0" layer="19" extent="1-1"/>
+<wire x1="-109.05" y1="-10" x2="-109.05" y2="-49" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$107">
 <contactref element="R17" pad="2"/>
 <contactref element="R21" pad="1"/>
-<wire x1="-191.05" y1="-143" x2="-192.95" y2="-162.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-109.05" y1="-23" x2="-110.95" y2="-42.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$108">
 <contactref element="R21" pad="2"/>
 <contactref element="R20" pad="2"/>
 <contactref element="R18" pad="1"/>
-<wire x1="-191.05" y1="-156" x2="-191.05" y2="-162.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-192.95" y1="-130" x2="-191.05" y2="-156" width="0" layer="19" extent="1-1"/>
+<contactref element="R22" pad="1"/>
+<wire x1="-109.05" y1="-42.5" x2="-110.95" y2="-49" width="0" layer="19" extent="1-1"/>
+<wire x1="-109.05" y1="-36" x2="-109.05" y2="-42.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-110.95" y1="-10" x2="-109.05" y2="-36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$109">
 <contactref element="R17" pad="1"/>
 <contactref element="R20" pad="1"/>
 <contactref element="R23" pad="2"/>
-<wire x1="-192.95" y1="-156" x2="-191.05" y2="-175.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-192.95" y1="-143" x2="-192.95" y2="-156" width="0" layer="19" extent="1-1"/>
+<wire x1="-110.95" y1="-36" x2="-109.05" y2="-55.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-110.95" y1="-23" x2="-110.95" y2="-36" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$110">
+<contactref element="R13" pad="2"/>
+<contactref element="VMETER_IN" pad="1"/>
+<wire x1="-93.55" y1="-68" x2="-110.5" y2="-62.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AREF2V5">
+<contactref element="DA2" pad="2"/>
+<contactref element="DA2" pad="1"/>
+<contactref element="R24" pad="1"/>
+<contactref element="R25" pad="1"/>
+<wire x1="-118.05" y1="-54.9" x2="-119.95" y2="-54.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-115.45" y1="-51.5" x2="-118.05" y2="-54.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.5" y1="-50.45" x2="-115.45" y2="-51.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="AREF">
+<contactref element="R25" pad="2"/>
 </signal>
 </signals>
 </board>

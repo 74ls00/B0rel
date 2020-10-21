@@ -50,7 +50,7 @@ Wire.write(0x10);
 Wire.endTransmission();
 */
 
-//rtc.adjust(DateTime(2020, 10, 19,      6, 42,0 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
+//rtc.adjust(DateTime(2020, 10, 22,      2, 06,0 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
 
 
 } // End void setup
@@ -109,15 +109,97 @@ u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.se
 
 
 //region батарея
+
 // нижняя, верхняя, левая
 u8g2.drawHLine(0, 63,42); u8g2.drawHLine(0, 42, 42); u8g2.drawVLine(0, 42, 21); 
 u8g2.drawVLine(46, 49, 8); // плюс, и верхний, и нижний
 u8g2.drawHLine(46-5, 49, 5); u8g2.drawHLine(46-5, 56, 5);
 u8g2.drawVLine(41, 43, 6); u8g2.drawVLine(41, 43+14, 6); 
 
-//u8g2.setFont(u8g2_font_7x13r); u8g2.setCursor(8, 54); u8g2.print("KMhW");u8g2.print("%");
+// напряжение
+/*
+max*adc/1024 adc=954 max= 54.84947589098528 ≈ 54.85
+max/1024*adc alt.
 
-u8g2.setFont(u8g2_font_7x13B); u8g2.setCursor(8, 54); u8g2.print("200");u8g2.print("%"); //! 15002 48%
+Uout=Uin*(R2/(R1+R2)) Uin=54.84947589098528 Uout=4
+R2=10k/2 R1≈47k+15k+1k/2+1k , (ADC954=51.1v)
+ */
+
+u8g2.setFont(u8g_font_04b_03b);
+ vvalue = analogRead(A7);
+ vout = vmax * vvalue / 1024.0 ;
+ u8g2.setCursor(3, 61);u8g2.print(vout); u8g2.print("V");
+ 
+u8g2.setCursor(0, 10); u8g2.print(vvalue);
+//u8g2.setCursor(3, 61); u8g2.print(ran2); u8g2.print("V");
+
+u8g2.setFont(u8g2_font_7x13B); u8g2.setCursor(8, 54); 
+//u8g2.print("200");u8g2.print("%"); //! 15002 48%
+
+//if vout < 51 { u8g2.print("99"); }
+//else
+//if vout < 47.5 { u8g2.print("99"); }
+
+
+/*
+switch (vvalue) {
+
+  case 957:
+  u8g2.print("103");
+  break;
+
+
+   case 956:
+  u8g2.print("102");
+  break;
+ case 955:
+  u8g2.print("101");
+  break;
+
+  
+ case 954:
+  u8g2.print("100");
+  break;
+ case 953:
+  u8g2.print("99.");
+  break;
+
+ case 943:
+  u8g2.print("99");
+  break;
+
+ case 887:
+  u8g2.print("95");
+  break;
+  
+ case 884:
+  u8g2.print("90");
+  break;
+  
+ case 882:
+  u8g2.print("85");
+  break;
+ case 881:
+  u8g2.print("80."); //60
+  break;
+ case 880:
+  u8g2.print("75.");
+  break;
+
+
+
+  
+ default:
+  u8g2.print("000");
+}
+*/
+u8g2.print("%");
+
+
+
+// vout > 51.1
+
+//u8g2.setFont(u8g2_font_7x13B); u8g2.setCursor(8, 54); u8g2.print("200");u8g2.print("%"); //! 15002 48%
 //u8g2.setFont(u8g2_font_pxplusibmcga_8u ); u8g2.setCursor(8, 54); u8g2.print("200");u8g2.print("%"); //15536 50%
 //u8g2.setFont(u8g2_font_7x13B_tr); u8g2.setCursor(8, 54); u8g2.print("200");u8g2.print("%"); //! 15808 51%
 //u8g2.setFont(u8g2_font_7x13B_mr); u8g2.setCursor(8, 54); u8g2.print("200");u8g2.print("%"); //! 16130 52%
@@ -143,30 +225,7 @@ u8g2.setFont(u8g2_font_7x13B); u8g2.setCursor(8, 54); u8g2.print("200");u8g2.pri
 // ran2 = ran2 / 10
 
 
-u8g2.setFont(u8g_font_04b_03b);
 
- vvalue = analogRead(A7);
- vout = vmax * vvalue / 1024.0 ;
- u8g2.setCursor(3, 61);u8g2.print(vout); u8g2.print("V");
- 
-u8g2.setCursor(0, 10); u8g2.print(vvalue);
-
-//u8g2.setCursor(3, 61); u8g2.print(ran2); u8g2.print("V");
-//u8g2.setCursor(3, 61); u8g2.print(ran2); u8g2.print("V");
-
-/*
-max*adc/1024 adc=954 max= 54.84947589098528 ≈ 54.85
-max/1024*adc alt.
-
-for 5v
-Uout=Uin*(R2/(R1+R2)) Uin=54.84947589098528 Uout=5
-R1=10k  R2≈1k+3 , R1=9.1k R2≈912.74 ; R1=47k  R2≈4k7+120+21.92 , R1=33k  R2≈3k3+120+9.9
-R2=10k/2 R1≈47k+2k7+150- 0.93ma(51.1v)
-
-
-
-
- */
 
 
 
@@ -213,8 +272,6 @@ u8g2.setCursor(50, 61); u8g2.print("E"); //ток электроники
 
 // RTC 1307
    DateTime now = rtc.now();
-
-
 
 
 //u8g2.setFont(u8g2_font_chroma48medium8_8u);

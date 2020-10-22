@@ -2815,7 +2815,7 @@ NS Package M08A</description>
 <element name="OUT1" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-134.3025" y="-37.465" rot="MR90"/>
 <element name="R6" library="rcl" package="R0805" value="10k" x="-89.5" y="67.5" rot="R90"/>
 <element name="IC3" library="linear" package="SO08" value="LM358D" x="-144.5" y="-78"/>
-<element name="R102*1" library="rcl" package="R0805" value="640" x="-148" y="-85"/>
+<element name="R102*1" library="rcl" package="R0805" value="100k" x="-148" y="-85"/>
 <element name="R102*2" library="rcl" package="R0805" value="640" x="-148" y="-91.5"/>
 <element name="R313" library="rcl" package="R0805" value="1k*" x="44.5" y="56.5" rot="MR90"/>
 <element name="R314" library="rcl" package="R0805" value="1k*" x="48" y="52" rot="MR90"/>

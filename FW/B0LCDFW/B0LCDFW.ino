@@ -50,7 +50,7 @@ Wire.write(0x10);
 Wire.endTransmission();
 */
 
-//rtc.adjust(DateTime(2020, 10, 22,      2, 06,0 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
+//rtc.adjust(DateTime(2020, 10, 22,      6, 58,0 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
 
 
 } // End void setup
@@ -136,10 +136,21 @@ u8g2.setCursor(0, 10); u8g2.print(vvalue);
 u8g2.setFont(u8g2_font_7x13B); u8g2.setCursor(8, 54); 
 //u8g2.print("200");u8g2.print("%"); //! 15002 48%
 
-//if vout < 51 { u8g2.print("99"); }
-//else
-//if vout < 47.5 { u8g2.print("99"); }
-
+     if ( vvalue > 953 ) { u8g2.print("99.9"); }
+else if ( vout < 47.5 ) { u8g2.print("95"); }
+else if ( vout < 47.3 ) { u8g2.print("85"); }
+else if ( vout < 47.1 ) { u8g2.print("60"); }
+else if ( vout < 47 ) { u8g2.print("55"); }
+else if ( vout < 46.78 ) { u8g2.print("50"); }
+else if ( vout < 46.7 ) { u8g2.print("45"); }
+else if ( vout < 46.6 ) { u8g2.print("40"); }
+else if ( vout < 46.5 ) { u8g2.print("20"); }
+else if ( vout < 46.3 ) { u8g2.print("15"); }
+else if ( vout < 45.9 ) { u8g2.print("15"); }
+else if ( vout < 45.5 ) { u8g2.print("5"); }
+else if ( vout < 45 ) { u8g2.print("1"); }
+else { u8g2.print("0"); }
+u8g2.print("%");
 
 /*
 switch (vvalue) {
@@ -193,7 +204,7 @@ switch (vvalue) {
   u8g2.print("000");
 }
 */
-u8g2.print("%");
+
 
 
 
@@ -323,7 +334,7 @@ if (lup > 10) lup = 0;
 
 
   
-  delay(100);
+  delay(50);
 } //End void loop
 
 /* ---------------------------------------------------------------------------------------------- */

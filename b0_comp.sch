@@ -20892,7 +20892,7 @@ Source: http://cache.national.com/ds/LM/LM158.pdf</description>
 <part name="P+7" library="supply1v" deviceset="+5V" device=""/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="IC3" library="linear" deviceset="LM358" device="D"/>
-<part name="R102*1" library="rcl" deviceset="R-EU_" device="R0805" value="640"/>
+<part name="R102*1" library="rcl" deviceset="R-EU_" device="R0805" value="100k"/>
 <part name="R102*2" library="rcl" deviceset="R-EU_" device="R0805" value="640"/>
 <part name="R313" library="rcl" deviceset="R-EU_" device="R0805" value="1k*"/>
 <part name="R314" library="rcl" deviceset="R-EU_" device="R0805" value="1k*"/>

@@ -22,7 +22,8 @@ RTC_DS1307 rtc; // "rtc" используется в начале функций
 //int val = 0 ;
 //float adcv = 0.00 ;
 //float vmax = 54.8500 ; // максимальное напряжение измерения = 54.85
-const float vmax = 54.85;
+//const float vmax = 54.85;
+const float vmax = 548.5;
 
 //float vmax = 54 ; 
 int vvalue = 0 ;
@@ -128,7 +129,8 @@ R2=10k/2 R1≈47k+15k+1k/2+1k , (ADC954=51.1v)
 u8g2.setFont(u8g_font_04b_03b);
  vvalue = analogRead(A7);
  vout = vmax * vvalue / 1024.0 ;
- u8g2.setCursor(3, 61);u8g2.print(vout); u8g2.print("V");
+// u8g2.setCursor(3, 61);u8g2.print(vout/10); u8g2.print("V");
+  u8g2.setCursor(3, 61);u8g2.print(20 * vvalue / 512.0); u8g2.print("V");
  
 u8g2.setCursor(0, 10); u8g2.print(vvalue);
 //u8g2.setCursor(3, 61); u8g2.print(ran2); u8g2.print("V");
@@ -149,6 +151,7 @@ else if ( vout < 46.3 ) { u8g2.print("15"); }
 else if ( vout < 45.9 ) { u8g2.print("15"); }
 else if ( vout < 45.5 ) { u8g2.print("5"); }
 else if ( vout < 45 ) { u8g2.print("1"); }
+else if ( vout = 0 ) { u8g2.print("0"); }
 else { u8g2.print("0"); }
 u8g2.print("%");
 
@@ -259,7 +262,7 @@ switch (vvalue) {
 
 //region токи
 u8g2.setFont(u8g2_font_6x12_tr); 
-u8g2.setCursor(58, 52); u8g2.print("20.4");u8g2.print(" A");
+u8g2.setCursor(58, 52); u8g2.print("20.4");u8g2.print("A");
 u8g2.setCursor(50, 52); u8g2.print("M"); //ток мотора
 u8g2.setCursor(58, 61); u8g2.print("3.25");u8g2.print("A");
 u8g2.setCursor(50, 61); u8g2.print("E"); //ток электроники

@@ -24,6 +24,7 @@ RTC_DS1307 rtc; // "rtc" используется в начале функций
 //float vmax = 54.8500 ; // максимальное напряжение измерения = 54.85
 //const float vmax = 54.85;
 const float vmax = 548.5;
+const float vminus = 28;
 
 //float vmax = 54 ; 
 int vvalue = 0 ;
@@ -129,6 +130,8 @@ R2=10k/2 R1≈47k+15k+1k/2+1k , (ADC954=51.1v)
 u8g2.setFont(u8g_font_04b_03b);
  vvalue = analogRead(A7);
  vout = vmax * vvalue / 1024.0 ;
+///  vout = vmax * vvalue / 1024.0 ;
+ 
 // u8g2.setCursor(3, 61);u8g2.print(vout/10); u8g2.print("V");
   u8g2.setCursor(3, 61);u8g2.print(20 * vvalue / 512.0); u8g2.print("V");
  

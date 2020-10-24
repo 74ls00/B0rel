@@ -33,12 +33,19 @@ const float vminus = 28;
 int vvalue = 0 ;
 float vout = 0.0 ;
 
+// Скорость
+
+volatile int time = 0;
+volatile int time_last = 0; 
+volatile float rev=0;
+volatile int rpm;
+
+
 /* ---------------------------------------------------------------------------------------------- */
 
 void setup(void) {
   u8g2.begin();
 
-//pinMode(A0, INPUT);
 pinMode(A7, INPUT);
 
 analogReference(EXTERNAL); //внешний ИОН 4.00v. TL431 Rs=150 R2=3k R1=2k2+560/2 Raref=5k1 
@@ -49,40 +56,60 @@ analogReference(EXTERNAL); //внешний ИОН 4.00v. TL431 Rs=150 R2=3k R1=
 
 //1307
 //Запуск секундного выхода часов
-/*Wire.beginTransmission(0x68);
+Wire.beginTransmission(0x68);
 Wire.write(0x7);
 Wire.write(0x10);
 Wire.endTransmission();
-*/
+
 
 //rtc.adjust(DateTime(2020, 10, 22,      6, 58,0 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
+
+// Скорость
+// http://electronics-lab.ru/blog/4012.html
+//attachInterrupt(0,taho,FALLING); //digitalPinToInterrupt(2)
+setitr();
+digitalWrite(2, HIGH);
+
 
 
 } // End void setup
 /* ---------------------------------------------------------------------------------------------- */
 
+void taho() {
+  rev++;
+}
+
+void setitr(){
+  attachInterrupt(0,taho,FALLING); //digitalPinToInterrupt(2)
+}
+
+/* ---------------------------------------------------------------------------------------------- */
 
 void draw(void) {
 
-//debug
-// u8g2.setFont(u8x8_font_5x7_r); u8g2.setCursor(0, 10); u8g2.print(lup);
-//u8g2.setFont(u8g2_font_micro_mr);  u8g2.drawStr(15,20,lup);
-//
-  
-  // graphic commands to redraw the complete screen should be placed here  
-  //u8g2.setFont(u8g2_font_fur17n); //km/h
-  //u8g2.setFont(u8g2_font_10x20_78_79);
- // u8g2.setCursor(45, 17); 
-  // call procedure from base class, http://arduino.cc/en/Serial/Print
-  //u8g2.print("AaBbCcDdАаБбВвГг");
+detachInterrupt(0);   
 
+time = ( millis() - time_last);
+rpm=(rev/time)*60000; 
+time_last = millis();
+rev=0;
 
 //region скорость/расход
 //u8g2.setFont(  u8g2_font_18d  ); // u8g2_font_ncenB18_te
 u8g2.setFont(  u8g2_font_ncenB18m  );
 
 
-u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h
+//u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h
+
+
+u8g2.setCursor(26, 18); u8g2.print(rpm);  u8g2.print("/");
+
+
+
+
+//-------------
+
+
 
   float ran1 = random(1,30);
   ran1=ran1*100; ran1= ran1/1000;
@@ -161,58 +188,7 @@ else if ( vout = 0 ) { u8g2.print("0"); }
 else { u8g2.print("0"); }
 u8g2.print("%");
 
-/*
-switch (vvalue) {
 
-  case 957:
-  u8g2.print("103");
-  break;
-
-
-   case 956:
-  u8g2.print("102");
-  break;
- case 955:
-  u8g2.print("101");
-  break;
-
-  
- case 954:
-  u8g2.print("100");
-  break;
- case 953:
-  u8g2.print("99.");
-  break;
-
- case 943:
-  u8g2.print("99");
-  break;
-
- case 887:
-  u8g2.print("95");
-  break;
-  
- case 884:
-  u8g2.print("90");
-  break;
-  
- case 882:
-  u8g2.print("85");
-  break;
- case 881:
-  u8g2.print("80."); //60
-  break;
- case 880:
-  u8g2.print("75.");
-  break;
-
-
-
-  
- default:
-  u8g2.print("000");
-}
-*/
 
 
 
@@ -301,7 +277,7 @@ u8g2.setCursor(87, 64); u8g2.print(now.year()); u8g2.print(".");
 u8g2.print(now.month()); u8g2.print("."); u8g2.print(now.day());
 
 u8g2.setFont(u8g2_font_7d);
-u8g2.setCursor(95, 55); u8g2.print(now.hour()); u8g2.print(":");
+u8g2.setCursor(95, 50); u8g2.print(now.hour()); u8g2.print(":");
 
 //int min = now.minute() ;
 //int sec = now.second() ;
@@ -315,7 +291,8 @@ if ( now.second() < 10 ) { u8g2.print("0"); } u8g2.print(now.second());
 
 
 
-
+//attachInterrupt(0,taho,FALLING); //digitalPinToInterrupt(2)
+setitr();
 
 } // End void draw
 

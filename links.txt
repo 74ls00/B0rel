@@ -20,8 +20,8 @@ https://forum.cxem.net/index.php?/topic/135900-tl431-не-могу-понять-
 Источник опорного напряжения TL431
 https://chipenable.ru/index.php/programming-avr/item/202
 
-
-
+Фуоз + Датчик Холла От "карлсона" (Вентилятора) = Статика
+https://forum.cxem.net/index.php?/topic/117142-фуоз-датчик-холла-от-карлсона-вентилятора-статика/
 
 
 

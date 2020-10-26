@@ -19,6 +19,8 @@ Tl431 Не Могу Понять Почему Не Работает
 https://forum.cxem.net/index.php?/topic/135900-tl431-не-могу-понять-почему-не-работает/
 Источник опорного напряжения TL431
 https://chipenable.ru/index.php/programming-avr/item/202
+Компаратор на tl431 с гистерезисом
+https://yargeo.com/komparator-na-tl431-s-gisterezisom/
 
 Фуоз + Датчик Холла От "карлсона" (Вентилятора) = Статика
 https://forum.cxem.net/index.php?/topic/117142-фуоз-датчик-холла-от-карлсона-вентилятора-статика/

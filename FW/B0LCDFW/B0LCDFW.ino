@@ -67,14 +67,14 @@ Wire.endTransmission();
 // Скорость
 // http://electronics-lab.ru/blog/4012.html
 //attachInterrupt(0,taho,FALLING); //digitalPinToInterrupt(2)
-setitr();
+//setitr();
 digitalWrite(2, HIGH);
 
 
 
 } // End void setup
 /* ---------------------------------------------------------------------------------------------- */
-
+/*
 void taho() {
   rev++;
 }
@@ -82,17 +82,17 @@ void taho() {
 void setitr(){
   attachInterrupt(0,taho,FALLING); //digitalPinToInterrupt(2)
 }
-
+*/
 /* ---------------------------------------------------------------------------------------------- */
 
 void draw(void) {
 
-detachInterrupt(0);   
+//detachInterrupt(0);   
 
-time = ( millis() - time_last);
-rpm=(rev/time)*60000; 
-time_last = millis();
-rev=0;
+//time = ( millis() - time_last);
+//rpm=(rev/time)*60000; 
+//time_last = millis();
+//rev=0;
 
 //region скорость/расход
 //u8g2.setFont(  u8g2_font_18d  ); // u8g2_font_ncenB18_te
@@ -102,7 +102,7 @@ u8g2.setFont(  u8g2_font_ncenB18m  );
 //u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h
 
 
-u8g2.setCursor(26, 18); u8g2.print(rpm);  u8g2.print("/");
+//u8g2.setCursor(26, 18); u8g2.print(rpm);  u8g2.print("/");
 
 
 
@@ -160,7 +160,7 @@ R2=10k/2 R1≈47k+15k+1k/2+1k , (ADC954=51.1v)
 u8g2.setFont(u8g_font_04b_03b);
  vvalue = analogRead(A7);
  vout = vmax * vvalue / 1024.0 ;
-///  vout = vmax * vvalue / 1024.0 ;
+
  
 // u8g2.setCursor(3, 61);u8g2.print(vout/10); u8g2.print("V");
   u8g2.setCursor(3, 61);u8g2.print(20 * vvalue / 512.0); u8g2.print("V");
@@ -292,7 +292,7 @@ if ( now.second() < 10 ) { u8g2.print("0"); } u8g2.print(now.second());
 
 
 //attachInterrupt(0,taho,FALLING); //digitalPinToInterrupt(2)
-setitr();
+////setitr();
 
 } // End void draw
 

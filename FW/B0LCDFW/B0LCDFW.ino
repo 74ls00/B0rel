@@ -36,6 +36,7 @@ float vout = 0.0 ;
 
 int SpeedADC ;
 float SpeedKmH ;
+static char SpeedKmHtxt[3];
 
 /* ---------------------------------------------------------------------------------------------- */
 
@@ -94,7 +95,8 @@ void draw(void) {
 
 //region скорость/расход
 
-//29" 2.33m , 20" 1.685m
+//29" 2.33m  =1.382789317507418
+//20" 1.685m =1
 //1024adc=60km/h or; 1024adc=51.2km/h , 512adc=25.6km/h , 500adc=25km/h
 //
 
@@ -104,13 +106,18 @@ u8g2.setFont(  u8g2_font_ncenB18m  );
 
  SpeedADC = analogRead(A0);
 
+
 //SpeedKmH=(60/1024)*SpeedADC ;
 SpeedKmH=0.058*SpeedADC ;
 
-//u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h
-u8g2.setCursor(26, 18); u8g2.print(SpeedKmH);  u8g2.print("/");
 
-u8g2.setFont(u8g_font_04b_03b);u8g2.setCursor(28, 24); u8g2.print(SpeedADC); 
+dtostrf(SpeedKmH,3,1,SpeedKmHtxt);
+
+
+//u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h
+u8g2.setCursor(26, 18); u8g2.print(SpeedKmHtxt);  u8g2.print("/");
+
+u8g2.setFont(u8g_font_04b_03b);u8g2.setCursor(28, 24); u8g2.print(SpeedADC); u8g2.print("  "); 
 
 u8g2.setFont(  u8g2_font_ncenB18m  );
 //-------------

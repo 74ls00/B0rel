@@ -22,8 +22,7 @@ RTC_DS1307 rtc; // "rtc" используется в начале функций
 
  byte  lup = 0; // циклы отрисовки экрана
  
-//int val = 0 ;
-//float adcv = 0.00 ;
+
 //float vmax = 54.8500 ; // максимальное напряжение измерения = 54.85
 //const float vmax = 54.85;
 const float vmax = 548.5;
@@ -35,10 +34,10 @@ float vout = 0.0 ;
 
 // Скорость
 
-volatile int time = 0;
-volatile int time_last = 0; 
-volatile float rev=0;
-volatile int rpm;
+int SpeedADC ;
+float SpeedKmH ;
+
+/* ---------------------------------------------------------------------------------------------- */
 
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -68,9 +67,15 @@ Wire.endTransmission();
 // http://electronics-lab.ru/blog/4012.html
 //attachInterrupt(0,taho,FALLING); //digitalPinToInterrupt(2)
 //setitr();
-digitalWrite(2, HIGH);
 
 
+ //pinMode(pintaho, INPUT);
+// digitalWrite(pintaho, HIGH);
+
+
+ //attachInterrupt(digitalPinToInterrupt(2),interruptFunction, CHANGE);
+
+//digitalWrite(2, HIGH);
 
 } // End void setup
 /* ---------------------------------------------------------------------------------------------- */
@@ -87,26 +92,27 @@ void setitr(){
 
 void draw(void) {
 
-//detachInterrupt(0);   
-
-//time = ( millis() - time_last);
-//rpm=(rev/time)*60000; 
-//time_last = millis();
-//rev=0;
-
 //region скорость/расход
+
+//29" 2.33m , 20" 1.685m
+//1024adc=60km/h or; 1024adc=51.2km/h , 512adc=25.6km/h , 500adc=25km/h
+//
+
+
 //u8g2.setFont(  u8g2_font_18d  ); // u8g2_font_ncenB18_te
 u8g2.setFont(  u8g2_font_ncenB18m  );
 
+ SpeedADC = analogRead(A0);
+
+//SpeedKmH=(60/1024)*SpeedADC ;
+SpeedKmH=0.058*SpeedADC ;
 
 //u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h
+u8g2.setCursor(26, 18); u8g2.print(SpeedKmH);  u8g2.print("/");
 
+u8g2.setFont(u8g_font_04b_03b);u8g2.setCursor(28, 24); u8g2.print(SpeedADC); 
 
-//u8g2.setCursor(26, 18); u8g2.print(rpm);  u8g2.print("/");
-
-
-
-
+u8g2.setFont(  u8g2_font_ncenB18m  );
 //-------------
 
 
@@ -164,6 +170,9 @@ u8g2.setFont(u8g_font_04b_03b);
  
 // u8g2.setCursor(3, 61);u8g2.print(vout/10); u8g2.print("V");
   u8g2.setCursor(3, 61);u8g2.print(20 * vvalue / 512.0); u8g2.print("V");
+
+
+//    u8g2.setCursor(2, 30);u8g2.print(duration); u8g2.print("i");
  
 u8g2.setCursor(0, 10); u8g2.print(vvalue);
 //u8g2.setCursor(3, 61); u8g2.print(ran2); u8g2.print("V");
@@ -301,22 +310,17 @@ if ( now.second() < 10 ) { u8g2.print("0"); } u8g2.print(now.second());
 /* ---------------------------------------------------------------------------------------------- */
 
 void loop(void) {
-
-
-  
-  // picture loop
+// picture loop
   u8g2.firstPage();  
   do {
     draw();
 // timertc();
   } while( u8g2.nextPage() );
   
-  // rebuild the picture after some delay
+// rebuild the picture after some delay
 
 lup = lup+1 ;
 if (lup > 10) lup = 0;
-
-
 
 
   

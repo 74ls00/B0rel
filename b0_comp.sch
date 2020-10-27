@@ -23329,7 +23329,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="P+13" library="supply1v" deviceset="+12V" device=""/>
 <part name="GND10" library="supply1v" deviceset="GND" device=""/>
 <part name="DA3" library="st-microelectronics" deviceset="NE555" device="" value="NE555"/>
-<part name="R5T" library="rcl" deviceset="R-EU_" device="M0805" value="5k1"/>
 <part name="C3T" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="C2T" library="rcl" deviceset="C-EU" device="C0805" value="100n*"/>
 <part name="R3T" library="rcl" deviceset="R-EU_" device="M0805" value="5k1"/>
@@ -23420,8 +23419,8 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="JP7" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="IC10" library="40xx" deviceset="4011" device="D"/>
 <part name="GND34" library="supply1v" deviceset="GND" device=""/>
-<part name="VD1T" library="diode" deviceset="DIODE-" device="SOD80C"/>
-<part name="VD2T" library="diode" deviceset="DIODE-" device="SOD80C"/>
+<part name="VD1T" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
+<part name="VD2T" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
 <part name="JP8" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="C4T" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="10m"/>
 <part name="GND40" library="supply1v" deviceset="GND" device=""/>
@@ -23450,13 +23449,16 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="P+19" library="supply1v" deviceset="+5V" device=""/>
 <part name="C5T" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND44" library="supply1v" deviceset="GND" device=""/>
-<part name="R12T" library="rcl" deviceset="R-EU_" device="M0805" value="50"/>
+<part name="R12T" library="rcl" deviceset="R-EU_" device="M0805" value="47"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0204/5" value="1k"/>
 <part name="R2" library="rcl" deviceset="R-TRIMM" device="4G/J" value="1k"/>
 <part name="L1" library="rcl" deviceset="L" device="0204V" value="1uµ"/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="0204/5" value="1k"/>
 <part name="R9" library="rcl" deviceset="R-TRIMM" device="4G/J" value="1k"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="0204/5" value="1k"/>
+<part name="R14" library="rcl" deviceset="R-TRIMM" device="3059Y" value="5k"/>
+<part name="GND45" library="supply1v" deviceset="GND" device=""/>
+<part name="D9" library="diode" deviceset="ZENER-DIODE" device="SMB"/>
 </parts>
 <sheets>
 <sheet>
@@ -23978,7 +23980,7 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <attribute name="VALUE" x="148.59" y="37.338" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="IC6" gate="G$1" x="-58.42" y="99.06"/>
-<instance part="LCD2" gate="G$1" x="-45.72" y="144.78"/>
+<instance part="LCD2" gate="G$1" x="-101.6" y="210.82"/>
 <instance part="JLCD1.F" gate="A" x="124.46" y="162.56"/>
 <instance part="R2L" gate="R" x="106.68" y="157.48" smashed="yes">
 <attribute name="NAME" x="100.33" y="158.9786" size="1.778" layer="95"/>
@@ -24043,6 +24045,8 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <attribute name="NAME" x="-11.43" y="255.4986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-11.43" y="253.238" size="1.778" layer="96"/>
 </instance>
+<instance part="R14" gate="G$1" x="-12.7" y="160.02"/>
+<instance part="GND45" gate="1" x="-12.7" y="147.32"/>
 </instances>
 <busses>
 <bus name="DB[0..7],E,RS,RST,RESET">
@@ -24187,12 +24191,6 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <junction x="17.78" y="10.16"/>
 </segment>
 <segment>
-<pinref part="DA1" gate="G$1" pin="FB"/>
-<wire x1="17.78" y1="106.68" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="106.68" x2="15.24" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="GND15" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="DA1" gate="G$1" pin="SWE"/>
 <wire x1="48.26" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="116.84" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
@@ -24234,6 +24232,11 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <pinref part="GND43" gate="1" pin="GND"/>
 <pinref part="VT10" gate="G$1" pin="E"/>
 <wire x1="60.96" y1="180.34" x2="60.96" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="A"/>
+<pinref part="GND45" gate="1" pin="GND"/>
+<wire x1="-12.7" y1="152.4" x2="-12.7" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -24612,12 +24615,6 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 </net>
 <net name="N$100" class="0">
 <segment>
-<pinref part="DA1" gate="G$1" pin="TC"/>
-<pinref part="C3L" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="111.76" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
-<junction x="50.8" y="111.76"/>
-<wire x1="50.8" y1="111.76" x2="50.8" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="119.38" x2="60.96" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="119.38" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="D12" gate="G$1" pin="C"/>
@@ -24823,6 +24820,11 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <wire x1="50.8" y1="170.18" x2="50.8" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="VT10" gate="G$1" pin="B"/>
 <wire x1="55.88" y1="172.72" x2="50.8" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="E"/>
+<wire x1="-12.7" y1="162.56" x2="-12.7" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="185.42" x2="50.8" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="185.42" x2="50.8" y2="172.72" width="0.1524" layer="91"/>
+<junction x="50.8" y="172.72"/>
 </segment>
 </net>
 <net name="N$115" class="0">
@@ -24942,6 +24944,26 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <junction x="68.58" y="215.9"/>
 </segment>
 </net>
+<net name="N$124" class="0">
+<segment>
+<pinref part="DA1" gate="G$1" pin="FB"/>
+<wire x1="17.78" y1="106.68" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="106.68" x2="-5.08" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="106.68" x2="-5.08" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="S"/>
+<wire x1="-5.08" y1="157.48" x2="-10.16" y2="157.48" width="0.1524" layer="91"/>
+<junction x="15.24" y="106.68"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="C3L" gate="G$1" pin="1"/>
+<pinref part="DA1" gate="G$1" pin="TC"/>
+<wire x1="48.26" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
+<junction x="50.8" y="111.76"/>
+<wire x1="50.8" y1="111.76" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -24984,6 +25006,13 @@ uminux=23.8
 
 u=adc*(umax-umin)/1024+umin</text>
 <text x="127" y="60.96" size="1.778" layer="98" rot="R90">Деление с 9 до 2в, не нужно</text>
+<text x="93.98" y="60.96" size="1.778" layer="98">К53-4 15мф 15в</text>
+<circle x="8.89" y="36.83" radius="2.54" width="0.1524" layer="98"/>
+<text x="7.62" y="35.56" size="1.778" layer="98">1</text>
+<wire x1="10.16" y1="38.1" x2="15.24" y2="40.64" width="0.1524" layer="98"/>
+<text x="66.04" y="86.36" size="1.778" layer="98">Настройка:
+На вход [pin 2 DA3 NE555] подать 0в.
+Настроить делитель на 3.4в на выходе к МК</text>
 </plain>
 <instances>
 <instance part="U$11" gate="G$1" x="139.7" y="0"/>
@@ -25019,16 +25048,21 @@ u=adc*(umax-umin)/1024+umin</text>
 <attribute name="NAME" x="38.1" y="67.31" size="1.778" layer="95"/>
 <attribute name="VALUE" x="38.1" y="60.96" size="1.778" layer="96"/>
 </instance>
-<instance part="R5T" gate="G$1" x="60.96" y="63.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="64.5414" y="64.77" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="66.802" y="64.77" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="C3T" gate="G$1" x="63.5" y="38.1"/>
 <instance part="C2T" gate="G$1" x="33.02" y="35.56"/>
-<instance part="R3T" gate="G$1" x="25.4" y="33.02" rot="R90"/>
+<instance part="R3T" gate="G$1" x="25.4" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.67" y="29.4386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="26.67" y="27.178" size="1.778" layer="96"/>
+</instance>
 <instance part="C1T" gate="G$1" x="15.24" y="50.8" rot="MR0"/>
-<instance part="R4T" gate="G$1" x="33.02" y="63.5" rot="R90"/>
-<instance part="R2T" gate="G$1" x="25.4" y="55.88" rot="R90"/>
+<instance part="R4T" gate="G$1" x="33.02" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.75" y="69.6214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="31.75" y="66.802" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R2T" gate="G$1" x="25.4" y="55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.9014" y="52.07" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="28.702" y="52.07" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="TIN" gate="G$1" x="7.62" y="71.12" smashed="yes" rot="MR90">
 <attribute name="NAME" x="6.35" y="75.565" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="2.54" y="64.77" size="1.778" layer="96" rot="MR90"/>
@@ -25045,7 +25079,10 @@ u=adc*(umax-umin)/1024+umin</text>
 <attribute name="NAME" x="76.2" y="63.5" size="1.778" layer="95"/>
 <attribute name="VALUE" x="76.2" y="60.96" size="1.778" layer="96"/>
 </instance>
-<instance part="R6T" gate="G$1" x="66.04" y="55.88" rot="R90"/>
+<instance part="R6T" gate="G$1" x="66.04" y="55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="64.77" y="67.5386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="64.77" y="65.278" size="1.778" layer="96"/>
+</instance>
 <instance part="R7T" gate="G$1" x="73.66" y="50.8" smashed="yes">
 <attribute name="NAME" x="77.47" y="44.069" size="1.778" layer="95"/>
 <attribute name="VALUE" x="77.47" y="41.91" size="1.778" layer="96"/>
@@ -25172,8 +25209,14 @@ u=adc*(umax-umin)/1024+umin</text>
 <attribute name="VALUE" x="364.49" y="-5.842" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R101*14" gate="G$1" x="347.98" y="-17.78"/>
-<instance part="VD1T" gate="G$1" x="20.32" y="60.96" rot="R90"/>
-<instance part="VD2T" gate="G$1" x="20.32" y="33.02" rot="R90"/>
+<instance part="VD1T" gate="G$1" x="20.32" y="60.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.32" y="76.6826" size="1.778" layer="95"/>
+<attribute name="VALUE" x="20.32" y="73.8886" size="1.778" layer="96"/>
+</instance>
+<instance part="VD2T" gate="G$1" x="20.32" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.78" y="32.5374" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="17.78" y="30.2514" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="JP8" gate="G$1" x="129.54" y="40.64"/>
 <instance part="C4T" gate="G$1" x="93.98" y="50.8" rot="MR0"/>
 <instance part="GND40" gate="1" x="93.98" y="40.64"/>
@@ -25185,7 +25228,10 @@ u=adc*(umax-umin)/1024+umin</text>
 <attribute name="NAME" x="17.78" y="154.94" size="1.778" layer="95"/>
 <attribute name="VALUE" x="17.78" y="152.4" size="1.778" layer="96"/>
 </instance>
-<instance part="R1T" gate="G$1" x="15.24" y="63.5" rot="R90"/>
+<instance part="R1T" gate="G$1" x="15.24" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.97" y="75.1586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="13.97" y="72.898" size="1.778" layer="96"/>
+</instance>
 <instance part="P+19" gate="1" x="73.66" y="76.2" rot="MR0"/>
 <instance part="C5T" gate="G$1" x="119.38" y="33.02"/>
 <instance part="GND44" gate="1" x="119.38" y="22.86"/>
@@ -25193,6 +25239,7 @@ u=adc*(umax-umin)/1024+umin</text>
 <attribute name="NAME" x="74.93" y="34.5186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="74.93" y="32.258" size="1.778" layer="96"/>
 </instance>
+<instance part="D9" gate="G$1" x="104.14" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -25242,7 +25289,7 @@ u=adc*(umax-umin)/1024+umin</text>
 <wire x1="63.5" y1="25.4" x2="63.5" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="30.48" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
 <junction x="33.02" y="25.4"/>
-<wire x1="25.4" y1="27.94" x2="25.4" y2="25.4" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="25.4" y1="27.94" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="DA3" gate="G$1" pin="GND"/>
 <pinref part="C3T" gate="G$1" pin="2"/>
 <pinref part="C2T" gate="G$1" pin="2"/>
@@ -25545,20 +25592,16 @@ u=adc*(umax-umin)/1024+umin</text>
 <wire x1="33.02" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="68.58" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
 <junction x="33.02" y="71.12"/>
-<wire x1="60.96" y1="68.58" x2="60.96" y2="71.12" width="0.1524" layer="91" style="shortdash"/>
-<wire x1="60.96" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
 <junction x="58.42" y="71.12"/>
 <pinref part="DA3" gate="G$1" pin="VCC+"/>
 <pinref part="DA3" gate="G$1" pin="/RES"/>
-<pinref part="R5T" gate="G$1" pin="2"/>
 <pinref part="R4T" gate="G$1" pin="2"/>
 <pinref part="R2T" gate="G$1" pin="2"/>
 <junction x="25.4" y="71.12"/>
 <wire x1="20.32" y1="71.12" x2="25.4" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="VT4" gate="G$1" pin="C"/>
 <wire x1="73.66" y1="68.58" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="71.12" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
-<junction x="60.96" y="71.12"/>
+<wire x1="73.66" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="VD1T" gate="G$1" pin="C"/>
 <wire x1="20.32" y1="63.5" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R1T" gate="G$1" pin="2"/>
@@ -25591,14 +25634,9 @@ u=adc*(umax-umin)/1024+umin</text>
 </net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="55.88" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="48.26" x2="60.96" y2="50.8" width="0.1524" layer="91" style="shortdash"/>
 <pinref part="DA3" gate="G$1" pin="OUT"/>
-<pinref part="R5T" gate="G$1" pin="1"/>
 <pinref part="R6T" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="50.8" x2="60.96" y2="58.42" width="0.1524" layer="91" style="shortdash"/>
-<junction x="58.42" y="48.26"/>
-<wire x1="58.42" y1="48.26" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="48.26" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="48.26" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -25621,7 +25659,7 @@ u=adc*(umax-umin)/1024+umin</text>
 <segment>
 <wire x1="25.4" y1="50.8" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="40.64" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="38.1" x2="25.4" y2="40.64" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="25.4" y1="38.1" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 <junction x="25.4" y="40.64"/>
 <pinref part="DA3" gate="G$1" pin="TRI"/>
 <pinref part="R3T" gate="G$1" pin="2"/>
@@ -25635,6 +25673,7 @@ u=adc*(umax-umin)/1024+umin</text>
 <junction x="20.32" y="40.64"/>
 <wire x1="15.24" y1="45.72" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="40.64" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
+<junction x="15.24" y="40.64"/>
 </segment>
 </net>
 <net name="N$12" class="0">

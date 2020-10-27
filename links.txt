@@ -22,6 +22,16 @@ https://chipenable.ru/index.php/programming-avr/item/202
 Компаратор на tl431 с гистерезисом
 https://yargeo.com/komparator-na-tl431-s-gisterezisom/
 
+Цифровой тахометр на 555 таймере и КР572ПВ2
+http://micpic.ru/other-shemes/174-tsifrovoj-takhometr-na-555-tajmere-i-kr572pv2.html
+https://radiokot.ru/forum/viewtopic.php?f=1&t=173496&p=3913409#p3913409
+
+
+
+
+
+
+
 Фуоз + Датчик Холла От "карлсона" (Вентилятора) = Статика
 https://forum.cxem.net/index.php?/topic/117142-фуоз-датчик-холла-от-карлсона-вентилятора-статика/
 

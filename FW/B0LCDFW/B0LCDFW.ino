@@ -2,7 +2,8 @@
 
 #include <Wire.h> //for RTClib.h
 //#include <Time.h>
-#include "RTClib.h" //RTClib 1.2.1 https://github.com/adafruit/RTClib
+#include "lib/RTClib.h" //RTClib 1.2.1 https://github.com/adafruit/RTClib
+#include "lib/RTClib.cpp"
 
 #include "fonts/Fonts.h" 
 #include "fonts/u8g_font_04b_03b.h" //Шрифт Мелкие цифры Батарея V, ..
@@ -98,7 +99,12 @@ void draw(void) {
 //29" 2.33m  =1.382789317507418
 //20" 1.685m =1
 //1024adc=60km/h or; 1024adc=51.2km/h , 512adc=25.6km/h , 500adc=25km/h
-//
+
+// SpeedKmH = (f*3600*1.685)/1000 // 1i=6066mh=6.066kmh
+// f= ? adc
+
+// Umax=3.4v = 59.392kmh = 0.058*1024 // adc = kmh 426 = 24.96 427 = 25.01
+// 6.066/0.058=1045.86v
 
 
 //u8g2.setFont(  u8g2_font_18d  ); // u8g2_font_ncenB18_te
@@ -108,14 +114,17 @@ u8g2.setFont(  u8g2_font_ncenB18m  );
 
 
 //SpeedKmH=(60/1024)*SpeedADC ;
-SpeedKmH=0.058*SpeedADC ;
+SpeedKmH=0.058*(SpeedADC-4) ; if (SpeedKmH < 0) { SpeedKmH=0; }
+
 
 
 dtostrf(SpeedKmH,3,1,SpeedKmHtxt);
 
 
 //u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h
+
 u8g2.setCursor(26, 18); u8g2.print(SpeedKmHtxt);  u8g2.print("/");
+//u8g2.setCursor(26, 18); u8g2.print(SpeedKmH);  u8g2.print("/");
 
 u8g2.setFont(u8g_font_04b_03b);u8g2.setCursor(28, 24); u8g2.print(SpeedADC); u8g2.print("  "); 
 
@@ -331,7 +340,7 @@ if (lup > 10) lup = 0;
 
 
   
-  delay(50); //int0 250
+  delay(100); //int0 250
 } //End void loop
 
 /* ---------------------------------------------------------------------------------------------- */

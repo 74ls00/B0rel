@@ -63,7 +63,7 @@ Wire.write(0x10);
 Wire.endTransmission();
 
 
-// rtc.adjust(DateTime(2020, 10, 28,      14, 55,0 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
+// rtc.adjust(DateTime(2020, 10, 28,      16, 24,0 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
 
 // Скорость
 // http://electronics-lab.ru/blog/4012.html

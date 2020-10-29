@@ -23749,6 +23749,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="T_VT1B" library="m_transistor" deviceset="JFET-P" device="_TO-18V_SGD" value="КП103Л"/>
 <part name="JT4" library="jumper" deviceset="SJ" device=""/>
 <part name="U$16" library="b0f" deviceset="JFET" device=""/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -24212,8 +24213,8 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <attribute name="VALUE" x="85.09" y="10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="R204" gate="G$1" x="53.34" y="33.02" smashed="yes" rot="MR90">
-<attribute name="NAME" x="54.61" y="36.6014" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="54.61" y="33.782" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="54.61" y="46.7614" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="54.61" y="43.942" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="R203" gate="G$1" x="48.26" y="33.02" smashed="yes" rot="MR90">
 <attribute name="NAME" x="46.99" y="34.5186" size="1.778" layer="95" rot="MR0"/>
@@ -24356,6 +24357,10 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 </instance>
 <instance part="R14" gate="G$1" x="-12.7" y="160.02"/>
 <instance part="GND45" gate="1" x="-12.7" y="147.32"/>
+<instance part="R16" gate="G$1" x="58.42" y="33.02" smashed="yes" rot="MR90">
+<attribute name="NAME" x="59.69" y="36.6014" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="59.69" y="33.782" size="1.778" layer="96" rot="MR180"/>
+</instance>
 </instances>
 <busses>
 <bus name="DB[0..7],E,RS,RST,RESET">
@@ -24449,6 +24454,10 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <junction x="17.78" y="25.4"/>
 <wire x1="17.78" y1="25.4" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="38.1" x2="58.42" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="40.64" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
+<junction x="53.34" y="40.64"/>
 </segment>
 <segment>
 <pinref part="ISP1" gate="G$1" pin="2"/>
@@ -25276,8 +25285,11 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <net name="RTC7" class="0">
 <segment>
 <pinref part="DD2" gate="G$1" pin="SQW"/>
-<wire x1="43.18" y1="15.24" x2="53.34" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="15.24" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
 <label x="45.72" y="15.24" size="1.778" layer="95"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="15.24" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
+<junction x="58.42" y="15.24"/>
 </segment>
 </net>
 <net name="TAHO" class="0">

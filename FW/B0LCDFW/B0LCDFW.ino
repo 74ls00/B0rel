@@ -35,9 +35,14 @@ float vout = 0.0 ;
 
 // Скорость
 
-int SpeedADC ;
+byte SpeedADCstep = 0; //циклы замера adc
+int SpeedADCp ; // SpeedADC * циклы
+const byte SpeedADCc = 4 ; // циклы приближения
+float debugADC ;
+int SpeedADC ; // показания АЦП скорость-напряжение
 float SpeedKmH ;
 static char SpeedKmHtxt[3];
+
 
 /* ---------------------------------------------------------------------------------------------- */
 
@@ -112,26 +117,32 @@ u8g2.setFont(  u8g2_font_ncenB18m  );
 
  SpeedADC = analogRead(A0);
 
+// SpeedADCp = SpeedADC ;
+
 
 //SpeedKmH=(60/1024)*SpeedADC ;
+// SpeedADCp
 
 
-SpeedKmH=0.058*(SpeedADC-4) ;
 
-/*
-if (SpeedADC<200) {
-  SpeedKmH=(6/102)*(SpeedADC)*10;
+if (SpeedADCstep < SpeedADCc) {
+  SpeedADCstep++ ;
+  SpeedADCp = SpeedADCp + SpeedADC ;
+} 
+else {
+  SpeedKmH=0.058*(SpeedADCp)/SpeedADCc;
+  debugADC =  SpeedADCp/4 ;
+  SpeedADCp=0;
+  SpeedADCstep=0;
+
 }
-*/
 
+
+//SpeedKmH=0.058*(SpeedADC-4) ;
 
  if (SpeedKmH < 0) { SpeedKmH=0; }
 
-
-
-
-
-dtostrf(SpeedKmH,3,1,SpeedKmHtxt);
+dtostrf(SpeedKmH,3,1,SpeedKmHtxt); //
 
 
 
@@ -139,10 +150,15 @@ dtostrf(SpeedKmH,3,1,SpeedKmHtxt);
 
 //u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h
 
-u8g2.setCursor(26, 18); u8g2.print(SpeedKmHtxt);  u8g2.print("/");
+u8g2.setCursor(26, 18); u8g2.print(SpeedKmHtxt); // u8g2.print("/");
 //u8g2.setCursor(26, 18); u8g2.print(SpeedKmH);  u8g2.print("/");
 
 u8g2.setFont(u8g_font_04b_03b);u8g2.setCursor(28, 24); u8g2.print(SpeedADC); u8g2.print("  "); 
+u8g2.setCursor(22, 30); u8g2.print(debugADC); u8g2.print("  "); 
+u8g2.setCursor(28, 36); u8g2.print(SpeedADCstep); u8g2.print("  "); 
+
+
+
 
 u8g2.setFont(  u8g2_font_ncenB18m  );
 //-------------
@@ -356,7 +372,7 @@ if (lup > 10) lup = 0;
 
 
   
-  delay(100); //int0 250
+  delay(40); //int0 250
 } //End void loop
 
 /* ---------------------------------------------------------------------------------------------- */

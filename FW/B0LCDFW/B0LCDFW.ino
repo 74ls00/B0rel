@@ -114,11 +114,27 @@ u8g2.setFont(  u8g2_font_ncenB18m  );
 
 
 //SpeedKmH=(60/1024)*SpeedADC ;
-SpeedKmH=0.058*(SpeedADC-4) ; if (SpeedKmH < 0) { SpeedKmH=0; }
+
+
+SpeedKmH=0.058*(SpeedADC-4) ;
+
+/*
+if (SpeedADC<200) {
+  SpeedKmH=(6/102)*(SpeedADC)*10;
+}
+*/
+
+
+ if (SpeedKmH < 0) { SpeedKmH=0; }
+
+
 
 
 
 dtostrf(SpeedKmH,3,1,SpeedKmHtxt);
+
+
+
 
 
 //u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h

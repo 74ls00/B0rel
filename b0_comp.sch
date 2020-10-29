@@ -8,34 +8,34 @@
 </settings>
 <grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="6" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="6" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,17 +53,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="14" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="14" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -15928,6 +15928,27 @@ grid 5.08 mm</description>
 <text x="0.508" y="0.381" size="1.27" layer="51" ratio="10">3</text>
 <text x="-1.651" y="0.381" size="1.27" layer="51" ratio="10">4</text>
 </package>
+<package name="TO18V">
+<description>&lt;b&gt;TO-18&lt;/b&gt;</description>
+<wire x1="-2.2098" y1="-0.9693" x2="2.2098" y2="-0.9693" width="0.0508" layer="21" curve="132.632"/>
+<wire x1="-0.9693" y1="2.2098" x2="0.9693" y2="2.2098" width="0.0508" layer="51" curve="-47.3681"/>
+<wire x1="-2.2098" y1="0.9693" x2="-2.2098" y2="-0.9693" width="0.0508" layer="51" curve="47.3681"/>
+<wire x1="-2.2098" y1="0.9693" x2="-0.9693" y2="2.2098" width="0.0508" layer="21" curve="-42.6319"/>
+<wire x1="2.2098" y1="-0.9693" x2="2.2098" y2="0.9693" width="0.0508" layer="51" curve="47.3681"/>
+<wire x1="1.649" y1="-2.411" x2="2.413" y2="-3.175" width="0.1524" layer="21"/>
+<wire x1="2.411" y1="-1.649" x2="3.175" y2="-2.413" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="-3.175" x2="3.175" y2="-2.413" width="0.1524" layer="21"/>
+<wire x1="0.9693" y1="2.2098" x2="2.2098" y2="0.9693" width="0.0508" layer="21" curve="-42.6319"/>
+<circle x="0" y="0" radius="2.921" width="0.1524" layer="21"/>
+<pad name="1" x="1.905" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="0" y="-1.905" drill="0.8128" shape="octagon"/>
+<pad name="3" x="-1.905" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.302" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.302" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="1.016" y="0.762" size="1.27" layer="51" ratio="10">1</text>
+<text x="-0.508" y="-1.27" size="1.27" layer="51" ratio="10">2</text>
+<text x="-1.905" y="0.635" size="1.27" layer="51" ratio="10">3</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MFN">
@@ -16011,6 +16032,19 @@ grid 5.08 mm</description>
 <circle x="0" y="0" radius="4.572" width="0.254" layer="94"/>
 <pin name="GND" x="0" y="-5.08" visible="off" length="point" rot="R90"/>
 <wire x1="0" y1="-5.08" x2="0" y2="-4.572" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="JFET-P">
+<text x="-10.16" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="middle" direction="pas"/>
+<pin name="D" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="S" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<wire x1="0" y1="-3.81" x2="0" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.905" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.27" y2="-3.175" width="0.254" layer="94"/>
+<text x="1.27" y="0.635" size="1.524" layer="95">С</text>
+<text x="1.27" y="-1.905" size="1.524" layer="95">И</text>
+<text x="-2.54" y="-1.27" size="1.524" layer="95">З</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -16222,17 +16256,38 @@ BC847 SOT23 BCE</description>
 </deviceset>
 <deviceset name="JFET-N" prefix="VT">
 <description>&lt;b&gt;N-канальный транзистор&lt;/b&gt;&lt;p&gt;&lt;p&gt;
-КП303*</description>
+
+КП302*М, КП303*  SDG&lt;br&gt;</description>
 <gates>
 <gate name="Q1" symbol="JFET-N" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_TO-72" package="TO72">
+<device name="_TO-72_SDG" package="TO72">
 <connects>
 <connect gate="Q1" pin="D" pad="2"/>
 <connect gate="Q1" pin="G" pad="3"/>
 <connect gate="Q1" pin="GND" pad="4"/>
 <connect gate="Q1" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JFET-P">
+<description>&lt;b&gt;P-канальный транзистор&lt;/b&gt;&lt;p&gt;&lt;p&gt;
+
+КП103*  TO-18V SGD&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="JFET-P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_TO-18V_SGD" package="TO18V">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="2"/>
+<connect gate="G$1" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -22911,6 +22966,27 @@ Source: avr.lbr</description>
 <wire x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" width="0.1524" layer="94"/>
 <text x="-5.08" y="2.54" size="1.778" layer="98">&gt;VALUE</text>
 </symbol>
+<symbol name="JFET_">
+<circle x="-2.2225" y="2.2225" radius="0.762" width="0.254" layer="98"/>
+<circle x="2.2225" y="2.2225" radius="0.762" width="0.254" layer="98"/>
+<circle x="-2.2225" y="-2.2225" radius="0.762" width="0.254" layer="98"/>
+<circle x="2.2225" y="-2.2225" radius="0.762" width="0.254" layer="98"/>
+<text x="-5.715" y="-8.255" size="1.778" layer="98">вид снизу</text>
+<wire x1="-0.9525" y1="-4.7625" x2="-0.9525" y2="-6.35" width="0.254" layer="98"/>
+<wire x1="-0.9525" y1="-6.35" x2="0.9525" y2="-6.35" width="0.254" layer="98"/>
+<wire x1="0.9525" y1="-6.35" x2="0.9525" y2="-4.7625" width="0.254" layer="98"/>
+<text x="-5.715" y="-3.175" size="1.778" layer="98" rot="MR0">Исток/Source</text>
+<text x="-4.445" y="3.81" size="1.778" layer="98" rot="MR0">Сток/Drain</text>
+<text x="5.08" y="3.81" size="1.778" layer="98">Затвор/Gate</text>
+<text x="5.08" y="-3.175" size="1.778" layer="98">[корпус/ground]</text>
+<text x="-4.445" y="6.985" size="1.778" layer="98">(КП103)</text>
+<wire x1="-0.9525" y1="-4.7625" x2="0.9525" y2="-4.7625" width="0.254" layer="98" curve="-337.380135"/>
+<text x="-7.62" y="9.525" size="1.778" layer="98">КП302,КП303</text>
+<text x="-5.08" y="-5.715" size="1.778" layer="98" rot="MR0">(Исток/Source)</text>
+<text x="5.08" y="-6.35" size="1.778" layer="98">(Затвор/Gate)</text>
+<text x="5.715" y="1.27" size="1.778" layer="98">(Сток/Drain)</text>
+<text x="-5.715" y="1.27" size="1.778" layer="98" rot="MR0">(nc)</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="T">
@@ -22928,6 +23004,18 @@ Source: avr.lbr</description>
 <deviceset name="I">
 <gates>
 <gate name="G$1" symbol="I" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JFET">
+<gates>
+<gate name="G$1" symbol="JFET_" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -23355,84 +23443,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="transistor-fet">
-<description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
-&lt;p&gt;
-Symbols changed according to IEC617&lt;p&gt; 
-All types, packages and assignment to symbols and pins checked&lt;p&gt;
-Package outlines partly checked&lt;p&gt;
-&lt;p&gt;
-JFET = junction FET&lt;p&gt;
-IGBT-x = insulated gate bipolar transistor&lt;p&gt;
-x=N: NPN; x=P: PNP&lt;p&gt;
-IGFET-mc-nnn; (IGFET=insulated gate field effect transistor)&lt;P&gt;
-m=D: depletion mode (Verdr&amp;auml;ngungstyp)&lt;p&gt;
-m=E: enhancement mode (Anreicherungstyp)&lt;p&gt;
-c: N=N-channel; P=P-Channel&lt;p&gt;
-GDSB: gate, drain, source, bulk&lt;p&gt;
-&lt;p&gt;
-by R. Vogg  15.March.2002</description>
-<packages>
-<package name="TO18">
-<description>&lt;b&gt;TO 18&lt;/b&gt;</description>
-<wire x1="0.9289" y1="2.227" x2="2.227" y2="0.9289" width="0.0508" layer="51" curve="-44.7172"/>
-<wire x1="0.9289" y1="-2.227" x2="2.227" y2="-0.9289" width="0.0508" layer="51" curve="44.7172"/>
-<wire x1="-3.937" y1="-0.508" x2="-3.937" y2="0.508" width="0.127" layer="21"/>
-<wire x1="-2.227" y1="-0.9289" x2="0.929" y2="2.2271" width="0.0508" layer="21" curve="-135.281"/>
-<wire x1="-2.227" y1="-0.9289" x2="-0.9289" y2="-2.227" width="0.0508" layer="51" curve="44.7172"/>
-<wire x1="-3.937" y1="-0.508" x2="-2.8765" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="-0.9289" y1="-2.227" x2="0.9289" y2="-2.227" width="0.0508" layer="21" curve="45.2828"/>
-<wire x1="-3.937" y1="0.508" x2="-2.8765" y2="0.508" width="0.127" layer="21"/>
-<wire x1="2.227" y1="-0.9289" x2="2.227" y2="0.9289" width="0.0508" layer="21" curve="45.2828"/>
-<circle x="0" y="0" radius="2.921" width="0.127" layer="21"/>
-<pad name="1" x="-1.27" y="-1.27" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="-1.27" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.27" y="1.27" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="0" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.905" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.905" y="-1.27" size="1.27" layer="51" ratio="10">1</text>
-<text x="0.635" y="-1.27" size="1.27" layer="51" ratio="10">2</text>
-<text x="0" y="0.635" size="1.27" layer="51" ratio="10">3</text>
-</package>
-</packages>
-<symbols>
-<symbol name="JFET-P">
-<wire x1="0" y1="-3.81" x2="0" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-1.27" y2="3.175" width="0.254" layer="94"/>
-<text x="-10.16" y="-1.397" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<text x="2.54" y="-0.635" size="1.524" layer="95" rot="MR180">D</text>
-<text x="2.54" y="4.445" size="1.524" layer="95" rot="MR180">S</text>
-<text x="-4.445" y="4.445" size="1.524" layer="95" rot="MR180">G</text>
-<pin name="G" x="-5.08" y="2.54" visible="off" length="middle" direction="pas"/>
-<pin name="D" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="S" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="2N5116" prefix="Q">
-<description>&lt;b&gt;P-Channel Junction FET&lt;/b&gt;&lt;p&gt;
-Source:  Vishay 70260.pdf</description>
-<gates>
-<gate name="G$1" symbol="JFET-P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO18">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="2"/>
-<connect gate="G$1" pin="S" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -23721,12 +23731,13 @@ Source:  Vishay 70260.pdf</description>
 <part name="JT3" library="jumper" deviceset="SJ" device=""/>
 <part name="U$17" library="Рамка страницы" deviceset="A5_V" device=""/>
 <part name="U$18" library="Рамка страницы" deviceset="A5_V" device=""/>
-<part name="T_VT1A" library="m_transistor" deviceset="JFET-N" device="_TO-72" value="КП302ВМ"/>
+<part name="T_VT1A" library="m_transistor" deviceset="JFET-N" device="_TO-72_SDG" value="КП302ВМ"/>
 <part name="T_R14A" library="rcl" deviceset="R-TRIMM" device="3296W" value="2k"/>
 <part name="T_R14B" library="rcl" deviceset="R-TRIMM" device="3296W"/>
 <part name="T_R12" library="rcl" deviceset="R-EU_" device="M0805" value="100"/>
-<part name="T_VT1B" library="transistor-fet" deviceset="2N5116" device="" value="КП103"/>
+<part name="T_VT1B" library="m_transistor" deviceset="JFET-P" device="_TO-18V_SGD" value="КП103"/>
 <part name="JT4" library="jumper" deviceset="SJ" device=""/>
+<part name="U$16" library="b0f" deviceset="JFET" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25399,14 +25410,15 @@ ON</text>
 <attribute name="NAME" x="90.17" y="105.6386" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="90.17" y="103.378" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="T_VT1B" gate="G$1" x="88.9" y="83.82" smashed="yes" rot="R270">
-<attribute name="NAME" x="76.2" y="84.963" size="1.778" layer="95"/>
-<attribute name="VALUE" x="76.2" y="82.55" size="1.778" layer="96"/>
+<instance part="T_VT1B" gate="G$1" x="88.9" y="83.82" smashed="yes" rot="MR270">
+<attribute name="NAME" x="86.36" y="74.803" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="96.52" y="74.93" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="JT4" gate="1" x="66.04" y="99.06" smashed="yes" rot="R270">
 <attribute name="NAME" x="63.5" y="101.6" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="62.23" y="101.6" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="U$16" gate="G$1" x="33.02" y="106.68"/>
 </instances>
 <busses>
 </busses>

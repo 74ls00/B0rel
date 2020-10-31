@@ -63,7 +63,7 @@ analogReference(EXTERNAL); //внешний ИОН 4.00v. TL431 Rs=150 R2=3k R1=
 //1307
 //Запуск секундного выхода часов
 /* Wire.beginTransmission(0x68); Wire.write(0x7); Wire.write(0x10); Wire.endTransmission(); */
-rtc.writeSqwPinMode( SquareWave1HZ ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
+rtc.writeSqwPinMode( SquareWave8kHz ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
 
 // rtc.adjust(DateTime(2020, 10, 29,      15, 59,0 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
 

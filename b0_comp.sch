@@ -24111,17 +24111,17 @@ GND 10
 <text x="50.8" y="180.34" size="1.778" layer="98" rot="MR90">gnd</text>
 <text x="48.26" y="180.34" size="1.778" layer="98" rot="MR90">gnd</text>
 <text x="45.72" y="180.34" size="1.778" layer="98" rot="MR90">+12v</text>
-<text x="40.64" y="180.34" size="1.778" layer="98" rot="MR90">(+6v)</text>
-<text x="38.1" y="180.34" size="1.778" layer="98" rot="MR90">(+3v)</text>
+<text x="38.1" y="180.34" size="1.778" layer="98" rot="MR90">(+6v)</text>
+<text x="35.56" y="180.34" size="1.778" layer="98" rot="MR90">(+3v)</text>
 <text x="25.4" y="203.2" size="1.778" layer="98" rot="MR180">nc +51 gnd gnd +12 i1 i2 6v 3v заж пов тах</text>
 <text x="30.48" y="180.34" size="1.778" layer="98" rot="MR90">I1</text>
 <text x="25.4" y="180.34" size="1.778" layer="98" rot="MR90">gnd</text>
 <text x="27.94" y="180.34" size="1.778" layer="98" rot="MR90">I0</text>
-<text x="35.56" y="180.34" size="1.778" layer="98" rot="MR90">taho</text>
-<text x="43.18" y="180.34" size="1.778" layer="98" rot="MR90">povorot</text>
+<text x="33.02" y="180.34" size="1.778" layer="98" rot="MR90">taho</text>
+<text x="40.64" y="180.34" size="1.778" layer="98" rot="MR90">povorot</text>
 <text x="22.86" y="180.34" size="1.778" layer="98" rot="MR90">ignition</text>
 <text x="53.34" y="180.34" size="1.778" layer="98" rot="MR90">nc</text>
-<text x="33.02" y="180.34" size="1.778" layer="98" rot="MR90">gnd</text>
+<text x="43.18" y="180.34" size="1.778" layer="98" rot="MR90">+12v</text>
 </plain>
 <instances>
 <instance part="IC2" gate="G$1" x="45.72" y="53.34"/>

@@ -91,7 +91,7 @@
 </packages>
 <symbols>
 <symbol name="T">
-<wire x1="0" y1="-35.56" x2="0" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="-71.12" x2="0" y2="0" width="0.254" layer="94" style="shortdash"/>
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="I">

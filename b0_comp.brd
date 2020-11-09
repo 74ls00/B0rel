@@ -3337,12 +3337,12 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <element name="IC2" library="v-reg" package="DIL08" value="UC3843N" x="-36.83" y="-73.025" rot="MR0"/>
 <element name="U$1" library="GD75232" package="SSOP20D8" value="GD75232DB" x="51.3" y="-18.28" rot="R90"/>
 <element name="VT2" library="m_transistor" package="DPACK" value="PHD45N03LTA " x="-40.64" y="-55.245"/>
-<element name="R1-" library="rcl" package="M0805" value="4r7" x="-43.02125" y="-63.5" rot="R90"/>
+<element name="R1-" library="rcl" package="M0805" value="10" x="-43.02125" y="-63.5" rot="R90"/>
 <element name="R2-" library="rcl" package="M0805" value="330" x="-45.56125" y="-65.7225" smashed="yes" rot="R90">
 <attribute name="NAME" x="-46.355" y="-63.34125" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-43.02125" y="-66.9925" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R3" library="rcl" package="R1210" value="0e1 2w" x="-34.76625" y="-59.84875" smashed="yes" rot="R180">
+<element name="R3" library="rcl" package="R1210" value="0e15 2w" x="-34.76625" y="-59.84875" smashed="yes" rot="R180">
 <attribute name="NAME" x="-33.49625" y="-57.30875" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="-33.49625" y="-57.30875" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -3603,15 +3603,16 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <element name="D16" library="diode" package="CB429-17" value="" x="-2.54" y="-84.455" rot="R90"/>
 <element name="VT14" library="m_transistor" package="TO92" value="КТ209" x="-28.575" y="-63.5" rot="R270"/>
 <element name="R2-1" library="rcl" package="M0805" value="10k" x="-24.765" y="-56.515" rot="R270"/>
-<element name="D17" library="diode" package="SOD80C" value="" x="-40.79875" y="-63.1825" rot="R90"/>
-<element name="R5-1" library="rcl" package="M0805" value="100k" x="-30.7975" y="-86.0425"/>
-<element name="R5-2" library="rcl" package="M0805" value="100k" x="-39.84625" y="-83.02625"/>
+<element name="D17" library="diode" package="SOD80C" value="LL4148" x="-40.79875" y="-63.1825" rot="R90"/>
+<element name="R5-1" library="rcl" package="M0805" value="1k" x="-34.29" y="-86.20125"/>
+<element name="R5-2" library="rcl" package="M0805" value="1k" x="-40.48125" y="-84.29625"/>
 <element name="19" library="b0f" package="PIN1X1" value="T_PIN" x="12.85875" y="-73.50125"/>
 <element name="20" library="b0f" package="PIN1X1" value="T_PIN" x="19.3675" y="-73.50125"/>
 <element name="D18" library="diode" package="CB429-17" value="" x="22.38375" y="-67.31"/>
 <element name="21" library="b0f" package="PIN1X1" value="T_PIN" x="12.85875" y="-88.10625"/>
 <element name="22" library="b0f" package="PIN1X1" value="T_PIN" x="19.3675" y="-88.10625"/>
 <element name="D19" library="diode" package="CB429-17" value="" x="22.38375" y="-81.915"/>
+<element name="R5-3" library="rcl" package="M0805" value="75" x="-30.00375" y="-90.17"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -3814,7 +3815,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="-43.02375" y1="-69.05625" x2="-62.865" y2="-55.245" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.64" y1="-69.215" x2="-43.02375" y2="-69.05625" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.145" y1="-72.0725" x2="-40.64" y2="-71.91625" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.79625" y1="-83.02625" x2="-40.64" y2="-71.91625" width="0" layer="19" extent="1-1"/>
+<wire x1="-41.43125" y1="-84.29625" x2="-40.64" y2="-71.91625" width="0" layer="19" extent="1-1"/>
 <wire x1="-33.36625" y1="-59.84875" x2="-40.64" y2="-69.215" width="0" layer="19" extent="1-1"/>
 <wire x1="48.0488" y1="-15.359" x2="15.76" y2="-27.94" width="0" layer="19" extent="1-16"/>
 <wire x1="90.17" y1="-2.54" x2="59.4267" y2="-12.7428" width="0" layer="19" extent="1-1"/>
@@ -4041,8 +4042,8 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="-35.56" y1="-79.53125" x2="-35.24" y2="-79.85125" width="0.4064" layer="1"/>
 <contactref element="R5-2" pad="2"/>
 <contactref element="R5-1" pad="1"/>
-<wire x1="-35.24" y1="-82.07375" x2="-38.89625" y2="-83.02625" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.7475" y1="-86.0425" x2="-35.24" y2="-82.07375" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.24" y1="-82.07375" x2="-39.53125" y2="-84.29625" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.24" y1="-86.20125" x2="-35.24" y2="-82.07375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$29">
 <contactref element="IC2" pad="1"/>
@@ -5198,8 +5199,8 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </signal>
 <signal name="+5VUSB">
 <contactref element="D11" pad="C"/>
-<contactref element="R5-1" pad="2"/>
-<wire x1="-20.0025" y1="-93.6625" x2="-29.8475" y2="-86.0425" width="0" layer="19" extent="1-1"/>
+<contactref element="R5-3" pad="2"/>
+<wire x1="-20.0025" y1="-93.6625" x2="-29.05375" y2="-90.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+7V5">
 <contactref element="D16" pad="C"/>
@@ -5219,6 +5220,11 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </signal>
 <signal name="+3V">
 <contactref element="D19" pad="C"/>
+</signal>
+<signal name="N$163">
+<contactref element="R5-1" pad="2"/>
+<contactref element="R5-3" pad="1"/>
+<wire x1="-33.34" y1="-86.20125" x2="-30.95375" y2="-90.17" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

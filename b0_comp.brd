@@ -3893,7 +3893,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <element name="C14" library="rcl" package="E2-5" value="100m" x="-365.4425" y="-39.0525"/>
 <element name="JP2" library="Разъёмы штырьковые 2.54мм" package="1X14" value="" x="-76.835" y="-95.25"/>
 <element name="VD2P" library="diode" package="CB429-17" value="SR5200" x="26.9875" y="-96.2025" rot="R180"/>
-<element name="VT1P" library="m_transistor" package="TO18" value="КТ203" x="-29.36875" y="-60.325" rot="MR270"/>
+<element name="VT1P" library="m_transistor" package="TO18" value="КТ203Б" x="-29.36875" y="-60.325" rot="MR270"/>
 <element name="R10P" library="rcl" package="M0805" value="10k" x="-34.925" y="-53.975" rot="R270"/>
 <element name="VD1P" library="diode" package="SOD80C" value="LL4148" x="-40.79875" y="-63.1825" rot="R90"/>
 <element name="R8P" library="rcl" package="M0805" value="1k" x="-34.29" y="-86.20125"/>

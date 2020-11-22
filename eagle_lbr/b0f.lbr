@@ -262,6 +262,11 @@
 <text x="-1.27" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-1.27" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="LP">
+<wire x1="25.4" y1="0" x2="0" y2="0" width="0.254" layer="94" style="shortdash"/>
+<text x="13.97" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="1.27" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
 <symbol name="I">
 <wire x1="-0.635" y1="0.635" x2="0.635" y2="-0.635" width="0.1524" layer="94"/>
 <wire x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" width="0.1524" layer="94"/>
@@ -434,6 +439,18 @@
 <connect gate="A" pin="8" pad="4A"/>
 <connect gate="A" pin="9" pad="5"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LP">
+<gates>
+<gate name="G$1" symbol="LP" x="5.08" y="17.78"/>
+</gates>
+<devices>
+<device name="" package="R23X14">
 <technologies>
 <technology name=""/>
 </technologies>

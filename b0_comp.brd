@@ -4300,13 +4300,13 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <element name="R22" library="rcl" package="M0805" value="27" x="-275.59" y="114.3" rot="MR180"/>
 <element name="R23" library="rcl" package="M0805" value="27" x="-276.225" y="123.19" rot="MR180"/>
 <element name="IC5" library="XL6009" package="TO263-5" value="XL6009" x="-376.555" y="95.25"/>
-<element name="VD2P1" library="diode" package="CB429-17" value="SR5200" x="-360.045" y="90.805" rot="R90"/>
-<element name="C2" library="rcl" package="E2,5-5" value="22m" x="-367.665" y="91.44"/>
+<element name="VD2P1" library="diode" package="CB429-17" value="SR5200" x="-360.68" y="91.44" rot="R90"/>
+<element name="C2" library="rcl" package="E2,5-5" value="22m" x="-367.665" y="92.71"/>
 <element name="R8P1" library="rcl" package="M0805" value="8k6" x="-370.84" y="79.375"/>
 <element name="R8P2" library="rcl" package="M0805" value="1k" x="-379.73" y="83.82"/>
 <element name="R8P3" library="rcl" package="M0805" value="3k" x="-371.475" y="83.82"/>
 <element name="T1P1" library="b0f" package="R23X14" value="T90, -26 MicroMetals Yellow-White" x="-370.205" y="117.475"/>
-<element name="VD2P2" library="diode" package="CB429-17" value="SR5200" x="-353.695" y="88.9" rot="R90"/>
+<element name="VD2P2" library="diode" package="CB429-17" value="SR5200" x="-353.695" y="91.44" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -6148,7 +6148,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <signal name="N$185">
 <contactref element="IC5" pad="3"/>
 <contactref element="C2" pad="+"/>
-<wire x1="-368.935" y1="91.44" x2="-376.555" y2="89.4588" width="0" layer="19" extent="1-1"/>
+<wire x1="-368.935" y1="92.71" x2="-376.555" y2="89.4588" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$186">
 <contactref element="IC5" pad="4"/>
@@ -6159,7 +6159,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <signal name="N$187">
 <contactref element="VD2P1" pad="C"/>
 <contactref element="R8P3" pad="2"/>
-<wire x1="-370.525" y1="83.82" x2="-360.045" y2="81.915" width="0" layer="19" extent="1-1"/>
+<wire x1="-370.525" y1="83.82" x2="-360.68" y2="82.55" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$189">
 <contactref element="R8P2" pad="2"/>
@@ -6171,7 +6171,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <signal name="N$190">
 <contactref element="C2" pad="-"/>
 <contactref element="VD2P2" pad="A"/>
-<wire x1="-353.695" y1="97.79" x2="-366.395" y2="91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="-353.695" y1="100.33" x2="-366.395" y2="92.71" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$191">
 <contactref element="VD2P2" pad="C"/>

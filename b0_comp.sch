@@ -26198,7 +26198,7 @@ Wickmann</description>
 <text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VIN" x="-10.16" y="5.08" length="short" direction="pwr"/>
 <pin name="EN" x="-10.16" y="0" length="short" direction="in"/>
-<pin name="SW" x="10.16" y="5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="SW" x="10.16" y="0" length="short" direction="pwr" rot="R180"/>
 <pin name="FB" x="10.16" y="-5.08" length="short" direction="out" rot="R180"/>
 <pin name="GND" x="-10.16" y="-5.08" length="short" direction="in"/>
 </symbol>
@@ -26806,10 +26806,12 @@ GND 10
 <wire x1="-66.04" y1="66.04" x2="-66.04" y2="68.58" width="0.1524" layer="94" curve="-180"/>
 <wire x1="-66.04" y1="68.58" x2="-66.04" y2="71.12" width="0.1524" layer="94" curve="-180"/>
 <wire x1="-66.04" y1="71.12" x2="-66.04" y2="73.66" width="0.1524" layer="94" curve="-180"/>
-<circle x="-71.12" y="72.39" radius="0.2794" width="0.508" layer="94"/>
-<circle x="-66.04" y="64.77" radius="0.2794" width="0.508" layer="94"/>
+<circle x="-71.12" y="64.77" radius="0.2794" width="0.508" layer="94"/>
+<circle x="-66.04" y="74.93" radius="0.2794" width="0.508" layer="94"/>
 <text x="-73.66" y="62.23" size="1.778" layer="98" rot="MR90">47mkhn</text>
 <wire x1="-66.04" y1="73.66" x2="-66.04" y2="76.2" width="0.1524" layer="94" curve="-180"/>
+<text x="-63.5" y="82.55" size="1.778" layer="98" rot="MR90">47mkhn</text>
+<circle x="-66.04" y="69.85" radius="0.2794" width="0.508" layer="94"/>
 </plain>
 <instances>
 <instance part="DA1P" gate="G$1" x="35.56" y="53.34" smashed="yes">
@@ -27047,8 +27049,8 @@ GND 10
 <instance part="C3P" gate="G$1" x="66.04" y="91.44"/>
 <instance part="C1" gate="G$1" x="45.72" y="81.28" rot="MR180"/>
 <instance part="GND49" gate="1" x="45.72" y="91.44" rot="R180"/>
-<instance part="IC5" gate="A" x="-83.82" y="48.26"/>
-<instance part="GND54" gate="1" x="-96.52" y="38.1"/>
+<instance part="IC5" gate="A" x="-83.82" y="53.34"/>
+<instance part="GND54" gate="1" x="-96.52" y="43.18"/>
 <instance part="GND55" gate="1" x="-66.04" y="58.42"/>
 <instance part="VD2P1" gate="G$1" x="-48.26" y="71.12" smashed="yes">
 <attribute name="NAME" x="-51.054" y="74.295" size="1.778" layer="95" rot="R180"/>
@@ -27201,13 +27203,13 @@ GND 10
 </segment>
 <segment>
 <pinref part="GND54" gate="1" pin="GND"/>
-<wire x1="-96.52" y1="40.64" x2="-96.52" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="45.72" x2="-96.52" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="A" pin="GND"/>
-<wire x1="-96.52" y1="43.18" x2="-93.98" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="48.26" x2="-93.98" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="A" pin="EN"/>
-<wire x1="-93.98" y1="48.26" x2="-96.52" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="48.26" x2="-96.52" y2="43.18" width="0.1524" layer="91"/>
-<junction x="-96.52" y="43.18"/>
+<wire x1="-93.98" y1="53.34" x2="-96.52" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="53.34" x2="-96.52" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-96.52" y="48.26"/>
 </segment>
 <segment>
 <pinref part="GND55" gate="1" pin="GND"/>
@@ -27730,11 +27732,11 @@ GND 10
 <net name="N$186" class="0">
 <segment>
 <wire x1="-71.12" y1="73.66" x2="-96.52" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="73.66" x2="-96.52" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="73.66" x2="-96.52" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="A" pin="VIN"/>
-<wire x1="-96.52" y1="53.34" x2="-93.98" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="53.34" x2="-101.6" y2="53.34" width="0.1524" layer="91"/>
-<junction x="-96.52" y="53.34"/>
+<wire x1="-96.52" y1="58.42" x2="-93.98" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="58.42" x2="-101.6" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-96.52" y="58.42"/>
 </segment>
 </net>
 <net name="N$188" class="0">
@@ -27757,10 +27759,10 @@ GND 10
 <segment>
 <pinref part="R8P2" gate="G$1" pin="2"/>
 <wire x1="-43.18" y1="55.88" x2="-43.18" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="55.88" x2="-48.26" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="55.88" x2="-48.26" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="55.88" x2="-50.8" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="55.88" x2="-50.8" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="A" pin="FB"/>
-<wire x1="-48.26" y1="43.18" x2="-73.66" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="48.26" x2="-73.66" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R8P3" gate="G$1" pin="1"/>
 <wire x1="-43.18" y1="55.88" x2="-43.18" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-43.18" y="55.88"/>

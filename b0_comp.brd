@@ -3785,6 +3785,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <element name="R1.3" library="rcl" package="M0805" value="4к7" x="-438.15" y="-231.14"/>
 <element name="VT15" library="m_transistor" package="TO92" value="КТ 361" x="-436.245" y="-238.125"/>
 <element name="LED1" library="led" package="CHIP-LED0603" value="" x="-443.23" y="-241.935"/>
+<element name="R3.1" library="rcl" package="M0805" value="2k2" x="-443.23" y="-246.38"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -4109,7 +4110,6 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <contactref element="L2P" pad="1"/>
 <contactref element="C9P" pad="1"/>
 <contactref element="C8P" pad="+"/>
-<contactref element="R6." pad="2"/>
 <contactref element="R5." pad="2"/>
 <contactref element="LCD1" pad="19@"/>
 <contactref element="LCD1" pad="19"/>
@@ -4121,6 +4121,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <contactref element="ARDUINO1" pad="VCC@1"/>
 <wire x1="13.22" y1="-29.96" x2="13.22" y2="-32.5" width="1.27" layer="16"/>
 <contactref element="VT15" pad="1"/>
+<contactref element="R6." pad="2"/>
 <wire x1="-260.67" y1="13.335" x2="-266.385" y2="13.335" width="0" layer="19" extent="1-1"/>
 <wire x1="-254.955" y1="13.335" x2="-260.67" y2="13.335" width="0" layer="19" extent="1-1"/>
 <wire x1="-222.885" y1="9.525" x2="-254.955" y2="13.335" width="0" layer="19" extent="1-1"/>
@@ -5304,11 +5305,6 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <wire x1="-408.305" y1="-62.23" x2="-408.625" y2="-90.805" width="0" layer="19" extent="1-1"/>
 <wire x1="-399.415" y1="-97.155" x2="-408.625" y2="-90.805" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$26">
-<contactref element="R6." pad="1"/>
-<contactref element="VT14" pad="1"/>
-<wire x1="-410.845" y1="-71.12" x2="-410.525" y2="-97.155" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$28">
 <contactref element="IC2" pad="4"/>
 <contactref element="IC2" pad="1"/>
@@ -5335,10 +5331,10 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <wire x1="-430.21" y1="-204.47" x2="-430.53" y2="-212.725" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$115">
-<contactref element="R1.1" pad="2"/>
 <contactref element="R1.3" pad="2"/>
 <contactref element="R1L1" pad="P$1"/>
 <contactref element="LED1" pad="C"/>
+<contactref element="R1.1" pad="2"/>
 <wire x1="-437.2" y1="-231.14" x2="-443.23" y2="-241.185" width="0" layer="19" extent="1-1"/>
 <wire x1="-439.265" y1="-219.075" x2="-437.2" y2="-231.14" width="0" layer="19" extent="1-1"/>
 <wire x1="-428.31" y1="-204.47" x2="-439.265" y2="-219.075" width="0" layer="19" extent="1-1"/>
@@ -5360,7 +5356,16 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <wire x1="-436.245" y1="-239.395" x2="-443.23" y2="-242.685" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
+<contactref element="R3.1" pad="2"/>
+<contactref element="VT14" pad="1"/>
+<contactref element="R6." pad="1"/>
+<wire x1="-410.845" y1="-71.12" x2="-410.525" y2="-97.155" width="0" layer="19" extent="1-1"/>
+<wire x1="-442.28" y1="-246.38" x2="-410.525" y2="-97.155" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$30">
 <contactref element="VT15" pad="3"/>
+<contactref element="R3.1" pad="1"/>
+<wire x1="-433.705" y1="-239.395" x2="-444.18" y2="-246.38" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

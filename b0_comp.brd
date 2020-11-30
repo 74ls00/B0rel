@@ -3706,6 +3706,8 @@ Based on the following sources:
 <element name="C2" library="rcl" package="C0805" value="100" x="-194.31" y="-144.145"/>
 <element name="R14" library="rcl" package="R0805" value="100k" x="-194.31" y="-150.495"/>
 <element name="C3" library="rcl" package="C0805" value="100n" x="-194.31" y="-156.845"/>
+<element name="VT2" library="m_transistor" package="TO92" value="BJT_PNP_TO-92_ECB" x="-364.49" y="-163.83"/>
+<element name="R20" library="rcl" package="R0805" value="1k" x="-365.76" y="-172.085"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -5298,6 +5300,14 @@ Based on the following sources:
 <contactref element="C3" pad="1"/>
 <contactref element="R14" pad="2"/>
 <wire x1="-193.36" y1="-150.495" x2="-195.26" y2="-156.845" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$20">
+<contactref element="R20" pad="2"/>
+<contactref element="VT2" pad="3"/>
+<wire x1="-361.95" y1="-165.1" x2="-364.81" y2="-172.085" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$23">
+<contactref element="R20" pad="1"/>
 </signal>
 </signals>
 </board>

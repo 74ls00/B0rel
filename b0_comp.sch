@@ -26313,21 +26313,21 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <instance part="P+4" gate="1" x="-7.62" y="172.72"/>
 <instance part="IC5" gate="G$1" x="60.96" y="160.02"/>
 <instance part="GND15" gate="1" x="38.1" y="149.86" rot="MR0"/>
-<instance part="R1L1" gate="R" x="10.16" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.6614" y="166.37" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="13.462" y="168.91" size="1.778" layer="96" rot="R90"/>
+<instance part="R1L1" gate="R" x="7.62" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="8.89" y="171.6786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="8.89" y="174.498" size="1.778" layer="96"/>
 </instance>
 <instance part="P+11" gate="1" x="30.48" y="177.8" rot="MR0"/>
 <instance part="R1" gate="G$1" x="27.94" y="149.86" smashed="yes" rot="MR90">
 <attribute name="NAME" x="26.67" y="130.5814" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="24.638" y="146.05" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="R2" gate="G$1" x="10.16" y="157.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.89" y="161.0614" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="8.89" y="158.242" size="1.778" layer="96" rot="R180"/>
+<instance part="R2" gate="G$1" x="7.62" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.35" y="161.0614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="6.35" y="158.242" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+22" gate="1" x="10.16" y="182.88" rot="MR0"/>
-<instance part="GND16" gate="1" x="10.16" y="147.32" rot="MR0"/>
+<instance part="P+22" gate="1" x="7.62" y="182.88" rot="MR0"/>
+<instance part="GND16" gate="1" x="7.62" y="147.32" rot="MR0"/>
 <instance part="VT16" gate="G$1" x="58.42" y="119.38" smashed="yes">
 <attribute name="NAME" x="63.5" y="119.38" size="1.778" layer="95"/>
 <attribute name="VALUE" x="63.5" y="116.84" size="1.778" layer="96"/>
@@ -26441,7 +26441,7 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <segment>
 <pinref part="P+22" gate="1" pin="+5V"/>
 <pinref part="R1L1" gate="R" pin="2"/>
-<wire x1="10.16" y1="180.34" x2="10.16" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="180.34" x2="7.62" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
@@ -26542,7 +26542,7 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="10.16" y1="152.4" x2="10.16" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="152.4" x2="7.62" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND41" gate="1" pin="GND"/>
@@ -27208,13 +27208,13 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="R1L1" gate="R" pin="1"/>
-<wire x1="10.16" y1="162.56" x2="10.16" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="165.1" x2="10.16" y2="167.64" width="0.1524" layer="91"/>
-<junction x="10.16" y="165.1"/>
+<wire x1="7.62" y1="162.56" x2="7.62" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="165.1" x2="7.62" y2="167.64" width="0.1524" layer="91"/>
+<junction x="7.62" y="165.1"/>
 <pinref part="IC5" gate="G$1" pin="PB2/PCINT2/SCK/ADC1/T0"/>
 <wire x1="40.64" y1="165.1" x2="22.86" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="ISP2" gate="G$1" pin="3"/>
-<wire x1="22.86" y1="165.1" x2="10.16" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="165.1" x2="7.62" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="137.16" x2="22.86" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="137.16" x2="22.86" y2="165.1" width="0.1524" layer="91"/>
 <junction x="22.86" y="165.1"/>

@@ -7,6 +7,7 @@ const byte LimitL = 160 ; // test max 190 // limit 160
 
 void setup() {
   pinMode(0, OUTPUT);
+  analogReference(DEFAULT);
 }
 
 void loop() {

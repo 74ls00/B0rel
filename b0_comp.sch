@@ -25558,6 +25558,14 @@ TO-247 SBL3040PT</description>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="VT2" library="m_transistor" deviceset="BJT_PNP" device="_TO-92_ECB"/>
 <part name="R20" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R21" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R22" library="rcl" deviceset="R-EU_" device="R0805" value="47k"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
+<part name="R23" library="rcl" deviceset="R-EU_" device="R0805" value="47k"/>
+<part name="R24" library="rcl" deviceset="R-EU_" device="R0805" value="47k"/>
+<part name="C15" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
+<part name="GND5" library="supply1v" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26352,8 +26360,19 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <instance part="C2" gate="G$1" x="5.08" y="210.82"/>
 <instance part="R14" gate="G$1" x="12.7" y="215.9"/>
 <instance part="C3" gate="G$1" x="20.32" y="210.82"/>
-<instance part="VT2" gate="G$1" x="58.42" y="93.98" rot="MR180"/>
-<instance part="R20" gate="G$1" x="48.26" y="93.98"/>
+<instance part="VT2" gate="G$1" x="58.42" y="73.66" rot="MR180"/>
+<instance part="R20" gate="G$1" x="48.26" y="73.66"/>
+<instance part="R21" gate="G$1" x="20.32" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.05" y="97.5614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="19.05" y="94.742" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R22" gate="G$1" x="27.94" y="101.6"/>
+<instance part="C4" gate="G$1" x="35.56" y="93.98"/>
+<instance part="R23" gate="G$1" x="43.18" y="101.6"/>
+<instance part="R24" gate="G$1" x="58.42" y="101.6"/>
+<instance part="C15" gate="G$1" x="50.8" y="93.98"/>
+<instance part="C16" gate="G$1" x="66.04" y="93.98"/>
+<instance part="GND5" gate="1" x="35.56" y="81.28" rot="MR0"/>
 </instances>
 <busses>
 <bus name="DB[0..7],E,RS,RST,RESET">
@@ -26559,6 +26578,23 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <wire x1="35.56" y1="127" x2="35.56" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="ISP2" gate="G$1" pin="6"/>
 <wire x1="35.56" y1="129.54" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="88.9" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="86.36" x2="50.8" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="86.36" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="88.9" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="88.9" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="86.36" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="86.36" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="35.56" y1="83.82" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
+<junction x="35.56" y="86.36"/>
+<junction x="50.8" y="86.36"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -27198,10 +27234,15 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <wire x1="40.64" y1="167.64" x2="33.02" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="167.64" x2="20.32" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="ISP2" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="111.76" x2="20.32" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="101.6" x2="20.32" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="142.24" x2="33.02" y2="167.64" width="0.1524" layer="91"/>
 <junction x="33.02" y="167.64"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="99.06" x2="20.32" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="101.6" x2="22.86" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<junction x="20.32" y="101.6"/>
 </segment>
 </net>
 <net name="SCK13" class="0">
@@ -27253,11 +27294,12 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <wire x1="48.26" y1="218.44" x2="53.34" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$124" class="0">
+<net name="!INT4" class="0">
 <segment>
 <pinref part="IC5" gate="G$1" pin="PB4/PCINT4/ADC2"/>
 <wire x1="40.64" y1="160.02" x2="15.24" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="160.02" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="160.02" x2="15.24" y2="127" width="0.1524" layer="91"/>
+<label x="15.24" y="129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$116" class="0">
@@ -27297,15 +27339,47 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <segment>
 <pinref part="R20" gate="G$1" pin="2"/>
 <pinref part="VT2" gate="G$1" pin="B"/>
-<wire x1="53.34" y1="93.98" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="73.66" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="93.98" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="93.98" x2="12.7" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="73.66" x2="12.7" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="162.56" x2="38.1" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="101.6" x2="35.56" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="101.6" x2="35.56" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
+<junction x="35.56" y="101.6"/>
+</segment>
+</net>
+<net name="N$67" class="0">
+<segment>
+<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="101.6" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="101.6" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
+<junction x="50.8" y="101.6"/>
+</segment>
+</net>
+<net name="N$69" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="101.6" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="101.6" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
+<junction x="66.04" y="101.6"/>
 </segment>
 </net>
 </nets>

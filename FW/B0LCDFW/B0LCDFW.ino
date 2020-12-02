@@ -1,3 +1,5 @@
+//Arduino AVR Boards: Arduino Pro or Pro Mini | ATmega328p (5V, 16MHz)
+
 #include <U8g2lib.h> //U8g2 2.27.6
 
 #include <Wire.h> //for RTClib.h

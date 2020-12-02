@@ -25692,7 +25692,6 @@ TO-247 SBL3040PT</description>
 <part name="C16" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="GND5" library="supply1v" deviceset="GND" device=""/>
 <part name="IC6" library="atmel" deviceset="MEGA8-P" device=""/>
-<part name="IC10" library="ds1307_pcf8583" deviceset="DS1307" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26500,7 +26499,6 @@ Vт- = Vref * (1+ ((R1*R2)/(R1+R2)) * (1/R3) )</text>
 <instance part="C16" gate="G$1" x="66.04" y="93.98"/>
 <instance part="GND5" gate="1" x="35.56" y="81.28" rot="MR0"/>
 <instance part="IC6" gate="G$1" x="-53.34" y="116.84"/>
-<instance part="IC10" gate="G$1" x="-109.22" y="147.32"/>
 </instances>
 <busses>
 <bus name="DB[0..7],ICP,E,RS,RST,RESET">

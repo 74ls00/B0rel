@@ -9,13 +9,16 @@
 #include "fonts/u8g_font_04b_03b.h" //Шрифт Мелкие цифры Батарея V, ..
 #include "fonts/u8g2_font_ncenB18m.h"  //Шрифт больших цифр скорости расхода
 
-//U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 5, 6, 7, 8, 9, 10, 11, 12, /*en=*/ 18 /* A4 */, U8X8_PIN_NONE, /*rs=*/ 17 /* A3 */, /*rst=*/ 15 /* A1 */);  // R/W соединить с общим
-//U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 12,11,10,9,8,7,6,5, 18,U8X8_PIN_NONE,17,15); // nano
-//U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 9,8,7,6,5,4,3,2, 16,U8X8_PIN_NONE,17,15); // pro mini
-U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 9,8,7,6,5,4,3,10, 16,U8X8_PIN_NONE,17,15); 
+#define PIN_VMETER A7 //вход вольтметра
+#define PIN_TAHO A0 //вход тахометра // int0 d2
+#define PIN_F 8 //вход обнаружения частоты ICP // mega328 pin12
+#define KM_SYM 5 // количество символов спидометра 4, 5
+
+// инициализация экрана
+U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 9,11,7,6,5,4,3,10, 16,U8X8_PIN_NONE,17,15); 
 
 
-
+// инициализация часов
 RTC_DS1307 rtc; // "rtc" используется в начале функций, которые прилагаются с библиотекой
 //int displayrtc = 1234 ;
 
@@ -40,9 +43,17 @@ int SpeedADCp ; // SpeedADC * циклы
 const byte SpeedADCc = 4 ; // циклы приближения
 float debugADC ;
 int SpeedADC ; // показания АЦП скорость-напряжение
-float SpeedKmH ;
-static char SpeedKmHtxt[3];
 
+
+
+// Оценка методов измерения низких частот на Arduino. Способ 2. задействуем Timer1 https://habr.com/ru/post/373213/
+volatile byte time2 = 0; //старший разряд времени, два младших - регистры таймера
+volatile unsigned long ttime = 0;        //Время срабатывания датчика
+volatile unsigned long time_old = 0;        //Предыдущее время
+volatile uint8_t flag=0;
+float SpeedMC ;
+float SpeedKmH ;
+static char SpeedKmHtxt[KM_SYM+1]; //строка скорости спидометра 5 = 9.999 99.99 // 69.9
 
 /* ---------------------------------------------------------------------------------------------- */
 
@@ -52,7 +63,7 @@ static char SpeedKmHtxt[3];
 void setup(void) {
   u8g2.begin();
 
-pinMode(A7, INPUT);
+pinMode(PIN_VMETER, INPUT);
 
 analogReference(EXTERNAL); //внешний ИОН 4.00v. TL431 Rs=150 R2=3k R1=2k2+560/2 Raref=5k1 
 // DEFAULT: стандартное опорное напряжение 5 В (на платформах с напряжением питания 5 В) или 3.3 В (на платформах с напряжением питания 3.3 В)
@@ -63,7 +74,8 @@ analogReference(EXTERNAL); //внешний ИОН 4.00v. TL431 Rs=150 R2=3k R1=
 //1307
 //Запуск секундного выхода часов
 /* Wire.beginTransmission(0x68); Wire.write(0x7); Wire.write(0x10); Wire.endTransmission(); */
-rtc.writeSqwPinMode( SquareWave8kHz ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
+rtc.writeSqwPinMode( SquareWave1HZ ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
+//rtc.writeSqwPinMode( SquareWave4kHz ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
 
 // rtc.adjust(DateTime(2020, 10, 29,      15, 59,0 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
 
@@ -78,11 +90,52 @@ rtc.writeSqwPinMode( SquareWave8kHz ); // OFF, ON, SquareWave1HZ, SquareWave4kHz
 
 
  //attachInterrupt(digitalPinToInterrupt(2),interruptFunction, CHANGE);
+//attachInterrupt(PIN_F,impuls, RISING);
 
 //digitalWrite(2, HIGH);
 
+
+//pinMode(IR_PIN, OUTPUT); //на выход
+
+  pinMode(PIN_F, INPUT); //вывод обнаружения частоты на вход
+  TCCR1A = 0; // установка регистров таймера1
+  TCCR1B =1<<ICES1 | 1<<CS11 ; // Устанавливаем захват по фронту и делитель 1/8 к тактовой частоте 16МГц
+  TIMSK1 = 1<<TOIE1 | 1<<ICIE1; //разрешаем прерывание по переполнению и захвата Timer1
+  TCNT1 = 0; //Обнуляем счетные регистры
+}
+
+ISR( TIMER1_OVF_vect ) //прерывание счета времени
+{
+  time2++; //увеличиваем на единицу старший разряд времени
+}
+
+ISR(TIMER1_CAPT_vect) //прерывание захвата
+{ 
+  TCNT1 = 0; // очищаем Timer1 Count Register
+  uint16_t time01 = ICR1; //сохраняем состояние счетчика таймера, разряды 0 и 1 
+  if(flag!=1) ttime = ((unsigned long)time2 << 16) +time01; //собираем
+  time2=0;
+
+
+
+
+
+
+
+
+
+
 } // End void setup
 /* ---------------------------------------------------------------------------------------------- */
+
+/*
+void impuls(){
+    if(flag!=1) ttime =micros()-time_old;
+    time_old = micros();
+}
+*/
+
+
 /*
 void taho() {
   rev++;
@@ -112,7 +165,7 @@ void draw(void) {
 //u8g2.setFont(  u8g2_font_18d  ); // u8g2_font_ncenB18_te
 u8g2.setFont(  u8g2_font_ncenB18m  );
 
- SpeedADC = analogRead(A0);
+ SpeedADC = analogRead(PIN_TAHO);
 
 // SpeedADCp = SpeedADC ;
 
@@ -137,9 +190,10 @@ else {
 
 //SpeedKmH=0.058*(SpeedADC-4) ;
 
- if (SpeedKmH < 0) { SpeedKmH=0; }
+ //if (SpeedKmH < 0) { SpeedKmH=0; }
 
-dtostrf(SpeedKmH,3,1,SpeedKmHtxt); //
+
+
 
 
 
@@ -147,8 +201,20 @@ dtostrf(SpeedKmH,3,1,SpeedKmHtxt); //
 
 //u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h
 
-u8g2.setCursor(26, 18); u8g2.print(SpeedKmHtxt); // u8g2.print("/");
+//u8g2.setCursor(26, 18); u8g2.print(SpeedKmHtxt); // u8g2.print("/");
 //u8g2.setCursor(26, 18); u8g2.print(SpeedKmH);  u8g2.print("/");
+
+
+flag=1; //чтобы ttime не изменилось в процессе вывода
+  if (ttime!=0) {//на случай отсутствия частоты
+    SpeedKmH =6087230959/ttime  ;// Вычисляем частоту сигнала в Гц // x=6087230959
+    
+  }
+flag=0; 
+
+dtostrf(SpeedKmH/1000,KM_SYM,3,SpeedKmHtxt); 
+//u8g2.setCursor(26, 18); u8g2.print(SpeedKmH);  u8g2.print("/");
+u8g2.setCursor(26, 18); u8g2.print(SpeedKmHtxt);  u8g2.print("/");
 
 u8g2.setFont(u8g_font_04b_03b);u8g2.setCursor(28, 24); u8g2.print(SpeedADC); u8g2.print("  "); 
 u8g2.setCursor(22, 30); u8g2.print(debugADC); u8g2.print("  "); 
@@ -209,7 +275,7 @@ R2=10k/2 R1≈47k+15k+1k/2+1k , (ADC954=51.1v)
  */
 
 u8g2.setFont(u8g_font_04b_03b);
- vvalue = analogRead(A7);
+ vvalue = analogRead(PIN_VMETER);
  vout = vmax * vvalue / 1024.0 ;
 
  
@@ -369,7 +435,7 @@ if (lup > 10) lup = 0;
 
 
   
-  delay(40); //int0 250
+  delay(40 ); //int0 250//40
 } //End void loop
 
 /* ---------------------------------------------------------------------------------------------- */

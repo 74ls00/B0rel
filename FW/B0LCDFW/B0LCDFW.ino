@@ -12,13 +12,12 @@
 #include "fonts/u8g2_font_ncenB18m.h"  //Шрифт больших цифр скорости расхода
 
 #define PIN_VMETER A7 //вход вольтметра
-#define PIN_TAHO A0 //вход тахометра // int0 d2
+//#define PIN_TAHO A0 //вход тахометра // int0 d2
 #define PIN_F 8 //вход обнаружения частоты ICP // mega328 pin12
 #define KM_SYM 5 // количество символов спидометра 4, 5
 
 // инициализация экрана
 U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 9,11,7,6,5,4,3,10, 16,U8X8_PIN_NONE,17,15); 
-
 
 // инициализация часов
 RTC_DS1307 rtc; // "rtc" используется в начале функций, которые прилагаются с библиотекой
@@ -26,7 +25,7 @@ RTC_DS1307 rtc; // "rtc" используется в начале функций
 
 
 
- byte  lup = 0; // циклы отрисовки экрана
+byte  lup = 0; // циклы отрисовки экрана
  
 
 //float vmax = 54.8500 ; // максимальное напряжение измерения = 54.85
@@ -39,21 +38,11 @@ int vvalue = 0 ;
 float vout = 0.0 ;
 
 // Скорость
-
-byte SpeedADCstep = 0; //циклы замера adc
-int SpeedADCp ; // SpeedADC * циклы
-const byte SpeedADCc = 4 ; // циклы приближения
-float debugADC ;
-int SpeedADC ; // показания АЦП скорость-напряжение
-
-
-
 // Оценка методов измерения низких частот на Arduino. Способ 2. задействуем Timer1 https://habr.com/ru/post/373213/
 volatile byte time2 = 0; //старший разряд времени, два младших - регистры таймера
 volatile unsigned long ttime = 0;        //Время срабатывания датчика
 volatile unsigned long time_old = 0;        //Предыдущее время
 volatile uint8_t flag=0;
-float SpeedMC ;
 float SpeedKmH ;
 static char SpeedKmHtxt[KM_SYM+1]; //строка скорости спидометра 5 = 9.999 99.99 // 69.9
 
@@ -72,7 +61,6 @@ analogReference(EXTERNAL); //внешний ИОН 4.00v. TL431 Rs=150 R2=3k R1=
 // INTERNAL: встроенное опорное напряжение 1.1 В на микроконтроллерах ATmega168 и ATmega328, и 2.56 В на ATmega8.
 // EXTERNAL: внешний источник опорного напряжения, подключенный к выводу AREF
 
-
 //1307
 //Запуск секундного выхода часов
 /* Wire.beginTransmission(0x68); Wire.write(0x7); Wire.write(0x10); Wire.endTransmission(); */
@@ -83,28 +71,19 @@ rtc.writeSqwPinMode( SquareWave1HZ ); // OFF, ON, SquareWave1HZ, SquareWave4kHz,
 
 // Скорость
 // http://electronics-lab.ru/blog/4012.html
-//attachInterrupt(0,taho,FALLING); //digitalPinToInterrupt(2)
-//setitr();
 
-
- //pinMode(pintaho, INPUT);
-// digitalWrite(pintaho, HIGH);
-
-
- //attachInterrupt(digitalPinToInterrupt(2),interruptFunction, CHANGE);
-//attachInterrupt(PIN_F,impuls, RISING);
-
-//digitalWrite(2, HIGH);
-
-
-//pinMode(IR_PIN, OUTPUT); //на выход
 
   pinMode(PIN_F, INPUT); //вывод обнаружения частоты на вход
   TCCR1A = 0; // установка регистров таймера1
   TCCR1B =1<<ICES1 | 1<<CS11 ; // Устанавливаем захват по фронту и делитель 1/8 к тактовой частоте 16МГц
+  //TCCR1B =1<<ICES1 | 1<<CS11  | 1<<CS10; // Устанавливаем захват по фронту и делитель 1/64 к тактовой частоте 16МГц
   TIMSK1 = 1<<TOIE1 | 1<<ICIE1; //разрешаем прерывание по переполнению и захвата Timer1
   TCNT1 = 0; //Обнуляем счетные регистры
-}
+
+  
+}// End void setup
+
+/* ---------------------------------------------------------------------------------------------- */
 
 ISR( TIMER1_OVF_vect ) //прерывание счета времени
 {
@@ -117,36 +96,11 @@ ISR(TIMER1_CAPT_vect) //прерывание захвата
   uint16_t time01 = ICR1; //сохраняем состояние счетчика таймера, разряды 0 и 1 
   if(flag!=1) ttime = ((unsigned long)time2 << 16) +time01; //собираем
   time2=0;
-
-
-
-
-
-
-
-
-
-
-} // End void setup
+} 
 /* ---------------------------------------------------------------------------------------------- */
 
-/*
-void impuls(){
-    if(flag!=1) ttime =micros()-time_old;
-    time_old = micros();
-}
-*/
 
 
-/*
-void taho() {
-  rev++;
-}
-
-void setitr(){
-  attachInterrupt(0,taho,FALLING); //digitalPinToInterrupt(2)
-}
-*/
 /* ---------------------------------------------------------------------------------------------- */
 
 void draw(void) {
@@ -167,60 +121,29 @@ void draw(void) {
 //u8g2.setFont(  u8g2_font_18d  ); // u8g2_font_ncenB18_te
 u8g2.setFont(  u8g2_font_ncenB18m  );
 
- SpeedADC = analogRead(PIN_TAHO);
-
-// SpeedADCp = SpeedADC ;
-
-
-//SpeedKmH=(60/1024)*SpeedADC ;
-// SpeedADCp
-
-
-
-if (SpeedADCstep < SpeedADCc) {
-  SpeedADCstep++ ;
-  SpeedADCp = SpeedADCp + SpeedADC ;
-} 
-else {
-  SpeedKmH=0.058*(SpeedADCp)/SpeedADCc;
-  debugADC =  SpeedADCp/4 ;
-  SpeedADCp=0;
-  SpeedADCstep=0;
-
-}
-
-
-//SpeedKmH=0.058*(SpeedADC-4) ;
-
- //if (SpeedKmH < 0) { SpeedKmH=0; }
-
-
-
-
-
-
 
 
 //u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h
 
-//u8g2.setCursor(26, 18); u8g2.print(SpeedKmHtxt); // u8g2.print("/");
-//u8g2.setCursor(26, 18); u8g2.print(SpeedKmH);  u8g2.print("/");
 
-
+//Измерение скорости
 flag=1; //чтобы ttime не изменилось в процессе вывода
   if (ttime!=0) {//на случай отсутствия частоты
+    //        6087230959
+    //SpeedKmH =6087230959/ttime  ;// Вычисляем частоту сигнала в Гц // x=6087230959
     SpeedKmH =6087230959/ttime  ;// Вычисляем частоту сигнала в Гц // x=6087230959
     
   }
 flag=0; 
-
-dtostrf(SpeedKmH/1000,KM_SYM,3,SpeedKmHtxt); 
-//u8g2.setCursor(26, 18); u8g2.print(SpeedKmH);  u8g2.print("/");
+//dtostrf(SpeedKmH/1000,KM_SYM,3,SpeedKmHtxt); 
+dtostrf(SpeedKmH/1000,KM_SYM,1,SpeedKmHtxt); 
 u8g2.setCursor(26, 18); u8g2.print(SpeedKmHtxt);  u8g2.print("/");
+//end Измерение скорости
 
-u8g2.setFont(u8g_font_04b_03b);u8g2.setCursor(28, 24); u8g2.print(SpeedADC); u8g2.print("  "); 
-u8g2.setCursor(22, 30); u8g2.print(debugADC); u8g2.print("  "); 
-u8g2.setCursor(28, 36); u8g2.print(SpeedADCstep); u8g2.print("  "); 
+
+//u8g2.setFont(u8g_font_04b_03b);u8g2.setCursor(28, 24); u8g2.print(SpeedADC); u8g2.print("  "); 
+//u8g2.setCursor(22, 30); u8g2.print(debugADC); u8g2.print("  "); 
+//u8g2.setCursor(28, 36); u8g2.print(SpeedADCstep); u8g2.print("  "); 
 
 
 
@@ -410,11 +333,6 @@ if ( now.second() < 10 ) { u8g2.print("0"); } u8g2.print(now.second());
 // батарейки СЦ установлены 2020.10.18
 // End RTC 1307
 
-
-
-
-//attachInterrupt(0,taho,FALLING); //digitalPinToInterrupt(2)
-////setitr();
 
 } // End void draw
 

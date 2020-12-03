@@ -37,6 +37,12 @@ const float vminus = 28;
 int vvalue = 0 ;
 float vout = 0.0 ;
 
+// Напряжение
+
+int V_ADC ;
+float Volt ;
+
+
 // Скорость
 // Оценка методов измерения низких частот на Arduino. Способ 2. задействуем Timer1 https://habr.com/ru/post/373213/
 volatile byte time2 = 0; //старший разряд времени, два младших - регистры таймера
@@ -149,9 +155,6 @@ u8g2.setCursor(26, 18); u8g2.print(SpeedKmHtxt);  u8g2.print("/");
 
 
 u8g2.setFont(  u8g2_font_ncenB18m  );
-//-------------
-
-
 
   float ran1 = random(1,30);
   ran1=ran1*100; ran1= ran1/1000;
@@ -190,7 +193,7 @@ u8g2.drawVLine(46, 49, 8); // плюс, и верхний, и нижний
 u8g2.drawHLine(46-5, 49, 5); u8g2.drawHLine(46-5, 56, 5);
 u8g2.drawVLine(41, 43, 6); u8g2.drawVLine(41, 43+14, 6); 
 
-// напряжение
+
 /*
 max*adc/1024 adc=954 max= 54.84947589098528 ≈ 54.85
 max/1024*adc alt.
@@ -199,23 +202,30 @@ Uout=Uin*(R2/(R1+R2)) Uin=54.84947589098528 Uout=4
 R2=10k/2 R1≈47k+15k+1k/2+1k , (ADC954=51.1v)
  */
 
+// напряжение
+
 u8g2.setFont(u8g_font_04b_03b);
- vvalue = analogRead(PIN_VMETER);
- vout = vmax * vvalue / 1024.0 ;
+ V_ADC = analogRead(PIN_VMETER);
+ 
+ //vout = vmax * vvalue / 1024.0 ;
 
  
 // u8g2.setCursor(3, 61);u8g2.print(vout/10); u8g2.print("V");
-  u8g2.setCursor(3, 61);u8g2.print(20 * vvalue / 512.0); u8g2.print("V");
+//  u8g2.setCursor(3, 61);u8g2.print(20 * vvalue / 512.0); u8g2.print("V");
 
 
 //    u8g2.setCursor(2, 30);u8g2.print(duration); u8g2.print("i");
  
-u8g2.setCursor(0, 10); u8g2.print(vvalue);
-//u8g2.setCursor(3, 61); u8g2.print(ran2); u8g2.print("V");
+u8g2.setCursor(2, 10); u8g2.print(V_ADC);
+Volt=2.92/880*(V_ADC) ;
+
+u8g2.setCursor(3, 61); u8g2.print(Volt); u8g2.print("V");
 
 u8g2.setFont(u8g2_font_7x13B); u8g2.setCursor(8, 54); 
 //u8g2.print("200");u8g2.print("%"); //! 15002 48%
 
+
+/*
      if ( vvalue > 953 ) { u8g2.print("99.9"); }
 else if ( vout < 47.5 ) { u8g2.print("95"); }
 else if ( vout < 47.3 ) { u8g2.print("85"); }
@@ -233,7 +243,7 @@ else if ( vout = 0 ) { u8g2.print("0"); }
 else { u8g2.print("0"); }
 u8g2.print("%");
 
-
+*/
 
 
 

@@ -3934,7 +3934,7 @@ Based on the following sources:&lt;p&gt;
 <contactref element="R204" pad="2"/>
 <contactref element="R203" pad="2"/>
 <contactref element="ISP1" pad="2"/>
-<contactref element="R335" pad="2"/>
+<contactref element="R335" pad="1"/>
 <contactref element="DD2" pad="8"/>
 <contactref element="C201" pad="1"/>
 <contactref element="IC9" pad="4"/>
@@ -4011,7 +4011,7 @@ Based on the following sources:&lt;p&gt;
 <wire x1="-68.26" y1="-2.645" x2="-81.91" y2="11.11" width="0" layer="19" extent="1-1"/>
 <wire x1="-74.325" y1="-6.935" x2="-68.26" y2="-2.645" width="0" layer="19" extent="1-1"/>
 <wire x1="-61.91" y1="3.81" x2="-68.26" y2="-2.645" width="0" layer="19" extent="1-16"/>
-<wire x1="-61.99" y1="6.27" x2="-61.91" y2="3.81" width="0" layer="19" extent="16-16"/>
+<wire x1="-60.09" y1="6.27" x2="-61.91" y2="3.81" width="0" layer="19" extent="16-16"/>
 <wire x1="-35.865" y1="-8.94" x2="-61.91" y2="3.81" width="0" layer="19" extent="16-16"/>
 <wire x1="-30.095" y1="-14.3875" x2="-35.865" y2="-8.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.935" y1="-8.0375" x2="-30.095" y2="-14.3875" width="0" layer="19" extent="1-1"/>
@@ -4413,14 +4413,14 @@ Based on the following sources:&lt;p&gt;
 <wire x1="-51.12" y1="2.54" x2="-51.5" y2="5.05" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VREF">
-<contactref element="R335" pad="1"/>
+<contactref element="R335" pad="2"/>
 <contactref element="DA2" pad="2"/>
 <contactref element="R4V" pad="1"/>
 <contactref element="R331" pad="2"/>
 <contactref element="R336" pad="2"/>
 <contactref element="R330" pad="1"/>
-<wire x1="-60.09" y1="6.27" x2="-76.52" y2="5.715" width="0" layer="19" extent="1-16"/>
-<wire x1="-60.01" y1="3.81" x2="-60.09" y2="6.27" width="0" layer="19" extent="16-16"/>
+<wire x1="-61.99" y1="6.27" x2="-76.52" y2="5.715" width="0" layer="19" extent="1-16"/>
+<wire x1="-60.01" y1="3.81" x2="-61.99" y2="6.27" width="0" layer="19" extent="16-16"/>
 <wire x1="-60.01" y1="0" x2="-60.01" y2="3.81" width="0" layer="19" extent="16-16"/>
 <wire x1="-55.88" y1="2.855" x2="-60.01" y2="3.81" width="0" layer="19" extent="16-16"/>
 <wire x1="-55.45" y1="4.9" x2="-55.88" y2="2.855" width="0" layer="19" extent="16-16"/>
@@ -4584,13 +4584,13 @@ Based on the following sources:&lt;p&gt;
 </signal>
 <signal name="N$36">
 <contactref element="R331" pad="1"/>
-<contactref element="R332" pad="2"/>
-<wire x1="-53.655" y1="-0.635" x2="-55.88" y2="0.955" width="0" layer="19" extent="16-16"/>
+<contactref element="R332" pad="1"/>
+<wire x1="-51.755" y1="-0.635" x2="-55.88" y2="0.955" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$37">
-<contactref element="R332" pad="1"/>
+<contactref element="R332" pad="2"/>
 <contactref element="R333" pad="2"/>
-<wire x1="-53.02" y1="2.54" x2="-51.755" y2="-0.635" width="0" layer="19" extent="16-16"/>
+<wire x1="-53.02" y1="2.54" x2="-53.655" y2="-0.635" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="INT0">
 <contactref element="ARDUINO1" pad="D2"/>

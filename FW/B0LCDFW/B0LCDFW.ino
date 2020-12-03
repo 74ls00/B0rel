@@ -37,16 +37,9 @@ byte  lup = 0; // циклы отрисовки экрана
 const float vmax = 548.5;
 const float vminus = 28;
 
-//float vmax = 54 ; 
-int vvalue = 0 ;
-float vout = 0.0 ;
-
 // Напряжение
-
 int V_ADC ; // ADC напряжения батареи
 float Volt_Bat ; // напряжение на батарее
-
-
 
 // Скорость
 // Оценка методов измерения низких частот на Arduino. Способ 2. задействуем Timer1 https://habr.com/ru/post/373213/
@@ -132,18 +125,12 @@ void draw(void) {
 //u8g2.setFont(  u8g2_font_18d  ); // u8g2_font_ncenB18_te
 u8g2.setFont(  u8g2_font_ncenB18m  );
 
-
-
-//u8g2.setCursor(26, 18); u8g2.print("25.4");  u8g2.print("/"); //km/h   //u8g2.setCursor(45, 18); u8g2.print("25"); //km/h
-
-
 //Измерение скорости
 flag=1; //чтобы ttime не изменилось в процессе вывода
   if (ttime!=0) {//на случай отсутствия частоты
     //        6087230959
     //SpeedKmH =6087230959/ttime  ;// Вычисляем частоту сигнала в Гц // x=6087230959
     SpeedKmH =6087230959/ttime  ;// Вычисляем частоту сигнала в Гц // x=6087230959
-    
   }
 flag=0; 
 //dtostrf(SpeedKmH/1000,KM_SYM,3,SpeedKmHtxt); 
@@ -203,20 +190,15 @@ u8g2.drawVLine(41, 43, 6); u8g2.drawVLine(41, 43+14, 6);
 
 u8g2.setFont(u8g_font_04b_03b);
 
-V_ADC = analogRead(PIN_VMETER);
-
-// коррекция лишний ацп 15+1 ; максимальное напряжение измерения 51.6 ; минимальное 28
-Volt_Bat=(V_ADC-V_ADCE)*(V_MAX-V_MIN)/(1024-V_ADCE)+V_MIN ;
-if (V_ADC <= V_ADCE) { Volt_Bat = 0.00;}
 u8g2.setCursor(3, 61); u8g2.print(Volt_Bat); u8g2.print("V");
-u8g2.print(V_ADC); //отладка
+u8g2.print(V_ADC); u8g2.print(" ") ;//отладка
 
 
 
 u8g2.setFont(u8g2_font_7x13B); u8g2.setCursor(8, 54); 
 //u8g2.print("200");u8g2.print("%"); //! 15002 48%
 
-     if ( vvalue > 953 ) { u8g2.print("99.9"); }
+     if ( Volt_Bat > 953 ) { u8g2.print("99.9"); }
 else if ( Volt_Bat < 47.5 ) { u8g2.print("95"); }
 else if ( Volt_Bat < 47.3 ) { u8g2.print("85"); }
 else if ( Volt_Bat < 47.1 ) { u8g2.print("60"); }
@@ -229,7 +211,7 @@ else if ( Volt_Bat < 46.3 ) { u8g2.print("15"); }
 else if ( Volt_Bat < 45.9 ) { u8g2.print("15"); }
 else if ( Volt_Bat < 45.5 ) { u8g2.print("5"); }
 else if ( Volt_Bat < 45 ) { u8g2.print("1"); }
-else if ( vout = 0 ) { u8g2.print("0"); }
+else if ( Volt_Bat = 0 ) { u8g2.print("0"); }
 else { u8g2.print("0"); }
 u8g2.print("%");
 
@@ -352,6 +334,13 @@ void loop(void) {
 
 lup = lup+1 ;
 if (lup > 10) lup = 0;
+
+// Вольтметр
+V_ADC = analogRead(PIN_VMETER);
+Volt_Bat=1000* ( (V_ADC-V_ADCE)*(V_MAX-V_MIN)/(1024-V_ADCE)+V_MIN ) ;
+if (V_ADC <= V_ADCE) { Volt_Bat = 0 ;}
+
+
 
 
   

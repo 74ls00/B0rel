@@ -3689,7 +3689,7 @@ Based on the following sources:&lt;p&gt;
 <element name="R1.2V" library="rcl" package="M0805" value="0" x="-81.28" y="3.175" rot="R270"/>
 <element name="C4T1" library="rcl" package="C0805" value="100n" x="-90.805" y="2.54"/>
 <element name="R6V" library="rcl" package="R0805" value="1k" x="-74.295" y="11.43"/>
-<element name="C4T2" library="rcl" package="C0805" value="100n" x="-84.455" y="1.905" rot="R180"/>
+<element name="C1V" library="rcl" package="C0805" value="100n" x="-84.455" y="1.905" rot="R180"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -3824,7 +3824,7 @@ Based on the following sources:&lt;p&gt;
 <contactref element="C4T" pad="2"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C4T1" pad="2"/>
-<contactref element="C4T2" pad="2"/>
+<contactref element="C1V" pad="2"/>
 <wire x1="-259.92" y1="6.985" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-268.605" y1="26.67" x2="-259.92" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-222.565" y1="-16.51" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
@@ -4527,7 +4527,7 @@ Based on the following sources:&lt;p&gt;
 <contactref element="R3V" pad="2"/>
 <contactref element="DA1" pad="5"/>
 <contactref element="R1.2V" pad="1"/>
-<contactref element="C4T2" pad="1"/>
+<contactref element="C1V" pad="1"/>
 <wire x1="-83.505" y1="4.445" x2="-83.505" y2="1.905" width="0" layer="19" extent="1-1"/>
 <wire x1="-81.28" y1="4.125" x2="-83.505" y2="4.445" width="0" layer="19" extent="1-1"/>
 <wire x1="-81.91" y1="7.3" x2="-81.28" y2="4.125" width="0" layer="19" extent="1-1"/>

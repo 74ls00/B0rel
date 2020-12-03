@@ -25179,7 +25179,7 @@ TO-247 SBL3040PT</description>
 <part name="C4T1" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND22" library="supply1v" deviceset="GND" device=""/>
 <part name="R6V" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="C4T2" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C1V" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND23" library="supply1v" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -26132,7 +26132,7 @@ vin=4.914</text>
 <attribute name="NAME" x="76.2" y="171.6786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="77.47" y="169.418" size="1.778" layer="96"/>
 </instance>
-<instance part="C4T2" gate="G$1" x="43.18" y="165.1" smashed="yes">
+<instance part="C1V" gate="G$1" x="43.18" y="165.1" smashed="yes">
 <attribute name="NAME" x="44.704" y="168.021" size="1.778" layer="95"/>
 <attribute name="VALUE" x="44.704" y="165.481" size="1.778" layer="96"/>
 </instance>
@@ -26410,7 +26410,7 @@ vin=4.914</text>
 </segment>
 <segment>
 <pinref part="GND23" gate="1" pin="GND"/>
-<pinref part="C4T2" gate="G$1" pin="2"/>
+<pinref part="C1V" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="157.48" x2="43.18" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -27007,7 +27007,7 @@ vin=4.914</text>
 <wire x1="30.48" y1="167.64" x2="30.48" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="170.18" x2="35.56" y2="170.18" width="0.1524" layer="91"/>
 <junction x="35.56" y="170.18"/>
-<pinref part="C4T2" gate="G$1" pin="1"/>
+<pinref part="C1V" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="167.64" x2="43.18" y2="170.18" width="0.1524" layer="91"/>
 <junction x="43.18" y="170.18"/>
 </segment>

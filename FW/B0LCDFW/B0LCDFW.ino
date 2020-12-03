@@ -16,6 +16,10 @@
 #define PIN_F 8 //вход обнаружения частоты ICP // mega328 pin12
 #define KM_SYM 5 // количество символов спидометра 4, 5
 
+#define V_ADCE 15+1 // утечка ОУ АЦП вольтметра
+#define V_MIN 28 // минимальное напряжение вольтметра
+#define V_MAX 51.6// максимальное напряжение вольтметра
+
 // инициализация экрана
 U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 9,11,7,6,5,4,3,10, 16,U8X8_PIN_NONE,17,15); 
 
@@ -39,8 +43,9 @@ float vout = 0.0 ;
 
 // Напряжение
 
-int V_ADC ;
-float Volt ;
+int V_ADC ; // ADC напряжения батареи
+float Volt_Bat ; // напряжение на батарее
+
 
 
 // Скорость
@@ -194,56 +199,41 @@ u8g2.drawHLine(46-5, 49, 5); u8g2.drawHLine(46-5, 56, 5);
 u8g2.drawVLine(41, 43, 6); u8g2.drawVLine(41, 43+14, 6); 
 
 
-/*
-max*adc/1024 adc=954 max= 54.84947589098528 ≈ 54.85
-max/1024*adc alt.
-
-Uout=Uin*(R2/(R1+R2)) Uin=54.84947589098528 Uout=4
-R2=10k/2 R1≈47k+15k+1k/2+1k , (ADC954=51.1v)
- */
-
 // напряжение
 
 u8g2.setFont(u8g_font_04b_03b);
- V_ADC = analogRead(PIN_VMETER);
- 
- //vout = vmax * vvalue / 1024.0 ;
 
- 
-// u8g2.setCursor(3, 61);u8g2.print(vout/10); u8g2.print("V");
-//  u8g2.setCursor(3, 61);u8g2.print(20 * vvalue / 512.0); u8g2.print("V");
+V_ADC = analogRead(PIN_VMETER);
+
+// коррекция лишний ацп 15+1 ; максимальное напряжение измерения 51.6 ; минимальное 28
+Volt_Bat=(V_ADC-V_ADCE)*(V_MAX-V_MIN)/(1024-V_ADCE)+V_MIN ;
+if (V_ADC <= V_ADCE) { Volt_Bat = 0.00;}
+u8g2.setCursor(3, 61); u8g2.print(Volt_Bat); u8g2.print("V");
+u8g2.print(V_ADC); //отладка
 
 
-//    u8g2.setCursor(2, 30);u8g2.print(duration); u8g2.print("i");
- 
-u8g2.setCursor(2, 10); u8g2.print(V_ADC);
-Volt=2.92/880*(V_ADC) ;
-
-u8g2.setCursor(3, 61); u8g2.print(Volt); u8g2.print("V");
 
 u8g2.setFont(u8g2_font_7x13B); u8g2.setCursor(8, 54); 
 //u8g2.print("200");u8g2.print("%"); //! 15002 48%
 
-
-/*
      if ( vvalue > 953 ) { u8g2.print("99.9"); }
-else if ( vout < 47.5 ) { u8g2.print("95"); }
-else if ( vout < 47.3 ) { u8g2.print("85"); }
-else if ( vout < 47.1 ) { u8g2.print("60"); }
-else if ( vout < 47 ) { u8g2.print("55"); }
-else if ( vout < 46.78 ) { u8g2.print("50"); }
-else if ( vout < 46.7 ) { u8g2.print("45"); }
-else if ( vout < 46.6 ) { u8g2.print("40"); }
-else if ( vout < 46.5 ) { u8g2.print("20"); }
-else if ( vout < 46.3 ) { u8g2.print("15"); }
-else if ( vout < 45.9 ) { u8g2.print("15"); }
-else if ( vout < 45.5 ) { u8g2.print("5"); }
-else if ( vout < 45 ) { u8g2.print("1"); }
+else if ( Volt_Bat < 47.5 ) { u8g2.print("95"); }
+else if ( Volt_Bat < 47.3 ) { u8g2.print("85"); }
+else if ( Volt_Bat < 47.1 ) { u8g2.print("60"); }
+else if ( Volt_Bat < 47 ) { u8g2.print("55"); }
+else if ( Volt_Bat < 46.78 ) { u8g2.print("50"); }
+else if ( Volt_Bat < 46.7 ) { u8g2.print("45"); }
+else if ( Volt_Bat < 46.6 ) { u8g2.print("40"); }
+else if ( Volt_Bat < 46.5 ) { u8g2.print("20"); }
+else if ( Volt_Bat < 46.3 ) { u8g2.print("15"); }
+else if ( Volt_Bat < 45.9 ) { u8g2.print("15"); }
+else if ( Volt_Bat < 45.5 ) { u8g2.print("5"); }
+else if ( Volt_Bat < 45 ) { u8g2.print("1"); }
 else if ( vout = 0 ) { u8g2.print("0"); }
 else { u8g2.print("0"); }
 u8g2.print("%");
 
-*/
+
 
 
 

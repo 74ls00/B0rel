@@ -50,11 +50,14 @@ float Volt_Bat ; // напряжение на батарее
 static char Volt_BatTxt[5]; // вывод напряжения на экран
 
 // Ток
-const float A_MAX = 75.8 ;//15.36 // максимальный ток амперметра, A
+const float A_MAX = 15.36 ; // 75.8 ;//15.36 // максимальный ток амперметра, A
 #define A_ADCE 11 // смещение ОУ АЦП амперметра, ADC
 int A_ADC ; // ADC ток от батареи
 float Amper_Bat ; // потребляемый ток от батареи
 static char Amper_BatTxt[5]; // вывод тока на экран
+
+// Мощность
+float Power_Bat ; // потбребляемая мощность
 
 // Скорость
 // Оценка методов измерения низких частот на Arduino. Способ 2. задействуем Timer1 https://habr.com/ru/post/373213/
@@ -290,15 +293,23 @@ u8g2.setFont(u8g2_font_6x12_tr);
 //u8g2.setCursor(58, 52); u8g2.print("20.4");u8g2.print("A");
 
 //dtostrf(Amper_Bat,4,1,Amper_BatTxt); 
-u8g2.setCursor(50, 52); u8g2.print("I."); u8g2.print(Amper_Bat);u8g2.print("A");
+u8g2.setCursor(50, 52); u8g2.print("I"); u8g2.print(Amper_Bat);u8g2.print("A");
 //u8g2.setCursor(58, 52); 
 
 
 
 
 //u8g2.setCursor(58, 61); u8g2.print("3.25");u8g2.print("A");
-u8g2.setCursor(58, 61); u8g2.print(A_ADC);
-u8g2.setCursor(50, 61); u8g2.print("E"); //ток электроники
+u8g2.setCursor(98, 10); u8g2.print(A_ADC);u8g2.print("a"); // debug
+
+
+// Мощность
+
+Power_Bat = Volt_Bat*Amper_Bat ;
+
+u8g2.setCursor(50, 61); u8g2.print("P"); //ток электроники
+u8g2.print(Power_Bat); u8g2.print("W");
+
 
 //end region токи
 
@@ -367,9 +378,6 @@ if (V_ADC <= V_ADCE) { Volt_Bat = 0 ;}
 
 // Амперметр
 A_ADC = analogRead(PIN_AMETER);
-
-//Amper_Bat = A_MAX/(1024-A_ADCE)*A_ADC  ; // 75/(1024-10)*A_ADC
-// Amper_Bat = 0.0739644970414201*A_ADC  ;
 Amper_Bat = A_MAX/(1024-A_ADCE)*(A_ADC-A_ADCE)  ;
 
 

@@ -40,6 +40,7 @@ const float vminus = 28;
 // Напряжение
 int V_ADC ; // ADC напряжения батареи
 float Volt_Bat ; // напряжение на батарее
+static char Volt_BatTxt[5]; // вывод напряжения на экран
 
 // Скорость
 // Оценка методов измерения низких частот на Arduino. Способ 2. задействуем Timer1 https://habr.com/ru/post/373213/
@@ -67,11 +68,11 @@ analogReference(EXTERNAL); //внешний ИОН 4.00v. TL431 Rs=150 R2=3k R1=
 
 //1307
 //Запуск секундного выхода часов
-/* Wire.beginTransmission(0x68); Wire.write(0x7); Wire.write(0x10); Wire.endTransmission(); */
-rtc.writeSqwPinMode( SquareWave1HZ ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
+// Wire.beginTransmission(0x68); Wire.write(0x7); Wire.write(0x10); Wire.endTransmission(); 
+//rtc.writeSqwPinMode( SquareWave1HZ ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
 //rtc.writeSqwPinMode( SquareWave4kHz ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
 
-// rtc.adjust(DateTime(2020, 12, 03,      2, 47,0 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
+ rtc.adjust(DateTime(2000, 1, 1,      1, 1,1 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
 
 // Скорость
 // http://electronics-lab.ru/blog/4012.html
@@ -190,8 +191,11 @@ u8g2.drawVLine(41, 43, 6); u8g2.drawVLine(41, 43+14, 6);
 
 u8g2.setFont(u8g_font_04b_03b);
 
-u8g2.setCursor(3, 61); u8g2.print(Volt_Bat); u8g2.print("V");
+
+dtostrf(Volt_Bat,3,1,Volt_BatTxt); 
+u8g2.setCursor(3, 61); u8g2.print(Volt_BatTxt); u8g2.print("V");
 u8g2.print(V_ADC); u8g2.print(" ") ;//отладка
+
 
 
 
@@ -337,7 +341,8 @@ if (lup > 10) lup = 0;
 
 // Вольтметр
 V_ADC = analogRead(PIN_VMETER);
-Volt_Bat=1000* ( (V_ADC-V_ADCE)*(V_MAX-V_MIN)/(1024-V_ADCE)+V_MIN ) ;
+//Volt_Bat=1000* ( (V_ADC-V_ADCE)*(V_MAX-V_MIN)/(1024-V_ADCE)+V_MIN ) ;
+Volt_Bat=(V_ADC-V_ADCE)*(V_MAX-V_MIN)/(1024-V_ADCE)+V_MIN ;
 if (V_ADC <= V_ADCE) { Volt_Bat = 0 ;}
 
 

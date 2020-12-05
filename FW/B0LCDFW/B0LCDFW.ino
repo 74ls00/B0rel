@@ -13,13 +13,16 @@
 #include "fonts/u8g2_font_7x13B.h"  //Шрифт Батарея 200%
 
 #define PIN_VMETER A7 //вход вольтметра
+#define PIN_AMETER A6 //вход амперметра
 //#define PIN_TAHO A0 //вход тахометра // int0 d2
 #define PIN_F 8 //вход обнаружения частоты ICP // mega328 pin12
-#define KM_SYM 5 // количество символов спидометра 4, 5
+#define KM_SYM 5 // количество символов спидометра, 4 или 5
 
-#define V_ADCE 15+1 // утечка ОУ АЦП вольтметра
-#define V_MIN 28 // минимальное напряжение вольтметра
-#define V_MAX 51.6// максимальное напряжение вольтметра
+
+
+
+
+
 
 // инициализация экрана
 U8G2_ST7920_128X64_F_8080 u8g2(U8G2_R0, 9,11,7,6,5,4,3,10, 16,U8X8_PIN_NONE,17,15); 
@@ -39,9 +42,19 @@ const float vmax = 548.5;
 const float vminus = 28;
 
 // Напряжение
+#define V_ADCE 15+1 // смещение ОУ АЦП вольтметра, ADC
+#define V_MIN 28 // минимальное напряжение вольтметра, V
+#define V_MAX 51.6// максимальное напряжение вольтметра, V
 int V_ADC ; // ADC напряжения батареи
 float Volt_Bat ; // напряжение на батарее
 static char Volt_BatTxt[5]; // вывод напряжения на экран
+
+// Ток
+const float A_MAX = 75.8 ;//15.36 // максимальный ток амперметра, A
+#define A_ADCE 11 // смещение ОУ АЦП амперметра, ADC
+int A_ADC ; // ADC ток от батареи
+float Amper_Bat ; // потребляемый ток от батареи
+static char Amper_BatTxt[5]; // вывод тока на экран
 
 // Скорость
 // Оценка методов измерения низких частот на Arduino. Способ 2. задействуем Timer1 https://habr.com/ru/post/373213/
@@ -61,6 +74,7 @@ void setup(void) {
   u8g2.begin();
 
 pinMode(PIN_VMETER, INPUT);
+pinMode(PIN_AMETER, INPUT);
 
 analogReference(EXTERNAL); //внешний ИОН 4.00v. TL431 Rs=150 R2=3k R1=2k2+560/2 Raref=5k1 
 // DEFAULT: стандартное опорное напряжение 5 В (на платформах с напряжением питания 5 В) или 3.3 В (на платформах с напряжением питания 3.3 В)
@@ -267,11 +281,25 @@ u8g2.setCursor(4, 54); u8g2.print(Volt_BatTxt);  u8g2.print("V");
 
 
 //region токи
+
+// Амперметр
+
+
+
 u8g2.setFont(u8g2_font_6x12_tr); 
-u8g2.setCursor(58, 52); u8g2.print("20.4");u8g2.print("A");
-u8g2.setCursor(50, 52); u8g2.print("M"); //ток мотора
-u8g2.setCursor(58, 61); u8g2.print("3.25");u8g2.print("A");
+//u8g2.setCursor(58, 52); u8g2.print("20.4");u8g2.print("A");
+
+//dtostrf(Amper_Bat,4,1,Amper_BatTxt); 
+u8g2.setCursor(50, 52); u8g2.print("I."); u8g2.print(Amper_Bat);u8g2.print("A");
+//u8g2.setCursor(58, 52); 
+
+
+
+
+//u8g2.setCursor(58, 61); u8g2.print("3.25");u8g2.print("A");
+u8g2.setCursor(58, 61); u8g2.print(A_ADC);
 u8g2.setCursor(50, 61); u8g2.print("E"); //ток электроники
+
 //end region токи
 
 
@@ -337,7 +365,12 @@ V_ADC = analogRead(PIN_VMETER);
 Volt_Bat=(V_ADC-V_ADCE)*(V_MAX-V_MIN)/(1024-V_ADCE)+V_MIN ;
 if (V_ADC <= V_ADCE) { Volt_Bat = 0 ;}
 
+// Амперметр
+A_ADC = analogRead(PIN_AMETER);
 
+//Amper_Bat = A_MAX/(1024-A_ADCE)*A_ADC  ; // 75/(1024-10)*A_ADC
+// Amper_Bat = 0.0739644970414201*A_ADC  ;
+Amper_Bat = A_MAX/(1024-A_ADCE)*(A_ADC-A_ADCE)  ;
 
 
   

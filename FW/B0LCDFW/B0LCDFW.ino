@@ -10,6 +10,7 @@
 #include "fonts/Fonts.h" 
 #include "fonts/u8g_font_04b_03b.h" //Шрифт Мелкие цифры Батарея V, ..
 #include "fonts/u8g2_font_ncenB18m.h"  //Шрифт больших цифр скорости расхода
+#include "fonts/u8g2_font_7x13B.h"  //Шрифт Батарея 200%
 
 #define PIN_VMETER A7 //вход вольтметра
 //#define PIN_TAHO A0 //вход тахометра // int0 d2
@@ -193,14 +194,16 @@ u8g2.setFont(u8g_font_04b_03b);
 
 
 dtostrf(Volt_Bat,3,1,Volt_BatTxt); 
-u8g2.setCursor(3, 61); u8g2.print(Volt_BatTxt); u8g2.print("V");
+u8g2.setCursor(3, 61);//  u8g2.print(Volt_BatTxt); u8g2.print("V");
 u8g2.print(V_ADC); u8g2.print(" ") ;//отладка
 
 
 
 
-u8g2.setFont(u8g2_font_7x13B); u8g2.setCursor(8, 54); 
+u8g2.setFont(u8g2_font_7x13B); // u8g2.setCursor(8, 54); 
 //u8g2.print("200");u8g2.print("%"); //! 15002 48%
+
+/*
 
      if ( Volt_Bat > 953 ) { u8g2.print("99.9"); }
 else if ( Volt_Bat < 47.5 ) { u8g2.print("95"); }
@@ -219,10 +222,9 @@ else if ( Volt_Bat = 0 ) { u8g2.print("0"); }
 else { u8g2.print("0"); }
 u8g2.print("%");
 
-
-
-
-
+*/
+u8g2.setCursor(4, 54); u8g2.print(Volt_BatTxt);  u8g2.print("V"); 
+//u8g2.setCursor(4, 54);  u8g2.print("51.1V"); 
 
 // vout > 51.1
 
@@ -247,15 +249,6 @@ u8g2.print("%");
 //u8g2.setFont(u8g2_font_trixel_square_tr  ); 
 //u8g2.setFont(u8g2_font_trixel_square_tf ); 
 //u8g2.setFont(u8g_font_04b_03b  );
-
-//float ran2 = random(311,611)/1;
-// ran2 = ran2 / 10
-
-
-
-
-
-
 
 
 
@@ -299,7 +292,6 @@ u8g2.setCursor(50, 61); u8g2.print("E"); //ток электроники
 
 // RTC 1307
    DateTime now = rtc.now();
-
 
 //u8g2.setFont(u8g2_font_chroma48medium8_8u);
 u8g2.setFont(u8g_font_04b_03b); //u8g2_font_blipfest_07_tr

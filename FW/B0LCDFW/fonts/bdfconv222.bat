@@ -10,8 +10,11 @@ rem %bdfconv_2_22% -v -f 1 -m "37-57" "%~d0%~p0%font_name%.bdf" -o "%~d0%~p0%fon
 
 
 rem # u8g_font_04b_03b 46-86  30-39 2e 56 / 48-57 46 86
-set font_name=u8g_font_04b_03b
-%bdfconv_2_22% -v -f 1 -m "46,48-57,86" "%~d0%~p0%font_name%.bdf" -o "%~d0%~p0%font_name%.h"  -n %font_name%
+rem set font_name=u8g_font_04b_03b
+rem %bdfconv_2_22% -v -f 1 -m "46,48-57,86" "%~d0%~p0%font_name%.bdf" -o "%~d0%~p0%font_name%.h"  -n %font_name%
+
+set font_name=u8g2_font_7x13B
+%bdfconv_2_22% -v -f 1 -m "48-57, 37, 46, 86" "%~d0%~p0%font_name%.bdf" -o "%~d0%~p0%font_name%.h"  -n %font_name%
 
 
 rem u8g2_font_ncenB18m 2d-39 45-57

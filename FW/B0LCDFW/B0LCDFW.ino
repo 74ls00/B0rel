@@ -51,7 +51,7 @@ static char Volt_BatTxt[5]; // вывод напряжения на экран
 
 // Ток
 const float A_MAX = 15.36 ; // 75.8 ;//15.36 // максимальный ток амперметра, A
-#define A_ADCE 11 // смещение ОУ АЦП амперметра, ADC
+#define A_ADCE 0 //11 // смещение ОУ АЦП амперметра, ADC
 int A_ADC ; // ADC ток от батареи
 float Amper_Bat ; // потребляемый ток от батареи
 static char Amper_BatTxt[5]; // вывод тока на экран
@@ -378,8 +378,8 @@ if (V_ADC <= V_ADCE) { Volt_Bat = 0 ;}
 
 // Амперметр
 A_ADC = analogRead(PIN_AMETER);
-Amper_Bat = A_MAX/(1024-A_ADCE)*(A_ADC-A_ADCE)  ;
-
+//Amper_Bat = A_MAX/(1024-A_ADCE)*(A_ADC-A_ADCE)  ;
+Amper_Bat = A_MAX/1024*A_ADC ; 
 
   
   delay(40 ); //int0 250//40

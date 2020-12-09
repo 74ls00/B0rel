@@ -3402,6 +3402,37 @@ Source: http://www.taiwansemi.com/TSCbig5/ezcatfiles/cust/img/img/db101g.pdf</de
 </package>
 </packages>
 </library>
+<library name="К176">
+<description>&lt;b&gt;Советские часовые микросхемы серии К176&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+&lt;b&gt;К176ИЕ5, К176ИЕ12, К176ИЕ18&lt;/b&gt; нарисованы с совпадением выводов на схеме, без перемещения проводников.&lt;br&gt;</description>
+<packages>
+<package name="DIL14">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3891,6 +3922,15 @@ Source: http://www.taiwansemi.com/TSCbig5/ezcatfiles/cust/img/img/db101g.pdf</de
 <element name="DA7" library="linear" package="SO08" value="BA358" x="-406.4" y="-244.475"/>
 <element name="R7.3" library="rcl" package="R0805" value="470k" x="-408.305" y="-252.095"/>
 <element name="R7.4" library="rcl" package="R0805" value="470k" x="-408.305" y="-258.445"/>
+<element name="U$16" library="К176" package="DIL14" value="К176ИЕ5" x="-379.095" y="-274.955" rot="R90"/>
+<element name="VT14" library="m_transistor" package="TO92" value="" x="-388.62" y="-280.035" rot="R90"/>
+<element name="VT15" library="m_transistor" package="TO92" value="" x="-393.065" y="-280.035" rot="R90"/>
+<element name="R27" library="rcl" package="M0805" value="2k7" x="-391.795" y="-285.75" rot="R90"/>
+<element name="R28" library="rcl" package="M0805" value="2k7" x="-387.35" y="-285.75" rot="R90"/>
+<element name="R29" library="rcl" package="M0805" value="1k" x="-391.795" y="-290.195" rot="R90"/>
+<element name="R30" library="rcl" package="M0805" value="1k" x="-387.35" y="-290.195" rot="R90"/>
+<element name="VT17" library="m_transistor" package="TO92" value="" x="-389.89" y="-294.005"/>
+<element name="VT18" library="m_transistor" package="TO92" value="" x="-397.51" y="-292.1" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -5676,6 +5716,71 @@ Source: http://www.taiwansemi.com/TSCbig5/ezcatfiles/cust/img/img/db101g.pdf</de
 </signal>
 <signal name="N$214">
 <contactref element="DA7" pad="8"/>
+</signal>
+<signal name="N$215">
+<contactref element="U$16" pad="1"/>
+<contactref element="U$16" pad="2"/>
+<wire x1="-375.285" y1="-280.035" x2="-375.285" y2="-282.575" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$221">
+<contactref element="VT14" pad="1"/>
+<contactref element="R28" pad="2"/>
+<wire x1="-387.35" y1="-282.575" x2="-387.35" y2="-284.8" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$222">
+<contactref element="VT15" pad="1"/>
+<contactref element="R27" pad="2"/>
+<wire x1="-391.795" y1="-282.575" x2="-391.795" y2="-284.8" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$224">
+<contactref element="R27" pad="1"/>
+<contactref element="R29" pad="2"/>
+<contactref element="VT18" pad="3"/>
+<wire x1="-391.795" y1="-289.245" x2="-396.24" y2="-289.56" width="0" layer="19" extent="1-1"/>
+<wire x1="-391.795" y1="-286.7" x2="-391.795" y2="-289.245" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$225">
+<contactref element="R30" pad="1"/>
+<contactref element="U$16" pad="7"/>
+<contactref element="U$16" pad="6"/>
+<contactref element="VT17" pad="1"/>
+<contactref element="R29" pad="1"/>
+<contactref element="VT18" pad="1"/>
+<wire x1="-392.43" y1="-295.275" x2="-396.24" y2="-294.64" width="0" layer="19" extent="1-1"/>
+<wire x1="-391.795" y1="-291.145" x2="-392.43" y2="-295.275" width="0" layer="19" extent="1-1"/>
+<wire x1="-387.35" y1="-291.145" x2="-391.795" y2="-291.145" width="0" layer="19" extent="1-1"/>
+<wire x1="-375.285" y1="-269.875" x2="-387.35" y2="-291.145" width="0" layer="19" extent="1-1"/>
+<wire x1="-375.285" y1="-267.335" x2="-375.285" y2="-269.875" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$230">
+<contactref element="VT17" pad="2"/>
+</signal>
+<signal name="N$229">
+<contactref element="VT18" pad="2"/>
+</signal>
+<signal name="N$217">
+<contactref element="VT15" pad="3"/>
+<contactref element="U$16" pad="12"/>
+<wire x1="-382.905" y1="-277.495" x2="-391.795" y2="-277.495" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$218">
+<contactref element="VT14" pad="3"/>
+<contactref element="U$16" pad="11"/>
+<wire x1="-382.905" y1="-274.955" x2="-387.35" y2="-277.495" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$219">
+<contactref element="U$16" pad="14"/>
+<contactref element="VT14" pad="2"/>
+<contactref element="VT15" pad="2"/>
+<wire x1="-387.35" y1="-280.035" x2="-391.795" y2="-280.035" width="0" layer="19" extent="1-1"/>
+<wire x1="-382.905" y1="-282.575" x2="-387.35" y2="-280.035" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$220">
+<contactref element="R30" pad="2"/>
+<contactref element="R28" pad="1"/>
+<contactref element="VT17" pad="3"/>
+<wire x1="-387.35" y1="-289.245" x2="-387.35" y2="-295.275" width="0" layer="19" extent="1-1"/>
+<wire x1="-387.35" y1="-286.7" x2="-387.35" y2="-289.245" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

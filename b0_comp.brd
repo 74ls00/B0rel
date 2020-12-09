@@ -3937,7 +3937,7 @@ Source: http://www.taiwansemi.com/TSCbig5/ezcatfiles/cust/img/img/db101g.pdf</de
 <element name="VT20" library="m_transistor" package="TO92" value="" x="-407.035" y="-325.755"/>
 <element name="R32" library="rcl" package="0411/12" value="" x="-403.225" y="-333.375"/>
 <element name="B3" library="rectifier" package="DB" value="" x="-404.495" y="-340.36"/>
-<element name="R33" library="rcl" package="0411/12" value="10k" x="-403.225" y="-349.885"/>
+<element name="R33" library="rcl" package="0411/12" value="1k" x="-403.225" y="-349.885"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -5805,10 +5805,6 @@ Source: http://www.taiwansemi.com/TSCbig5/ezcatfiles/cust/img/img/db101g.pdf</de
 <contactref element="VT20" pad="3"/>
 <contactref element="VT19" pad="3"/>
 <contactref element="R31" pad="1"/>
-<contactref element="B3" pad="-"/>
-<contactref element="R33" pad="2"/>
-<wire x1="-396.875" y1="-349.885" x2="-401.955" y2="-344.17" width="0" layer="19" extent="1-1"/>
-<wire x1="-404.495" y1="-327.025" x2="-401.955" y2="-344.17" width="0" layer="19" extent="1-1"/>
 <wire x1="-409.575" y1="-320.04" x2="-404.495" y2="-327.025" width="0" layer="19" extent="1-1"/>
 <wire x1="-404.495" y1="-313.69" x2="-409.575" y2="-320.04" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -5838,6 +5834,11 @@ Source: http://www.taiwansemi.com/TSCbig5/ezcatfiles/cust/img/img/db101g.pdf</de
 <wire x1="-407.035" y1="-344.17" x2="-409.575" y2="-349.885" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$247">
+</signal>
+<signal name="N$234">
+<contactref element="B3" pad="-"/>
+<contactref element="R33" pad="2"/>
+<wire x1="-396.875" y1="-349.885" x2="-401.955" y2="-344.17" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

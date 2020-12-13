@@ -4065,7 +4065,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="C3T2" library="rcl" package="C0805" value="470" x="-407.035" y="-268.605"/>
 <element name="I0" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-392.43" y="-298.45"/>
 <element name="I1" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-407.035" y="-304.165"/>
-<element name="R8A" library="rcl" package="R0805" value="15.35k" x="-407.035" y="-285.115"/>
+<element name="R8A" library="rcl" package="R0805" value="15.5k" x="-407.035" y="-285.115"/>
 <element name="R5A" library="rcl" package="R0805" value="6k8" x="-399.415" y="-285.115"/>
 <element name="R2A" library="rcl" package="R0805" value="3k8" x="-391.795" y="-285.115"/>
 <element name="R3A" library="rcl" package="RTRIM3296W" value="400" x="-405.765" y="-297.18"/>
@@ -4090,7 +4090,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="R3.21" library="rcl" package="R0805" value="10k" x="-425.45" y="-447.675"/>
 <element name="R3.22" library="rcl" package="R0805" value="560" x="-425.45" y="-454.025"/>
 <element name="R3.23" library="rcl" package="R0805" value="1k2" x="-425.45" y="-460.375"/>
-<element name="R7A" library="rcl" package="R0805" value="10k" x="-425.45" y="-473.075"/>
+<element name="R7A" library="rcl" package="R0805" value="15k" x="-425.45" y="-473.075"/>
 <element name="R1A" library="rcl" package="R0805" value="100" x="-425.45" y="-479.425"/>
 <element name="R6A" library="rcl" package="R0805" value="100" x="-425.45" y="-485.775"/>
 <element name="C2A" library="rcl" package="C0805" value="100n" x="-425.45" y="-492.125"/>

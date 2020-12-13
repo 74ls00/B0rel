@@ -26553,7 +26553,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY4" library="supply2" deviceset="+9V" device=""/>
 <part name="I0" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="I1" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
-<part name="R8A" library="rcl" deviceset="R-EU_" device="R0805" value="15.35k"/>
+<part name="R8A" library="rcl" deviceset="R-EU_" device="R0805" value="15.5k"/>
 <part name="R5A" library="rcl" deviceset="R-EU_" device="R0805" value="6k8"/>
 <part name="R2A" library="rcl" deviceset="R-EU_" device="R0805" value="3k8"/>
 <part name="R3A" library="rcl" deviceset="R-TRIMM" device="3296W" value="400"/>
@@ -26568,7 +26568,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R3.21" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R3.22" library="rcl" deviceset="R-EU_" device="R0805" value="560"/>
 <part name="R3.23" library="rcl" deviceset="R-EU_" device="R0805" value="1k2"/>
-<part name="R7A" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R7A" library="rcl" deviceset="R-EU_" device="R0805" value="15k"/>
 <part name="GND47" library="supply1v" deviceset="GND" device=""/>
 <part name="R1A" library="rcl" deviceset="R-EU_" device="R0805" value="100"/>
 <part name="R6A" library="rcl" deviceset="R-EU_" device="R0805" value="100"/>

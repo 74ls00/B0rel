@@ -26904,7 +26904,7 @@ LiFePo4
 <part name="PCB_DC-DC" library="b0l2" deviceset="PCB_DC-DC" device=""/>
 <part name="R_SHUNT" library="b0_sym" deviceset="S" device="" value=""/>
 <part name="U$19" library="b0_sym" deviceset="S" device=""/>
-<part name="R9A" library="rcl" deviceset="R-EU_" device="R0805" value="500*"/>
+<part name="R9A" library="rcl" deviceset="R-EU_" device="R0805" value="510*"/>
 </parts>
 <sheets>
 <sheet>
@@ -26991,7 +26991,7 @@ GND 10
 <wire x1="60.96" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="94" curve="-180"/>
 <wire x1="50.8" y1="60.96" x2="53.34" y2="60.96" width="0.1524" layer="94" curve="-180"/>
 <text x="43.18" y="68.58" size="1.778" layer="98">Кольцо салатово-синее
-20x12x6 21вит.</text>
+20x12x6  21вит.</text>
 <text x="99.06" y="43.18" size="1.778" layer="98">Кольцо
 жёлто-белое
 13x7x5 25вит.
@@ -27627,6 +27627,7 @@ vin=4.914</text>
 <text x="-144.78" y="-66.04" size="1.778" layer="98" rot="R180">+1v</text>
 <text x="4.445" y="161.925" size="1.778" layer="98">DA2P</text>
 <text x="58.42" y="83.82" size="1.778" layer="98" rot="R180">+22mv</text>
+<text x="114.3" y="101.6" size="1.778" layer="98">3.4v</text>
 </plain>
 <instances>
 <instance part="ARDUINO1" gate="G$1" x="236.22" y="53.34" rot="MR0"/>

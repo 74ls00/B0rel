@@ -4346,7 +4346,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="PCB_DC-DC" library="b0l2" package="PCB_DC-DC" value="PCB_DC-DC" x="1.905" y="-71.755"/>
 <element name="R_SHUNT" library="b0_sym" package="S" value="" x="-426.085" y="-496.57"/>
 <element name="U$19" library="b0_sym" package="S" value="S" x="-426.085" y="-499.745"/>
-<element name="R9A" library="rcl" package="R0805" value="500*" x="-91.44" y="13.335"/>
+<element name="R9A" library="rcl" package="R0805" value="510*" x="-91.44" y="13.335"/>
 </elements>
 <signals>
 <signal name="N$5">

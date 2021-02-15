@@ -90,7 +90,12 @@ analogReference(EXTERNAL); //внешний ИОН 4.00v. TL431 Rs=150 R2=3k R1=
 //rtc.writeSqwPinMode( SquareWave1HZ ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
 //rtc.writeSqwPinMode( SquareWave4kHz ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
 
- rtc.adjust(DateTime(2000, 1, 1,      1, 1,1 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
+// rtc.adjust(DateTime(2021, 2, 13,      9, 56,1 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
+DateTime now = rtc.now();
+if ( now.year() < 2005 ) { rtc.adjust(DateTime(2019, 12, 31, 23, 59,1 )); } // set YYYY,MM,dd,hh,mm
+// https://www.radiokot.ru/forum/viewtopic.php?f=2&t=174215
+// rtc.year()
+
 
 // Скорость
 // http://electronics-lab.ru/blog/4012.html
@@ -335,9 +340,41 @@ u8g2.print(Power_Bat); u8g2.print("W");
 //u8g2.setFont(u8g2_font_chroma48medium8_8u);
 u8g2.setFont(u8g_font_04b_03b); //u8g2_font_blipfest_07_tr
 
-u8g2.setCursor(87, 64); u8g2.print(now.year()); u8g2.print(".");
-u8g2.print(now.month()); u8g2.print("."); u8g2.print(now.day());
+//u8g2.setCursor(87, 64); u8g2.print(now.year()); u8g2.print(".");
+//u8g2.print(now.month()); u8g2.print("."); u8g2.print(now.day());
 
+ int tmpo = now.day() ;
+ //int tmpo = now.second() ;
+ byte tDay ;
+ byte tMou ;
+ int tYea ;
+ 
+if ( tmpo == 1 ) { u8g2.setCursor(126, 64); tDay = 7; } 
+else if ( tmpo == 11 ) { u8g2.setCursor(123, 64);  tDay = 4; }
+else if ( tmpo < 10 ) { u8g2.setCursor(124, 64);  tDay = 5;  }
+else if ( tmpo == 10 or tmpo == 12 or tmpo == 13 or tmpo == 14 or tmpo == 15 or tmpo == 16 or tmpo == 17 or tmpo == 18 or tmpo == 19 or tmpo == 21 or tmpo == 31) 
+  { u8g2.setCursor(121, 64);  tDay = 2; }
+else if ( tmpo == 20 or tmpo > 21) { u8g2.setCursor(119, 64) ; tDay = 0; }
+u8g2.setCursor(119+tDay, 64); u8g2.print(tmpo) ;
+
+//tmpo = 12 ;
+tmpo = now.month() ;
+if ( tmpo == 1 ) {  tMou = 7; } 
+else if ( tmpo == 11 ) { tMou = 4; }
+else if ( tmpo == 10 or  tmpo == 12 ) {  tMou = 2;  }
+else { tMou = 5; }
+
+u8g2.setCursor(107+tDay+tMou, 64) ;
+u8g2.print(tmpo) ; u8g2.print(".");
+
+//tmpo = 2091 ;
+tmpo = now.year() ;
+if ( tmpo == 2021 or tmpo == 2031 or tmpo == 2041 or tmpo == 2051 or tmpo == 2061 or tmpo == 2071 or tmpo == 2081 or tmpo == 2091) 
+{  tYea = 1; } 
+u8g2.setCursor(86+tDay+tMou+tYea, 64) ;
+u8g2.print(tmpo) ; u8g2.print(".");
+
+//--------------------------
 u8g2.setFont(u8g2_font_7d);
 u8g2.setCursor(95, 50); u8g2.print(now.hour()); u8g2.print(":");
 

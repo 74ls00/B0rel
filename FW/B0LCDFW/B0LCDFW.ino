@@ -339,40 +339,40 @@ u8g2.print(Power_Bat); u8g2.print("W");
 
 //u8g2.setFont(u8g2_font_chroma48medium8_8u);
 u8g2.setFont(u8g_font_04b_03b); //u8g2_font_blipfest_07_tr
+//u8g2.setCursor(87, 64); u8g2.print(now.year()); u8g2.print("."); u8g2.print(now.month()); u8g2.print("."); u8g2.print(now.day()); // обычная версия
 
-//u8g2.setCursor(87, 64); u8g2.print(now.year()); u8g2.print(".");
-//u8g2.print(now.month()); u8g2.print("."); u8g2.print(now.day());
 
- int tmpo = now.day() ;
- //int tmpo = now.second() ;
- byte tDay ;
- byte tMou ;
- int tYea ;
+
+ int tmpo ;
+ byte dataShift = 0 ;
  
-if ( tmpo == 1 ) { u8g2.setCursor(126, 64); tDay = 7; } 
-else if ( tmpo == 11 ) { u8g2.setCursor(123, 64);  tDay = 4; }
-else if ( tmpo < 10 ) { u8g2.setCursor(124, 64);  tDay = 5;  }
+ tmpo = now.second()/2 ;
+
+if ( tmpo == 1 ) { u8g2.setCursor(126, 64); dataShift = dataShift+7; } 
+else if ( tmpo == 11 ) { u8g2.setCursor(123, 64);  dataShift = dataShift+4; }
+//else if ( tmpo < 10 ) { u8g2.setCursor(124, 64);  dataShift = dataShift+5;  }
+else if ( tmpo < 10 or tmpo == 0 ) { u8g2.setCursor(124, 64);  dataShift = dataShift+5;  } // extend
 else if ( tmpo == 10 or tmpo == 12 or tmpo == 13 or tmpo == 14 or tmpo == 15 or tmpo == 16 or tmpo == 17 or tmpo == 18 or tmpo == 19 or tmpo == 21 or tmpo == 31) 
-  { u8g2.setCursor(121, 64);  tDay = 2; }
-else if ( tmpo == 20 or tmpo > 21) { u8g2.setCursor(119, 64) ; tDay = 0; }
-u8g2.setCursor(119+tDay, 64); u8g2.print(tmpo) ;
+  { u8g2.setCursor(121, 64);  dataShift = dataShift+2; }
+else if ( tmpo == 20 or tmpo > 21) { u8g2.setCursor(119, 64) ; dataShift = dataShift+0; }
+u8g2.setCursor(119+dataShift, 64); u8g2.print(tmpo) ;
 
-//tmpo = 12 ;
-tmpo = now.month() ;
-if ( tmpo == 1 ) {  tMou = 7; } 
-else if ( tmpo == 11 ) { tMou = 4; }
-else if ( tmpo == 10 or  tmpo == 12 ) {  tMou = 2;  }
-else { tMou = 5; }
-
-u8g2.setCursor(107+tDay+tMou, 64) ;
+tmpo = now.second()/5 ;
+//tmpo = now.month() ;
+if ( tmpo == 1 ) {  dataShift = dataShift+5; } // for 1
+else if ( tmpo == 11 ) { dataShift = dataShift+2; } // for 11
+else if ( tmpo == 10 or  tmpo == 12 ) {  }//dataShift = dataShift+0;  } // for 10,12
+  else if ( tmpo == 0 ) { dataShift = dataShift+3; } // extend for 0
+else { dataShift = dataShift+2; } // for 2,3,4,5,6,7,8,9,etc
+u8g2.setCursor(109+dataShift, 64) ;
 u8g2.print(tmpo) ; u8g2.print(".");
 
-//tmpo = 2091 ;
-tmpo = now.year() ;
-if ( tmpo == 2021 or tmpo == 2031 or tmpo == 2041 or tmpo == 2051 or tmpo == 2061 or tmpo == 2071 or tmpo == 2081 or tmpo == 2091) 
-{  tYea = 1; } 
-u8g2.setCursor(86+tDay+tMou+tYea, 64) ;
+tmpo = 2000+now.second() ;
+//tmpo =  now.year()  ;
+if ( tmpo == 2021 or tmpo == 2031 or tmpo == 2041 or tmpo == 2051 or tmpo == 2061 or tmpo == 2071 or tmpo == 2081) { dataShift = dataShift+1; } 
+u8g2.setCursor(88+dataShift, 64) ;
 u8g2.print(tmpo) ; u8g2.print(".");
+
 
 //--------------------------
 u8g2.setFont(u8g2_font_7d);

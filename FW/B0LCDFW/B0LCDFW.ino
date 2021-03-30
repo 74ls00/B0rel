@@ -341,14 +341,11 @@ u8g2.print(Power_Bat); u8g2.print("W");
 u8g2.setFont(u8g_font_04b_03b); //u8g2_font_blipfest_07_tr
 //u8g2.setCursor(87, 64); u8g2.print(now.year()); u8g2.print("."); u8g2.print(now.month()); u8g2.print("."); u8g2.print(now.day()); // обычная версия
 
-
-
- int tmpo ;
- byte dataShift = 0 ;
-
+int tmpo ;
+byte dataShift = 0 ;
  
- //tmpo = (now.second()+1)/2 ;
- tmpo =  now.day() ;
+//tmpo = (now.second()+1)/2 ;
+tmpo =  now.day() ;
 if ( tmpo == 1 ) { u8g2.setCursor(126, 64); dataShift = dataShift+7; } 
 else if ( tmpo == 11 ) { u8g2.setCursor(123, 64);  dataShift = dataShift+4; }
 else if ( tmpo < 10 ) { u8g2.setCursor(124, 64);  dataShift = dataShift+5;  }
@@ -376,7 +373,7 @@ u8g2.setCursor(87+dataShift, 64) ; u8g2.print(tmpo) ; u8g2.print(".");
 
 //--------------------------
 u8g2.setFont(u8g2_font_7d);
-u8g2.setCursor(95, 50); u8g2.print(now.hour()); u8g2.print(":");
+u8g2.setCursor(95, 56); u8g2.print(now.hour()); u8g2.print(":"); //95 50
 
 //int min = now.minute() ;
 //int sec = now.second() ;

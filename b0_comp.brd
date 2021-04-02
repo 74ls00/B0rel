@@ -3959,6 +3959,114 @@ www.allegromicro.com&lt;br&gt;
 </package>
 </packages>
 </library>
+<library name="74xx-eu">
+<description>&lt;b&gt;TTL Devices, 74xx Series with European Symbols&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
+&lt;li&gt;TTL Data Book, Volume 2 , 1993
+&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
+&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
+&lt;li&gt;http://icmaster.com/ViewCompare.asp
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SO14">
+<description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
+<wire x1="4.064" y1="1.9558" x2="-4.064" y2="1.9558" width="0.1524" layer="51"/>
+<wire x1="4.064" y1="-1.9558" x2="4.445" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.445" y1="1.5748" x2="-4.064" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
+<wire x1="4.064" y1="1.9558" x2="4.445" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-4.445" y1="-1.5748" x2="-4.064" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.064" y1="-1.9558" x2="4.064" y2="-1.9558" width="0.1524" layer="51"/>
+<wire x1="4.445" y1="-1.5748" x2="4.445" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.5748" x2="-4.445" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="0.508" x2="-4.445" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-0.508" x2="-4.445" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="0.508" x2="-4.445" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-4.445" y1="-1.6002" x2="4.445" y2="-1.6002" width="0.0508" layer="21"/>
+<smd name="1" x="-3.81" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="14" x="-3.81" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-2.54" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="-1.27" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="13" x="-2.54" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="12" x="-1.27" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="0" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="11" x="0" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="1.27" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="2.54" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="10" x="1.27" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="9" x="2.54" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="3.81" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="3.81" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<text x="-3.175" y="-0.762" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.826" y="-1.905" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="-0.254" y1="1.9558" x2="0.254" y2="3.0988" layer="51"/>
+<rectangle x1="-4.064" y1="-3.0988" x2="-3.556" y2="-1.9558" layer="51"/>
+<rectangle x1="-2.794" y1="-3.0988" x2="-2.286" y2="-1.9558" layer="51"/>
+<rectangle x1="-1.524" y1="-3.0734" x2="-1.016" y2="-1.9304" layer="51"/>
+<rectangle x1="-0.254" y1="-3.0988" x2="0.254" y2="-1.9558" layer="51"/>
+<rectangle x1="-1.524" y1="1.9558" x2="-1.016" y2="3.0988" layer="51"/>
+<rectangle x1="-2.794" y1="1.9558" x2="-2.286" y2="3.0988" layer="51"/>
+<rectangle x1="-4.064" y1="1.9558" x2="-3.556" y2="3.0988" layer="51"/>
+<rectangle x1="1.016" y1="1.9558" x2="1.524" y2="3.0988" layer="51"/>
+<rectangle x1="2.286" y1="1.9558" x2="2.794" y2="3.0988" layer="51"/>
+<rectangle x1="3.556" y1="1.9558" x2="4.064" y2="3.0988" layer="51"/>
+<rectangle x1="1.016" y1="-3.0988" x2="1.524" y2="-1.9558" layer="51"/>
+<rectangle x1="2.286" y1="-3.0988" x2="2.794" y2="-1.9558" layer="51"/>
+<rectangle x1="3.556" y1="-3.0988" x2="4.064" y2="-1.9558" layer="51"/>
+</package>
+<package name="SO16">
+<description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
+<wire x1="4.699" y1="1.9558" x2="-4.699" y2="1.9558" width="0.1524" layer="51"/>
+<wire x1="4.699" y1="-1.9558" x2="5.08" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.08" y1="1.5748" x2="-4.699" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
+<wire x1="4.699" y1="1.9558" x2="5.08" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-5.08" y1="-1.5748" x2="-4.699" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.699" y1="-1.9558" x2="4.699" y2="-1.9558" width="0.1524" layer="51"/>
+<wire x1="5.08" y1="-1.5748" x2="5.08" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.5748" x2="-5.08" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.508" x2="-5.08" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-5.08" y1="-1.6002" x2="5.08" y2="-1.6002" width="0.0508" layer="21"/>
+<smd name="1" x="-4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="16" x="-4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-3.175" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="-1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="15" x="-3.175" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="14" x="-1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="-0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="13" x="-0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="12" x="0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="3.175" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="11" x="1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="10" x="3.175" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="9" x="4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<text x="-3.81" y="-0.762" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.461" y="-1.905" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
+<rectangle x1="-4.699" y1="-3.0988" x2="-4.191" y2="-1.9558" layer="51"/>
+<rectangle x1="-3.429" y1="-3.0988" x2="-2.921" y2="-1.9558" layer="51"/>
+<rectangle x1="-2.159" y1="-3.0734" x2="-1.651" y2="-1.9304" layer="51"/>
+<rectangle x1="-0.889" y1="-3.0988" x2="-0.381" y2="-1.9558" layer="51"/>
+<rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
+<rectangle x1="-3.429" y1="1.9558" x2="-2.921" y2="3.0988" layer="51"/>
+<rectangle x1="-4.699" y1="1.9558" x2="-4.191" y2="3.0988" layer="51"/>
+<rectangle x1="0.381" y1="-3.0988" x2="0.889" y2="-1.9558" layer="51"/>
+<rectangle x1="1.651" y1="-3.0988" x2="2.159" y2="-1.9558" layer="51"/>
+<rectangle x1="2.921" y1="-3.0988" x2="3.429" y2="-1.9558" layer="51"/>
+<rectangle x1="4.191" y1="-3.0988" x2="4.699" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="1.9558" x2="0.889" y2="3.0988" layer="51"/>
+<rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
+<rectangle x1="2.921" y1="1.9558" x2="3.429" y2="3.0988" layer="51"/>
+<rectangle x1="4.191" y1="1.9558" x2="4.699" y2="3.0988" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4549,32 +4657,22 @@ www.allegromicro.com&lt;br&gt;
 <element name="C307" library="rcl" package="C0805" value="100n" x="139.065" y="-128.905"/>
 <element name="R14" library="rcl" package="M1206" value="1" x="-350.52" y="-222.885"/>
 <element name="DA7" library="linear" package="SO08" value="LM2904" x="-339.725" y="-230.505"/>
-<element name="R10A1" library="rcl" package="R0805" value="1k" x="-332.74" y="-229.235"/>
-<element name="C3A1" library="rcl" package="C0805" value="100n" x="-351.155" y="-257.81"/>
-<element name="I2" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-345.44" y="-258.445"/>
-<element name="I3" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-341.63" y="-258.445"/>
-<element name="R8A1" library="rcl" package="R0805" value="15k" x="-351.155" y="-251.46"/>
-<element name="R5A1" library="rcl" package="R0805" value="6k8" x="-351.155" y="-245.11"/>
-<element name="R2A1" library="rcl" package="R0805" value="3k8" x="-344.17" y="-238.76"/>
-<element name="R3A1" library="rcl" package="RTRIM3296W" value="400" x="-348.615" y="-230.505"/>
-<element name="R4A1" library="rcl" package="R0805" value="47k" x="-337.185" y="-238.76"/>
-<element name="R7A1" library="rcl" package="R0805" value="15k" x="-337.185" y="-245.11"/>
-<element name="R1A1" library="rcl" package="R0805" value="100" x="-351.155" y="-238.76"/>
-<element name="R6A1" library="rcl" package="R0805" value="100" x="-344.17" y="-245.11"/>
-<element name="C2A1" library="rcl" package="C0805" value="100n" x="-337.185" y="-251.46"/>
-<element name="R9A1" library="rcl" package="R0805" value="510*" x="-344.17" y="-251.46"/>
 <element name="IC4" library="lm231" package="DIL08" value="LM231N" x="-381" y="-278.765" rot="R90"/>
 <element name="R19" library="rcl" package="M0805" value="10k" x="-387.985" y="-280.035" rot="MR0"/>
 <element name="R26" library="rcl" package="M0805" value="17k*" x="-375.285" y="-278.765" rot="MR270"/>
 <element name="R39" library="rcl" package="M0805" value="6k81" x="-387.985" y="-274.955" rot="MR0"/>
-<element name="R40" library="rcl" package="M0805" value="68krx" x="-381" y="-280.035" rot="MR0"/>
+<element name="R40" library="rcl" package="M0805" value="68krx" x="-381" y="-278.13" rot="MR0"/>
 <element name="R42" library="rcl" package="M0805" value="10k" x="-387.985" y="-277.495" rot="MR0"/>
-<element name="C21" library="rcl" package="C0805" value="" x="-383.54" y="-270.51" rot="MR270"/>
+<element name="C21" library="rcl" package="C0805" value="1n" x="-383.54" y="-270.51" rot="MR270"/>
 <element name="C22" library="rcl" package="C0805" value="10n" x="-381" y="-274.955" rot="MR180"/>
-<element name="C23" library="rcl" package="C0805" value="20n" x="-407.035" y="-288.925"/>
-<element name="R43" library="rcl" package="M0805" value="100k" x="-407.035" y="-295.275"/>
-<element name="R44" library="rcl" package="M0805" value="100k" x="-407.035" y="-301.625"/>
-<element name="C24" library="rcl" package="C0805" value="100n" x="-407.035" y="-307.975"/>
+<element name="C23" library="rcl" package="C0805" value="20n" x="-370.84" y="-283.845" rot="MR90"/>
+<element name="R43" library="rcl" package="M0805" value="100k" x="-374.015" y="-282.575" rot="MR180"/>
+<element name="R44" library="rcl" package="M0805" value="100k" x="-374.015" y="-285.115" rot="MR0"/>
+<element name="C24" library="rcl" package="C0805" value="100n" x="-379.73" y="-281.305" rot="MR90"/>
+<element name="IC7" library="74xx-eu" package="SO14" value="74HC14D" x="-439.42" y="-177.165"/>
+<element name="IC8" library="74xx-eu" package="SO16" value="744053D" x="-438.785" y="-186.69"/>
+<element name="VD1" library="diode" package="SMB" value="SS12" x="19.685" y="-42.545"/>
+<element name="JP3" library="Разъёмы штырьковые 2.54мм" package="1X02" value="" x="19.05" y="-50.165"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -4661,7 +4759,6 @@ www.allegromicro.com&lt;br&gt;
 <wire x1="-122.970059375" y1="25.9959" x2="-126.045" y2="44.13" width="0.4064" layer="16"/>
 <wire x1="-126.045" y1="44.13" x2="-117.79" y2="48.895" width="0.4064" layer="16"/>
 <contactref element="R111" pad="1"/>
-<contactref element="DA2" pad="4"/>
 <contactref element="R4" pad="1"/>
 <contactref element="D7" pad="A"/>
 <contactref element="D8" pad="A"/>
@@ -4707,7 +4804,6 @@ www.allegromicro.com&lt;br&gt;
 <contactref element="IC6" pad="22"/>
 <wire x1="-107.95" y1="44.45" x2="-104.775" y2="44.45" width="0.4064" layer="16"/>
 <contactref element="C4T" pad="2"/>
-<contactref element="C100" pad="2"/>
 <contactref element="R9" pad="B"/>
 <contactref element="C102" pad="2"/>
 <contactref element="R3.4" pad="1"/>
@@ -4749,9 +4845,6 @@ www.allegromicro.com&lt;br&gt;
 <contactref element="L301" pad="2"/>
 <contactref element="C305" pad="+"/>
 <contactref element="C306" pad="+"/>
-<contactref element="C3A1" pad="2"/>
-<contactref element="R7A1" pad="1"/>
-<contactref element="C2A1" pad="1"/>
 <contactref element="R26" pad="1"/>
 <contactref element="IC4" pad="3"/>
 <contactref element="IC4" pad="4"/>
@@ -4760,6 +4853,9 @@ www.allegromicro.com&lt;br&gt;
 <contactref element="R40" pad="1"/>
 <contactref element="C24" pad="2"/>
 <contactref element="DA7" pad="5"/>
+<contactref element="IC7" pad="7"/>
+<contactref element="IC8" pad="8"/>
+<contactref element="VD1" pad="C"/>
 <wire x1="-259.92" y1="6.985" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-268.605" y1="26.67" x2="-259.92" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-222.565" y1="-16.51" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
@@ -4773,12 +4869,10 @@ www.allegromicro.com&lt;br&gt;
 <wire x1="-99.06" y1="44.02" x2="-101.6" y2="44.77" width="0" layer="19" extent="16-16"/>
 <wire x1="-96.835" y1="19.05" x2="-99.695" y2="39.37" width="0" layer="19" extent="1-16"/>
 <wire x1="-84.455" y1="17.96" x2="-96.835" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-84.77" y1="14.605" x2="-84.455" y2="17.96" width="0" layer="19" extent="1-1"/>
-<wire x1="-87.11" y1="7.3" x2="-84.77" y2="14.605" width="0" layer="19" extent="1-1"/>
-<wire x1="-85.405" y1="4.445" x2="-87.11" y2="7.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-98.745" y1="5.715" x2="-96.835" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-89.535" y1="4.125" x2="-98.745" y2="5.715" width="0" layer="19" extent="1-1"/>
+<wire x1="-85.405" y1="4.445" x2="-89.535" y2="4.125" width="0" layer="19" extent="1-1"/>
 <wire x1="-83.505" y1="1.905" x2="-85.405" y2="4.445" width="0" layer="19" extent="1-1"/>
-<wire x1="-89.535" y1="4.125" x2="-87.11" y2="7.3" width="0" layer="19" extent="1-1"/>
-<wire x1="-98.745" y1="5.715" x2="-89.535" y2="4.125" width="0" layer="19" extent="1-1"/>
 <wire x1="-61.595" y1="31.435" x2="-84.455" y2="17.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-56.2" y1="8.89" x2="-55.245" y2="31.435" width="0" layer="19" extent="1-16"/>
 <wire x1="-54.5" y1="7.1" x2="-56.2" y2="8.89" width="0" layer="19" extent="16-16"/>
@@ -4790,13 +4884,14 @@ www.allegromicro.com&lt;br&gt;
 <wire x1="0.385" y1="-15.6575" x2="-19.935" y2="-23.2775" width="0" layer="19" extent="1-1"/>
 <wire x1="5.6" y1="-27.94" x2="4" y2="-25.5" width="0" layer="19" extent="16-16"/>
 <wire x1="5.6" y1="-29.96" x2="5.6" y2="-27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="17.485" y1="-42.545" x2="15.76" y2="-32.5" width="0" layer="19" extent="1-1"/>
 <wire x1="12.31" y1="-12.69" x2="0.385" y2="-15.6575" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.62" y1="-43.18" x2="5.6" y2="-32.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.62" y1="-45.72" x2="-7.62" y2="-43.18" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.16" y1="-45.72" x2="-7.62" y2="-45.72" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.16" y1="-43.18" x2="-7.62" y2="-43.18" width="0" layer="19" extent="1-1"/>
-<wire x1="5.23875" y1="-51.435" x2="-7.62" y2="-45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="5.23875" y1="-51.435" x2="17.485" y2="-42.545" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.27" y1="-60.325" x2="5.23875" y2="-51.435" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-45.72" x2="5.23875" y2="-51.435" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.16" y1="-45.72" x2="-7.62" y2="-45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.16" y1="-43.18" x2="-10.16" y2="-45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-43.18" x2="-7.62" y2="-45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="9.6012" y1="-73.8886" x2="-1.27" y2="-60.325" width="0" layer="19" extent="1-1"/>
 <wire x1="13.335" y1="-74.61" x2="9.6012" y2="-73.8886" width="0" layer="19" extent="1-1"/>
 <wire x1="13.335" y1="-70.8" x2="13.335" y2="-74.61" width="0" layer="19" extent="1-1"/>
@@ -4845,20 +4940,9 @@ www.allegromicro.com&lt;br&gt;
 <wire x1="-263.84" y1="-206.375" x2="-220.345" y2="-150.495" width="0" layer="19" extent="1-1"/>
 <wire x1="-284.16" y1="-186.69" x2="-263.84" y2="-206.375" width="0" layer="19" extent="1-1"/>
 <wire x1="-337.82" y1="-227.905" x2="-284.16" y2="-186.69" width="0" layer="19" extent="1-1"/>
-<wire x1="-338.135" y1="-245.11" x2="-337.82" y2="-227.905" width="0" layer="19" extent="1-1"/>
-<wire x1="-338.135" y1="-251.46" x2="-338.135" y2="-245.11" width="0" layer="19" extent="1-1"/>
-<wire x1="-350.205" y1="-257.81" x2="-338.135" y2="-251.46" width="0" layer="19" extent="1-1"/>
 <wire x1="-350.266" y1="-212.09" x2="-337.82" y2="-227.905" width="0" layer="19" extent="1-1"/>
-<wire x1="-377.19" y1="-274.955" x2="-350.205" y2="-257.81" width="0" layer="19" extent="1-1"/>
-<wire x1="-377.19" y1="-277.495" x2="-377.19" y2="-274.955" width="0" layer="19" extent="1-1"/>
-<wire x1="-375.285" y1="-277.815" x2="-377.19" y2="-277.495" width="0" layer="19" extent="16-16"/>
-<wire x1="-380.05" y1="-274.955" x2="-377.19" y2="-274.955" width="0" layer="19" extent="16-16"/>
-<wire x1="-380.05" y1="-280.035" x2="-377.19" y2="-277.495" width="0" layer="19" extent="16-16"/>
-<wire x1="-406.085" y1="-268.605" x2="-380.05" y2="-274.955" width="0" layer="19" extent="1-16"/>
-<wire x1="-407.035" y1="-260.52" x2="-406.085" y2="-268.605" width="0" layer="19" extent="1-1"/>
-<wire x1="-407.985" y1="-235.585" x2="-407.035" y2="-260.52" width="0" layer="19" extent="1-1"/>
-<wire x1="-401.005" y1="-216.535" x2="-407.985" y2="-235.585" width="0" layer="19" extent="1-1"/>
-<wire x1="-391.795" y1="-217.17" x2="-401.005" y2="-216.535" width="0" layer="19" extent="1-1"/>
+<wire x1="-391.795" y1="-217.17" x2="-350.266" y2="-212.09" width="0" layer="19" extent="1-1"/>
+<wire x1="-401.005" y1="-216.535" x2="-391.795" y2="-217.17" width="0" layer="19" extent="1-1"/>
 <wire x1="-407.985" y1="-210.185" x2="-401.005" y2="-216.535" width="0" layer="19" extent="1-1"/>
 <wire x1="-398.46" y1="-195.58" x2="-407.985" y2="-210.185" width="0" layer="19" extent="1-1"/>
 <wire x1="-407.035" y1="-191.135" x2="-398.46" y2="-195.58" width="0" layer="19" extent="1-1"/>
@@ -4868,7 +4952,17 @@ www.allegromicro.com&lt;br&gt;
 <wire x1="-402.59" y1="-167.7" x2="-407.985" y2="-172.085" width="0" layer="19" extent="1-1"/>
 <wire x1="-398.46" y1="-161.925" x2="-402.59" y2="-167.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-406.715" y1="-157.325" x2="-398.46" y2="-161.925" width="0" layer="19" extent="1-1"/>
-<wire x1="-406.085" y1="-307.975" x2="-380.05" y2="-280.035" width="0" layer="19" extent="1-16"/>
+<wire x1="-407.985" y1="-235.585" x2="-401.005" y2="-216.535" width="0" layer="19" extent="1-1"/>
+<wire x1="-407.035" y1="-260.52" x2="-407.985" y2="-235.585" width="0" layer="19" extent="1-1"/>
+<wire x1="-406.085" y1="-268.605" x2="-407.035" y2="-260.52" width="0" layer="19" extent="1-1"/>
+<wire x1="-380.05" y1="-274.955" x2="-406.085" y2="-268.605" width="0" layer="19" extent="1-16"/>
+<wire x1="-377.19" y1="-274.955" x2="-380.05" y2="-274.955" width="0" layer="19" extent="16-16"/>
+<wire x1="-377.19" y1="-277.495" x2="-377.19" y2="-274.955" width="0" layer="19" extent="1-1"/>
+<wire x1="-375.285" y1="-277.815" x2="-377.19" y2="-277.495" width="0" layer="19" extent="16-16"/>
+<wire x1="-380.05" y1="-278.13" x2="-377.19" y2="-277.495" width="0" layer="19" extent="16-16"/>
+<wire x1="-379.73" y1="-280.355" x2="-380.05" y2="-278.13" width="0" layer="19" extent="16-16"/>
+<wire x1="-434.34" y1="-189.7634" x2="-407.035" y2="-191.135" width="0" layer="19" extent="1-1"/>
+<wire x1="-435.61" y1="-180.2384" x2="-434.34" y2="-189.7634" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
 <contactref element="VT1" pad="D"/>
@@ -4884,6 +4978,14 @@ www.allegromicro.com&lt;br&gt;
 <contactref element="IIN3" pad="1"/>
 <contactref element="IC3" pad="3"/>
 <contactref element="C12" pad="1"/>
+<contactref element="IC4" pad="8"/>
+<contactref element="R19" pad="2"/>
+<contactref element="R39" pad="2"/>
+<contactref element="R42" pad="2"/>
+<wire x1="-388.935" y1="-277.495" x2="-388.935" y2="-280.035" width="0" layer="19" extent="16-16"/>
+<wire x1="-388.935" y1="-274.955" x2="-388.935" y2="-277.495" width="0" layer="19" extent="16-16"/>
+<wire x1="-384.81" y1="-282.575" x2="-388.935" y2="-280.035" width="0" layer="19" extent="16-16"/>
+<wire x1="-28.09875" y1="-59.055" x2="-388.935" y2="-274.955" width="0" layer="19" extent="16-16"/>
 <wire x1="-23.495" y1="-57.785" x2="-28.09875" y2="-59.055" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.3022" y1="-52.07" x2="-28.09875" y2="-59.055" width="0" layer="19" extent="1-1"/>
 <wire x1="0.15875" y1="-51.435" x2="-23.495" y2="-57.785" width="0" layer="19" extent="1-1"/>
@@ -4987,11 +5089,6 @@ www.allegromicro.com&lt;br&gt;
 <contactref element="C301" pad="+"/>
 <contactref element="R301" pad="1"/>
 <contactref element="R14" pad="1"/>
-<contactref element="DA7" pad="8"/>
-<contactref element="IC4" pad="8"/>
-<contactref element="R19" pad="2"/>
-<contactref element="R39" pad="2"/>
-<contactref element="R42" pad="2"/>
 <wire x1="-260.67" y1="13.335" x2="-266.385" y2="13.335" width="0" layer="19" extent="1-1"/>
 <wire x1="-254.955" y1="13.335" x2="-260.67" y2="13.335" width="0" layer="19" extent="1-1"/>
 <wire x1="-222.885" y1="9.525" x2="-254.955" y2="13.335" width="0" layer="19" extent="1-1"/>
@@ -5042,12 +5139,7 @@ www.allegromicro.com&lt;br&gt;
 <wire x1="-213.995" y1="-135.57" x2="-189.55" y2="-12.065" width="0" layer="19" extent="1-1"/>
 <wire x1="-220.345" y1="-145.415" x2="-213.995" y2="-135.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-205.105" y1="-143.51" x2="-213.995" y2="-135.57" width="0" layer="19" extent="1-1"/>
-<wire x1="-341.63" y1="-227.905" x2="-220.345" y2="-145.415" width="0" layer="19" extent="1-1"/>
-<wire x1="-351.92" y1="-222.885" x2="-341.63" y2="-227.905" width="0" layer="19" extent="1-1"/>
-<wire x1="-388.935" y1="-274.955" x2="-351.92" y2="-222.885" width="0" layer="19" extent="1-16"/>
-<wire x1="-388.935" y1="-277.495" x2="-388.935" y2="-274.955" width="0" layer="19" extent="16-16"/>
-<wire x1="-388.935" y1="-280.035" x2="-388.935" y2="-277.495" width="0" layer="19" extent="16-16"/>
-<wire x1="-384.81" y1="-282.575" x2="-388.935" y2="-280.035" width="0" layer="19" extent="16-16"/>
+<wire x1="-351.92" y1="-222.885" x2="-220.345" y2="-145.415" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="LCD1" pad="3@"/>
@@ -5425,7 +5517,6 @@ www.allegromicro.com&lt;br&gt;
 <contactref element="C102" pad="1"/>
 <contactref element="R112" pad="2"/>
 <contactref element="R4A" pad="2"/>
-<contactref element="R4A1" pad="2"/>
 <wire x1="-78.42" y1="5.715" x2="-150.815" y2="-23.495" width="0" layer="19" extent="1-1"/>
 <wire x1="-61.99" y1="6.27" x2="-78.42" y2="5.715" width="0" layer="19" extent="1-16"/>
 <wire x1="-60.01" y1="3.81" x2="-61.99" y2="6.27" width="0" layer="19" extent="16-16"/>
@@ -5433,7 +5524,6 @@ www.allegromicro.com&lt;br&gt;
 <wire x1="-55.88" y1="2.855" x2="-60.01" y2="3.81" width="0" layer="19" extent="16-16"/>
 <wire x1="-55.45" y1="4.9" x2="-55.88" y2="2.855" width="0" layer="19" extent="16-16"/>
 <wire x1="-58.1" y1="8.89" x2="-61.99" y2="6.27" width="0" layer="19" extent="16-16"/>
-<wire x1="-336.235" y1="-238.76" x2="-150.815" y2="-23.495" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$103">
 <contactref element="R311" pad="1"/>
@@ -6122,12 +6212,8 @@ www.allegromicro.com&lt;br&gt;
 <contactref element="C13" pad="1"/>
 <contactref element="C3A" pad="1"/>
 <contactref element="R10A" pad="1"/>
-<contactref element="C3A1" pad="1"/>
-<contactref element="R10A1" pad="1"/>
 <wire x1="-307.025" y1="85.09" x2="-308.925" y2="78.74" width="0" layer="19" extent="1-1"/>
 <wire x1="-253.68" y1="-97.79" x2="-308.925" y2="78.74" width="0" layer="19" extent="1-1"/>
-<wire x1="-333.69" y1="-229.235" x2="-253.68" y2="-97.79" width="0" layer="19" extent="1-1"/>
-<wire x1="-352.105" y1="-257.81" x2="-333.69" y2="-229.235" width="0" layer="19" extent="1-1"/>
 <wire x1="-100.645" y1="5.715" x2="-253.68" y2="-97.79" width="0" layer="19" extent="1-1"/>
 <wire x1="-105.09" y1="13.97" x2="-100.645" y2="5.715" width="0" layer="19" extent="1-1"/>
 <wire x1="-94.935" y1="19.05" x2="-105.09" y2="13.97" width="0" layer="19" extent="1-1"/>
@@ -6311,9 +6397,13 @@ www.allegromicro.com&lt;br&gt;
 </signal>
 <signal name="V+">
 <contactref element="DA5" pad="8"/>
+<contactref element="DA7" pad="8"/>
+<wire x1="-341.63" y1="-227.905" x2="-307.34" y2="107.375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V-">
 <contactref element="DA5" pad="4"/>
+<contactref element="DA7" pad="4"/>
+<wire x1="-337.82" y1="-233.105" x2="-303.53" y2="102.175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="DA5" pad="2"/>
@@ -6904,74 +6994,25 @@ www.allegromicro.com&lt;br&gt;
 <contactref element="L302" pad="2"/>
 <contactref element="C307" pad="1"/>
 <contactref element="C306" pad="-"/>
-<contactref element="DA7" pad="4"/>
-<wire x1="130.81" y1="-121.285" x2="-337.82" y2="-233.105" width="0" layer="19" extent="1-1"/>
+<contactref element="VD1" pad="A"/>
+<contactref element="JP3" pad="1"/>
+<contactref element="JP3" pad="2"/>
+<contactref element="DA2" pad="4"/>
+<contactref element="C100" pad="2"/>
+<wire x1="-84.77" y1="14.605" x2="-87.11" y2="7.3" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="-50.165" x2="-87.11" y2="7.3" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="-50.165" x2="17.78" y2="-50.165" width="0" layer="19" extent="1-1"/>
+<wire x1="21.885" y1="-42.545" x2="20.32" y2="-50.165" width="0" layer="19" extent="1-1"/>
+<wire x1="130.81" y1="-121.285" x2="20.32" y2="-50.165" width="0" layer="19" extent="1-1"/>
 <wire x1="138.115" y1="-128.905" x2="130.81" y2="-121.285" width="0" layer="19" extent="1-1"/>
 <wire x1="144.145" y1="-140.97" x2="138.115" y2="-128.905" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$296">
-<contactref element="R5A1" pad="1"/>
-<contactref element="DA7" pad="3"/>
-<contactref element="R7A1" pad="2"/>
-<contactref element="R6A1" pad="2"/>
-<wire x1="-343.22" y1="-245.11" x2="-352.105" y2="-245.11" width="0" layer="19" extent="1-1"/>
-<wire x1="-336.235" y1="-245.11" x2="-343.22" y2="-245.11" width="0" layer="19" extent="1-1"/>
-<wire x1="-339.09" y1="-233.105" x2="-336.235" y2="-245.11" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$297">
-<contactref element="R2A1" pad="2"/>
-<contactref element="R8A1" pad="1"/>
-<contactref element="DA7" pad="2"/>
-<contactref element="R1A1" pad="2"/>
-<contactref element="C2A1" pad="2"/>
-<wire x1="-350.205" y1="-238.76" x2="-352.105" y2="-251.46" width="0" layer="19" extent="1-1"/>
-<wire x1="-343.22" y1="-238.76" x2="-350.205" y2="-238.76" width="0" layer="19" extent="1-1"/>
-<wire x1="-340.36" y1="-233.105" x2="-343.22" y2="-238.76" width="0" layer="19" extent="1-1"/>
-<wire x1="-336.235" y1="-251.46" x2="-343.22" y2="-238.76" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$298">
-<contactref element="R3A1" pad="2"/>
-<contactref element="R4A1" pad="1"/>
-<wire x1="-338.135" y1="-238.76" x2="-348.615" y2="-230.505" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$300">
-<contactref element="R2A1" pad="1"/>
-<contactref element="R3A1" pad="3"/>
-<wire x1="-348.615" y1="-227.965" x2="-345.12" y2="-238.76" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$301">
-<contactref element="DA7" pad="1"/>
-<contactref element="R9A1" pad="2"/>
-<contactref element="R10A1" pad="2"/>
-<wire x1="-341.63" y1="-233.105" x2="-343.22" y2="-251.46" width="0" layer="19" extent="1-1"/>
-<wire x1="-331.79" y1="-229.235" x2="-341.63" y2="-233.105" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$303">
-<contactref element="R5A1" pad="2"/>
-<contactref element="R3A1" pad="1"/>
-<wire x1="-348.615" y1="-233.045" x2="-350.205" y2="-245.11" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$304">
-<contactref element="R6A1" pad="1"/>
-<contactref element="I2" pad="1"/>
-<wire x1="-345.12" y1="-245.11" x2="-345.44" y2="-258.445" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$305">
-<contactref element="R1A1" pad="1"/>
-<contactref element="I3" pad="1"/>
-<wire x1="-352.105" y1="-238.76" x2="-341.63" y2="-258.445" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$306">
-<contactref element="R8A1" pad="2"/>
-<contactref element="R9A1" pad="1"/>
-<wire x1="-345.12" y1="-251.46" x2="-350.205" y2="-251.46" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$308">
 <contactref element="IC4" pad="7"/>
 <contactref element="R19" pad="1"/>
 <contactref element="R40" pad="2"/>
 <wire x1="-384.81" y1="-280.035" x2="-387.035" y2="-280.035" width="0" layer="19" extent="16-16"/>
-<wire x1="-381.95" y1="-280.035" x2="-384.81" y2="-280.035" width="0" layer="19" extent="16-16"/>
+<wire x1="-381.95" y1="-278.13" x2="-384.81" y2="-280.035" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$310">
 <contactref element="R26" pad="2"/>
@@ -6990,9 +7031,9 @@ www.allegromicro.com&lt;br&gt;
 <contactref element="C24" pad="1"/>
 <contactref element="R44" pad="2"/>
 <contactref element="R43" pad="1"/>
-<wire x1="-406.085" y1="-301.625" x2="-407.985" y2="-307.975" width="0" layer="19" extent="1-1"/>
-<wire x1="-407.985" y1="-295.275" x2="-406.085" y2="-301.625" width="0" layer="19" extent="1-1"/>
-<wire x1="-377.19" y1="-282.575" x2="-407.985" y2="-295.275" width="0" layer="19" extent="1-1"/>
+<wire x1="-377.19" y1="-282.575" x2="-379.73" y2="-282.255" width="0" layer="19" extent="16-16"/>
+<wire x1="-374.965" y1="-282.575" x2="-377.19" y2="-282.575" width="0" layer="19" extent="16-16"/>
+<wire x1="-374.965" y1="-285.115" x2="-374.965" y2="-282.575" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$313">
 <contactref element="IC4" pad="6"/>
@@ -7008,15 +7049,23 @@ www.allegromicro.com&lt;br&gt;
 <contactref element="C23" pad="1"/>
 <contactref element="DA7" pad="6"/>
 <contactref element="R44" pad="1"/>
-<wire x1="-407.985" y1="-288.925" x2="-407.985" y2="-301.625" width="0" layer="19" extent="1-1"/>
-<wire x1="-339.09" y1="-227.905" x2="-407.985" y2="-288.925" width="0" layer="19" extent="1-1"/>
+<wire x1="-373.065" y1="-285.115" x2="-370.84" y2="-284.795" width="0" layer="19" extent="16-16"/>
+<wire x1="-339.09" y1="-227.905" x2="-370.84" y2="-284.795" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$315">
 <contactref element="DA7" pad="7"/>
 <contactref element="C23" pad="2"/>
 <contactref element="R43" pad="2"/>
-<wire x1="-406.085" y1="-288.925" x2="-406.085" y2="-295.275" width="0" layer="19" extent="1-1"/>
-<wire x1="-340.36" y1="-227.905" x2="-406.085" y2="-288.925" width="0" layer="19" extent="1-1"/>
+<wire x1="-373.065" y1="-282.575" x2="-370.84" y2="-282.895" width="0" layer="19" extent="16-16"/>
+<wire x1="-340.36" y1="-227.905" x2="-370.84" y2="-282.895" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="VCC">
+<contactref element="IC7" pad="14"/>
+<contactref element="IC8" pad="16"/>
+<wire x1="-443.23" y1="-174.0916" x2="-443.23" y2="-183.6166" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VEE">
+<contactref element="IC8" pad="7"/>
 </signal>
 </signals>
 </board>

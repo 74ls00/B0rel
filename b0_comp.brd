@@ -4856,6 +4856,10 @@ Based on the following sources:
 <contactref element="IC7" pad="7"/>
 <contactref element="IC8" pad="8"/>
 <contactref element="VD1" pad="C"/>
+<contactref element="PCB_DC-DC" pad="2"/>
+<contactref element="PCB_DC-DC" pad="2@"/>
+<contactref element="PCB_DC-DC" pad="8"/>
+<contactref element="PCB_DC-DC" pad="8@"/>
 <wire x1="-259.92" y1="6.985" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-268.605" y1="26.67" x2="-259.92" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-222.565" y1="-16.51" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
@@ -4881,17 +4885,21 @@ Based on the following sources:
 <wire x1="-30.095" y1="-11.8475" x2="-35.865" y2="-14.02" width="0" layer="19" extent="1-1"/>
 <wire x1="-25.015" y1="-8.0375" x2="-30.095" y2="-11.8475" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.935" y1="-23.2775" x2="-30.095" y2="-11.8475" width="0" layer="19" extent="1-1"/>
-<wire x1="0.385" y1="-15.6575" x2="-19.935" y2="-23.2775" width="0" layer="19" extent="1-1"/>
-<wire x1="5.6" y1="-27.94" x2="4" y2="-25.5" width="0" layer="19" extent="16-16"/>
-<wire x1="5.6" y1="-29.96" x2="5.6" y2="-27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.815" y1="-40.755" x2="-19.935" y2="-23.2775" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.815" y1="-43.295" x2="-12.815" y2="-40.755" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.16" y1="-43.18" x2="-12.815" y2="-43.295" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.16" y1="-45.72" x2="-10.16" y2="-43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-45.72" x2="-10.16" y2="-45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-43.18" x2="-10.16" y2="-43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="2.425" y1="-43.295" x2="-7.62" y2="-43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="2.425" y1="-40.755" x2="2.425" y2="-43.295" width="0" layer="19" extent="1-1"/>
+<wire x1="5.23875" y1="-51.435" x2="2.425" y2="-43.295" width="0" layer="19" extent="1-1"/>
+<wire x1="5.6" y1="-32.5" x2="2.425" y2="-40.755" width="0" layer="19" extent="1-1"/>
+<wire x1="5.6" y1="-27.94" x2="5.6" y2="-29.96" width="0" layer="19" extent="1-1"/>
+<wire x1="4" y1="-25.5" x2="5.6" y2="-27.94" width="0" layer="19" extent="16-16"/>
 <wire x1="17.485" y1="-42.545" x2="15.76" y2="-32.5" width="0" layer="19" extent="1-1"/>
-<wire x1="12.31" y1="-12.69" x2="0.385" y2="-15.6575" width="0" layer="19" extent="1-1"/>
-<wire x1="5.23875" y1="-51.435" x2="17.485" y2="-42.545" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.27" y1="-60.325" x2="5.23875" y2="-51.435" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.62" y1="-45.72" x2="5.23875" y2="-51.435" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.16" y1="-45.72" x2="-7.62" y2="-45.72" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.16" y1="-43.18" x2="-10.16" y2="-45.72" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.62" y1="-43.18" x2="-7.62" y2="-45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="12.31" y1="-12.69" x2="0.385" y2="-15.6575" width="0" layer="19" extent="1-1"/>
 <wire x1="9.6012" y1="-73.8886" x2="-1.27" y2="-60.325" width="0" layer="19" extent="1-1"/>
 <wire x1="13.335" y1="-74.61" x2="9.6012" y2="-73.8886" width="0" layer="19" extent="1-1"/>
 <wire x1="13.335" y1="-70.8" x2="13.335" y2="-74.61" width="0" layer="19" extent="1-1"/>
@@ -4900,8 +4908,8 @@ Based on the following sources:
 <wire x1="23.815" y1="-84.455" x2="18.415" y2="-81.6" width="0" layer="19" extent="1-1"/>
 <wire x1="28.065" y1="-95.25" x2="23.815" y2="-84.455" width="0" layer="19" extent="1-1"/>
 <wire x1="5.205" y1="-86.995" x2="9.6012" y2="-73.8886" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.02" y1="-45.72" x2="-10.16" y2="-45.72" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.02" y1="-43.18" x2="-33.02" y2="-45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.02" y1="-43.18" x2="-12.815" y2="-43.295" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.02" y1="-45.72" x2="-33.02" y2="-43.18" width="0" layer="19" extent="1-1"/>
 <wire x1="48.0488" y1="-15.359" x2="15.76" y2="-27.94" width="0" layer="19" extent="1-16"/>
 <wire x1="51.435" y1="-29.845" x2="51.681" y2="-15.359" width="0" layer="19" extent="1-1"/>
 <wire x1="59.885" y1="-56.465" x2="51.435" y2="-29.845" width="0" layer="19" extent="16-16"/>
@@ -4982,6 +4990,8 @@ Based on the following sources:
 <contactref element="R19" pad="2"/>
 <contactref element="R39" pad="2"/>
 <contactref element="R42" pad="2"/>
+<contactref element="PCB_DC-DC" pad="7"/>
+<contactref element="PCB_DC-DC" pad="7@"/>
 <wire x1="-388.935" y1="-277.495" x2="-388.935" y2="-280.035" width="0" layer="19" extent="16-16"/>
 <wire x1="-388.935" y1="-274.955" x2="-388.935" y2="-277.495" width="0" layer="19" extent="16-16"/>
 <wire x1="-384.81" y1="-282.575" x2="-388.935" y2="-280.035" width="0" layer="19" extent="16-16"/>
@@ -4989,13 +4999,15 @@ Based on the following sources:
 <wire x1="-23.495" y1="-57.785" x2="-28.09875" y2="-59.055" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.3022" y1="-52.07" x2="-28.09875" y2="-59.055" width="0" layer="19" extent="1-1"/>
 <wire x1="0.15875" y1="-51.435" x2="-23.495" y2="-57.785" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.115" y1="-43.295" x2="0.15875" y2="-51.435" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.115" y1="-40.755" x2="-0.115" y2="-43.295" width="0" layer="19" extent="1-1"/>
 <wire x1="9.6012" y1="-68.7832" x2="0.15875" y2="-51.435" width="0" layer="19" extent="1-1"/>
 <wire x1="13.335" y1="-68.9" x2="9.6012" y2="-68.7832" width="0" layer="19" extent="1-1"/>
 <wire x1="11.305" y1="-86.995" x2="13.335" y2="-68.9" width="0" layer="19" extent="1-1"/>
 <wire x1="67.325" y1="-55.04" x2="13.335" y2="-68.9" width="0" layer="19" extent="1-16"/>
 <wire x1="80.01" y1="-54.61" x2="67.325" y2="-55.04" width="0" layer="19" extent="16-16"/>
 <wire x1="54.6528" y1="-21.074" x2="67.325" y2="-55.04" width="0" layer="19" extent="1-16"/>
-<wire x1="-74.524" y1="112.319" x2="-30.3022" y2="-52.07" width="0" layer="19" extent="16-16"/>
+<wire x1="-74.524" y1="112.319" x2="-0.115" y2="-40.755" width="0" layer="19" extent="16-16"/>
 <wire x1="-76.835" y1="113.35" x2="-74.524" y2="112.319" width="0" layer="19" extent="16-16"/>
 <wire x1="-66.04" y1="118.745" x2="-74.524" y2="112.319" width="0" layer="19" extent="16-16"/>
 </signal>
@@ -6872,11 +6884,6 @@ Based on the following sources:
 <wire x1="-29.96" y1="31" x2="-5.34" y2="30.445" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.5" y1="31" x2="-29.96" y2="31" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="GND1">
-<contactref element="PCB_DC-DC" pad="2"/>
-<contactref element="PCB_DC-DC" pad="2@"/>
-<wire x1="-12.815" y1="-40.755" x2="-12.815" y2="-43.295" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$184">
 <contactref element="PCB_DC-DC" pad="1"/>
 <contactref element="PCB_DC-DC" pad="1@"/>
@@ -6901,16 +6908,6 @@ Based on the following sources:
 <contactref element="PCB_DC-DC" pad="6"/>
 <contactref element="PCB_DC-DC" pad="6@"/>
 <wire x1="-2.655" y1="-40.755" x2="-2.655" y2="-43.295" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$180">
-<contactref element="PCB_DC-DC" pad="7"/>
-<contactref element="PCB_DC-DC" pad="7@"/>
-<wire x1="-0.115" y1="-40.755" x2="-0.115" y2="-43.295" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$181">
-<contactref element="PCB_DC-DC" pad="8"/>
-<contactref element="PCB_DC-DC" pad="8@"/>
-<wire x1="2.425" y1="-40.755" x2="2.425" y2="-43.295" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$183">
 <contactref element="PCB_DC-DC" pad="10"/>

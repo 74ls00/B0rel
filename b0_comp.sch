@@ -23892,6 +23892,9 @@ Source: avr.lbr</description>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="PIN_D3MM">
+<pad name="P$1" x="0" y="0" drill="3" diameter="5"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LP">
@@ -23942,6 +23945,11 @@ Source: avr.lbr</description>
 <pin name="P$1" x="0" y="0" visible="off" length="point"/>
 <circle x="0" y="0" radius="0.2794" width="0.4572" layer="94"/>
 <text x="-1.27" y="1.27" size="1.778" layer="94">&gt;NAME</text>
+</symbol>
+<symbol name="PIN_D">
+<pin name="P$1" x="2.54" y="0" visible="off" length="short" rot="R180"/>
+<circle x="-1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -24026,6 +24034,21 @@ Source: avr.lbr</description>
 <device name="" package="PIN-2MM">
 <connects>
 <connect gate="1" pin="P$1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIN_D">
+<gates>
+<gate name="G$1" symbol="PIN_D" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="PIN_D3MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -28571,6 +28594,8 @@ Philips Semiconductor</description>
 <part name="DA13" library="ct-pack" deviceset="78LXX" device="_SOT89" value="78L06"/>
 <part name="CON_I" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X5" device=""/>
 <part name="GND69" library="supply1v" deviceset="GND" device=""/>
+<part name="U$23" library="b0f" deviceset="PIN_D" device=""/>
+<part name="U$24" library="b0f" deviceset="PIN_D" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -30159,6 +30184,8 @@ vin=4.914</text>
 <attribute name="VALUE" x="-30.48" y="138.43" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND69" gate="1" x="-35.56" y="132.08" rot="MR0"/>
+<instance part="U$23" gate="G$1" x="-99.06" y="144.78" rot="R270"/>
+<instance part="U$24" gate="G$1" x="-58.42" y="144.78" rot="R270"/>
 </instances>
 <busses>
 <bus name="DB[0..7],BLK,VMETER,AMETR,ICP1,INT0,E,RS,RST,RESET">
@@ -32098,7 +32125,7 @@ vin=4.914</text>
 <wire x1="27.94" y1="76.2" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$283" class="0">
+<net name="IP+" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IP+"/>
 <wire x1="-93.98" y1="139.7" x2="-96.52" y2="139.7" width="0.1524" layer="91"/>
@@ -32108,10 +32135,12 @@ vin=4.914</text>
 <wire x1="-96.52" y1="134.62" x2="-93.98" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="137.16" x2="-99.06" y2="137.16" width="0.1524" layer="91"/>
 <junction x="-96.52" y="137.16"/>
-<wire x1="-99.06" y1="137.16" x2="-99.06" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="137.16" x2="-99.06" y2="142.24" width="0.1524" layer="91"/>
+<label x="-99.06" y="132.08" size="1.778" layer="95"/>
+<pinref part="U$23" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="N$285" class="0">
+<net name="IP-" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IP-"/>
 <wire x1="-63.5" y1="139.7" x2="-60.96" y2="139.7" width="0.1524" layer="91"/>
@@ -32121,7 +32150,9 @@ vin=4.914</text>
 <wire x1="-60.96" y1="134.62" x2="-63.5" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="137.16" x2="-58.42" y2="137.16" width="0.1524" layer="91"/>
 <junction x="-60.96" y="137.16"/>
-<wire x1="-58.42" y1="137.16" x2="-58.42" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="137.16" x2="-58.42" y2="142.24" width="0.1524" layer="91"/>
+<label x="-63.5" y="132.08" size="1.778" layer="95"/>
+<pinref part="U$24" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$289" class="0">

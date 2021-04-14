@@ -4793,7 +4793,20 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <element name="R2I1" library="rcl" package="R0805" value="20k" x="180.6575" y="-97.155"/>
 <element name="R3I1" library="rcl" package="R0805" value="10k" x="182.88" y="-107.95" rot="R90"/>
 <element name="R3I2" library="rcl" package="R0805" value="10k" x="184.15" y="-104.775" rot="R180"/>
-<element name="R2.2I" library="rcl" package="R0805" value="" x="-443.865" y="-291.1475"/>
+<element name="R2.2I" library="rcl" package="R0805" value="" x="170.4975" y="-149.5425"/>
+<element name="DA12" library="mc34063-2" package="SOIC8" value="MC34063AD" x="173.0375" y="-160.02"/>
+<element name="R45" library="rcl" package="M1206" value="1" x="171.1325" y="-174.9425"/>
+<element name="L1" library="rcl" package="TFI0305" value="100mkhn" x="173.355" y="-187.0075"/>
+<element name="VD2" library="diode" package="SMB" value="SS12" x="172.085" y="-167.9575"/>
+<element name="C18" library="rcl" package="C0805" value="470" x="180.975" y="-174.9425"/>
+<element name="R46" library="rcl" package="M0805" value="3k9" x="185.7375" y="-174.9425"/>
+<element name="R47" library="rcl" package="M0805" value="12k" x="190.5" y="-174.9425"/>
+<element name="C25" library="rcl" package="C0805" value="100n" x="183.1975" y="-167.005"/>
+<element name="C28" library="rcl" package="E3,5-8" value="470m" x="181.9275" y="-155.2575"/>
+<element name="R48" library="rcl" package="M1206" value="1" x="176.2125" y="-174.9425"/>
+<element name="D9" library="diode" package="SOD80C" value="" x="171.1325" y="-191.4525"/>
+<element name="R49" library="rcl" package="M0805" value="180" x="170.4975" y="-195.58"/>
+<element name="L2" library="rcl" package="TFI0305" value="100mkhn" x="173.355" y="-201.6125"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -4981,6 +4994,12 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <contactref element="DA3I" pad="2@1"/>
 <contactref element="DA3I" pad="2"/>
 <wire x1="184.785" y1="-94.793" x2="184.785" y2="-97.46" width="0.4064" layer="1"/>
+<contactref element="R47" pad="1"/>
+<contactref element="C25" pad="2"/>
+<contactref element="C28" pad="-"/>
+<contactref element="C18" pad="2"/>
+<contactref element="DA12" pad="4"/>
+<contactref element="DA12" pad="2"/>
 <wire x1="-259.92" y1="6.985" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-268.605" y1="26.67" x2="-259.92" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-222.565" y1="-16.51" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
@@ -5089,6 +5108,12 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="138.43" y1="-135.255" x2="134.3" y2="-135.255" width="0" layer="19" extent="1-1"/>
 <wire x1="133.985" y1="-141.605" x2="134.3" y2="-135.255" width="0" layer="19" extent="1-1"/>
 <wire x1="140.843" y1="-107.95" x2="128.27" y2="-121.285" width="0" layer="19" extent="1-1"/>
+<wire x1="172.4025" y1="-162.62" x2="138.43" y2="-135.255" width="0" layer="19" extent="1-1"/>
+<wire x1="174.9425" y1="-162.62" x2="172.4025" y2="-162.62" width="0" layer="19" extent="1-1"/>
+<wire x1="184.1475" y1="-167.005" x2="174.9425" y2="-162.62" width="0" layer="19" extent="1-1"/>
+<wire x1="181.925" y1="-174.9425" x2="184.1475" y2="-167.005" width="0" layer="19" extent="1-1"/>
+<wire x1="189.55" y1="-174.9425" x2="181.925" y2="-174.9425" width="0" layer="19" extent="1-1"/>
+<wire x1="183.7055" y1="-155.2575" x2="174.9425" y2="-162.62" width="0" layer="19" extent="1-1"/>
 <wire x1="184.785" y1="-97.46" x2="140.843" y2="-107.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
@@ -5220,6 +5245,11 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <contactref element="C301" pad="+"/>
 <contactref element="R301" pad="1"/>
 <contactref element="R14" pad="1"/>
+<contactref element="DA12" pad="6"/>
+<contactref element="C25" pad="1"/>
+<contactref element="C28" pad="+"/>
+<contactref element="R45" pad="1"/>
+<contactref element="R48" pad="1"/>
 <wire x1="-260.67" y1="13.335" x2="-266.385" y2="13.335" width="0" layer="19" extent="1-1"/>
 <wire x1="-254.955" y1="13.335" x2="-260.67" y2="13.335" width="0" layer="19" extent="1-1"/>
 <wire x1="-222.885" y1="9.525" x2="-254.955" y2="13.335" width="0" layer="19" extent="1-1"/>
@@ -5267,6 +5297,11 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="137.287" y1="-107.95" x2="130.81" y2="-109.795" width="0" layer="19" extent="1-1"/>
 <wire x1="147.19" y1="-119.38" x2="137.287" y2="-107.95" width="0" layer="19" extent="1-1"/>
 <wire x1="132.4" y1="-135.255" x2="147.19" y2="-119.38" width="0" layer="19" extent="1-1"/>
+<wire x1="173.6725" y1="-157.42" x2="147.19" y2="-119.38" width="0" layer="19" extent="1-1"/>
+<wire x1="180.1495" y1="-155.2575" x2="173.6725" y2="-157.42" width="0" layer="19" extent="1-1"/>
+<wire x1="182.2475" y1="-167.005" x2="180.1495" y2="-155.2575" width="0" layer="19" extent="1-1"/>
+<wire x1="174.8125" y1="-174.9425" x2="182.2475" y2="-167.005" width="0" layer="19" extent="1-1"/>
+<wire x1="169.7325" y1="-174.9425" x2="174.8125" y2="-174.9425" width="0" layer="19" extent="1-1"/>
 <wire x1="-213.995" y1="-135.57" x2="-189.55" y2="-12.065" width="0" layer="19" extent="1-1"/>
 <wire x1="-220.345" y1="-145.415" x2="-213.995" y2="-135.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-205.105" y1="-143.51" x2="-213.995" y2="-135.57" width="0" layer="19" extent="1-1"/>
@@ -7251,7 +7286,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="181.6075" y1="-97.155" x2="182.88" y2="-98.1075" width="0.4064" layer="1"/>
 <wire x1="182.88" y1="-98.1075" x2="184.47" y2="-100.6475" width="0.4064" layer="1"/>
 <contactref element="R2.2I" pad="1"/>
-<wire x1="181.3525" y1="-101.9175" x2="-444.815" y2="-291.1475" width="0" layer="19" extent="1-1"/>
+<wire x1="169.5475" y1="-149.5425" x2="181.3525" y2="-101.9175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5VI">
 <contactref element="DA1I" pad="8"/>
@@ -7269,7 +7304,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="185.735" y1="-90.805" x2="185.735" y2="-92.71" width="0.4064" layer="1"/>
 <wire x1="185.735" y1="-92.71" x2="186.284" y2="-94.539" width="0.4064" layer="1"/>
 <contactref element="R2.2I" pad="2"/>
-<wire x1="182.245" y1="-89.595" x2="-442.915" y2="-291.1475" width="0" layer="19" extent="1-1"/>
+<wire x1="171.4475" y1="-149.5425" x2="186.37" y2="-100.6475" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12VI">
 <contactref element="DA2I" pad="8"/>
@@ -7310,6 +7345,57 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <contactref element="R3I1" pad="1"/>
 <contactref element="R3I2" pad="2"/>
 <wire x1="182.88" y1="-108.9" x2="183.2" y2="-104.775" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$180">
+<contactref element="DA12" pad="5"/>
+<contactref element="R47" pad="2"/>
+<contactref element="R46" pad="1"/>
+<wire x1="184.7875" y1="-174.9425" x2="174.9425" y2="-157.42" width="0" layer="19" extent="1-1"/>
+<wire x1="191.45" y1="-174.9425" x2="184.7875" y2="-174.9425" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$303">
+<contactref element="DA12" pad="3"/>
+<contactref element="C18" pad="1"/>
+<wire x1="180.025" y1="-174.9425" x2="173.6725" y2="-162.62" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$304">
+<contactref element="R46" pad="2"/>
+<contactref element="D9" pad="C"/>
+<wire x1="186.6875" y1="-174.9425" x2="169.4325" y2="-191.4525" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$291">
+<contactref element="DA12" pad="1"/>
+<contactref element="L1" pad="2"/>
+<contactref element="D9" pad="A"/>
+<wire x1="177.165" y1="-187.0075" x2="172.8325" y2="-191.4525" width="0" layer="19" extent="1-1"/>
+<wire x1="171.1325" y1="-162.62" x2="177.165" y2="-187.0075" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$301">
+<contactref element="R49" pad="2"/>
+<contactref element="DA12" pad="8"/>
+<wire x1="171.1325" y1="-157.42" x2="171.4475" y2="-195.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$305">
+<contactref element="L2" pad="1"/>
+<contactref element="VD2" pad="A"/>
+<wire x1="174.285" y1="-167.9575" x2="169.545" y2="-201.6125" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$306">
+<contactref element="L2" pad="2"/>
+</signal>
+<signal name="N$309">
+<contactref element="VD2" pad="C"/>
+</signal>
+<signal name="N$316">
+<contactref element="DA12" pad="7"/>
+<contactref element="R45" pad="2"/>
+<contactref element="R48" pad="2"/>
+<contactref element="R49" pad="1"/>
+<contactref element="L1" pad="1"/>
+<wire x1="169.545" y1="-187.0075" x2="169.5475" y2="-195.58" width="0" layer="19" extent="1-1"/>
+<wire x1="172.5325" y1="-174.9425" x2="169.545" y2="-187.0075" width="0" layer="19" extent="1-1"/>
+<wire x1="177.6125" y1="-174.9425" x2="172.5325" y2="-174.9425" width="0" layer="19" extent="1-1"/>
+<wire x1="172.4025" y1="-157.42" x2="172.5325" y2="-174.9425" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

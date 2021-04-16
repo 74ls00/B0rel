@@ -4806,7 +4806,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <element name="R48" library="rcl" package="M1206" value="1" x="176.2125" y="-174.9425"/>
 <element name="D9" library="diode" package="SOD80C" value="" x="171.1325" y="-191.4525"/>
 <element name="R49" library="rcl" package="M0805" value="180" x="170.4975" y="-195.58"/>
-<element name="L2" library="rcl" package="TFI0305" value="100mkhn" x="173.355" y="-201.6125"/>
+<element name="L2" library="rcl" package="TFI0305" value="" x="173.355" y="-201.6125"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -4994,12 +4994,12 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <contactref element="DA3I" pad="2@1"/>
 <contactref element="DA3I" pad="2"/>
 <wire x1="184.785" y1="-94.793" x2="184.785" y2="-97.46" width="0.4064" layer="1"/>
-<contactref element="R47" pad="1"/>
 <contactref element="C25" pad="2"/>
 <contactref element="C28" pad="-"/>
 <contactref element="C18" pad="2"/>
 <contactref element="DA12" pad="4"/>
 <contactref element="DA12" pad="2"/>
+<contactref element="R47" pad="1"/>
 <wire x1="-259.92" y1="6.985" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-268.605" y1="26.67" x2="-259.92" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-222.565" y1="-16.51" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
@@ -7348,8 +7348,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 </signal>
 <signal name="N$180">
 <contactref element="DA12" pad="5"/>
-<contactref element="R47" pad="2"/>
 <contactref element="R46" pad="1"/>
+<contactref element="R47" pad="2"/>
 <wire x1="184.7875" y1="-174.9425" x2="174.9425" y2="-157.42" width="0" layer="19" extent="1-1"/>
 <wire x1="191.45" y1="-174.9425" x2="184.7875" y2="-174.9425" width="0" layer="19" extent="1-1"/>
 </signal>

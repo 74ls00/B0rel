@@ -26,17 +26,18 @@ https://yargeo.com/komparator-na-tl431-s-gisterezisom/
 http://micpic.ru/other-shemes/174-tsifrovoj-takhometr-na-555-tajmere-i-kr572pv2.html
 https://radiokot.ru/forum/viewtopic.php?f=1&t=173496&p=3913409#p3913409
 
-
-
-
-
+LM331 LM231 LM131
+Convertisseur Frequence Tension 001 
+https://shema.info/fr/convertisseurs/10353-convertisseur-frequence-tension-001.html
+LM331 (расчёт формулы)
+https://radiokot.ru/forum/viewtopic.php?f=21&t=162887
 
 
 Фуоз + Датчик Холла От "карлсона" (Вентилятора) = Статика
 https://forum.cxem.net/index.php?/topic/117142-фуоз-датчик-холла-от-карлсона-вентилятора-статика/
 
-
-
+Расчет делителя напряжения
+https://allcalc.ru/node/440
 
 
 

@@ -28627,13 +28627,13 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="R14" library="rcl" deviceset="R-EU_" device="M1206" value="1"/>
 <part name="DA2T" library="lm231" deviceset="LM331*" device="N" value="LM231N"/>
 <part name="R8T" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
-<part name="R11BT" library="rcl" deviceset="R-EU_" device="M0805" value="5k*"/>
+<part name="R12T" library="rcl" deviceset="R-EU_" device="M0805" value="5k*"/>
 <part name="R9T" library="rcl" deviceset="R-EU_" device="M0805" value="6k81"/>
 <part name="R10T" library="rcl" deviceset="R-EU_" device="M0805" value="51k*"/>
 <part name="R7T" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="C5T" library="rcl" deviceset="C-EU" device="C0805" value="2n2"/>
-<part name="C7T*" library="rcl" deviceset="C-EU" device="050-025X075" value="230n"/>
-<part name="C9T" library="rcl" deviceset="C-EU" device="C0805" value="330n"/>
+<part name="C7T*" library="rcl" deviceset="C-EU" device="050-025X075" value="1m"/>
+<part name="C9T" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="U$20" library="Рамка страницы" deviceset="A5_V" device=""/>
 <part name="U$21" library="Рамка страницы" deviceset="A5_V" device=""/>
 <part name="IC7" library="74xx-eu" deviceset="74*14" device="D" technology="HC"/>
@@ -28684,10 +28684,10 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="C8T" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="U$22" library="Рамка страницы" deviceset="A5_V" device=""/>
 <part name="DA1T" library="ne555" deviceset="NE555" device=""/>
-<part name="R14T" library="rcl" deviceset="R-EU_" device="M0805" value="47k"/>
-<part name="R12T" library="rcl" deviceset="R-EU_" device="M0805" value="91k"/>
-<part name="R11AT" library="rcl" deviceset="R-EU_" device="M0805" value="16k"/>
-<part name="R13T" library="rcl" deviceset="R-EU_" device="M0805" value="200"/>
+<part name="R15T" library="rcl" deviceset="R-EU_" device="M0805" value="47k"/>
+<part name="R13T" library="rcl" deviceset="R-EU_" device="M0805" value="91k"/>
+<part name="R11T" library="rcl" deviceset="R-EU_" device="M0805" value="16k"/>
+<part name="R14T" library="rcl" deviceset="R-EU_" device="M0805" value="200"/>
 </parts>
 <sheets>
 <sheet>
@@ -30274,18 +30274,26 @@ vin=4.914</text>
 <text x="-123.19" y="95.25" size="1.778" layer="98">IN 15a - OUT 10v
 PowerIN 12.00v</text>
 <text x="50.8" y="-22.86" size="1.778" layer="98">Vout.max(10v)
-R10T=(12v-2v)/0.2ma=50k*</text>
-<text x="121.92" y="-53.34" size="1.778" layer="98">3.4v</text>
+R10T=(12v-2v)/0.2ma</text>
+<text x="114.3" y="-58.42" size="1.778" layer="98">3.4v</text>
 <text x="91.44" y="-17.78" size="1.778" layer="98">R1=(Uout*R2)/(Uin-Uout)
 R2=(R1+R2)/(Uin/Uout)</text>
 <text x="91.44" y="-25.4" size="1.778" layer="98">RL=138.2k
-RL=R12T+13T+R14T</text>
-<text x="68.58" y="-40.64" size="1.778" layer="98">RV=R11AT+R11BT</text>
-<text x="66.04" y="-91.44" size="1.778" layer="98">Uout=Fin*2.09*(RL/RV)*Rt*C
+RL=R13T+R14T+R15T</text>
+<text x="88.9" y="-45.72" size="1.778" layer="98" rot="R90">RV=R11T+R12T</text>
+<text x="66.04" y="-88.9" size="1.778" layer="98">Uout=Fin*2.09*(RL/RV)*Rt*C
 Fin(Hz)
-R(Ohm) RT=R9T=6k8
-C(F)=C7T  0.00001F=1mf</text>
+R(Ohm) Rt=R9T=6k8
+C(F)=C7T  0.0001F=10mf</text>
 <text x="60.96" y="-93.98" size="1.778" layer="98">Fmax=(100*Uout*RV)/(209*Rt*RL*C)</text>
+<text x="114.3" y="-81.28" size="1.778" layer="98">TAHO10V=10v
+Speed.max=60kmh
+1kmh=0.17v
+
+TAHO3V4=3.4v
+1kmh=0.057v
+25kmh=1.41v</text>
+<text x="50.8" y="-83.82" size="1.778" layer="98">C7t 10mf*</text>
 </plain>
 <instances>
 <instance part="ARDUINO1" gate="G$1" x="236.22" y="53.34" rot="MR0"/>
@@ -30815,9 +30823,9 @@ C(F)=C7T  0.00001F=1mf</text>
 <attribute name="NAME" x="53.975" y="-34.0614" size="1.778" layer="95"/>
 <attribute name="VALUE" x="53.975" y="-36.322" size="1.778" layer="96"/>
 </instance>
-<instance part="R11BT" gate="G$1" x="96.52" y="-63.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="91.44" y="-76.6064" size="1.778" layer="95"/>
-<attribute name="VALUE" x="91.44" y="-78.867" size="1.778" layer="96"/>
+<instance part="R12T" gate="G$1" x="96.52" y="-63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="92.71" y="-40.4114" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.71" y="-42.672" size="1.778" layer="96"/>
 </instance>
 <instance part="R9T" gate="G$1" x="60.96" y="-45.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="59.055" y="-34.0614" size="1.778" layer="95"/>
@@ -30843,7 +30851,7 @@ C(F)=C7T  0.00001F=1mf</text>
 <attribute name="NAME" x="105.156" y="-75.819" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="105.156" y="-78.359" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="P+21" gate="1" x="66.04" y="-33.02"/>
+<instance part="P+21" gate="1" x="66.04" y="-30.48"/>
 <instance part="P-5" gate="1" x="7.62" y="149.86"/>
 <instance part="DA2I" gate="B" x="-43.18" y="76.2" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-41.91" y="73.025" size="1.778" layer="95" rot="MR180"/>
@@ -30907,19 +30915,19 @@ C(F)=C7T  0.00001F=1mf</text>
 <attribute name="NAME" x="26.035" y="-39.37" size="1.778" layer="95"/>
 <attribute name="VALUE" x="26.035" y="-66.04" size="1.778" layer="96"/>
 </instance>
-<instance part="R14T" gate="G$1" x="106.68" y="-63.5" smashed="yes" rot="R90">
+<instance part="R15T" gate="G$1" x="106.68" y="-63.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="108.585" y="-62.6364" size="1.778" layer="95"/>
 <attribute name="VALUE" x="108.585" y="-65.532" size="1.778" layer="96"/>
 </instance>
-<instance part="R12T" gate="G$1" x="106.68" y="-35.56" smashed="yes" rot="MR270">
+<instance part="R13T" gate="G$1" x="106.68" y="-35.56" smashed="yes" rot="MR270">
 <attribute name="NAME" x="108.585" y="-33.2486" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="108.585" y="-36.068" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R11AT" gate="G$1" x="96.52" y="-50.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="92.71" y="-39.1414" size="1.778" layer="95"/>
-<attribute name="VALUE" x="92.71" y="-41.402" size="1.778" layer="96"/>
+<instance part="R11T" gate="G$1" x="96.52" y="-50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="92.71" y="-32.7914" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.71" y="-35.052" size="1.778" layer="96"/>
 </instance>
-<instance part="R13T" gate="G$1" x="106.68" y="-48.26" smashed="yes" rot="R90">
+<instance part="R14T" gate="G$1" x="106.68" y="-48.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="108.585" y="-47.3964" size="1.778" layer="95"/>
 <attribute name="VALUE" x="108.585" y="-50.292" size="1.778" layer="96"/>
 </instance>
@@ -31158,7 +31166,7 @@ C(F)=C7T  0.00001F=1mf</text>
 <wire x1="5.08" y1="-71.12" x2="12.7" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="DA1T" gate="G$1" pin="GND"/>
 <pinref part="C8T" gate="G$1" pin="2"/>
-<pinref part="R11BT" gate="G$1" pin="1"/>
+<pinref part="R12T" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="-68.58" x2="96.52" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="DA2T" gate="G$1" pin="F-OUT"/>
 <wire x1="91.44" y1="-71.12" x2="96.52" y2="-71.12" width="0.1524" layer="91"/>
@@ -31191,7 +31199,7 @@ C(F)=C7T  0.00001F=1mf</text>
 <wire x1="48.26" y1="-71.12" x2="55.88" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="-73.66" x2="48.26" y2="-71.12" width="0.1524" layer="91"/>
 <junction x="48.26" y="-71.12"/>
-<pinref part="R14T" gate="G$1" pin="1"/>
+<pinref part="R15T" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="-68.58" x2="106.68" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -32244,7 +32252,7 @@ C(F)=C7T  0.00001F=1mf</text>
 <segment>
 <wire x1="66.04" y1="-50.8" x2="66.04" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="DA2T" gate="G$1" pin="VCC"/>
-<wire x1="66.04" y1="-38.1" x2="66.04" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-38.1" x2="66.04" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-50.8" x2="66.04" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="R8T" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="-40.64" x2="55.88" y2="-38.1" width="0.1524" layer="91"/>
@@ -33060,25 +33068,25 @@ C(F)=C7T  0.00001F=1mf</text>
 <pinref part="DA2T" gate="G$1" pin="I-OUT"/>
 <wire x1="88.9" y1="-50.8" x2="91.44" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="-27.94" x2="106.68" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="-27.94" x2="124.46" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-27.94" x2="121.92" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="-53.34" x2="101.6" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="R12T" gate="G$1" pin="1"/>
+<pinref part="R13T" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="-30.48" x2="106.68" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="106.68" y="-27.94"/>
 <wire x1="91.44" y1="-50.8" x2="91.44" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-27.94" x2="101.6" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="101.6" y="-27.94"/>
-<label x="111.76" y="-30.48" size="1.778" layer="95"/>
+<label x="109.22" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TAHO3V4" class="0">
 <segment>
-<pinref part="R14T" gate="G$1" pin="2"/>
+<pinref part="R15T" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="-58.42" x2="106.68" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="-55.88" x2="127" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="R13T" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="-55.88" x2="121.92" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="R14T" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="-55.88" x2="106.68" y2="-53.34" width="0.1524" layer="91"/>
-<label x="114.3" y="-55.88" size="1.778" layer="95"/>
+<label x="109.22" y="-55.88" size="1.778" layer="95"/>
 <junction x="106.68" y="-55.88"/>
 </segment>
 </net>
@@ -33088,21 +33096,21 @@ C(F)=C7T  0.00001F=1mf</text>
 <wire x1="88.9" y1="-53.34" x2="93.98" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="-53.34" x2="93.98" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="-43.18" x2="96.52" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="R11AT" gate="G$1" pin="2"/>
+<pinref part="R11T" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="-43.18" x2="96.52" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$320" class="0">
 <segment>
-<pinref part="R11AT" gate="G$1" pin="1"/>
-<pinref part="R11BT" gate="G$1" pin="2"/>
+<pinref part="R11T" gate="G$1" pin="1"/>
+<pinref part="R12T" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="-55.88" x2="96.52" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$312" class="0">
 <segment>
+<pinref part="R14T" gate="G$1" pin="2"/>
 <pinref part="R13T" gate="G$1" pin="2"/>
-<pinref part="R12T" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="-43.18" x2="106.68" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>

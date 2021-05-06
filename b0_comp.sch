@@ -23468,45 +23468,6 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/2535S.pdf</description
 <rectangle x1="-0.82" y1="-3.85" x2="-0.47" y2="-2.95" layer="51"/>
 <rectangle x1="-2.08" y1="-3.85" x2="-1.73" y2="-2.95" layer="51"/>
 </package>
-<package name="DIL28-3">
-<description>&lt;B&gt;Dual In Line&lt;/B&gt; 0.3 inch</description>
-<wire x1="-18.542" y1="-0.635" x2="-18.542" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="-18.542" y1="0.635" x2="-18.542" y2="-0.635" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-18.542" y1="-2.794" x2="18.542" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="-18.542" y1="2.794" x2="-18.542" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-18.542" y1="2.794" x2="18.542" y2="2.794" width="0.1524" layer="21"/>
-<wire x1="18.542" y1="2.794" x2="18.542" y2="-2.794" width="0.1524" layer="21"/>
-<pad name="1" x="-16.51" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-13.97" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="13.97" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="16.51" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="16.51" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="17" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="18" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="19" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="20" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="21" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="22" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="23" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="24" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="25" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="26" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="27" x="-13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="28" x="-16.51" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-19.2024" y="-2.54" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-15.875" y="-0.635" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="TINY13">
@@ -23524,42 +23485,6 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/2535S.pdf</description
 <pin name="PB2/PCINT2/SCK/ADC1/T0" x="-20.32" y="5.08" length="short"/>
 <pin name="VCC" x="-20.32" y="12.7" length="short" direction="pwr"/>
 <pin name="GND" x="-20.32" y="-5.08" length="short" direction="pwr"/>
-</symbol>
-<symbol name="23-I/O-2">
-<wire x1="-17.78" y1="30.48" x2="20.32" y2="30.48" width="0.254" layer="94"/>
-<wire x1="20.32" y1="30.48" x2="20.32" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-33.02" x2="-17.78" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-33.02" x2="-17.78" y2="30.48" width="0.254" layer="94"/>
-<text x="-17.78" y="-35.56" size="1.778" layer="95">&gt;NAME</text>
-<text x="-17.78" y="31.75" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="PB5(SCK)" x="25.4" y="-30.48" length="middle" rot="R180"/>
-<pin name="PB7(XTAL2/TOSC2)" x="-22.86" y="5.08" length="middle"/>
-<pin name="PB6(XTAL1/TOSC1)" x="-22.86" y="10.16" length="middle"/>
-<pin name="GND@1" x="-22.86" y="-2.54" length="middle" direction="pwr"/>
-<pin name="VCC@1" x="-22.86" y="-7.62" length="middle" direction="pwr"/>
-<pin name="GND" x="-22.86" y="22.86" length="middle" direction="pwr"/>
-<pin name="AREF" x="-22.86" y="20.32" length="middle" direction="pas"/>
-<pin name="AVCC" x="-22.86" y="17.78" length="middle" direction="pwr"/>
-<pin name="PB4(MISO)" x="25.4" y="-27.94" length="middle" rot="R180"/>
-<pin name="PB3(MOSI/OC2)" x="25.4" y="-25.4" length="middle" rot="R180"/>
-<pin name="PB2(SS/OC1B)" x="25.4" y="-22.86" length="middle" rot="R180"/>
-<pin name="PB1(OC1A)" x="25.4" y="-20.32" length="middle" rot="R180"/>
-<pin name="PB0(ICP)" x="25.4" y="-17.78" length="middle" rot="R180"/>
-<pin name="PD7(AIN1)" x="25.4" y="-12.7" length="middle" rot="R180"/>
-<pin name="PD6(AIN0)" x="25.4" y="-10.16" length="middle" rot="R180"/>
-<pin name="PD5(T1)" x="25.4" y="-7.62" length="middle" rot="R180"/>
-<pin name="PD4(XCK/T0)" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="PD3(INT1)" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="PD2(INT0)" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="PD1(TXD)" x="25.4" y="2.54" length="middle" rot="R180"/>
-<pin name="PD0(RXD)" x="25.4" y="5.08" length="middle" rot="R180"/>
-<pin name="PC5(ADC5/SCL)" x="25.4" y="15.24" length="middle" rot="R180"/>
-<pin name="PC4(ADC4/SDA)" x="25.4" y="17.78" length="middle" rot="R180"/>
-<pin name="PC3(ADC3)" x="25.4" y="20.32" length="middle" rot="R180"/>
-<pin name="PC2(ADC2)" x="25.4" y="22.86" length="middle" rot="R180"/>
-<pin name="PC1(ADC1)" x="25.4" y="25.4" length="middle" rot="R180"/>
-<pin name="PC0(ADC0)" x="25.4" y="27.94" length="middle" rot="R180"/>
-<pin name="PC6(/RESET)" x="-22.86" y="27.94" length="middle" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -23645,57 +23570,6 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/2535S.pdf</description
 <attribute name="MPN" value="ATTINY13V-10SU" constant="no"/>
 <attribute name="OC_FARNELL" value="9171584" constant="no"/>
 <attribute name="OC_NEWARK" value="96K6524" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MEGA8-P" prefix="IC">
-<description>&lt;b&gt;MICROCONTROLLER&lt;/b&gt;&lt;p&gt;
-8 Kbytes FLASH, 1 kbytes SRAM, 512 bytes EEPROM, USART, 4-channel 10 bit ADC, 2-channel 8 bit ADC&lt;br&gt;
-Pin compatible with Atmega48, ATMega88, ATMega168&lt;br&gt;
-Source: avr.lbr</description>
-<gates>
-<gate name="G$1" symbol="23-I/O-2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIL28-3">
-<connects>
-<connect gate="G$1" pin="AREF" pad="21"/>
-<connect gate="G$1" pin="AVCC" pad="20"/>
-<connect gate="G$1" pin="GND" pad="22"/>
-<connect gate="G$1" pin="GND@1" pad="8"/>
-<connect gate="G$1" pin="PB0(ICP)" pad="14"/>
-<connect gate="G$1" pin="PB1(OC1A)" pad="15"/>
-<connect gate="G$1" pin="PB2(SS/OC1B)" pad="16"/>
-<connect gate="G$1" pin="PB3(MOSI/OC2)" pad="17"/>
-<connect gate="G$1" pin="PB4(MISO)" pad="18"/>
-<connect gate="G$1" pin="PB5(SCK)" pad="19"/>
-<connect gate="G$1" pin="PB6(XTAL1/TOSC1)" pad="9"/>
-<connect gate="G$1" pin="PB7(XTAL2/TOSC2)" pad="10"/>
-<connect gate="G$1" pin="PC0(ADC0)" pad="23"/>
-<connect gate="G$1" pin="PC1(ADC1)" pad="24"/>
-<connect gate="G$1" pin="PC2(ADC2)" pad="25"/>
-<connect gate="G$1" pin="PC3(ADC3)" pad="26"/>
-<connect gate="G$1" pin="PC4(ADC4/SDA)" pad="27"/>
-<connect gate="G$1" pin="PC5(ADC5/SCL)" pad="28"/>
-<connect gate="G$1" pin="PC6(/RESET)" pad="1"/>
-<connect gate="G$1" pin="PD0(RXD)" pad="2"/>
-<connect gate="G$1" pin="PD1(TXD)" pad="3"/>
-<connect gate="G$1" pin="PD2(INT0)" pad="4"/>
-<connect gate="G$1" pin="PD3(INT1)" pad="5"/>
-<connect gate="G$1" pin="PD4(XCK/T0)" pad="6"/>
-<connect gate="G$1" pin="PD5(T1)" pad="11"/>
-<connect gate="G$1" pin="PD6(AIN0)" pad="12"/>
-<connect gate="G$1" pin="PD7(AIN1)" pad="13"/>
-<connect gate="G$1" pin="VCC@1" pad="7"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -28295,10 +28169,10 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="R314" library="rcl" deviceset="R-EU_" device="R0805" value="1k*"/>
 <part name="GND10" library="supply1v" deviceset="GND" device=""/>
 <part name="C3T" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C2T" library="rcl" deviceset="C-EU" device="C0805" value="100n*"/>
+<part name="C2T" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="R4T" library="rcl" deviceset="R-EU_" device="M0805" value="5k1"/>
 <part name="C1T" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="R5T" library="rcl" deviceset="R-EU_" device="M0805" value="51k*"/>
+<part name="R5T" library="rcl" deviceset="R-EU_" device="M0805" value="51k"/>
 <part name="R3T" library="rcl" deviceset="R-EU_" device="M0805" value="5k1"/>
 <part name="TAHOIN" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="MAX52V" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
@@ -28369,7 +28243,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="R4L0" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="R2L0" library="rcl" deviceset="R-EU_" device="R0805" value="100k"/>
 <part name="R1L0" library="rcl" deviceset="R-EU_" device="R0805" value="100k"/>
-<part name="R2T" library="rcl" deviceset="R-EU_" device="M1206" value="10k"/>
+<part name="R2T" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="P+19" library="supply1v" deviceset="+5V" device=""/>
 <part name="JT1" library="jumper" deviceset="SJ" device=""/>
 <part name="U$17" library="Рамка страницы" deviceset="A5_V" device=""/>
@@ -28434,7 +28308,6 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="C15" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="C16" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="GND5" library="supply1v" deviceset="GND" device=""/>
-<part name="IC6" library="atmel" deviceset="MEGA8-P" device=""/>
 <part name="JP1" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X2" device="/2"/>
 <part name="P+5" library="supply1v" deviceset="+5V" device=""/>
 <part name="R6T" library="rcl" deviceset="R-EU_" device="M0805" value="0"/>
@@ -28631,9 +28504,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="R9T" library="rcl" deviceset="R-EU_" device="M0805" value="6k81"/>
 <part name="R10T" library="rcl" deviceset="R-EU_" device="M0805" value="51k*"/>
 <part name="R7T" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
-<part name="C5T" library="rcl" deviceset="C-EU" device="C0805" value="2n2"/>
-<part name="C7T*" library="rcl" deviceset="C-EU" device="050-025X075" value="1m"/>
-<part name="C9T" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
+<part name="C5T" library="rcl" deviceset="C-EU" device="075-032X103" value="1n"/>
+<part name="C7T" library="rcl" deviceset="C-EU" device="C3225" value="10m"/>
+<part name="C9T" library="rcl" deviceset="C-EU" device="C3225" value="22m"/>
 <part name="U$20" library="Рамка страницы" deviceset="A5_V" device=""/>
 <part name="U$21" library="Рамка страницы" deviceset="A5_V" device=""/>
 <part name="IC7" library="74xx-eu" deviceset="74*14" device="D" technology="HC"/>
@@ -28688,6 +28561,8 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="R13T" library="rcl" deviceset="R-EU_" device="M0805" value="91k"/>
 <part name="R11T" library="rcl" deviceset="R-EU_" device="M0805" value="16k"/>
 <part name="R14T" library="rcl" deviceset="R-EU_" device="M0805" value="200"/>
+<part name="T10" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
+<part name="T3" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -30273,14 +30148,14 @@ vin=4.914</text>
 21.9648mv</text>
 <text x="-123.19" y="95.25" size="1.778" layer="98">IN 15a - OUT 10v
 PowerIN 12.00v</text>
-<text x="50.8" y="-22.86" size="1.778" layer="98">Vout.max(10v)
+<text x="53.34" y="-22.86" size="1.778" layer="98">Vout.max(10v)
 R10T=(12v-2v)/0.2ma</text>
 <text x="114.3" y="-58.42" size="1.778" layer="98">3.4v</text>
 <text x="91.44" y="-17.78" size="1.778" layer="98">R1=(Uout*R2)/(Uin-Uout)
 R2=(R1+R2)/(Uin/Uout)</text>
 <text x="91.44" y="-25.4" size="1.778" layer="98">RL=138.2k
 RL=R13T+R14T+R15T</text>
-<text x="88.9" y="-45.72" size="1.778" layer="98" rot="R90">RV=R11T+R12T</text>
+<text x="71.12" y="-40.64" size="1.778" layer="98">RV=R11T+R12T</text>
 <text x="66.04" y="-88.9" size="1.778" layer="98">Uout=Fin*2.09*(RL/RV)*Rt*C
 Fin(Hz)
 R(Ohm) Rt=R9T=6k8
@@ -30824,8 +30699,8 @@ TAHO3V4=3.4v
 <attribute name="VALUE" x="53.975" y="-36.322" size="1.778" layer="96"/>
 </instance>
 <instance part="R12T" gate="G$1" x="96.52" y="-63.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="92.71" y="-40.4114" size="1.778" layer="95"/>
-<attribute name="VALUE" x="92.71" y="-42.672" size="1.778" layer="96"/>
+<attribute name="NAME" x="92.71" y="-39.1414" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.71" y="-41.402" size="1.778" layer="96"/>
 </instance>
 <instance part="R9T" gate="G$1" x="60.96" y="-45.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="59.055" y="-34.0614" size="1.778" layer="95"/>
@@ -30843,7 +30718,7 @@ TAHO3V4=3.4v
 <attribute name="NAME" x="45.974" y="-52.959" size="1.778" layer="95"/>
 <attribute name="VALUE" x="45.974" y="-55.499" size="1.778" layer="96"/>
 </instance>
-<instance part="C7T*" gate="G$1" x="60.96" y="-63.5" smashed="yes" rot="MR0">
+<instance part="C7T" gate="G$1" x="60.96" y="-63.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="59.436" y="-77.089" size="1.778" layer="95"/>
 <attribute name="VALUE" x="59.436" y="-79.629" size="1.778" layer="96"/>
 </instance>
@@ -30930,6 +30805,14 @@ TAHO3V4=3.4v
 <instance part="R14T" gate="G$1" x="106.68" y="-48.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="108.585" y="-47.3964" size="1.778" layer="95"/>
 <attribute name="VALUE" x="108.585" y="-50.292" size="1.778" layer="96"/>
+</instance>
+<instance part="T10" gate="G$1" x="132.08" y="-20.32" smashed="yes" rot="MR90">
+<attribute name="NAME" x="128.27" y="-15.875" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="127" y="-26.67" size="1.778" layer="96" rot="MR90"/>
+</instance>
+<instance part="T3" gate="G$1" x="132.08" y="-48.26" smashed="yes" rot="MR90">
+<attribute name="NAME" x="128.27" y="-43.815" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="127" y="-54.61" size="1.778" layer="96" rot="MR90"/>
 </instance>
 </instances>
 <busses>
@@ -31177,7 +31060,7 @@ TAHO3V4=3.4v
 <junction x="96.52" y="-71.12"/>
 <wire x1="88.9" y1="-58.42" x2="91.44" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="91.44" y="-58.42"/>
-<pinref part="C7T*" gate="G$1" pin="2"/>
+<pinref part="C7T" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="-68.58" x2="60.96" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-71.12" x2="66.04" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-71.12" x2="91.44" y2="-71.12" width="0.1524" layer="91"/>
@@ -31705,9 +31588,9 @@ TAHO3V4=3.4v
 <wire x1="124.46" y1="58.42" x2="134.62" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="38.1" y1="-20.32" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-20.32" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="JT1" gate="1" pin="2"/>
-<label x="38.1" y="-20.32" size="1.778" layer="95"/>
+<label x="40.64" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RES13" class="0">
@@ -32908,7 +32791,7 @@ TAHO3V4=3.4v
 <wire x1="68.58" y1="-58.42" x2="60.96" y2="-58.42" width="0.1524" layer="91"/>
 <pinref part="R9T" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="-58.42" x2="60.96" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="C7T*" gate="G$1" pin="1"/>
+<pinref part="C7T" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="-60.96" x2="60.96" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="60.96" y="-58.42"/>
 </segment>
@@ -33068,7 +32951,7 @@ TAHO3V4=3.4v
 <pinref part="DA2T" gate="G$1" pin="I-OUT"/>
 <wire x1="88.9" y1="-50.8" x2="91.44" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="-27.94" x2="106.68" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="-27.94" x2="121.92" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-27.94" x2="132.08" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="-53.34" x2="101.6" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="R13T" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="-30.48" x2="106.68" y2="-27.94" width="0.1524" layer="91"/>
@@ -33077,17 +32960,21 @@ TAHO3V4=3.4v
 <wire x1="91.44" y1="-27.94" x2="101.6" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="101.6" y="-27.94"/>
 <label x="109.22" y="-27.94" size="1.778" layer="95"/>
+<pinref part="T10" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="-27.94" x2="132.08" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TAHO3V4" class="0">
 <segment>
 <pinref part="R15T" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="-58.42" x2="106.68" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="-55.88" x2="121.92" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-55.88" x2="132.08" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="R14T" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="-55.88" x2="106.68" y2="-53.34" width="0.1524" layer="91"/>
 <label x="109.22" y="-55.88" size="1.778" layer="95"/>
 <junction x="106.68" y="-55.88"/>
+<pinref part="T3" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="-55.88" x2="132.08" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$310" class="0">
@@ -33114,6 +33001,13 @@ TAHO3V4=3.4v
 <wire x1="106.68" y1="-43.18" x2="106.68" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="VTAHO" class="0">
+<segment>
+<pinref part="ARDUINO1" gate="G$1" pin="A0"/>
+<wire x1="220.98" y1="45.72" x2="195.58" y2="48.26" width="0.1524" layer="91"/>
+<label x="195.58" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -33123,7 +33017,6 @@ TAHO3V4=3.4v
 <instance part="U$17" gate="G$1" x="139.7" y="0"/>
 <instance part="U$18" gate="G$1" x="139.7" y="0" rot="MR0"/>
 <instance part="LCD2" gate=".1" x="35.56" y="144.78"/>
-<instance part="IC6" gate="G$1" x="93.98" y="147.32"/>
 </instances>
 <busses>
 </busses>

@@ -4743,9 +4743,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <element name="R14" library="rcl" package="M1206" value="1" x="-350.52" y="-222.885"/>
 <element name="DA2T" library="lm231" package="DIL08" value="LM231N" x="-109.5375" y="47.3075" rot="R90"/>
 <element name="R8T" library="rcl" package="M0805" value="10k" x="-115.57" y="44.7675" rot="MR270"/>
-<element name="R12T" library="rcl" package="M0805" value="5k*" x="-102.5525" y="48.5775" rot="MR180"/>
+<element name="R12T" library="rcl" package="M0805" value="4k3*" x="-102.5525" y="48.5775" rot="MR180"/>
 <element name="R9T" library="rcl" package="M0805" value="6k81" x="-119.38" y="48.895" rot="MR270"/>
-<element name="R10T" library="rcl" package="M0805" value="51k*" x="-109.5375" y="48.26" rot="MR0"/>
+<element name="R10T" library="rcl" package="M0805" value="51k" x="-109.5375" y="48.26" rot="MR0"/>
 <element name="R7T" library="rcl" package="M0805" value="10k" x="-117.7925" y="44.7675" rot="MR270"/>
 <element name="C5T" library="rcl" package="C075-032X103" value="1n" x="-116.84" y="52.07" rot="R270"/>
 <element name="C7T" library="rcl" package="C3225" value="10m" x="-109.5375" y="51.1175" rot="MR180"/>
@@ -4802,7 +4802,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 </element>
 <element name="R15T" library="rcl" package="M0805" value="47k" x="-99.06" y="48.895" rot="MR270"/>
 <element name="R13T" library="rcl" package="M0805" value="91k" x="-102.5525" y="43.4975" rot="MR180"/>
-<element name="R11T" library="rcl" package="M0805" value="16k" x="-102.5525" y="46.0375" rot="MR0"/>
+<element name="R11T" library="rcl" package="M0805" value="15k" x="-102.5525" y="46.0375" rot="MR0"/>
 <element name="R14T" library="rcl" package="M0805" value="200" x="-99.06" y="44.45" rot="MR270"/>
 <element name="T10" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-102.87" y="40.005" rot="R180"/>
 <element name="T3" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-96.52" y="47.9425" rot="R180"/>

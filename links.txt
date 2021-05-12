@@ -33,6 +33,13 @@ LM331 (расчёт формулы)
 https://radiokot.ru/forum/viewtopic.php?f=21&t=162887
 
 
+Преобразователь частоты в напряжение
+https://cxem.net/beginner/beginner164.php
+Человеческое обозначение 74HC4052 (*4051 *4053)
+https://radiokot.ru/forum/viewtopic.php?f=21&t=177010
+pdf https://www.ti.com/lit/ds/symlink/cd4052b.pdf
+
+
 Фуоз + Датчик Холла От "карлсона" (Вентилятора) = Статика
 https://forum.cxem.net/index.php?/topic/117142-фуоз-датчик-холла-от-карлсона-вентилятора-статика/
 

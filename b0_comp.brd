@@ -4712,7 +4712,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 </package>
 </packages>
 </library>
-<library name="74hc4052">
+<library name="4052(f2v)">
 <packages>
 <package name="SO16">
 <description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
@@ -5480,7 +5480,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <element name="IC6" library="74xx-eu" package="SO14" value="74HC74D" x="-145.7325" y="138.43" rot="R90"/>
 <element name="THIN1" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-152.0825" y="137.795"/>
 <element name="THOUT1" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-155.575" y="142.5575"/>
-<element name="IC1" library="74hc4052" package="SO16" value="4052D" x="184.4675" y="49.8475" rot="R90"/>
+<element name="IC1" library="4052(f2v)" package="SO16" value="4052D" x="184.4675" y="49.8475" rot="R90"/>
 <element name="C19" library="rcl" package="C0805" value="100n" x="178.1175" y="49.53" rot="R270"/>
 <element name="R19" library="rcl" package="M0805" value="120" x="184.785" y="56.515"/>
 <element name="DA13" library="linear" package="SO08" value="TL072" x="182.245" y="62.865" rot="R90"/>
@@ -8798,43 +8798,17 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="-148.8059" y1="138.43" x2="-150.8125" y2="138.43" width="0.3048" layer="1"/>
 <wire x1="-150.8125" y1="138.43" x2="-152.0825" y2="137.795" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$340">
-<contactref element="IC1" pad="16"/>
-<contactref element="IC1" pad="13"/>
-<contactref element="C19" pad="2"/>
-<contactref element="IC7" pad="14"/>
-<contactref element="IC8" pad="14"/>
-<wire x1="178.1175" y1="48.58" x2="181.3941" y2="49.2125" width="0" layer="19" extent="1-1"/>
-<wire x1="181.3941" y1="45.4025" x2="181.3941" y2="49.2125" width="0" layer="19" extent="1-1"/>
-<wire x1="166.4716" y1="45.72" x2="178.1175" y2="48.58" width="0" layer="19" extent="1-1"/>
-<wire x1="164.8841" y1="56.515" x2="166.4716" y2="45.72" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$343">
 <contactref element="IC1" pad="12"/>
-<contactref element="C19" pad="1"/>
+<contactref element="C19" pad="2"/>
 <contactref element="R19" pad="1"/>
 <wire x1="181.3941" y1="50.4825" x2="183.835" y2="56.515" width="0" layer="19" extent="1-1"/>
-<wire x1="178.1175" y1="50.48" x2="181.3941" y2="50.4825" width="0" layer="19" extent="1-1"/>
+<wire x1="178.1175" y1="48.58" x2="181.3941" y2="50.4825" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$339">
 <contactref element="R19" pad="2"/>
 <contactref element="IC1" pad="3"/>
 <wire x1="187.5409" y1="47.9425" x2="185.735" y2="56.515" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$344">
-<contactref element="IC1" pad="2"/>
-<contactref element="DA13" pad="2"/>
-<contactref element="C21" pad="1"/>
-<contactref element="R26" pad="1"/>
-<contactref element="DA13" pad="8"/>
-<contactref element="R50" pad="2"/>
-<contactref element="F5V" pad="1"/>
-<wire x1="187.325" y1="63.3125" x2="191.135" y2="62.2275" width="0" layer="19" extent="1-1"/>
-<wire x1="184.845" y1="62.23" x2="187.325" y2="63.3125" width="0" layer="19" extent="1-1"/>
-<wire x1="179.645" y1="60.96" x2="184.845" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="192.405" y1="68.8975" x2="191.135" y2="62.2275" width="0" layer="19" extent="1-1"/>
-<wire x1="187.5409" y1="46.6725" x2="184.845" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="170.8125" y1="42.545" x2="187.5409" y2="46.6725" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$394">
 <contactref element="C21" pad="2"/>
@@ -8907,6 +8881,32 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <contactref element="DA13" pad="4"/>
 <contactref element="F5V-" pad="1"/>
 <wire x1="187.6425" y1="68.58" x2="184.845" y2="64.77" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$344">
+<contactref element="IC1" pad="16"/>
+<contactref element="IC7" pad="14"/>
+<contactref element="IC8" pad="14"/>
+<contactref element="IC1" pad="13"/>
+<contactref element="DA13" pad="8"/>
+<contactref element="R50" pad="2"/>
+<contactref element="F5V" pad="1"/>
+<contactref element="C19" pad="1"/>
+<wire x1="178.1175" y1="50.48" x2="179.645" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="181.3941" y1="49.2125" x2="178.1175" y2="50.48" width="0" layer="19" extent="1-1"/>
+<wire x1="181.3941" y1="45.4025" x2="181.3941" y2="49.2125" width="0" layer="19" extent="1-1"/>
+<wire x1="170.8125" y1="42.545" x2="178.1175" y2="50.48" width="0" layer="19" extent="1-1"/>
+<wire x1="166.4716" y1="45.72" x2="170.8125" y2="42.545" width="0" layer="19" extent="1-1"/>
+<wire x1="164.8841" y1="56.515" x2="166.4716" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="192.405" y1="68.8975" x2="179.645" y2="60.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$340">
+<contactref element="IC1" pad="2"/>
+<contactref element="DA13" pad="2"/>
+<contactref element="C21" pad="1"/>
+<contactref element="R26" pad="1"/>
+<wire x1="187.325" y1="63.3125" x2="191.135" y2="62.2275" width="0" layer="19" extent="1-1"/>
+<wire x1="184.845" y1="62.23" x2="187.325" y2="63.3125" width="0" layer="19" extent="1-1"/>
+<wire x1="187.5409" y1="46.6725" x2="184.845" y2="62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

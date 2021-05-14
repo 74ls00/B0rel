@@ -5560,6 +5560,8 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <element name="1D4" library="40xx" package="DIL14" value="4070N" x="-570.23" y="-470.8525" rot="R180"/>
 <element name="C26" library="rcl" package="E3,5-8" value="470m" x="182.88" y="-143.8275" rot="R90"/>
 <element name="JP7" library="Разъёмы штырьковые 2.54мм" package="2X01" value="" x="190.8175" y="-143.8275"/>
+<element name="JP8" library="Разъёмы штырьковые 2.54мм" package="1X05" value="" x="197.1675" y="-134.3025"/>
+<element name="R54" library="rcl" package="M0805" value="1k2" x="193.04" y="-143.51" rot="MR90"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -8331,20 +8333,6 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <contactref element="VD2" pad="A"/>
 <wire x1="175.5775" y1="-153.3525" x2="180.34" y2="-153.0125" width="0.4064" layer="16"/>
 </signal>
-<signal name="N$306">
-<contactref element="L2" pad="2"/>
-<contactref element="C26" pad="-"/>
-<contactref element="JP7" pad="2"/>
-<wire x1="175.5775" y1="-140.6525" x2="182.88" y2="-142.0495" width="0.4064" layer="16"/>
-<wire x1="182.88" y1="-142.0495" x2="189.5475" y2="-142.5575" width="0.4064" layer="16"/>
-</signal>
-<signal name="N$309">
-<contactref element="VD2" pad="C"/>
-<contactref element="C26" pad="+"/>
-<contactref element="JP7" pad="1"/>
-<wire x1="180.34" y1="-148.6125" x2="182.88" y2="-145.6055" width="0.4064" layer="16"/>
-<wire x1="182.88" y1="-145.6055" x2="189.5475" y2="-145.0975" width="0.4064" layer="16"/>
-</signal>
 <signal name="N$316">
 <contactref element="DA12" pad="7"/>
 <contactref element="R45" pad="2"/>
@@ -9319,6 +9307,34 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 </signal>
 <signal name="VSS">
 <contactref element="1D4" pad="7"/>
+</signal>
+<signal name="+12VI1">
+<contactref element="JP8" pad="1"/>
+<contactref element="VD2" pad="C"/>
+<contactref element="C26" pad="+"/>
+<contactref element="JP7" pad="1"/>
+<wire x1="180.34" y1="-148.6125" x2="182.88" y2="-145.6055" width="0.4064" layer="16"/>
+<wire x1="182.88" y1="-145.6055" x2="189.5475" y2="-145.0975" width="0.4064" layer="16"/>
+<contactref element="R54" pad="1"/>
+<wire x1="192.0875" y1="-134.3025" x2="193.04" y2="-144.46" width="0" layer="19" extent="1-1"/>
+<wire x1="189.5475" y1="-145.0975" x2="193.04" y2="-144.46" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="-12VI1">
+<contactref element="JP8" pad="2"/>
+<contactref element="L2" pad="2"/>
+<contactref element="C26" pad="-"/>
+<contactref element="JP7" pad="2"/>
+<wire x1="175.5775" y1="-140.6525" x2="182.88" y2="-142.0495" width="0.4064" layer="16"/>
+<wire x1="182.88" y1="-142.0495" x2="189.5475" y2="-142.5575" width="0.4064" layer="16"/>
+<contactref element="R54" pad="2"/>
+<wire x1="194.6275" y1="-134.3025" x2="193.04" y2="-142.56" width="0" layer="19" extent="1-1"/>
+<wire x1="189.5475" y1="-142.5575" x2="193.04" y2="-142.56" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="+12VI2">
+<contactref element="JP8" pad="4"/>
+</signal>
+<signal name="-12VI2">
+<contactref element="JP8" pad="5"/>
 </signal>
 </signals>
 </board>

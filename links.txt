@@ -39,6 +39,10 @@ https://cxem.net/beginner/beginner164.php
 https://radiokot.ru/forum/viewtopic.php?f=21&t=177010
 pdf https://www.ti.com/lit/ds/symlink/cd4052b.pdf
 
+Формирование фазового сдвига периодического сигнала
+Радио 1999 №2 с.42
+https://www.diagram.com.ua/list/constructor/constructor26.shtml
+
 
 Фуоз + Датчик Холла От "карлсона" (Вентилятора) = Статика
 https://forum.cxem.net/index.php?/topic/117142-фуоз-датчик-холла-от-карлсона-вентилятора-статика/

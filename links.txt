@@ -22,6 +22,10 @@ https://chipenable.ru/index.php/programming-avr/item/202
 Компаратор на tl431 с гистерезисом
 https://yargeo.com/komparator-na-tl431-s-gisterezisom/
 
+микросхема NE556N
+https://radiokot.ru/forum/viewtopic.php?f=22&t=95468
+
+
 Цифровой тахометр на 555 таймере и КР572ПВ2
 http://micpic.ru/other-shemes/174-tsifrovoj-takhometr-na-555-tajmere-i-kr572pv2.html
 https://radiokot.ru/forum/viewtopic.php?f=1&t=173496&p=3913409#p3913409
@@ -50,8 +54,8 @@ https://forum.cxem.net/index.php?/topic/117142-фуоз-датчик-холла-
 Расчет делителя напряжения
 https://allcalc.ru/node/440
 
-
-
+Разъём для бутерброда
+https://radiokot.ru/forum/viewtopic.php?f=8&t=176940
 
 Маршрутный компьютер для электровелосипеда
 https://electrotransport.ru/ussr/index.php?topic=37556.0

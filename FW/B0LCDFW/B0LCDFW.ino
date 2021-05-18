@@ -89,7 +89,7 @@ analogReference(EXTERNAL); //внешний ИОН 4.00v. TL431 Rs=150 R2=3k R1=
 // Wire.beginTransmission(0x68); Wire.write(0x7); Wire.write(0x10); Wire.endTransmission(); 
 //NOTE SquareWave= 32.768khz 8.192khz 4.096khz 1hz
 //rtc.writeSqwPinMode( SquareWave1HZ ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
-rtc.writeSqwPinMode( SquareWave4kHz ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
+rtc.writeSqwPinMode( SquareWave32kHz ); // OFF, ON, SquareWave1HZ, SquareWave4kHz, SquareWave8kHz, SquareWave32kHz
 
 // rtc.adjust(DateTime(2021, 5, 7,      3, 53,1 )); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
 DateTime now = rtc.now();

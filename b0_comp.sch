@@ -36198,8 +36198,8 @@ grid 5.08 mm</description>
 <part name="THIN" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="THOUT" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="C3T5" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C2T3" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
-<part name="R5T3" library="rcl" deviceset="R-EU_" device="M0805" value="400k"/>
+<part name="C2T3" library="rcl" deviceset="C-EU" device="C0805" value="1m-"/>
+<part name="R5T3" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
 <part name="C4T2" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="GND74" library="supply1v" deviceset="GND" device=""/>
 <part name="DA1T1" library="555,556-v2" deviceset="*555" device=""/>
@@ -36233,11 +36233,11 @@ grid 5.08 mm</description>
 <part name="IC14" library="40xx" deviceset="4070" device="D" value="4070D"/>
 <part name="GND76" library="supply1v" deviceset="GND" device=""/>
 <part name="C8T10" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="R51" library="rcl" deviceset="R-TRIMM" device="3296W" value="200k"/>
+<part name="R51" library="rcl" deviceset="R-TRIMM" device="3296W" value="47k"/>
 <part name="R5T5" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="C2T5" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="C2T6" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
-<part name="R5T6" library="rcl" deviceset="R-EU_" device="M0805" value="100k"/>
+<part name="R5T6" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
 <part name="C4T3" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="GND79" library="supply1v" deviceset="GND" device=""/>
 <part name="DA1T2" library="555,556-v2" deviceset="*555" device=""/>
@@ -36245,7 +36245,7 @@ grid 5.08 mm</description>
 <part name="R5T7" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="C2T7" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="C2T8" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
-<part name="R5T8" library="rcl" deviceset="R-EU_" device="M0805" value="100k"/>
+<part name="R5T8" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
 <part name="C4T4" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="GND82" library="supply1v" deviceset="GND" device=""/>
 <part name="DA1T3" library="555,556-v2" deviceset="*555" device=""/>
@@ -36357,6 +36357,7 @@ grid 5.08 mm</description>
 <part name="6R1" library="resistor" deviceset="R-EU_" device="R0805" value="39k"/>
 <part name="6VD3" library="diode" deviceset="DIODE-" device="SOD80C"/>
 <part name="6R2" library="resistor" deviceset="R-EU_" device="R0805" value="39k"/>
+<part name="R5T13" library="rcl" deviceset="R-EU_" device="M0805" value="220k"/>
 </parts>
 <sheets>
 <sheet>
@@ -38174,18 +38175,11 @@ TAHO3V4=3.4v
 <text x="200.66" y="-162.56" size="1.778" layer="98">(57k 10.24v pin7)</text>
 <text x="12.7" y="-121.92" size="1.778" layer="98">1m =56mc</text>
 <text x="2.54" y="-129.54" size="1.778" layer="98">Т(mc)=1.1*R(KOhm)*С(mkF)</text>
-<text x="139.7" y="-142.24" size="1.778" layer="98">φ=4*π*R2/(R3+3*R2)
+<text x="134.62" y="-66.04" size="1.778" layer="98">Radio1999#2p42
+π=180°, R2=Rc, R3=1M
+φ=4*π*R2/(R3+3*R2)
 R2=(φ*R3)/(4*π-3*φ)</text>
-<text x="139.7" y="-147.32" size="1.778" layer="98">f=4*p* v/(r+3*v)</text>
-<text x="101.6" y="-76.2" size="1.778" layer="98">Rv=20k</text>
-<text x="147.32" y="-134.62" size="1.778" layer="98">π=180°</text>
-<text x="86.36" y="-58.42" size="1.778" layer="98">R=110k
-Rv=53k
-8hz</text>
-<text x="147.32" y="-71.12" size="1.778" layer="98">R=110k
-Rv=58k
-8hz</text>
-<text x="119.38" y="-71.12" size="1.778" layer="98">Radio1999#2p42</text>
+<text x="134.62" y="-71.12" size="1.778" layer="98">f=4*p* v/(r+3*v)</text>
 <wire x1="-91.44" y1="25.4" x2="-91.44" y2="27.94" width="0.1524" layer="98"/>
 <wire x1="-91.44" y1="27.94" x2="-88.9" y2="27.94" width="0.1524" layer="98"/>
 <wire x1="-88.9" y1="27.94" x2="-88.9" y2="25.4" width="0.1524" layer="98"/>
@@ -38237,22 +38231,34 @@ vtaho a0
 reset
 cristall1
 cristall2</text>
-<text x="205.74" y="-71.12" size="1.778" layer="98">R=10k
-Rv=48k
-8hz</text>
 <text x="-93.98" y="25.4" size="1.778" layer="98" rot="MR0">KT1</text>
 <text x="-93.98" y="20.32" size="1.778" layer="98" rot="MR0">KT2</text>
 <text x="-93.98" y="15.24" size="1.778" layer="98" rot="MR0">KT3</text>
 <text x="-93.98" y="10.16" size="1.778" layer="98" rot="MR0">KT4</text>
 <text x="-93.98" y="5.08" size="1.778" layer="98" rot="MR0">KT5</text>
 <wire x1="-91.44" y1="30.48" x2="-50.8" y2="30.48" width="0.1524" layer="98"/>
-<text x="-93.98" y="30.48" size="1.778" layer="98" rot="MR0">8hz</text>
+<text x="-57.15" y="31.115" size="1.778" layer="98" rot="MR0">T=4.096hz=244.140625ms</text>
 <text x="-27.94" y="-231.14" size="1.778" layer="98">Rv=20k</text>
 <text x="-45.72" y="-233.68" size="1.778" layer="98">R=110k
 Rv=53k
 8hz</text>
 <text x="-10.16" y="-226.06" size="1.778" layer="98">Radio1999#2p42</text>
-<text x="86.36" y="-60.96" size="1.778" layer="98">Ic=0.36ma=360mka</text>
+<text x="167.64" y="-60.96" size="1.778" layer="98">Rdis(pin7-pin8,4)&gt;1M линейность по частоте
+Rc(pin2-pin7) длительность спада</text>
+<wire x1="-91.44" y1="30.48" x2="-91.44" y2="31.115" width="0.1524" layer="98"/>
+<wire x1="-50.8" y1="30.48" x2="-50.8" y2="31.115" width="0.1524" layer="98"/>
+<wire x1="-91.44" y1="2.54" x2="-81.28" y2="2.54" width="0.1524" layer="98"/>
+<text x="-91.44" y="0" size="1.778" layer="98" rot="MR180">1/4f=61.03515625мс
+Tic1=Tic2=Tic3</text>
+<wire x1="-91.44" y1="2.54" x2="-91.44" y2="3.175" width="0.1524" layer="98"/>
+<wire x1="-81.28" y1="2.54" x2="-81.28" y2="3.175" width="0.1524" layer="98"/>
+<wire x1="-91.44" y1="2.54" x2="-91.44" y2="1.905" width="0.1524" layer="98"/>
+<wire x1="-81.28" y1="2.54" x2="-81.28" y2="1.905" width="0.1524" layer="98"/>
+<wire x1="-91.44" y1="30.48" x2="-91.44" y2="29.845" width="0.1524" layer="98"/>
+<wire x1="-50.8" y1="30.48" x2="-50.8" y2="29.845" width="0.1524" layer="98"/>
+<text x="-85.09" y="20.955" size="1.778" layer="98" rot="MR0">Tic1</text>
+<text x="-74.93" y="15.875" size="1.778" layer="98" rot="MR0">Tic2</text>
+<text x="-64.77" y="10.795" size="1.778" layer="98" rot="MR0">Tic3</text>
 </plain>
 <instances>
 <instance part="ARDUINO1" gate="G$1" x="236.22" y="53.34" rot="MR0"/>
@@ -39017,9 +39023,9 @@ Rv=53k
 <attribute name="NAME" x="57.404" y="-408.559" size="1.778" layer="95"/>
 <attribute name="VALUE" x="57.404" y="-411.099" size="1.778" layer="96"/>
 </instance>
-<instance part="R51" gate="G$1" x="68.58" y="-91.44" smashed="yes">
-<attribute name="NAME" x="62.23" y="-85.471" size="1.778" layer="95"/>
-<attribute name="VALUE" x="62.23" y="-87.63" size="1.778" layer="96"/>
+<instance part="R51" gate="G$1" x="68.58" y="-78.74" smashed="yes">
+<attribute name="NAME" x="62.23" y="-72.771" size="1.778" layer="95"/>
+<attribute name="VALUE" x="62.23" y="-74.93" size="1.778" layer="96"/>
 </instance>
 <instance part="R5T5" gate="G$1" x="73.66" y="-111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="75.565" y="-110.8964" size="1.778" layer="95"/>
@@ -39126,8 +39132,6 @@ Rv=53k
 </instance>
 <instance part="D12" gate="1" x="10.16" y="-175.26" rot="R270"/>
 <instance part="1D4" gate="C" x="264.16" y="-83.82"/>
-<instance part="1D4" gate="A" x="279.4" y="-68.58"/>
-<instance part="1D4" gate="B" x="289.56" y="-83.82"/>
 <instance part="GND33" gate="1" x="40.64" y="-124.46"/>
 <instance part="VT23" gate="G$1" x="45.72" y="-30.48"/>
 <instance part="P+22" gate="1" x="48.26" y="-20.32" rot="MR0"/>
@@ -39261,6 +39265,10 @@ Rv=53k
 <attribute name="VALUE" x="-83.82" y="-124.2314" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="6R2" gate="G$1" x="-78.74" y="-116.84" rot="MR180"/>
+<instance part="R5T13" gate="G$1" x="68.58" y="-91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="70.485" y="-90.5764" size="1.778" layer="95"/>
+<attribute name="VALUE" x="70.485" y="-92.837" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="DB[0..7],BLK,VMETER,AMETR,ICP1,INT0,E,RS,RST,RESET">
@@ -42096,26 +42104,28 @@ Rv=53k
 <wire x1="68.58" y1="-109.22" x2="68.58" y2="-104.14" width="0.1524" layer="91"/>
 <pinref part="DA1T1" gate="G$1" pin="TRI"/>
 <wire x1="68.58" y1="-104.14" x2="78.74" y2="-104.14" width="0.1524" layer="91"/>
-<pinref part="R51" gate="G$1" pin="A"/>
-<wire x1="68.58" y1="-96.52" x2="68.58" y2="-104.14" width="0.1524" layer="91"/>
 <junction x="68.58" y="-104.14"/>
+<pinref part="R5T13" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="-96.52" x2="68.58" y2="-104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$361" class="0">
 <segment>
 <pinref part="R51" gate="G$1" pin="S"/>
-<wire x1="71.12" y1="-91.44" x2="76.2" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="-91.44" x2="76.2" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="DA1T1" gate="G$1" pin="DIS"/>
 <wire x1="76.2" y1="-93.98" x2="78.74" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="-91.44" x2="76.2" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="-83.82" x2="68.58" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-93.98" x2="76.2" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="R51" gate="G$1" pin="E"/>
-<wire x1="68.58" y1="-83.82" x2="68.58" y2="-86.36" width="0.1524" layer="91"/>
-<junction x="76.2" y="-91.44"/>
+<wire x1="68.58" y1="-71.12" x2="68.58" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="R5T3" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="-83.82" x2="81.28" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="76.2" y="-83.82"/>
+<wire x1="71.12" y1="-78.74" x2="73.66" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-78.74" x2="73.66" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-71.12" x2="68.58" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="73.66" y="-78.74"/>
+<wire x1="76.2" y1="-83.82" x2="76.2" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-78.74" x2="73.66" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$391" class="0">
@@ -42595,6 +42605,13 @@ Rv=53k
 <pinref part="6VD3" gate="G$1" pin="A"/>
 <pinref part="6R2" gate="G$1" pin="1"/>
 <wire x1="-86.36" y1="-116.84" x2="-83.82" y2="-116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$356" class="0">
+<segment>
+<pinref part="R5T13" gate="G$1" pin="2"/>
+<pinref part="R51" gate="G$1" pin="A"/>
+<wire x1="68.58" y1="-83.82" x2="68.58" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

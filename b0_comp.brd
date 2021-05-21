@@ -4952,23 +4952,6 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <rectangle x1="1.2954" y1="-0.8636" x2="1.8542" y2="0.8636" layer="51"/>
 <rectangle x1="-0.8636" y1="-0.7874" x2="-0.254" y2="0.7874" layer="21"/>
 </package>
-<package name="ZDIO-5">
-<description>&lt;b&gt;Z DIODE&lt;/b&gt;</description>
-<wire x1="0" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="21"/>
-<wire x1="-1.27" y1="0" x2="1.27" y2="1.27" width="0.254" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.651" y2="0" width="0.254" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="-1.651" y1="0" x2="-1.27" y2="0" width="0.254" layer="21"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="21"/>
-<pad name="A" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="C" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 </packages>
 </library>
 <library name="ds1307_pcf8583">
@@ -8082,12 +8065,12 @@ chip</description>
 <element name="JAREF" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-422.5925" y="124.7775"/>
 <element name="C31" library="rcl" package="C0805" value="" x="-415.29" y="126.6825" rot="MR90"/>
 <element name="C32" library="rcl" package="C0805" value="" x="-398.78" y="127" rot="MR270"/>
-<element name="VT23" library="m_transistor" package="SOT23" value="BJT_PNP_SOT23_BCE" x="-452.4375" y="42.8625"/>
-<element name="R5T1" library="rcl" package="M0805" value="10k" x="-453.0725" y="36.195"/>
-<element name="C1T1" library="rcl" package="C0805" value="100n" x="-453.0725" y="30.1625"/>
-<element name="R2T1" library="rcl" package="M0805" value="5k" x="-453.0725" y="24.13"/>
-<element name="TAHOIN1" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-453.0725" y="17.4625"/>
-<element name="D16" library="diode" package="ZDIO-5" value="5v6" x="-451.485" y="12.3825"/>
+<element name="VT23" library="m_transistor" package="SOT23" value="BJT_PNP_SOT23_BCE" x="-287.9725" y="232.0925"/>
+<element name="R5T1" library="rcl" package="M0805" value="10k" x="-288.6075" y="225.425"/>
+<element name="C1T1" library="rcl" package="C0805" value="100n" x="-288.6075" y="219.3925"/>
+<element name="R2T1" library="rcl" package="M0805" value="5k" x="-288.6075" y="213.36"/>
+<element name="TAHOIN1" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="-288.6075" y="206.6925"/>
+<element name="D16" library="diode" package="SOD80C" value="5v6" x="-281.94" y="202.565"/>
 <element name="R2T2" library="rcl" package="M0805" value="10k" x="-488.315" y="-66.3575"/>
 <element name="U$22" library="525" package="DIL14" value="КМ525ПС3Б" x="-479.1075" y="-75.565"/>
 <element name="IC10" library="74xx-eu" package="SO14" value="74LS74D" x="-431.8" y="-67.945"/>
@@ -8100,7 +8083,7 @@ chip</description>
 <element name="R5T14" library="rcl" package="M0805" value="220k" x="-281.94" y="170.4975" rot="MR0"/>
 <element name="R5T15" library="rcl" package="M0805" value="220k" x="-265.1125" y="170.815" rot="MR270"/>
 <element name="SJ1" library="jumper" package="SJ" value="" x="-303.53" y="174.625" rot="MR270"/>
-<element name="R2T3" library="rcl" package="M0805" value="2k7" x="-488.315" y="-256.8575"/>
+<element name="R2T3" library="rcl" package="M0805" value="2k7" x="-295.91" y="205.4225"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -8361,6 +8344,8 @@ chip</description>
 <contactref element="C3T5" pad="2"/>
 <contactref element="C4T3" pad="2"/>
 <contactref element="C4T4" pad="2"/>
+<contactref element="U$22" pad="2"/>
+<contactref element="U$22" pad="7"/>
 <wire x1="-259.92" y1="6.985" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-268.605" y1="26.67" x2="-259.92" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-222.565" y1="-16.51" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
@@ -8437,6 +8422,8 @@ chip</description>
 <wire x1="-312.1025" y1="165.735" x2="-311.7875" y2="167.64" width="0" layer="19" extent="16-16"/>
 <wire x1="-297.18" y1="182.56" x2="-296.5475" y2="171.1325" width="0" layer="19" extent="16-16"/>
 <wire x1="-301.9425" y1="181.295" x2="-297.18" y2="182.56" width="0" layer="19" extent="16-16"/>
+<wire x1="-280.24" y1="202.565" x2="-282.575" y2="182.8775" width="0" layer="19" extent="1-16"/>
+<wire x1="-289.5575" y1="225.425" x2="-280.24" y2="202.565" width="0" layer="19" extent="1-1"/>
 <wire x1="-251.78" y1="-97.79" x2="-222.565" y2="-16.51" width="0" layer="19" extent="1-1"/>
 <wire x1="-209.55" y1="-135.57" x2="-251.78" y2="-97.79" width="0" layer="19" extent="1-1"/>
 <wire x1="-203.2" y1="-130.175" x2="-209.55" y2="-135.57" width="0" layer="19" extent="1-1"/>
@@ -8471,6 +8458,8 @@ chip</description>
 <wire x1="160.3375" y1="-144.653" x2="143.83" y2="-128.905" width="0" layer="19" extent="1-1"/>
 <wire x1="186.3725" y1="-153.985" x2="169.545" y2="-151.19" width="0" layer="19" extent="1-16"/>
 <wire x1="184.785" y1="-97.46" x2="140.843" y2="-107.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-471.4875" y1="-79.375" x2="-406.715" y2="-157.325" width="0" layer="19" extent="1-1"/>
+<wire x1="-484.1875" y1="-79.375" x2="-471.4875" y2="-79.375" width="0" layer="19" extent="1-1"/>
 <wire x1="171.0309" y1="64.135" x2="48" y2="46.55" width="0" layer="19" extent="1-16"/>
 <wire x1="179.645" y1="64.77" x2="171.0309" y2="64.135" width="0" layer="19" extent="1-1"/>
 <wire x1="184.845" y1="63.5" x2="179.645" y2="64.77" width="0" layer="19" extent="1-1"/>
@@ -8482,8 +8471,6 @@ chip</description>
 <wire x1="187.5409" y1="54.2925" x2="187.5409" y2="53.0225" width="0" layer="19" extent="1-1"/>
 <wire x1="187.5409" y1="51.7525" x2="187.5409" y2="53.0225" width="0" layer="19" extent="1-1"/>
 <wire x1="193.04" y1="54.61" x2="187.5409" y2="54.2925" width="0" layer="19" extent="1-1"/>
-<wire x1="-454.0225" y1="36.195" x2="-307.025" y2="78.74" width="0" layer="19" extent="1-1"/>
-<wire x1="-448.945" y1="12.3825" x2="-454.0225" y2="36.195" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
 <contactref element="VT1" pad="D"/>
@@ -8731,12 +8718,12 @@ chip</description>
 <wire x1="-288.9275" y1="168.91" x2="-288.925" y2="171.135" width="0" layer="19" extent="16-16"/>
 <wire x1="-308.9275" y1="178.435" x2="-303.53" y2="171.4525" width="0" layer="19" extent="16-16"/>
 <wire x1="-316.545" y1="162.56" x2="-313.6875" y2="167.64" width="0" layer="19" extent="16-16"/>
+<wire x1="-287.0225" y1="230.9925" x2="-293.6875" y2="178.435" width="0" layer="19" extent="1-1"/>
 <wire x1="-213.995" y1="-135.57" x2="-189.55" y2="-12.065" width="0" layer="19" extent="1-1"/>
 <wire x1="-220.345" y1="-145.415" x2="-213.995" y2="-135.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-205.105" y1="-143.51" x2="-213.995" y2="-135.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-351.92" y1="-222.885" x2="-220.345" y2="-145.415" width="0" layer="19" extent="1-1"/>
-<wire x1="-451.4875" y1="41.7625" x2="-351.92" y2="-222.885" width="0" layer="19" extent="1-1"/>
-<wire x1="-435.61" y1="-64.8716" x2="-451.4875" y2="41.7625" width="0" layer="19" extent="1-1"/>
+<wire x1="-435.61" y1="-64.8716" x2="-351.92" y2="-222.885" width="0" layer="19" extent="1-1"/>
 <wire x1="-487.365" y1="-66.3575" x2="-435.61" y2="-64.8716" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
@@ -11424,24 +11411,18 @@ chip</description>
 <contactref element="R5T1" pad="2"/>
 <contactref element="VT23" pad="3"/>
 <contactref element="C1T1" pad="1"/>
-<wire x1="-452.1225" y1="36.195" x2="-454.0225" y2="30.1625" width="0" layer="19" extent="1-1"/>
-<wire x1="-452.4375" y1="43.9625" x2="-452.1225" y2="36.195" width="0" layer="19" extent="1-1"/>
+<wire x1="-287.6575" y1="225.425" x2="-289.5575" y2="219.3925" width="0" layer="19" extent="1-1"/>
+<wire x1="-287.9725" y1="233.1925" x2="-287.6575" y2="225.425" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$123">
 <contactref element="VT23" pad="1"/>
 <contactref element="R2T1" pad="2"/>
-<wire x1="-453.3875" y1="41.7625" x2="-452.1225" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="-288.9225" y1="230.9925" x2="-287.6575" y2="213.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$124">
 <contactref element="TAHOIN1" pad="1"/>
 <contactref element="R2T3" pad="1"/>
-<wire x1="-453.0725" y1="17.4625" x2="-489.265" y2="-256.8575" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="-U">
-<contactref element="U$22" pad="8"/>
-</signal>
-<signal name="+U">
-<contactref element="U$22" pad="14"/>
+<wire x1="-288.6075" y1="206.6925" x2="-296.86" y2="205.4225" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$345">
 <contactref element="IC10" pad="2"/>
@@ -11460,8 +11441,8 @@ chip</description>
 <contactref element="IC10" pad="4"/>
 <contactref element="6VD2" pad="A"/>
 <contactref element="6VD3" pad="C"/>
-<wire x1="-433.8175" y1="-75.565" x2="-433.8175" y2="-78.105" width="0" layer="19" extent="1-1"/>
 <wire x1="-433.7075" y1="-73.3425" x2="-433.8175" y2="-75.565" width="0" layer="19" extent="1-1"/>
+<wire x1="-433.8175" y1="-78.105" x2="-433.8175" y2="-75.565" width="0" layer="19" extent="1-1"/>
 <wire x1="-431.8" y1="-71.0184" x2="-433.7075" y2="-73.3425" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$359">
@@ -11511,8 +11492,23 @@ chip</description>
 <contactref element="R2T1" pad="1"/>
 <contactref element="D16" pad="C"/>
 <contactref element="R2T3" pad="2"/>
-<wire x1="-454.025" y1="12.3825" x2="-487.365" y2="-256.8575" width="0" layer="19" extent="1-1"/>
-<wire x1="-454.0225" y1="24.13" x2="-454.025" y2="12.3825" width="0" layer="19" extent="1-1"/>
+<wire x1="-283.64" y1="202.565" x2="-294.96" y2="205.4225" width="0" layer="19" extent="1-1"/>
+<wire x1="-289.5575" y1="213.36" x2="-283.64" y2="202.565" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$299">
+<contactref element="U$22" pad="1"/>
+</signal>
+<signal name="N$302">
+<contactref element="U$22" pad="6"/>
+</signal>
+<signal name="N$311">
+<contactref element="U$22" pad="12"/>
+</signal>
+<signal name="+15V">
+<contactref element="U$22" pad="14"/>
+</signal>
+<signal name="-15V">
+<contactref element="U$22" pad="8"/>
 </signal>
 </signals>
 </board>

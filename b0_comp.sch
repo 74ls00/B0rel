@@ -36232,7 +36232,7 @@ type RDH, grid 15 mm</description>
 <part name="R5T8" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
 <part name="C4T4" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="DA1T3" library="555,556-v2" deviceset="*555" device="N"/>
-<part name="R53" library="rcl" deviceset="R-TRIMM" device="3296W" value="100k"/>
+<part name="R53" library="rcl" deviceset="R-TRIMM" device="3314G" value="100k"/>
 <part name="R5T9" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="C2T9" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="1D4" library="40xx" deviceset="4011" device="D"/>

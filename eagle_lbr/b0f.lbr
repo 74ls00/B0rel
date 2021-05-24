@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -363,6 +363,12 @@
 </package>
 <package name="PIN_D3MM">
 <pad name="P$1" x="0" y="0" drill="3" diameter="5"/>
+</package>
+<package name="DIMEN10X10">
+<wire x1="-49.53" y1="-49.53" x2="49.53" y2="-49.53" width="0.3048" layer="20"/>
+<wire x1="-49.53" y1="-49.53" x2="-49.53" y2="49.53" width="0.3048" layer="20"/>
+<wire x1="-49.53" y1="49.53" x2="49.53" y2="49.53" width="0.3048" layer="20"/>
+<wire x1="49.53" y1="-49.53" x2="49.53" y2="49.53" width="0.3048" layer="20"/>
 </package>
 </packages>
 <symbols>

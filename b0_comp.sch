@@ -33186,7 +33186,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="C11F" library="rcl" deviceset="C-EU" device="050-025X075" value="1m"/>
 <part name="R14F" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
 <part name="C12F" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
-<part name="DA1F" library="555,556-v2" deviceset="*555" device="D" value="SA555"/>
+<part name="DA1F" library="555,556-v2" deviceset="*555" device="N" value="КР1006ВИ1"/>
 <part name="R13F" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="KT2" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="R12F" library="rcl" deviceset="R-EU_" device="M0805" value="220k"/>
@@ -33203,10 +33203,10 @@ Source: 008-0260-0_E.pdf</description>
 <part name="P+31" library="supply1v" deviceset="+5V" device=""/>
 <part name="GND83" library="supply1v" deviceset="GND" device=""/>
 <part name="C14F" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
-<part name="C19F" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
+<part name="C19F" library="rcl" deviceset="C-EU" device="050-025X075" value="1m"/>
 <part name="R22F" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
 <part name="C20F" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
-<part name="DA3F" library="555,556-v2" deviceset="*555" device="D" value="NE555P"/>
+<part name="DA3F" library="555,556-v2" deviceset="*555" device="D" value="КР1006ВИ1"/>
 <part name="R21F" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="KT4" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="R20F" library="rcl" deviceset="R-EU_" device="M0805" value="220k"/>
@@ -33240,7 +33240,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="R5T2" library="rcl" deviceset="R-EU_" device="M0805" value="0"/>
 <part name="P+36" library="supply1v" deviceset="+5V" device=""/>
 <part name="R17F" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
-<part name="C15F" library="rcl" deviceset="C-EU" device="050-025X075" value="1m"/>
+<part name="C15F" library="rcl" deviceset="C-EU" device="102-064X133" value="1m"/>
 <part name="DA7" library="555,556-v2" deviceset="*555" device="N" value="SA555"/>
 <part name="DA14" library="555,556-v2" deviceset="*555" device="N" value="SA555"/>
 <part name="DA15" library="555,556-v2" deviceset="*555" device="N" value="SA555"/>
@@ -38002,11 +38002,11 @@ ne555p 780k
 </instance>
 <instance part="DA1F" gate="G$1" x="-91.44" y="-33.02" smashed="yes">
 <attribute name="NAME" x="-93.345" y="-29.21" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-93.345" y="-53.34" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-95.885" y="-53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="R13F" gate="G$1" x="-104.14" y="-53.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="-102.235" y="-52.4764" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-102.235" y="-54.737" size="1.778" layer="96"/>
+<attribute name="NAME" x="-102.235" y="-57.5564" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-102.235" y="-59.817" size="1.778" layer="96"/>
 </instance>
 <instance part="KT2" gate="G$1" x="-73.66" y="-25.4" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-74.93" y="-20.955" size="1.778" layer="95" rot="MR180"/>
@@ -38033,7 +38033,7 @@ ne555p 780k
 </instance>
 <instance part="DA2F" gate="G$1" x="-38.1" y="-33.02" smashed="yes">
 <attribute name="NAME" x="-40.005" y="-29.21" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-40.005" y="-53.34" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-42.545" y="-53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="KT3" gate="G$1" x="-20.32" y="-25.4" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-21.59" y="-20.955" size="1.778" layer="95" rot="MR180"/>
@@ -38064,11 +38064,11 @@ ne555p 780k
 </instance>
 <instance part="DA3F" gate="G$1" x="15.24" y="-33.02" smashed="yes">
 <attribute name="NAME" x="13.335" y="-29.21" size="1.778" layer="95"/>
-<attribute name="VALUE" x="13.335" y="-53.34" size="1.778" layer="96"/>
+<attribute name="VALUE" x="10.795" y="-53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="R21F" gate="G$1" x="5.08" y="-53.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="6.985" y="-52.4764" size="1.778" layer="95"/>
-<attribute name="VALUE" x="6.985" y="-54.737" size="1.778" layer="96"/>
+<attribute name="NAME" x="6.985" y="-57.5564" size="1.778" layer="95"/>
+<attribute name="VALUE" x="6.985" y="-59.817" size="1.778" layer="96"/>
 </instance>
 <instance part="KT4" gate="G$1" x="38.1" y="-25.4" smashed="yes" rot="MR90">
 <attribute name="NAME" x="36.83" y="-20.955" size="1.778" layer="95" rot="MR180"/>
@@ -38148,8 +38148,8 @@ ne555p 780k
 </instance>
 <instance part="P+36" gate="1" x="137.16" y="142.24" rot="MR0"/>
 <instance part="R17F" gate="G$1" x="-48.26" y="-53.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="-46.355" y="-55.0164" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-46.355" y="-57.277" size="1.778" layer="96"/>
+<attribute name="NAME" x="-46.355" y="-57.5564" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-46.355" y="-59.817" size="1.778" layer="96"/>
 </instance>
 <instance part="C15F" gate="G$1" x="-55.88" y="-53.34" smashed="yes">
 <attribute name="NAME" x="-61.341" y="-52.324" size="1.778" layer="95"/>

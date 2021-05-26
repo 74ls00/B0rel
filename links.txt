@@ -43,7 +43,7 @@ https://cxem.net/beginner/beginner164.php
 https://radiokot.ru/forum/viewtopic.php?f=21&t=177010
 pdf https://www.ti.com/lit/ds/symlink/cd4052b.pdf
 
-Формирование фазового сдвига периодического сигнала
+Формирование фазового сдвига периодического сигнала. С. Вычугжанин.
 Радио 1999 №2 с.42
 https://www.diagram.com.ua/list/constructor/constructor26.shtml
 

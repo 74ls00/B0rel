@@ -38024,9 +38024,9 @@ ne555p 780k
 </instance>
 <instance part="P+32" gate="1" x="-15.24" y="58.42" rot="MR0"/>
 <instance part="GND85" gate="1" x="-30.48" y="53.34" rot="MR90"/>
-<instance part="C18F" gate="G$1" x="-60.96" y="30.48" smashed="yes">
-<attribute name="NAME" x="-60.579" y="27.686" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-63.119" y="27.686" size="1.778" layer="96" rot="R270"/>
+<instance part="C18F" gate="G$1" x="-60.96" y="25.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="-58.166" y="25.781" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-58.166" y="23.241" size="1.778" layer="96"/>
 </instance>
 <instance part="KT1" gate="G$1" x="-93.98" y="111.76" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-95.25" y="116.205" size="1.778" layer="95" rot="MR180"/>
@@ -38065,7 +38065,6 @@ ne555p 780k
 <attribute name="NAME" x="77.47" y="178.689" size="1.778" layer="95"/>
 <attribute name="VALUE" x="69.85" y="179.07" size="1.778" layer="96"/>
 </instance>
-<instance part="IC2" gate="C" x="-60.96" y="45.72" rot="R270"/>
 <instance part="IC2" gate="B" x="5.08" y="149.86"/>
 <instance part="IC2" gate="A" x="5.08" y="160.02"/>
 <instance part="IC2" gate="F" x="60.96" y="124.46"/>
@@ -39057,12 +39056,11 @@ ne555p 780k
 <pinref part="KT3" gate="G$1" pin="1"/>
 <wire x1="-73.66" y1="30.48" x2="-81.28" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="30.48" x2="-73.66" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="C" pin="I"/>
 <junction x="-73.66" y="30.48"/>
-<wire x1="-60.96" y1="50.8" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="58.42" x2="-68.58" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="58.42" x2="-68.58" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="30.48" x2="-73.66" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="30.48" x2="-66.04" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="30.48" x2="-66.04" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="C18F" gate="G$1" pin="1"/>
+<wire x1="-66.04" y1="25.4" x2="-63.5" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$324" class="0">
@@ -39104,7 +39102,7 @@ ne555p 780k
 <pinref part="R21F" gate="G$1" pin="2"/>
 <wire x1="-38.1" y1="25.4" x2="-38.1" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-38.1" y="25.4"/>
-<wire x1="-60.96" y1="25.4" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="25.4" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C18F" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -39200,13 +39198,6 @@ ne555p 780k
 <wire x1="-129.54" y1="63.5" x2="-129.54" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C14F" gate="G$1" pin="1"/>
 <wire x1="-129.54" y1="25.4" x2="-121.92" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$322" class="0">
-<segment>
-<pinref part="IC2" gate="C" pin="O"/>
-<pinref part="C18F" gate="G$1" pin="1"/>
-<wire x1="-60.96" y1="38.1" x2="-60.96" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$304" class="0">

@@ -6711,7 +6711,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <element name="-12V2" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="79.375" y="-60.96"/>
 <element name="JP4" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="80.01" y="-54.61"/>
 <element name="JP5" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="60.325" y="-62.865"/>
-<element name="U$1" library="GD75232" package="SSOP20D8" value="GD75232DB" x="-456.7475" y="84.6375" rot="R270"/>
+<element name="DD1-" library="GD75232" package="SSOP20D8" value="GD75232DB" x="-456.7475" y="84.6375" rot="R270"/>
 <element name="ARDUINO1" library="arduinopromini" package="ARDUINO_PRO_MINI" value="" x="-18.665" y="-19.4675" rot="R90"/>
 <element name="LCD1" library="b0l2" package="12864B" value="LCD_128x64_ST7920" x="0" y="0" locked="yes"/>
 <element name="R202" library="rcl" package="R0805" value="5k1" x="12.1" y="-23.32" rot="MR90"/>
@@ -7430,7 +7430,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <signal name="GND">
 <contactref element="R101*1" pad="1"/>
 <contactref element="JP5" pad="1"/>
-<contactref element="U$1" pad="11"/>
+<contactref element="DD1-" pad="11"/>
 <contactref element="LCD1" pad="1"/>
 <contactref element="LCD1" pad="1@"/>
 <wire x1="15.76" y1="-29.96" x2="15.76" y2="-32.5" width="1.27" layer="16"/>
@@ -7954,7 +7954,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <signal name="+12V">
 <contactref element="VT1" pad="D"/>
 <contactref element="JP4" pad="1"/>
-<contactref element="U$1" pad="1"/>
+<contactref element="DD1-" pad="1"/>
 <contactref element="VT1P" pad="1"/>
 <contactref element="C1P" pad="+"/>
 <contactref element="F1" pad="1"/>
@@ -8021,10 +8021,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="54.895" y1="-42.91" x2="57.01" y2="-49.245" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="-12V">
-<contactref element="U$1" pad="10"/>
+<contactref element="DD1-" pad="10"/>
 </signal>
 <signal name="+5V">
-<contactref element="U$1" pad="20"/>
+<contactref element="DD1-" pad="20"/>
 <contactref element="R204" pad="2"/>
 <contactref element="R203" pad="2"/>
 <contactref element="ISP1" pad="2"/>
@@ -8318,69 +8318,69 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="0.385" y1="-8.0375" x2="-17.26" y2="-29.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$58">
-<contactref element="U$1" pad="9"/>
+<contactref element="DD1-" pad="9"/>
 <contactref element="X1" pad="9"/>
 <wire x1="-460.1003" y1="82.3515" x2="-461.5735" y2="82.3515" width="0.3048" layer="1"/>
 <wire x1="-461.5735" y1="82.3515" x2="-463.4404" y2="80.4846" width="0.3048" layer="1"/>
 <wire x1="-463.4404" y1="80.4846" x2="-467.7178" y2="80.4846" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$65">
-<contactref element="U$1" pad="8"/>
+<contactref element="DD1-" pad="8"/>
 <contactref element="X1" pad="4"/>
 <wire x1="-460.1003" y1="82.9865" x2="-462.2085" y2="82.9865" width="0.3048" layer="1"/>
 <wire x1="-462.2085" y1="82.9865" x2="-463.3261" y2="81.8689" width="0.3048" layer="1"/>
 <wire x1="-463.3261" y1="81.8689" x2="-464.8742" y2="81.8689" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$66">
-<contactref element="U$1" pad="7"/>
+<contactref element="DD1-" pad="7"/>
 <contactref element="X1" pad="8"/>
 <wire x1="-460.1003" y1="83.6215" x2="-462.8435" y2="83.6215" width="0.3048" layer="1"/>
 <wire x1="-462.8435" y1="83.6215" x2="-463.2118" y2="83.2532" width="0.3048" layer="1"/>
 <wire x1="-463.2118" y1="83.2532" x2="-467.7178" y2="83.2532" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$74">
-<contactref element="U$1" pad="6"/>
+<contactref element="DD1-" pad="6"/>
 <contactref element="X1" pad="3"/>
 <wire x1="-460.1003" y1="84.2565" x2="-463.3515" y2="84.2565" width="0.3048" layer="1"/>
 <wire x1="-463.3515" y1="84.2565" x2="-463.7325" y2="84.6375" width="0.3048" layer="1"/>
 <wire x1="-463.7325" y1="84.6375" x2="-464.8742" y2="84.6375" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$75">
-<contactref element="U$1" pad="5"/>
+<contactref element="DD1-" pad="5"/>
 <contactref element="X1" pad="7"/>
 <wire x1="-460.1003" y1="84.8915" x2="-462.7165" y2="84.8915" width="0.3048" layer="1"/>
 <wire x1="-462.7165" y1="84.8915" x2="-463.8468" y2="86.0218" width="0.3048" layer="1"/>
 <wire x1="-463.8468" y1="86.0218" x2="-467.7178" y2="86.0218" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$76">
-<contactref element="U$1" pad="4"/>
+<contactref element="DD1-" pad="4"/>
 <contactref element="X1" pad="2"/>
 <wire x1="-460.1003" y1="85.5265" x2="-462.0815" y2="85.5265" width="0.3048" layer="1"/>
 <wire x1="-462.0815" y1="85.5265" x2="-463.9611" y2="87.4061" width="0.3048" layer="1"/>
 <wire x1="-463.9611" y1="87.4061" x2="-464.8742" y2="87.4061" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$77">
-<contactref element="U$1" pad="3"/>
+<contactref element="DD1-" pad="3"/>
 <contactref element="X1" pad="6"/>
 <wire x1="-460.1003" y1="86.1615" x2="-461.4465" y2="86.1615" width="0.3048" layer="1"/>
 <wire x1="-461.4465" y1="86.1615" x2="-464.0754" y2="88.7904" width="0.3048" layer="1"/>
 <wire x1="-464.0754" y1="88.7904" x2="-467.7178" y2="88.7904" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$78">
-<contactref element="U$1" pad="2"/>
+<contactref element="DD1-" pad="2"/>
 <contactref element="X1" pad="1"/>
 <wire x1="-460.1003" y1="86.7965" x2="-460.8115" y2="86.7965" width="0.3048" layer="1"/>
 <wire x1="-460.8115" y1="86.7965" x2="-464.1897" y2="90.1747" width="0.3048" layer="1"/>
 <wire x1="-464.1897" y1="90.1747" x2="-464.8742" y2="90.1747" width="0.3048" layer="1"/>
 </signal>
 <signal name="RX">
-<contactref element="U$1" pad="15"/>
+<contactref element="DD1-" pad="15"/>
 </signal>
 <signal name="TX">
-<contactref element="U$1" pad="17"/>
+<contactref element="DD1-" pad="17"/>
 </signal>
 <signal name="DB1">
-<contactref element="U$1" pad="18"/>
+<contactref element="DD1-" pad="18"/>
 <contactref element="ARDUINO1" pad="D11"/>
 <contactref element="ISP1" pad="4"/>
 <contactref element="LCD1" pad="8@"/>
@@ -8391,21 +8391,21 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-2.02" y1="-29.96" x2="-2.155" y2="-8.0375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
-<contactref element="U$1" pad="16"/>
+<contactref element="DD1-" pad="16"/>
 <contactref element="ARDUINO1" pad="D12"/>
 <contactref element="ISP1" pad="1"/>
 <wire x1="-38.405" y1="-8.94" x2="-453.4963" y2="84.8915" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.695" y1="-8.0375" x2="-38.405" y2="-8.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
-<contactref element="U$1" pad="14"/>
+<contactref element="DD1-" pad="14"/>
 <contactref element="ISP1" pad="3"/>
 <contactref element="ARDUINO1" pad="D13"/>
 <wire x1="-38.405" y1="-11.48" x2="-453.4963" y2="83.6215" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.235" y1="-8.0375" x2="-38.405" y2="-11.48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
-<contactref element="U$1" pad="12"/>
+<contactref element="DD1-" pad="12"/>
 <contactref element="ISP1" pad="5"/>
 <contactref element="ARDUINO1" pad="RST@1"/>
 <contactref element="ARDUINO1" pad="RST"/>

@@ -209,7 +209,6 @@
 <dimension x1="172.085" y1="-83.185" x2="171.45" y2="-108.585" x3="191.77" y3="-95.885" textsize="1.778" layer="21" dtype="vertical"/>
 <dimension x1="228.9175" y1="72.0725" x2="220.6625" y2="40.64" x3="149.86" y3="56.35625" textsize="1.778" layer="21" dtype="vertical"/>
 <dimension x1="163.6025" y1="33.3825" x2="189.98" y2="25.0725" x3="176.79125" y3="76.075" textsize="1.778" layer="21" dtype="horizontal"/>
-<dimension x1="-350.2025" y1="109.5375" x2="-376.8725" y2="140.0175" x3="-341.63" y3="124.7775" textsize="1.778" layer="21" dtype="vertical"/>
 <dimension x1="-251.1425" y1="223.8375" x2="-254.635" y2="224.155" x3="-252.88875" y3="204.47" textsize="1.778" layer="21" dtype="horizontal"/>
 <dimension x1="-305.1175" y1="221.615" x2="-276.86" y2="232.0925" x3="-290.98875" y3="143.51" textsize="1.778" layer="21" dtype="horizontal"/>
 <dimension x1="-238.4425" y1="199.7075" x2="-242.57" y2="184.15" x3="-225.7425" y3="191.92875" textsize="1.778" layer="21" dtype="vertical"/>
@@ -217,13 +216,15 @@
 <dimension x1="-350.2025" y1="208.28" x2="-349.5675" y2="179.3875" x3="-340.995" y3="193.83375" textsize="1.778" layer="21" dtype="vertical"/>
 <text x="-289.2425" y="261.3025" size="1.778" layer="16" rot="MR0">bottom</text>
 <text x="-296.2275" y="257.81" size="1.778" layer="1">Top</text>
-<dimension x1="-299.4025" y1="189.23" x2="-282.8925" y2="189.865" x3="-291.1475" y3="171.45" textsize="1.778" layer="21" dtype="horizontal"/>
+<dimension x1="-299.4025" y1="189.23" x2="-314.0075" y2="204.7875" x3="-306.705" y3="171.45" textsize="1.778" layer="21" dtype="horizontal"/>
 <dimension x1="-323.85" y1="227.6475" x2="-245.745" y2="216.535" x3="-235.585" y3="222.09125" textsize="1.778" layer="21" dtype="vertical"/>
 <dimension x1="-436.88" y1="86.6775" x2="-423.2275" y2="86.995" x3="-430.05375" y3="59.3725" textsize="1.778" layer="21" dtype="horizontal"/>
 <dimension x1="-479.1075" y1="32.0675" x2="-477.2025" y2="49.2125" x3="-533.4" y3="40.64" textsize="1.778" layer="21" dtype="vertical"/>
 <dimension x1="-529.59" y1="27.305" x2="-488.95" y2="26.3525" x3="-509.27" y3="70.1675" textsize="1.778" layer="21" dtype="horizontal"/>
 <circle x="-511.4925" y="41.5925" radius="6" width="0.6096" layer="21"/>
 <dimension x1="-308.9275" y1="234.6325" x2="-307.6575" y2="222.5675" x3="-367.3475" y3="228.6" textsize="1.778" layer="21" dtype="vertical"/>
+<dimension x1="-311.15" y1="224.155" x2="-310.1975" y2="236.22" x3="-310.67375" y3="209.8675" textsize="1.778" layer="21" dtype="horizontal"/>
+<dimension x1="-311.785" y1="222.5675" x2="-309.88" y2="216.535" x3="-328.93" y3="219.55125" textsize="1.778" layer="21" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="Разъёмы штырьковые 2.54мм">
@@ -2151,26 +2152,6 @@ grid 7.5 mm, outline 3.2 x 10.3 mm</description>
 <rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-<package name="C100-060X120">
-<wire x1="-3.135" y1="1.2685" x2="-3.135" y2="-0.0015" width="0.4064" layer="21"/>
-<wire x1="-2.246" y1="1.2685" x2="-2.246" y2="-0.0015" width="0.4064" layer="21"/>
-<wire x1="3.85" y1="-0.0015" x2="-2.246" y2="-0.0015" width="0.1524" layer="21"/>
-<wire x1="-2.246" y1="-0.0015" x2="-2.246" y2="-1.2715" width="0.4064" layer="21"/>
-<wire x1="-3.77" y1="-0.0015" x2="-3.135" y2="-0.0015" width="0.1524" layer="21"/>
-<wire x1="-3.135" y1="-0.0015" x2="-3.135" y2="-1.2715" width="0.4064" layer="21"/>
-<wire x1="-5.456" y1="3.0465" x2="5.536" y2="3.0465" width="0.1524" layer="21"/>
-<wire x1="6.044" y1="2.5385" x2="6.044" y2="-2.5415" width="0.1524" layer="21"/>
-<wire x1="5.536" y1="-3.0495" x2="-5.456" y2="-3.0495" width="0.1524" layer="21"/>
-<wire x1="-5.964" y1="-2.5415" x2="-5.964" y2="2.5385" width="0.1524" layer="21"/>
-<wire x1="5.536" y1="3.0465" x2="6.044" y2="2.5385" width="0.1524" layer="21" curve="-90"/>
-<wire x1="5.536" y1="-3.0495" x2="6.044" y2="-2.5415" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.964" y1="-2.5415" x2="-5.456" y2="-3.0495" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.964" y1="2.5385" x2="-5.456" y2="3.0465" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-4.94" y="-0.0015" drill="1.016" shape="octagon"/>
-<pad name="2" x="5.02" y="-0.0015" drill="1.016" shape="octagon"/>
-<text x="-6.056" y="3.4275" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.484" y="-2.0335" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="C0805">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
@@ -6521,6 +6502,50 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 </package>
 </packages>
 </library>
+<library name="b0_C">
+<packages>
+<package name="C90-065X115">
+<wire x1="-3.135" y1="1.2685" x2="-3.135" y2="-0.0015" width="0.4064" layer="21"/>
+<wire x1="-2.246" y1="1.2685" x2="-2.246" y2="-0.0015" width="0.4064" layer="21"/>
+<wire x1="3.85" y1="-0.0015" x2="-2.246" y2="-0.0015" width="0.1524" layer="21"/>
+<wire x1="-2.246" y1="-0.0015" x2="-2.246" y2="-1.2715" width="0.4064" layer="21"/>
+<wire x1="-3.77" y1="-0.0015" x2="-3.135" y2="-0.0015" width="0.1524" layer="21"/>
+<wire x1="-3.135" y1="-0.0015" x2="-3.135" y2="-1.2715" width="0.4064" layer="21"/>
+<wire x1="-5.206" y1="3.2965" x2="5.286" y2="3.2965" width="0.1524" layer="21"/>
+<wire x1="5.794" y1="2.7885" x2="5.794" y2="-2.7915" width="0.1524" layer="21"/>
+<wire x1="5.286" y1="-3.2995" x2="-5.206" y2="-3.2995" width="0.1524" layer="21"/>
+<wire x1="-5.714" y1="-2.7915" x2="-5.714" y2="2.7885" width="0.1524" layer="21"/>
+<wire x1="5.286" y1="3.2965" x2="5.794" y2="2.7885" width="0.1524" layer="21" curve="-90"/>
+<wire x1="5.286" y1="-3.2995" x2="5.794" y2="-2.7915" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.714" y1="-2.7915" x2="-5.206" y2="-3.2995" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.714" y1="2.7885" x2="-5.206" y2="3.2965" width="0.1524" layer="21" curve="-90"/>
+<pad name="1" x="-4.44" y="-0.0015" drill="1.016" shape="octagon"/>
+<pad name="2" x="4.52" y="-0.0015" drill="1.016" shape="octagon"/>
+<text x="-1.556" y="1.1775" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.484" y="-2.0335" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="C90-065X115H">
+<wire x1="-0.595" y1="-2.084" x2="-0.595" y2="-3.354" width="0.4064" layer="21"/>
+<wire x1="0.294" y1="-2.084" x2="0.294" y2="-3.354" width="0.4064" layer="21"/>
+<wire x1="4.485" y1="-3.354" x2="0.294" y2="-3.354" width="0.1524" layer="21"/>
+<wire x1="0.294" y1="-3.354" x2="0.294" y2="-4.624" width="0.4064" layer="21"/>
+<wire x1="-4.405" y1="-3.354" x2="-0.595" y2="-3.354" width="0.1524" layer="21"/>
+<wire x1="-0.595" y1="-3.354" x2="-0.595" y2="-4.624" width="0.4064" layer="21"/>
+<wire x1="-5.206" y1="-1.2035" x2="5.286" y2="-1.2035" width="0.1524" layer="21"/>
+<wire x1="5.794" y1="-1.7115" x2="5.794" y2="-11.5415" width="0.1524" layer="21"/>
+<wire x1="5.286" y1="-12.0495" x2="-5.206" y2="-12.0495" width="0.1524" layer="21"/>
+<wire x1="-5.714" y1="-11.5415" x2="-5.714" y2="-1.7115" width="0.1524" layer="21"/>
+<wire x1="5.286" y1="-1.2035" x2="5.794" y2="-1.7115" width="0.1524" layer="21" curve="-90"/>
+<wire x1="5.286" y1="-12.0495" x2="5.794" y2="-11.5415" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.714" y1="-11.5415" x2="-5.206" y2="-12.0495" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.714" y1="-1.7115" x2="-5.206" y2="-1.2035" width="0.1524" layer="21" curve="-90"/>
+<pad name="1" x="-4.44" y="-0.0015" drill="1.016" shape="octagon"/>
+<pad name="2" x="4.52" y="-0.0015" drill="1.016" shape="octagon"/>
+<text x="-3.461" y="-7.5725" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.659" y="-10.1485" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7156,10 +7181,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <element name="JP6" library="Разъёмы штырьковые 2.54мм" package="2X30" value="" x="-6.35" y="-136.8425"/>
 <element name="R11T1" library="rcl" package="M0805" value="4k7" x="-210.5025" y="200.3425" rot="MR180"/>
 <element name="C33F" library="rcl" package="C0805" value="100n" x="-283.5275" y="253.0475" rot="R90"/>
-<element name="C23F" library="rcl" package="C100-060X120" value="1m-" x="-312.7375" y="230.1875" rot="MR270"/>
+<element name="C23F" library="b0_C" package="C90-065X115" value="1m" x="-313.3725" y="228.2825" rot="MR270"/>
 <element name="R5T3" library="rcl" package="M0805" value="1M" x="-368.6175" y="258.445" rot="R270"/>
-<element name="C24F" library="rcl" package="C0805" value="1m" x="-282.8925" y="185.42" rot="R180"/>
-<element name="DA4F" library="555,556-v2" package="DIL8" value="КР1006ВИ1" x="-286.385" y="190.5" rot="MR90"/>
+<element name="C24F" library="rcl" package="C0805" value="1m" x="-314.0075" y="200.3425" rot="R180"/>
+<element name="DA4F" library="555,556-v2" package="DIL8" value="КР1006ВИ1" x="-317.5" y="205.4225" rot="MR90"/>
 <element name="IC1" library="4052(f2v)" package="SO16" value="4052D" x="184.4675" y="49.8475" rot="R90"/>
 <element name="C19" library="rcl" package="C0805" value="100n" x="178.1175" y="49.53" rot="R270"/>
 <element name="R19" library="rcl" package="M0805" value="120" x="184.785" y="56.515"/>
@@ -7182,14 +7207,14 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <element name="F5V-" library="Разъёмы штырьковые 2.54мм" package="1X01" value="" x="187.6425" y="68.58" rot="R90"/>
 <element name="R5T5" library="rcl" package="M0805" value="10k" x="-368.935" y="252.4125"/>
 <element name="C22F" library="rcl" package="C0805" value="10n" x="-363.5375" y="255.27" rot="R180"/>
-<element name="C27F" library="rcl" package="C100-060X120" value="1m" x="-306.07" y="219.71" rot="MR0"/>
-<element name="R5T6" library="rcl" package="M0805" value="1M" x="-292.735" y="188.9125" rot="R270"/>
-<element name="C28F" library="rcl" package="C0805" value="1m" x="-291.7825" y="186.3725"/>
+<element name="C27F" library="b0_C" package="C90-065X115H" value="1m" x="-305.435" y="219.075" locked="yes" rot="MR180"/>
+<element name="R5T6" library="rcl" package="M0805" value="1M" x="-323.85" y="203.835" rot="R270"/>
+<element name="C28F" library="rcl" package="C0805" value="1m" x="-322.8975" y="201.295"/>
 <element name="DA5F" library="555,556-v2" package="DIL8" value="КР1006ВИ1" x="-299.085" y="190.5" rot="MR90"/>
 <element name="R52" library="rcl" package="RTRIM3314G" value="75k*" x="-299.085" y="191.135"/>
 <element name="R5T7" library="rcl" package="M0805" value="10k" x="-300.355" y="251.7775" rot="R270"/>
-<element name="C26F" library="rcl" package="C0805" value="10n" x="-291.7825" y="192.7225" rot="R180"/>
-<element name="C31F" library="rcl" package="C100-060X120" value="1m" x="-258.1275" y="219.71" rot="MR0"/>
+<element name="C26F" library="rcl" package="C0805" value="10n" x="-322.8975" y="207.645" rot="R180"/>
+<element name="C31F" library="b0_C" package="C90-065X115H" value="1m" x="-258.445" y="219.075" locked="yes" rot="MR180"/>
 <element name="R5T8" library="rcl" package="M0805" value="1M" x="-306.705" y="190.5" rot="MR90"/>
 <element name="C32F" library="rcl" package="C0805" value="1m" x="-306.07" y="185.7375"/>
 <element name="DA6F" library="555,556-v2" package="DIL8" value="КР1006ВИ1" x="-252.73" y="230.1875" rot="MR90"/>
@@ -7270,11 +7295,11 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <element name="D16" library="diode" package="SOD80C" value="5v6" x="-329.565" y="233.68" rot="R180"/>
 <element name="R2T2" library="rcl" package="M0805" value="10k" x="-360.3625" y="77.47"/>
 <element name="DA100" library="525" package="DIL14" value="КМ525ПС3Б" x="-394.0175" y="37.465" rot="R270"/>
-<element name="R5T13" library="rcl" package="M0805" value="200k" x="-287.02" y="185.7375"/>
+<element name="R5T13" library="rcl" package="M0805" value="200k" x="-318.135" y="200.66"/>
 <element name="R5T14" library="rcl" package="M0805" value="200k" x="-299.72" y="186.3725"/>
 <element name="R5T15" library="rcl" package="M0805" value="200k" x="-253.365" y="226.695"/>
 <element name="R2T3" library="rcl" package="M0805" value="2k7" x="-324.1675" y="232.0925" rot="R90"/>
-<element name="C11F" library="rcl" package="C100-060X120" value="1m" x="-295.275" y="219.71" rot="MR180"/>
+<element name="C11F" library="b0_C" package="C90-065X115H" value="1m" x="-293.6875" y="219.075" locked="yes" rot="MR180"/>
 <element name="R14F" library="rcl" package="M0805" value="1M" x="-292.4175" y="227.6475" rot="R270"/>
 <element name="C12F" library="rcl" package="C0805" value="1m" x="-300.99" y="236.22"/>
 <element name="DA1F" library="555,556-v2" package="DIL8" value="КР1006ВИ1" x="-294.64" y="231.4575" smashed="yes" rot="MR90">
@@ -7306,7 +7331,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <attribute name="NAME" x="-273.3675" y="233.9975" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="-273.685" y="234.6325" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="C19F" library="rcl" package="C100-060X120" value="1m" x="-270.51" y="219.71" rot="MR180"/>
+<element name="C19F" library="b0_C" package="C90-065X115H" value="1m" x="-270.1925" y="219.075" locked="yes" rot="MR180"/>
 <element name="R22F" library="rcl" package="M0805" value="1M" x="-260.985" y="227.6475" rot="MR270"/>
 <element name="C20F" library="rcl" package="C0805" value="1m" x="-267.335" y="226.695" rot="MR0"/>
 <element name="DA3F" library="555,556-v2" package="DIL8" value="КР1006ВИ1" x="-267.0175" y="230.1875" rot="MR90"/>
@@ -7320,7 +7345,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <attribute name="NAME" x="-296.2275" y="223.647" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="-296.6085" y="223.4692" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="R51" library="rcl" package="M0805" value="56k*" x="-287.02" y="190.8175" rot="R90"/>
+<element name="R51" library="rcl" package="M0805" value="56k*" x="-318.135" y="205.74" rot="R90"/>
 <element name="R15F" library="rcl" package="0207/10" value="16k*" x="-282.575" y="223.8375" smashed="yes">
 <attribute name="NAME" x="-284.1625" y="223.3295" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="-284.861" y="223.1517" size="1.27" layer="27" ratio="10"/>
@@ -7337,7 +7362,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <element name="KT5,KT6" library="Разъёмы штырьковые 2.54мм" package="1X02" value="" x="-269.5575" y="248.92" rot="R270"/>
 <element name="VD2T1" library="diode" package="SOD80C" value="LL4148" x="-319.0875" y="238.4425" rot="MR90"/>
 <element name="R2T4" library="rcl" package="M0805" value="10k" x="-334.01" y="243.5225"/>
-<element name="R68" library="rcl" package="RTRIM3314G" value="" x="-286.385" y="190.8175"/>
+<element name="R68" library="rcl" package="RTRIM3314G" value="" x="-317.5" y="205.74"/>
 <element name="VD2T2" library="diode" package="SOD80C" value="LL4148" x="-361.315" y="252.4125" rot="MR180"/>
 <element name="VD2T3" library="diode" package="SOD80C" value="LL4148" x="-267.6525" y="237.8075" rot="MR180"/>
 <element name="R69" library="rcl" package="M0805" value="1k" x="-268.605" y="236.5375" rot="MR270"/>
@@ -7346,9 +7371,9 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <attribute name="NAME" x="-281.6225" y="230.505" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="-283.5275" y="233.68" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C15F" library="rcl" package="C100-060X120" value="1m" x="-282.8925" y="219.71" smashed="yes" rot="MR180">
-<attribute name="NAME" x="-286.766" y="219.1385" size="1.27" layer="26" ratio="10" rot="MR0"/>
-<attribute name="VALUE" x="-286.3215" y="222.504" size="1.27" layer="28" ratio="10" rot="MR180"/>
+<element name="C15F" library="b0_C" package="C90-065X115H" value="1m" x="-281.94" y="219.075" locked="yes" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-285.8135" y="218.5035" size="1.27" layer="26" ratio="10" rot="MR0"/>
+<attribute name="VALUE" x="-285.369" y="221.869" size="1.27" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="C13F" library="rcl" package="C0805" value="100n" x="-155.2575" y="240.9825"/>
 <element name="J1F" library="jumper" package="SJ" value="" x="-296.8625" y="236.855" rot="MR90"/>
@@ -7838,6 +7863,15 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-505.4225" y1="42.545" x2="-505.4225" y2="42.805" width="0.6096" layer="16"/>
 <wire x1="-505.4225" y1="42.805" x2="-502.285" y2="42.805" width="0.6096" layer="16"/>
 <wire x1="-502.285" y1="42.805" x2="-502.285" y2="43.18" width="0.6096" layer="16"/>
+<wire x1="-253.925" y1="219.0765" x2="-253.925" y2="216.8525" width="1.016" layer="1"/>
+<wire x1="-253.925" y1="216.8525" x2="-265.6725" y2="216.8525" width="1.016" layer="1"/>
+<wire x1="-265.6725" y1="216.8525" x2="-277.42" y2="216.8525" width="1.016" layer="1"/>
+<wire x1="-277.42" y1="216.8525" x2="-289.1675" y2="216.8525" width="1.016" layer="1"/>
+<wire x1="-289.1675" y1="216.8525" x2="-300.915" y2="216.8525" width="1.016" layer="1"/>
+<wire x1="-265.6725" y1="219.0765" x2="-265.6725" y2="216.8525" width="1.016" layer="1"/>
+<wire x1="-277.42" y1="219.0765" x2="-277.42" y2="216.8525" width="1.016" layer="1"/>
+<wire x1="-289.1675" y1="219.0765" x2="-289.1675" y2="216.8525" width="1.016" layer="1"/>
+<wire x1="-300.915" y1="219.0765" x2="-300.915" y2="216.8525" width="1.016" layer="1"/>
 <wire x1="-259.92" y1="6.985" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-268.605" y1="26.67" x2="-259.92" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="-222.565" y1="-16.51" x2="-254.84" y2="6.985" width="0" layer="19" extent="1-1"/>
@@ -7887,28 +7921,24 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-111.7625" y1="91.44" x2="-79.0575" y2="98.1075" width="0" layer="19" extent="1-1"/>
 <wire x1="-307.025" y1="78.74" x2="-268.605" y2="26.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-293.3675" y1="115.5725" x2="-307.025" y2="78.74" width="0" layer="19" extent="1-16"/>
-<wire x1="-281.9425" y1="185.42" x2="-293.3675" y2="115.5725" width="0" layer="19" extent="1-16"/>
-<wire x1="-290.195" y1="186.69" x2="-281.9425" y2="185.42" width="0" layer="19" extent="1-1"/>
-<wire x1="-290.8325" y1="186.3725" x2="-290.195" y2="186.69" width="0" layer="19" extent="1-1"/>
-<wire x1="-302.895" y1="186.69" x2="-290.8325" y2="186.3725" width="0" layer="19" extent="1-1"/>
-<wire x1="-305.12" y1="185.7375" x2="-302.895" y2="186.69" width="0" layer="19" extent="1-1"/>
-<wire x1="-311.09" y1="219.7085" x2="-302.895" y2="186.69" width="0" layer="19" extent="1-1"/>
-<wire x1="-298.45" y1="227.6475" x2="-311.09" y2="219.7085" width="0" layer="19" extent="1-1"/>
+<wire x1="-305.12" y1="185.7375" x2="-293.3675" y2="115.5725" width="0" layer="19" extent="1-16"/>
+<wire x1="-302.895" y1="186.69" x2="-305.12" y2="185.7375" width="0" layer="19" extent="1-1"/>
+<wire x1="-313.0575" y1="200.3425" x2="-305.12" y2="185.7375" width="0" layer="19" extent="1-1"/>
+<wire x1="-321.31" y1="201.6125" x2="-313.0575" y2="200.3425" width="0" layer="19" extent="1-1"/>
+<wire x1="-321.9475" y1="201.295" x2="-321.31" y2="201.6125" width="0" layer="19" extent="1-1"/>
+<wire x1="-300.915" y1="216.8525" x2="-313.0575" y2="200.3425" width="0" layer="19" extent="1-1"/>
+<wire x1="-287.9725" y1="226.3775" x2="-289.1675" y2="219.0765" width="0" layer="19" extent="1-1"/>
+<wire x1="-256.54" y1="226.3775" x2="-253.925" y2="219.0765" width="0" layer="19" extent="1-1"/>
+<wire x1="-260.6675" y1="230.19" x2="-256.54" y2="226.3775" width="0" layer="19" extent="16-16"/>
+<wire x1="-268.285" y1="226.695" x2="-265.6725" y2="219.0765" width="0" layer="19" extent="16-16"/>
+<wire x1="-270.8275" y1="226.3775" x2="-268.285" y2="226.695" width="0" layer="19" extent="16-16"/>
+<wire x1="-298.45" y1="227.6475" x2="-300.915" y2="219.0765" width="0" layer="19" extent="1-1"/>
 <wire x1="-295.9075" y1="233.9975" x2="-298.45" y2="227.6475" width="0" layer="19" extent="1-1"/>
 <wire x1="-300.04" y1="236.22" x2="-295.9075" y2="233.9975" width="0" layer="19" extent="1-1"/>
-<wire x1="-287.9725" y1="226.3775" x2="-298.45" y2="227.6475" width="0" layer="19" extent="1-1"/>
-<wire x1="-290.255" y1="219.7115" x2="-287.9725" y2="226.3775" width="0" layer="19" extent="1-1"/>
-<wire x1="-277.8725" y1="219.7115" x2="-282.8925" y2="226.3775" width="0" layer="19" extent="1-1"/>
-<wire x1="-270.8275" y1="226.3775" x2="-277.8725" y2="219.7115" width="0" layer="19" extent="1-1"/>
-<wire x1="-268.285" y1="226.695" x2="-270.8275" y2="226.3775" width="0" layer="19" extent="16-16"/>
-<wire x1="-265.49" y1="219.7115" x2="-268.285" y2="226.695" width="0" layer="19" extent="16-16"/>
-<wire x1="-263.1475" y1="219.7085" x2="-265.49" y2="219.7115" width="0" layer="19" extent="1-1"/>
-<wire x1="-260.6675" y1="230.19" x2="-268.285" y2="226.695" width="0" layer="19" extent="16-16"/>
-<wire x1="-256.54" y1="226.3775" x2="-260.6675" y2="230.19" width="0" layer="19" extent="16-16"/>
-<wire x1="-312.736" y1="225.1675" x2="-311.09" y2="219.7085" width="0" layer="19" extent="1-1"/>
+<wire x1="-313.371" y1="223.7625" x2="-300.915" y2="219.0765" width="0" layer="19" extent="1-1"/>
 <wire x1="-283.5275" y1="253.9975" x2="-282.8925" y2="239.0775" width="0" layer="19" extent="1-1"/>
 <wire x1="-296.5425" y1="252.7275" x2="-283.5275" y2="253.9975" width="0" layer="19" extent="1-1"/>
-<wire x1="-319.0875" y1="240.1425" x2="-312.736" y2="225.1675" width="0" layer="19" extent="16-16"/>
+<wire x1="-319.0875" y1="240.1425" x2="-313.371" y2="223.7625" width="0" layer="19" extent="16-16"/>
 <wire x1="-331.1525" y1="235.905" x2="-319.0875" y2="240.1425" width="0" layer="19" extent="1-16"/>
 <wire x1="-331.265" y1="233.68" x2="-331.1525" y2="235.905" width="0" layer="19" extent="1-1"/>
 <wire x1="-349.5675" y1="252.0925" x2="-331.1525" y2="235.905" width="0" layer="19" extent="1-1"/>
@@ -7924,7 +7954,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-254.9525" y1="290.195" x2="-254.9525" y2="287.655" width="0" layer="19" extent="1-1"/>
 <wire x1="-257.4925" y1="290.195" x2="-254.9525" y2="290.195" width="0" layer="19" extent="1-1"/>
 <wire x1="-257.4925" y1="287.655" x2="-254.9525" y2="287.655" width="0" layer="19" extent="1-1"/>
-<wire x1="-216.0875" y1="207.9625" x2="-256.54" y2="226.3775" width="0" layer="19" extent="16-16"/>
+<wire x1="-216.0875" y1="207.9625" x2="-253.925" y2="216.8525" width="0" layer="19" extent="1-16"/>
 <wire x1="-154.3075" y1="220.6625" x2="-211.4525" y2="207.9625" width="0" layer="19" extent="1-16"/>
 <wire x1="-154.3075" y1="240.9825" x2="-154.3075" y2="220.6625" width="0" layer="19" extent="1-1"/>
 <wire x1="-156.8475" y1="271.4625" x2="-154.3075" y2="240.9825" width="0" layer="19" extent="1-1"/>
@@ -8159,10 +8189,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="DA3F" pad="8"/>
 <contactref element="R22F" pad="2"/>
 <contactref element="DA3F" pad="4"/>
-<via x="-278.4475" y="189.865" extent="1-16" drill="0.6" diameter="2.1844"/>
-<wire x1="-278.4475" y1="189.865" x2="-282.575" y2="186.69" width="0.4064" layer="1"/>
-<wire x1="-292.7325" y1="186.3725" x2="-292.7325" y2="187.96" width="0.4064" layer="1"/>
-<wire x1="-292.7325" y1="187.96" x2="-292.735" y2="187.9625" width="0.4064" layer="1"/>
+<via x="-309.5625" y="204.7875" extent="1-16" drill="0.6" diameter="2.1844"/>
+<wire x1="-309.5625" y1="204.7875" x2="-313.69" y2="201.6125" width="0.4064" layer="1"/>
+<wire x1="-323.8475" y1="201.295" x2="-323.8475" y2="202.8825" width="0.4064" layer="1"/>
+<wire x1="-323.8475" y1="202.8825" x2="-323.85" y2="202.885" width="0.4064" layer="1"/>
 <wire x1="-302.895" y1="194.31" x2="-301.625" y2="194.31" width="0.4064" layer="1"/>
 <via x="-301.625" y="194.31" extent="1-16" drill="0.6" diameter="2.1844"/>
 <via x="-294.64" y="184.4675" extent="1-16" drill="0.6" diameter="2.1844"/>
@@ -8248,25 +8278,14 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-505.7775" y1="60.645" x2="-507.535" y2="63.815" width="0" layer="19" extent="1-1"/>
 <wire x1="-497.205" y1="47.3075" x2="-505.7775" y2="60.645" width="0" layer="19" extent="1-1"/>
 <wire x1="-575.5259" y1="106.045" x2="-507.535" y2="63.815" width="0" layer="19" extent="1-16"/>
-<wire x1="130.81" y1="-109.795" x2="48.5775" y2="-35.8775" width="0" layer="19" extent="1-1"/>
-<wire x1="137.287" y1="-107.95" x2="130.81" y2="-109.795" width="0" layer="19" extent="1-1"/>
-<wire x1="147.19" y1="-119.38" x2="137.287" y2="-107.95" width="0" layer="19" extent="1-1"/>
-<wire x1="132.4" y1="-135.255" x2="147.19" y2="-119.38" width="0" layer="19" extent="1-1"/>
-<wire x1="167.51" y1="-140.335" x2="147.19" y2="-119.38" width="0" layer="19" extent="1-16"/>
-<wire x1="175.5775" y1="-133.6675" x2="167.51" y2="-140.335" width="0" layer="19" extent="16-16"/>
-<wire x1="-307.02" y1="185.7375" x2="-424.495" y2="137.16" width="0" layer="19" extent="1-1"/>
+<wire x1="-307.02" y1="185.7375" x2="-346.0775" y2="86.995" width="0" layer="19" extent="1-1"/>
 <wire x1="-306.705" y1="189.55" x2="-307.02" y2="185.7375" width="0" layer="19" extent="1-16"/>
 <wire x1="-302.895" y1="194.31" x2="-306.705" y2="189.55" width="0" layer="19" extent="16-16"/>
-<wire x1="-292.7325" y1="186.3725" x2="-295.275" y2="186.69" width="0" layer="19" extent="1-1"/>
-<wire x1="-290.195" y1="194.31" x2="-292.7325" y2="187.96" width="0" layer="19" extent="1-1"/>
-<wire x1="-283.8425" y1="185.42" x2="-292.7325" y2="186.3725" width="0" layer="19" extent="1-1"/>
-<wire x1="-282.575" y1="186.69" x2="-283.8425" y2="185.42" width="0" layer="19" extent="1-1"/>
-<wire x1="-368.6175" y1="257.495" x2="-278.4475" y2="189.865" width="0" layer="19" extent="1-1"/>
-<wire x1="-333.06" y1="243.5225" x2="-368.6175" y2="257.495" width="0" layer="19" extent="1-1"/>
-<wire x1="-323.85" y1="237.8075" x2="-333.06" y2="243.5225" width="0" layer="19" extent="1-1"/>
-<wire x1="-301.94" y1="236.22" x2="-323.85" y2="237.8075" width="0" layer="19" extent="1-1"/>
-<wire x1="-298.45" y1="235.2675" x2="-301.94" y2="236.22" width="0" layer="19" extent="1-1"/>
-<wire x1="-292.4175" y1="226.6975" x2="-298.45" y2="235.2675" width="0" layer="19" extent="1-1"/>
+<wire x1="-309.5625" y1="204.7875" x2="-302.895" y2="194.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-314.9575" y1="200.3425" x2="-313.69" y2="201.6125" width="0" layer="19" extent="1-1"/>
+<wire x1="-323.8475" y1="201.295" x2="-314.9575" y2="200.3425" width="0" layer="19" extent="1-1"/>
+<wire x1="-321.31" y1="209.2325" x2="-323.8475" y2="202.8825" width="0" layer="19" extent="1-1"/>
+<wire x1="-292.4175" y1="226.6975" x2="-309.5625" y2="204.7875" width="0" layer="19" extent="1-1"/>
 <wire x1="-290.83" y1="227.6475" x2="-292.4175" y2="226.6975" width="0" layer="19" extent="1-1"/>
 <wire x1="-286.385" y1="233.9975" x2="-290.83" y2="227.6475" width="0" layer="19" extent="16-16"/>
 <wire x1="-276.86" y1="226.6975" x2="-278.765" y2="226.3775" width="0" layer="19" extent="1-1"/>
@@ -8276,8 +8295,19 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-263.2075" y1="226.3775" x2="-266.385" y2="226.695" width="0" layer="19" extent="16-16"/>
 <wire x1="-260.985" y1="226.6975" x2="-263.2075" y2="226.3775" width="0" layer="19" extent="16-16"/>
 <wire x1="-256.54" y1="233.9975" x2="-260.985" y2="226.6975" width="0" layer="19" extent="16-16"/>
+<wire x1="-298.45" y1="235.2675" x2="-292.4175" y2="226.6975" width="0" layer="19" extent="1-1"/>
+<wire x1="-301.94" y1="236.22" x2="-298.45" y2="235.2675" width="0" layer="19" extent="1-1"/>
+<wire x1="-323.85" y1="237.8075" x2="-301.94" y2="236.22" width="0" layer="19" extent="1-1"/>
+<wire x1="-333.06" y1="243.5225" x2="-323.85" y2="237.8075" width="0" layer="19" extent="1-1"/>
+<wire x1="-368.6175" y1="257.495" x2="-333.06" y2="243.5225" width="0" layer="19" extent="1-1"/>
 <wire x1="-231.1375" y1="269.875" x2="-249.555" y2="235.585" width="0" layer="19" extent="16-16"/>
 <wire x1="-228.28" y1="274.955" x2="-231.1375" y2="269.875" width="0" layer="19" extent="16-16"/>
+<wire x1="130.81" y1="-109.795" x2="48.5775" y2="-35.8775" width="0" layer="19" extent="1-1"/>
+<wire x1="137.287" y1="-107.95" x2="130.81" y2="-109.795" width="0" layer="19" extent="1-1"/>
+<wire x1="147.19" y1="-119.38" x2="137.287" y2="-107.95" width="0" layer="19" extent="1-1"/>
+<wire x1="132.4" y1="-135.255" x2="147.19" y2="-119.38" width="0" layer="19" extent="1-1"/>
+<wire x1="167.51" y1="-140.335" x2="147.19" y2="-119.38" width="0" layer="19" extent="1-16"/>
+<wire x1="175.5775" y1="-133.6675" x2="167.51" y2="-140.335" width="0" layer="19" extent="16-16"/>
 <wire x1="-213.995" y1="-135.57" x2="-189.55" y2="-12.065" width="0" layer="19" extent="1-1"/>
 <wire x1="-220.345" y1="-145.415" x2="-213.995" y2="-135.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-205.105" y1="-143.51" x2="-213.995" y2="-135.57" width="0" layer="19" extent="1-1"/>
@@ -10345,8 +10375,8 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="C26F" pad="1"/>
 <contactref element="KT7" pad="1"/>
 <contactref element="VD2T4" pad="C"/>
-<wire x1="-290.8325" y1="192.7225" x2="-290.195" y2="191.77" width="0" layer="19" extent="1-1"/>
-<wire x1="-256.54" y1="186.3725" x2="-290.195" y2="191.77" width="0" layer="19" extent="1-1"/>
+<wire x1="-321.9475" y1="207.645" x2="-321.31" y2="206.6925" width="0" layer="19" extent="1-1"/>
+<wire x1="-256.54" y1="186.3725" x2="-321.31" y2="206.6925" width="0" layer="19" extent="1-1"/>
 <wire x1="-159.18" y1="257.175" x2="-256.54" y2="186.3725" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$343">
@@ -10463,8 +10493,8 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="C23F" pad="1"/>
 <contactref element="DA4F" pad="2"/>
 <contactref element="R5T13" pad="1"/>
-<wire x1="-287.97" y1="185.7375" x2="-290.195" y2="189.23" width="0" layer="19" extent="1-1"/>
-<wire x1="-312.736" y1="235.1275" x2="-287.97" y2="185.7375" width="0" layer="19" extent="1-1"/>
+<wire x1="-319.085" y1="200.66" x2="-321.31" y2="204.1525" width="0" layer="19" extent="1-1"/>
+<wire x1="-313.371" y1="232.7225" x2="-321.31" y2="204.1525" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$361">
 <contactref element="DA4F" pad="7"/>
@@ -10472,22 +10502,22 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="R51" pad="2"/>
 <contactref element="R68" pad="1"/>
 <contactref element="R68" pad="2"/>
-<wire x1="-287.02" y1="191.7675" x2="-287.02" y2="193.5675" width="0.4064" layer="1"/>
-<wire x1="-287.02" y1="193.5675" x2="-286.385" y2="193.5675" width="0.4064" layer="1"/>
-<wire x1="-285.235" y1="188.0675" x2="-285.235" y2="192.4175" width="0.4064" layer="1"/>
-<wire x1="-285.235" y1="192.4175" x2="-286.385" y2="193.5675" width="0.4064" layer="1"/>
-<wire x1="-285.235" y1="188.0675" x2="-282.575" y2="189.23" width="0" layer="19" extent="1-1"/>
-<wire x1="-368.6175" y1="259.395" x2="-282.575" y2="189.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-318.135" y1="206.69" x2="-318.135" y2="208.49" width="0.4064" layer="1"/>
+<wire x1="-318.135" y1="208.49" x2="-317.5" y2="208.49" width="0.4064" layer="1"/>
+<wire x1="-316.35" y1="202.99" x2="-316.35" y2="207.34" width="0.4064" layer="1"/>
+<wire x1="-316.35" y1="207.34" x2="-317.5" y2="208.49" width="0.4064" layer="1"/>
+<wire x1="-316.35" y1="202.99" x2="-313.69" y2="204.1525" width="0" layer="19" extent="1-1"/>
+<wire x1="-368.6175" y1="259.395" x2="-318.135" y2="208.49" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$391">
 <contactref element="DA4F" pad="6"/>
 <contactref element="R5T5" pad="2"/>
 <contactref element="C22F" pad="2"/>
-<wire x1="-282.575" y1="191.77" x2="-283.337" y2="191.77" width="0.4064" layer="1"/>
+<wire x1="-313.69" y1="206.6925" x2="-314.452" y2="206.6925" width="0.4064" layer="1"/>
 <wire x1="-367.985" y1="252.4125" x2="-367.665" y2="254.9525" width="0.4064" layer="1"/>
 <wire x1="-367.665" y1="254.9525" x2="-366.7125" y2="255.905" width="0.4064" layer="1"/>
-<wire x1="-367.665" y1="254.9525" x2="-282.575" y2="191.77" width="0" layer="19" extent="1-1"/>
 <wire x1="-364.4875" y1="255.27" x2="-366.7125" y2="255.905" width="0" layer="19" extent="1-1"/>
+<wire x1="-314.452" y1="206.6925" x2="-364.4875" y2="255.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$417">
 <contactref element="C27F" pad="1"/>
@@ -10498,7 +10528,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-301.3075" y1="187.325" x2="-301.625" y2="188.595" width="0.4064" layer="1"/>
 <wire x1="-301.625" y1="188.595" x2="-302.26" y2="188.595" width="0.4064" layer="1"/>
 <wire x1="-302.26" y1="188.595" x2="-302.895" y2="189.23" width="0.4064" layer="1"/>
-<wire x1="-300.67" y1="186.3725" x2="-301.13" y2="219.7085" width="0" layer="19" extent="1-1"/>
+<wire x1="-309.875" y1="219.0765" x2="-302.895" y2="189.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$419">
 <contactref element="R52" pad="2"/>
@@ -10508,8 +10538,8 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-297.935" y1="188.385" x2="-295.275" y2="189.23" width="0.4064" layer="1"/>
 <wire x1="-297.935" y1="188.385" x2="-299.085" y2="193.885" width="0.4064" layer="1"/>
 <contactref element="R19F2" pad="2"/>
-<wire x1="-295.275" y1="189.23" x2="-292.735" y2="189.8625" width="0" layer="19" extent="1-1"/>
-<wire x1="-338.1375" y1="228.6" x2="-292.735" y2="189.8625" width="0" layer="19" extent="1-1"/>
+<wire x1="-299.085" y1="193.885" x2="-323.85" y2="204.785" width="0" layer="19" extent="1-1"/>
+<wire x1="-338.1375" y1="228.6" x2="-323.85" y2="204.785" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$420">
 <contactref element="DA5F" pad="6"/>
@@ -10517,14 +10547,14 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="C26F" pad="2"/>
 <wire x1="-295.275" y1="191.77" x2="-297.18" y2="193.3575" width="0.4064" layer="1"/>
 <wire x1="-297.18" y1="193.3575" x2="-297.18" y2="195.2625" width="0.4064" layer="1"/>
-<wire x1="-292.7325" y1="192.7225" x2="-295.275" y2="191.77" width="0" layer="19" extent="1-1"/>
-<wire x1="-300.355" y1="250.8275" x2="-292.7325" y2="192.7225" width="0" layer="19" extent="1-1"/>
+<wire x1="-297.18" y1="195.2625" x2="-323.8475" y2="207.645" width="0" layer="19" extent="1-1"/>
+<wire x1="-300.355" y1="250.8275" x2="-323.8475" y2="207.645" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$423">
 <contactref element="C31F" pad="1"/>
 <contactref element="DA6F" pad="2"/>
 <contactref element="R5T15" pad="1"/>
-<wire x1="-254.315" y1="226.695" x2="-253.1875" y2="219.7085" width="0" layer="19" extent="1-1"/>
+<wire x1="-254.315" y1="226.695" x2="-262.885" y2="219.0765" width="0" layer="19" extent="1-1"/>
 <wire x1="-256.54" y1="228.9175" x2="-254.315" y2="226.695" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$425">
@@ -10534,9 +10564,9 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="R5T8" pad="2"/>
 <contactref element="R19F1" pad="2"/>
 <wire x1="-342.5825" y1="228.6" x2="-306.705" y2="191.45" width="0" layer="19" extent="16-16"/>
-<wire x1="-252.73" y1="234.2075" x2="-342.5825" y2="228.6" width="0" layer="19" extent="1-1"/>
-<wire x1="-251.58" y1="228.7075" x2="-252.73" y2="234.2075" width="0" layer="19" extent="1-1"/>
+<wire x1="-251.58" y1="228.7075" x2="-306.705" y2="191.45" width="0" layer="19" extent="1-16"/>
 <wire x1="-248.92" y1="228.9175" x2="-251.58" y2="228.7075" width="0" layer="19" extent="1-1"/>
+<wire x1="-252.73" y1="234.2075" x2="-251.58" y2="228.7075" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$426">
 <contactref element="DA6F" pad="6"/>
@@ -10545,8 +10575,8 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-248.92" y1="231.4575" x2="-250.825" y2="231.4575" width="0.4064" layer="1"/>
 <wire x1="-250.825" y1="231.4575" x2="-250.825" y2="235.2675" width="0.4064" layer="1"/>
 <wire x1="-349.25" y1="250.1925" x2="-349.5675" y2="250.1925" width="0.4064" layer="1"/>
-<wire x1="-349.5675" y1="250.1925" x2="-306.3875" y2="193.36" width="0" layer="19" extent="1-1"/>
-<wire x1="-250.825" y1="235.2675" x2="-349.25" y2="250.1925" width="0" layer="19" extent="1-1"/>
+<wire x1="-250.825" y1="231.4575" x2="-306.3875" y2="193.36" width="0" layer="19" extent="1-1"/>
+<wire x1="-349.25" y1="250.1925" x2="-306.3875" y2="193.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12VI1">
 <contactref element="JP8" pad="1"/>
@@ -10603,7 +10633,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="DA5F" pad="3"/>
 <contactref element="KT8" pad="1"/>
 <wire x1="-302.895" y1="191.77" x2="-306.3875" y2="195.26" width="0.4064" layer="1"/>
-<wire x1="-306.705" y1="250.5075" x2="-302.895" y2="191.77" width="0" layer="19" extent="1-1"/>
+<wire x1="-306.705" y1="250.5075" x2="-306.3875" y2="195.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3C3">
 <contactref element="J1F" pad="2"/>
@@ -10906,9 +10936,9 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="R5T13" pad="2"/>
 <contactref element="R51" pad="1"/>
 <contactref element="R68" pad="3"/>
-<wire x1="-287.535" y1="188.0675" x2="-287.535" y2="189.3525" width="0.4064" layer="1"/>
-<wire x1="-287.535" y1="189.3525" x2="-287.02" y2="189.8675" width="0.4064" layer="1"/>
-<wire x1="-287.535" y1="188.0675" x2="-286.07" y2="185.7375" width="0" layer="19" extent="1-1"/>
+<wire x1="-318.65" y1="202.99" x2="-318.65" y2="204.275" width="0.4064" layer="1"/>
+<wire x1="-318.65" y1="204.275" x2="-318.135" y2="204.79" width="0.4064" layer="1"/>
+<wire x1="-318.65" y1="202.99" x2="-317.185" y2="200.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$358">
 <contactref element="R52" pad="3"/>
@@ -10916,7 +10946,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-298.77" y1="186.3725" x2="-299.4025" y2="188.2775" width="0.4064" layer="1"/>
 <wire x1="-299.4025" y1="188.2775" x2="-300.235" y2="188.385" width="0.4064" layer="1"/>
 <contactref element="R19F2" pad="1"/>
-<wire x1="-338.1375" y1="217.17" x2="-298.77" y2="186.3725" width="0" layer="19" extent="1-1"/>
+<wire x1="-300.235" y1="188.385" x2="-338.1375" y2="217.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$367">
 <contactref element="R53" pad="3"/>
@@ -10966,7 +10996,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="C11F" pad="1"/>
 <contactref element="DA1F" pad="2"/>
 <contactref element="R12F" pad="1"/>
-<wire x1="-299.72" y1="228.5975" x2="-300.215" y2="219.7115" width="0" layer="19" extent="16-16"/>
+<wire x1="-299.72" y1="228.5975" x2="-298.1275" y2="219.0765" width="0" layer="19" extent="16-16"/>
 <wire x1="-298.45" y1="230.1875" x2="-299.72" y2="228.5975" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$314">
@@ -10975,10 +11005,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="R11F" pad="2"/>
 <contactref element="R79" pad="2"/>
 <contactref element="R79" pad="1"/>
-<wire x1="-293.49" y1="227.4375" x2="-294.64" y2="232.9375" width="0" layer="19" extent="16-16"/>
-<wire x1="-288.6075" y1="224.155" x2="-293.49" y2="227.4375" width="0" layer="19" extent="16-16"/>
-<wire x1="-292.4175" y1="228.5975" x2="-288.6075" y2="224.155" width="0" layer="19" extent="1-1"/>
+<wire x1="-293.49" y1="227.4375" x2="-292.4175" y2="228.5975" width="0" layer="19" extent="1-1"/>
 <wire x1="-290.83" y1="230.1875" x2="-292.4175" y2="228.5975" width="0" layer="19" extent="1-1"/>
+<wire x1="-294.64" y1="232.9375" x2="-290.83" y2="230.1875" width="0" layer="19" extent="1-1"/>
+<wire x1="-288.6075" y1="224.155" x2="-292.4175" y2="228.5975" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$315">
 <contactref element="DA1F" pad="6"/>
@@ -10993,8 +11023,8 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="R12F" pad="2"/>
 <contactref element="R11F" pad="1"/>
 <contactref element="R79" pad="3"/>
-<wire x1="-300.0375" y1="224.155" x2="-295.79" y2="227.4375" width="0" layer="19" extent="16-16"/>
 <wire x1="-299.72" y1="226.6975" x2="-300.0375" y2="224.155" width="0" layer="19" extent="16-16"/>
+<wire x1="-295.79" y1="227.4375" x2="-299.72" y2="226.6975" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$319">
 <contactref element="R16F" pad="1"/>
@@ -11003,8 +11033,8 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-288.29" y1="232.41" x2="-288.29" y2="229.5525" width="0.4064" layer="1"/>
 <wire x1="-288.29" y1="229.5525" x2="-287.655" y2="228.9175" width="0.4064" layer="1"/>
 <wire x1="-287.655" y1="228.9175" x2="-286.385" y2="228.9175" width="0.4064" layer="1"/>
-<wire x1="-287.655" y1="228.9175" x2="-287.8325" y2="219.7115" width="0" layer="19" extent="1-1"/>
-<wire x1="-284.1625" y1="228.5975" x2="-286.385" y2="228.9175" width="0" layer="19" extent="16-16"/>
+<wire x1="-284.1625" y1="228.5975" x2="-286.38" y2="219.0765" width="0" layer="19" extent="16-16"/>
+<wire x1="-286.385" y1="228.9175" x2="-284.1625" y2="228.5975" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$321">
 <contactref element="DA2F" pad="7"/>
@@ -11012,23 +11042,23 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="R15F" pad="2"/>
 <contactref element="R80" pad="1"/>
 <contactref element="R80" pad="2"/>
-<wire x1="-282.06" y1="228.7075" x2="-283.21" y2="234.2075" width="0" layer="19" extent="16-16"/>
-<wire x1="-277.495" y1="223.8375" x2="-283.21" y2="234.2075" width="0" layer="19" extent="16-16"/>
 <wire x1="-276.86" y1="228.5975" x2="-277.495" y2="223.8375" width="0" layer="19" extent="1-1"/>
 <wire x1="-278.765" y1="228.9175" x2="-276.86" y2="228.5975" width="0" layer="19" extent="1-1"/>
+<wire x1="-282.06" y1="228.7075" x2="-278.765" y2="228.9175" width="0" layer="19" extent="1-1"/>
+<wire x1="-283.21" y1="234.2075" x2="-282.06" y2="228.7075" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$324">
 <contactref element="R16F" pad="2"/>
 <contactref element="R15F" pad="1"/>
 <contactref element="R80" pad="3"/>
-<wire x1="-287.655" y1="223.8375" x2="-284.36" y2="228.7075" width="0" layer="19" extent="16-16"/>
 <wire x1="-284.1625" y1="226.6975" x2="-287.655" y2="223.8375" width="0" layer="19" extent="16-16"/>
+<wire x1="-284.36" y1="228.7075" x2="-284.1625" y2="226.6975" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$325">
 <contactref element="C19F" pad="1"/>
 <contactref element="DA3F" pad="2"/>
 <contactref element="R20F" pad="1"/>
-<wire x1="-274.0025" y1="227.9625" x2="-275.45" y2="219.7115" width="0" layer="19" extent="16-16"/>
+<wire x1="-274.0025" y1="227.9625" x2="-274.6325" y2="219.0765" width="0" layer="19" extent="16-16"/>
 <wire x1="-270.8275" y1="228.9175" x2="-274.0025" y2="227.9625" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$326">
@@ -11037,10 +11067,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="R19F" pad="2"/>
 <contactref element="R81" pad="1"/>
 <contactref element="R81" pad="2"/>
-<wire x1="-265.55" y1="228.39" x2="-266.7" y2="233.89" width="0" layer="19" extent="16-16"/>
-<wire x1="-262.5725" y1="223.8375" x2="-265.55" y2="228.39" width="0" layer="19" extent="16-16"/>
 <wire x1="-260.985" y1="228.5975" x2="-262.5725" y2="223.8375" width="0" layer="19" extent="16-16"/>
 <wire x1="-263.2075" y1="228.9175" x2="-260.985" y2="228.5975" width="0" layer="19" extent="16-16"/>
+<wire x1="-265.55" y1="228.39" x2="-263.2075" y2="228.9175" width="0" layer="19" extent="1-1"/>
+<wire x1="-266.7" y1="233.89" x2="-265.55" y2="228.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$327">
 <contactref element="DA3F" pad="6"/>
@@ -11053,8 +11083,8 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="R20F" pad="2"/>
 <contactref element="R19F" pad="1"/>
 <contactref element="R81" pad="3"/>
-<wire x1="-274.0025" y1="223.8375" x2="-267.85" y2="228.39" width="0" layer="19" extent="16-16"/>
 <wire x1="-274.0025" y1="226.0625" x2="-274.0025" y2="223.8375" width="0" layer="19" extent="16-16"/>
+<wire x1="-267.85" y1="228.39" x2="-274.0025" y2="226.0625" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="2F">
 <contactref element="KT5,KT6" pad="1"/>
@@ -11149,14 +11179,14 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="DA4F" pad="5"/>
 <contactref element="J4F" pad="1"/>
 <wire x1="-158.5595" y1="275.59" x2="-158.7475" y2="281.6225" width="0" layer="19" extent="1-1"/>
-<wire x1="-282.575" y1="194.31" x2="-158.5595" y2="275.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-313.69" y1="209.2325" x2="-158.5595" y2="275.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$341">
 <contactref element="C29F" pad="1"/>
 <contactref element="J5F" pad="1"/>
 <contactref element="DA5F" pad="5"/>
-<wire x1="-158.5595" y1="265.43" x2="-295.275" y2="194.31" width="0" layer="19" extent="1-1"/>
-<wire x1="-158.7475" y1="271.4625" x2="-158.5595" y2="265.43" width="0" layer="19" extent="1-1"/>
+<wire x1="-158.5595" y1="265.43" x2="-158.7475" y2="271.4625" width="0" layer="19" extent="1-1"/>
+<wire x1="-295.275" y1="194.31" x2="-158.5595" y2="265.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$346">
 <contactref element="DA6F" pad="5"/>

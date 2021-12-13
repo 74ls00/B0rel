@@ -7464,6 +7464,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <element name="R81" library="rcl" package="RTRIM3314G" value="" x="-266.7" y="231.14"/>
 <element name="R19F1" library="rcl" package="0207/11" value="20k*" x="-342.5825" y="222.885" rot="R90"/>
 <element name="R19F2" library="rcl" package="0207/11" value="20k*" x="-338.1375" y="222.885" rot="R90"/>
+<element name="VD2T6" library="diode" package="SOD80C" value="LL4148" x="-580.39" y="-256.8575"/>
+<element name="VD2T7" library="diode" package="SOD80C" value="LL4148" x="-580.39" y="-262.89"/>
+<element name="VD2T8" library="diode" package="SOD80C" value="LL4148" x="-580.39" y="-268.9225"/>
+<element name="VD2T9" library="diode" package="SOD80C" value="LL4148" x="-580.39" y="-274.955"/>
 </elements>
 <signals>
 <signal name="N$5">

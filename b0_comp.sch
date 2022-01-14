@@ -33764,7 +33764,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="VD2T1" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
 <part name="R2T4" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+33" library="supply1v" deviceset="+5V" device=""/>
-<part name="R68" library="rcl" deviceset="R-TRIMM" device="3314G"/>
+<part name="R68" library="rcl" deviceset="R-TRIMM" device="3314GJ"/>
 <part name="VD2T2" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
 <part name="VD2T3" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
 <part name="R69" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
@@ -33861,8 +33861,8 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="JP14" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X2" device="/90"/>
 <part name="JP16" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X2" device="/90"/>
 <part name="R79" library="rcl" deviceset="R-TRIMM" device="3314GJ" value="20k"/>
-<part name="R80" library="rcl" deviceset="R-TRIMM" device="3314G"/>
-<part name="R81" library="rcl" deviceset="R-TRIMM" device="3314G"/>
+<part name="R80" library="rcl" deviceset="R-TRIMM" device="3314GJ"/>
+<part name="R81" library="rcl" deviceset="R-TRIMM" device="3314GJ"/>
 <part name="R19F1" library="rcl" deviceset="R-EU_" device="0207/11" value="20k*"/>
 <part name="R19F2" library="rcl" deviceset="R-EU_" device="0207/11" value="20k*"/>
 <part name="GND94" library="supply1v" deviceset="GND" device=""/>
@@ -38721,9 +38721,9 @@ Tic1=Tic2=Tic3</text>
 <attribute name="NAME" x="-14.605" y="-52.4764" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-14.605" y="-54.737" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="KT5,KT6" gate="G$1" x="50.8" y="-58.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="54.61" y="-53.975" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="55.88" y="-64.77" size="1.778" layer="96" rot="R90"/>
+<instance part="KT5,KT6" gate="G$1" x="55.88" y="-12.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="59.69" y="-8.255" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="60.96" y="-19.05" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="VD2T1" gate="G$1" x="-109.22" y="-83.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="-111.76" y="-94.1324" size="1.778" layer="95"/>
@@ -39997,12 +39997,6 @@ Tic1=Tic2=Tic3</text>
 <junction x="-22.86" y="-30.48"/>
 <wire x1="25.4" y1="-30.48" x2="40.64" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="25.4" y="-30.48"/>
-<wire x1="40.64" y1="-30.48" x2="40.64" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="KT5,KT6" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-68.58" x2="48.26" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-101.6" x2="45.72" y2="-101.6" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-101.6" x2="45.72" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-68.58" x2="48.26" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$331" class="0">
@@ -40021,9 +40015,16 @@ Tic1=Tic2=Tic3</text>
 <net name="N$336" class="0">
 <segment>
 <pinref part="C22F" gate="G$1" pin="1"/>
-<pinref part="KT5,KT6" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="-60.96" x2="50.8" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-71.12" x2="53.34" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="KT4" gate="G$1" pin="1"/>
+<pinref part="DA3F" gate="G$1" pin="OUT"/>
+<pinref part="VD2T3" gate="G$1" pin="C"/>
+<junction x="25.4" y="-71.12"/>
+<wire x1="25.4" y1="-71.12" x2="25.4" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-71.12" x2="17.78" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-71.12" x2="30.48" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-71.12" x2="30.48" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-71.12" x2="30.48" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="30.48" y="-71.12"/>
 </segment>
 </net>
 <net name="N$330" class="0">
@@ -40277,18 +40278,6 @@ Tic1=Tic2=Tic3</text>
 <wire x1="452.12" y1="27.94" x2="462.28" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="452.12" y1="40.64" x2="452.12" y2="27.94" width="0.1524" layer="91"/>
 <junction x="452.12" y="27.94"/>
-</segment>
-</net>
-<net name="N$357" class="0">
-<segment>
-<pinref part="KT4" gate="G$1" pin="1"/>
-<pinref part="DA3F" gate="G$1" pin="OUT"/>
-<pinref part="VD2T3" gate="G$1" pin="C"/>
-<junction x="25.4" y="-71.12"/>
-<wire x1="25.4" y1="-71.12" x2="25.4" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-71.12" x2="17.78" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-71.12" x2="30.48" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-71.12" x2="30.48" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -33595,7 +33595,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="JP6" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-2X30" device=""/>
 <part name="R11T1" library="rcl" deviceset="R-EU_" device="R0805" value="4k7"/>
 <part name="C33F" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C23F" library="b0_C" deviceset="C" device="@V" value="1m"/>
+<part name="C23F" library="b0_C" deviceset="C" device="@H" value="1m"/>
 <part name="R5T3" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="C24F" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="DA4F" library="555,556-v2" deviceset="*555" device="N" value="КР1006ВИ1"/>
@@ -33628,7 +33628,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="R5T6" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="C28F" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="DA5F" library="555,556-v2" deviceset="*555" device="N" value="КР1006ВИ1"/>
-<part name="R52" library="rcl" deviceset="R-TRIMM" device="3314G" value="75k*"/>
+<part name="R52" library="rcl" deviceset="R-TRIMM" device="3314GJ" value="75k*"/>
 <part name="R5T7" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C26F" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="C31F" library="b0_C" deviceset="C" device="@H" value="1m"/>
@@ -33751,7 +33751,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="KT1" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="LCD3" library="b0l2" deviceset="12864B" device="" value="LCD_128x64_ST7920"/>
 <part name="R11F" library="rcl" deviceset="R-EU_" device="0207/11" value="20k*"/>
-<part name="R51" library="rcl" deviceset="R-EU_" device="R0805" value="56k*"/>
+<part name="R51" library="rcl" deviceset="R-EU_" device="0207/11" value="56k*"/>
 <part name="R15F" library="rcl" deviceset="R-EU_" device="0207/10" value="16k*"/>
 <part name="R19F" library="rcl" deviceset="R-EU_" device="0207/11" value="20k*"/>
 <part name="VT4" library="m_transistor" deviceset="BJT_NPN" device="_SOT23_BCE" value=""/>

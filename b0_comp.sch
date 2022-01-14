@@ -8,34 +8,34 @@
 </settings>
 <grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="6" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="6" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="14" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="14" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -3397,6 +3397,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<rectangle x1="-0.1999" y1="-6.9499" x2="0.1999" y2="-5.7501" layer="35"/>
 </package>
 <package name="R0805W">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt; wave soldering&lt;p&gt;</description>
@@ -3726,40 +3727,6 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
 </package>
-<package name="M0805">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-MELF 0.10 W</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="0.7112" y1="0.635" x2="-0.7112" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="0.7112" y1="-0.635" x2="-0.7112" y2="-0.635" width="0.1524" layer="51"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.6" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.6" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.0414" y1="-0.7112" x2="-0.6858" y2="0.7112" layer="51"/>
-<rectangle x1="0.6858" y1="-0.7112" x2="1.0414" y2="0.7112" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.5999" x2="0.1999" y2="0.5999" layer="35"/>
-</package>
-<package name="M1206">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-MELF 0.25 W</description>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="1.143" y1="0.8382" x2="-1.143" y2="0.8382" width="0.1524" layer="51"/>
-<wire x1="1.143" y1="-0.8382" x2="-1.143" y2="-0.8382" width="0.1524" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="2" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="2" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.9144" x2="-1.1176" y2="0.9144" layer="51"/>
-<rectangle x1="1.1176" y1="-0.9144" x2="1.7018" y2="0.9144" layer="51"/>
-<rectangle x1="-0.3" y1="-0.8001" x2="0.3" y2="0.8001" layer="35"/>
-</package>
 <package name="M1406">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 MELF 0.12 W</description>
@@ -3777,23 +3744,6 @@ MELF 0.12 W</description>
 <rectangle x1="1.2954" y1="-0.8382" x2="1.8542" y2="0.8382" layer="51"/>
 <rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
 </package>
-<package name="M2012">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-MELF 0.10 W</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="0.7112" y1="0.635" x2="-0.7112" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="0.7112" y1="-0.635" x2="-0.7112" y2="-0.635" width="0.1524" layer="51"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.6" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.6" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.0414" y1="-0.7112" x2="-0.6858" y2="0.7112" layer="51"/>
-<rectangle x1="0.6858" y1="-0.7112" x2="1.0414" y2="0.7112" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.5999" x2="0.1999" y2="0.5999" layer="35"/>
-</package>
 <package name="M2309">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 MELF 0.25 W</description>
@@ -3810,23 +3760,6 @@ MELF 0.25 W</description>
 <rectangle x1="-3.048" y1="-1.2446" x2="-2.3876" y2="1.2446" layer="51"/>
 <rectangle x1="2.3876" y1="-1.2446" x2="3.048" y2="1.2446" layer="51"/>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
-</package>
-<package name="M3216">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-MELF 0.25 W</description>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="1.143" y1="0.8382" x2="-1.143" y2="0.8382" width="0.1524" layer="51"/>
-<wire x1="1.143" y1="-0.8382" x2="-1.143" y2="-0.8382" width="0.1524" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="2" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="2" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.9144" x2="-1.1176" y2="0.9144" layer="51"/>
-<rectangle x1="1.1176" y1="-0.9144" x2="1.7018" y2="0.9144" layer="51"/>
-<rectangle x1="-0.3" y1="-0.8001" x2="0.3" y2="0.8001" layer="35"/>
 </package>
 <package name="M3516">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
@@ -13274,7 +13207,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <rectangle x1="3.175" y1="-0.3048" x2="4.0386" y2="0.3048" layer="21"/>
 <rectangle x1="-4.0386" y1="-0.3048" x2="-3.175" y2="0.3048" layer="21"/>
 </package>
-<package name="C100-060X120@1">
+<package name="C100-060X120">
 <wire x1="-3.135" y1="1.2685" x2="-3.135" y2="-0.0015" width="0.4064" layer="21"/>
 <wire x1="-2.246" y1="1.2685" x2="-2.246" y2="-0.0015" width="0.4064" layer="21"/>
 <wire x1="3.85" y1="-0.0015" x2="-2.246" y2="-0.0015" width="0.1524" layer="21"/>
@@ -13293,6 +13226,30 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <pad name="2" x="5.02" y="-0.0015" drill="1.016" shape="octagon"/>
 <text x="-6.056" y="3.4275" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.484" y="-2.0335" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="RTRIM3314GJ">
+<wire x1="2.15" y1="2.15" x2="1.2" y2="2.15" width="0.254" layer="21"/>
+<wire x1="-1.2" y1="2.15" x2="-2.15" y2="2.15" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="1.1" width="0.1016" layer="21"/>
+<smd name="3" x="-1.15" y="-2.75" dx="1.3" dy="1.3" layer="1" rot="R180"/>
+<smd name="1" x="1.15" y="-2.75" dx="1.3" dy="1.3" layer="1" rot="R180"/>
+<text x="-2.64" y="-2.99" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.01" y="-2.99" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<wire x1="2.15" y1="2.15" x2="2.15" y2="-2.15" width="0.254" layer="51"/>
+<wire x1="2.15" y1="-2.15" x2="-2.15" y2="-2.15" width="0.254" layer="51"/>
+<wire x1="-2.15" y1="-2.15" x2="-2.15" y2="2.15" width="0.254" layer="51"/>
+<wire x1="-2.15" y1="2.15" x2="2.15" y2="2.15" width="0.254" layer="51"/>
+<wire x1="2.15" y1="-0.800625" x2="2.15" y2="2.15" width="0.254" layer="21"/>
+<wire x1="-2.15" y1="2.15" x2="-2.15" y2="-0.800625" width="0.254" layer="21"/>
+<wire x1="0.315" y1="-2.15" x2="-0.315" y2="-2.15" width="0.254" layer="21"/>
+<wire x1="-0.5" y1="-0.9" x2="0.9" y2="0.5" width="0.1016" layer="21"/>
+<wire x1="-0.85" y1="-0.55" x2="0.55" y2="0.85" width="0.1016" layer="21"/>
+<circle x="0" y="0" radius="1.1" width="0.1016" layer="21"/>
+<smd name="3A" x="-1.8" y="-2" dx="1.3" dy="2" layer="1" rot="R180"/>
+<smd name="1A" x="1.8" y="-2" dx="1.3" dy="2" layer="1" rot="R180"/>
+<smd name="2" x="0" y="2.2" dx="2" dy="2.4" layer="1"/>
+<text x="-2.64" y="-2.99" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.01" y="-2.99" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -13592,24 +13549,6 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <technology name=""/>
 </technologies>
 </device>
-<device name="M0805" package="M0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="M1206" package="M1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="M1406" package="M1406">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -13619,25 +13558,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <technology name=""/>
 </technologies>
 </device>
-<device name="M2012" package="M2012">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="M2309" package="M2309">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="M3216" package="M3216">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -16461,7 +16382,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <technology name=""/>
 </technologies>
 </device>
-<device name="100-060X120" package="C100-060X120@1">
+<device name="100-060X120" package="C100-060X120">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -17459,6 +17380,16 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <connects>
 <connect gate="G$1" pin="A" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3314GJ" package="RTRIM3314GJ">
+<connects>
+<connect gate="G$1" pin="A" pad="3 3A"/>
+<connect gate="G$1" pin="E" pad="1 1A"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -33170,13 +33101,13 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="IC100" library="st-microelectronics" deviceset="NE555" device="" value="КР1006ВИ1(NE555)"/>
 <part name="P+1" library="supply1v" deviceset="+12V" device=""/>
 <part name="GND1" library="supply1v" deviceset="GND" device=""/>
-<part name="R102*-" library="rcl" deviceset="R-EU_" device="M0805" value="180k"/>
-<part name="R101*-" library="rcl" deviceset="R-EU_" device="M0805" value="22k"/>
+<part name="R102*-" library="rcl" deviceset="R-EU_" device="R0805" value="180k"/>
+<part name="R101*-" library="rcl" deviceset="R-EU_" device="R0805" value="22k"/>
 <part name="C101-" library="rcl" deviceset="CPOL-EU" device="E2-5" value="4m7"/>
 <part name="C102-" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="R103-" library="rcl" deviceset="R-EU_" device="M0805" value="2k2"/>
+<part name="R103-" library="rcl" deviceset="R-EU_" device="R0805" value="2k2"/>
 <part name="VT1" library="m_transistor" deviceset="MOSFET-N" device="_DPACK"/>
-<part name="R101*1" library="rcl" deviceset="R-EU_" device="M0805" value="22k"/>
+<part name="R101*1" library="rcl" deviceset="R-EU_" device="R0805" value="22k"/>
 <part name="+12V2" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="-12V2" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="JP4" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
@@ -33198,13 +33129,13 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="INIGN" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="IGNITION" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="0V3" library="diode" deviceset="ZENER-DIODE" device="DO34-7" value="11v"/>
-<part name="0R2" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="0R2" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="0V2" library="diode" deviceset="ZENER-DIODE" device="DO34-7" value="8v"/>
-<part name="0R3" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="0R3" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="0V1" library="diode" deviceset="ZENER-DIODE" device="DO34-7" value="5v"/>
-<part name="0R4" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="0R4" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="0V10" library="m_transistor" deviceset="BJT_PNP" device="_TO-92_CBE" value="П306ОС"/>
-<part name="0R6" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="0R6" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="0V4" library="diode" deviceset="ZENER-DIODE" device="DO34-7" value="11.5v"/>
 <part name="!RSPD" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="!BSPD" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
@@ -33212,7 +33143,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="0V6" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD"/>
 <part name="IGND" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="+BAT" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
-<part name="0R7" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="0R7" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="0V7" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD"/>
 <part name="0V8" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD"/>
 <part name="0V5" library="uln-udn" deviceset="ULN2003A" device="N" value="К1109КТ22"/>
@@ -33254,15 +33185,15 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="IC9" library="linear" deviceset="LM324" device="D"/>
 <part name="GND35" library="supply1v" deviceset="GND" device=""/>
 <part name="GND36" library="supply1v" deviceset="GND" device=""/>
-<part name="R901" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R906" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R902" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R907" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R904" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R903" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="R901" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R906" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R902" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R907" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R904" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R903" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="GND37" library="supply1v" deviceset="GND" device=""/>
 <part name="D13" library="diode" deviceset="DIODE-" device="SOD80C"/>
-<part name="R905" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="R905" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="GND38" library="supply1v" deviceset="GND" device=""/>
 <part name="IN1" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="IN2" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
@@ -33275,10 +33206,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="GND10" library="supply1v" deviceset="GND" device=""/>
 <part name="C3T" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="C2T" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
-<part name="R4T" library="rcl" deviceset="R-EU_" device="M0805" value="5k1"/>
+<part name="R4T" library="rcl" deviceset="R-EU_" device="R0805" value="5k1"/>
 <part name="C1T" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="R5T" library="rcl" deviceset="R-EU_" device="M0805" value="51k"/>
-<part name="R3T" library="rcl" deviceset="R-EU_" device="M0805" value="5k1"/>
+<part name="R5T" library="rcl" deviceset="R-EU_" device="R0805" value="51k"/>
+<part name="R3T" library="rcl" deviceset="R-EU_" device="R0805" value="5k1"/>
 <part name="TAHOIN" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="MAX52V" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="R103" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
@@ -33305,7 +33236,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="VT5" library="m_transistor" deviceset="BJT_PNP" device="_TO-92_ECB"/>
 <part name="R1HUHUH" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="R2K," library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="R101*11" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R101*11" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="GND19" library="supply1v" deviceset="GND" device=""/>
 <part name="P+16" library="supply1v" deviceset="+5V" device=""/>
@@ -33321,7 +33252,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="VT7" library="m_transistor" deviceset="BJT_NPN" device="_TO-92_ECB"/>
 <part name="GND27" library="supply1v" deviceset="GND" device=""/>
 <part name="GND28" library="supply1v" deviceset="GND" device=""/>
-<part name="R101*13" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R101*13" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="D14" library="diode" deviceset="DIODE-" device="SOD80C"/>
 <part name="D15" library="diode" deviceset="DIODE-" device="SOD80C"/>
@@ -33333,9 +33264,9 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="VT6" library="m_transistor" deviceset="BJT_NPN" device="_TO-92_ECB"/>
 <part name="GND26" library="supply1v" deviceset="GND" device=""/>
 <part name="GND29" library="supply1v" deviceset="GND" device=""/>
-<part name="R101*12" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R101*12" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R101*14" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R101*14" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="VD1T" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
 <part name="VD2T" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
 <part name="VT8" library="m_transistor" deviceset="BJT_NPN" device="_TO-92_ECB" value="КТ315"/>
@@ -33348,7 +33279,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="R4L0" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="R2L0" library="rcl" deviceset="R-EU_" device="R0805" value="100k"/>
 <part name="R1L0" library="rcl" deviceset="R-EU_" device="R0805" value="100k"/>
-<part name="R2T" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R2T" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+19" library="supply1v" deviceset="+5V" device=""/>
 <part name="JT1" library="jumper" deviceset="SJ" device=""/>
 <part name="U$17" library="Рамка страницы" deviceset="A5_V" device=""/>
@@ -33356,7 +33287,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="JP2" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X14" device=""/>
 <part name="VT1P" library="m_transistor" deviceset="BJT_PNP" device="_TO18_EBC" value="КТ203Б"/>
-<part name="R1P" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R1P" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C1P" library="rcl" deviceset="CPOL-EU" device="E5-13" value="2200m"/>
 <part name="GND52" library="supply1v" deviceset="GND" device=""/>
 <part name="U$37" library="b0f" deviceset="I" device="" value="I0=7.5ма"/>
@@ -33367,9 +33298,9 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="DA1P" library="XL6009" deviceset="XL6009" device="S" value="XL6009"/>
 <part name="GND54" library="supply1v" deviceset="GND" device=""/>
 <part name="C5P" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="22m"/>
-<part name="R4P" library="rcl" deviceset="R-EU_" device="M0805" value="1.050k*"/>
+<part name="R4P" library="rcl" deviceset="R-EU_" device="R0805" value="1.050k*"/>
 <part name="GND56" library="supply1v" deviceset="GND" device=""/>
-<part name="R3P" library="rcl" deviceset="R-EU_" device="M0805" value="3.252k*"/>
+<part name="R3P" library="rcl" deviceset="R-EU_" device="R0805" value="3.252k*"/>
 <part name="L1P" library="b0f" deviceset="LP" device="" value="T80-52 20w"/>
 <part name="C4P" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="22m"/>
 <part name="GND55" library="supply1v" deviceset="GND" device=""/>
@@ -33382,7 +33313,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="4" library="b0f" deviceset="T_PIN" device=""/>
 <part name="3" library="b0f" deviceset="T_PIN" device=""/>
 <part name="C3P" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
-<part name="R2P" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R2P" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="L2P" library="rcl" deviceset="L" device="0207/10"/>
 <part name="C9P" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="C6P" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
@@ -33415,10 +33346,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="GND5" library="supply1v" deviceset="GND" device=""/>
 <part name="JP1" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X2" device="/2"/>
 <part name="P+5" library="supply1v" deviceset="+5V" device=""/>
-<part name="R6T" library="rcl" deviceset="R-EU_" device="M0805" value="0"/>
+<part name="R6T" library="rcl" deviceset="R-EU_" device="R0805" value="0"/>
 <part name="C4T" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND20" library="supply1v" deviceset="GND" device=""/>
-<part name="R110" library="rcl" deviceset="R-EU_" device="M0805" value="0"/>
+<part name="R110" library="rcl" deviceset="R-EU_" device="R0805" value="0"/>
 <part name="C104" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND22" library="supply1v" deviceset="GND" device=""/>
 <part name="R114" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
@@ -33432,7 +33363,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="R7.1" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C102" library="rcl" deviceset="C-EU" device="C0805" value="1n"/>
 <part name="GND34" library="supply1v" deviceset="GND" device=""/>
-<part name="R1T" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
+<part name="R1T" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="U$13" library="Рамка страницы" deviceset="A5_V" device=""/>
 <part name="U$15" library="Рамка страницы" deviceset="A5_V" device=""/>
 <part name="VT12" library="m_transistor" deviceset="BJT_NPN" device="_TO-92_CBE" value=""/>
@@ -33486,10 +33417,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="U$16" library="К176" deviceset="К176ИЕ5" device=""/>
 <part name="VT14" library="m_transistor" deviceset="BJT_NPN" device="_TO-92_ECB" value=""/>
 <part name="VT15" library="m_transistor" deviceset="BJT_NPN" device="_TO-92_ECB" value=""/>
-<part name="R27" library="rcl" deviceset="R-EU_" device="M0805" value="2k7"/>
-<part name="R28" library="rcl" deviceset="R-EU_" device="M0805" value="2k7"/>
-<part name="R29" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
-<part name="R30" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
+<part name="R27" library="rcl" deviceset="R-EU_" device="R0805" value="2k7"/>
+<part name="R28" library="rcl" deviceset="R-EU_" device="R0805" value="2k7"/>
+<part name="R29" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R30" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="VT17" library="m_transistor" deviceset="BJT_NPN" device="_TO-92_ECB" value=""/>
 <part name="VT18" library="m_transistor" deviceset="BJT_NPN" device="_TO-92_ECB" value=""/>
 <part name="VT19" library="m_transistor" deviceset="BJT_NPN" device="_TO-92_CBE" value=""/>
@@ -33574,12 +33505,12 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="C1I" library="rcl" deviceset="C-EU" device="C0805" value="1n"/>
 <part name="C2I" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="DA6" library="mc34063-2" deviceset="MC34063" device="AD" value="MC34063AD"/>
-<part name="R301" library="rcl" deviceset="R-EU_" device="M1206" value="1"/>
+<part name="R301" library="rcl" deviceset="R-EU_" device="R1206" value="1"/>
 <part name="L301" library="rcl" deviceset="L-US" device="TFI0305" value="100mkhn"/>
 <part name="VD301" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD" value="SS12"/>
 <part name="C303" library="rcl" deviceset="C-EU" device="C0805" value="470"/>
-<part name="R304" library="rcl" deviceset="R-EU_" device="M0805" value="3k9"/>
-<part name="R303" library="rcl" deviceset="R-EU_" device="M0805" value="12k"/>
+<part name="R304" library="rcl" deviceset="R-EU_" device="R0805" value="3k9"/>
+<part name="R303" library="rcl" deviceset="R-EU_" device="R0805" value="12k"/>
 <part name="GND53" library="supply1" deviceset="GND" device=""/>
 <part name="P+12" library="supply1v" deviceset="+5V" device=""/>
 <part name="C304" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
@@ -33597,13 +33528,13 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
 <part name="GND63" library="supply1" deviceset="GND" device=""/>
 <part name="P-2" library="supply1v" deviceset="-5V" device=""/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="M1206" value="1"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R1206" value="1"/>
 <part name="DA2T" library="lm231" deviceset="LM331*" device="N" value="LM231N"/>
-<part name="R8T" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
-<part name="R12T" library="rcl" deviceset="R-EU_" device="M0805" value="4k3*"/>
-<part name="R9T" library="rcl" deviceset="R-EU_" device="M0805" value="6k81"/>
-<part name="R10T" library="rcl" deviceset="R-EU_" device="M0805" value="51k"/>
-<part name="R7T" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R8T" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R12T" library="rcl" deviceset="R-EU_" device="R0805" value="4k3*"/>
+<part name="R9T" library="rcl" deviceset="R-EU_" device="R0805" value="6k81"/>
+<part name="R10T" library="rcl" deviceset="R-EU_" device="R0805" value="51k"/>
+<part name="R7T" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C5T" library="rcl" deviceset="C-EU" device="C0805" value="1n"/>
 <part name="C7T" library="rcl" deviceset="C-EU" device="C3225" value="10m"/>
 <part name="C9T" library="rcl" deviceset="C-EU" device="C3225" value="10m*"/>
@@ -33636,87 +33567,87 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="R3I2" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R2.2I" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="DA12" library="mc34063-2" deviceset="MC34063" device="AD" value="MC34063AD"/>
-<part name="R45" library="rcl" deviceset="R-EU_" device="M1206" value="1"/>
+<part name="R45" library="rcl" deviceset="R-EU_" device="R1206" value="1"/>
 <part name="L1" library="rcl" deviceset="L-US" device="TFI0305" value="100mkhn"/>
 <part name="VD2" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD" value="sr5200"/>
 <part name="C18" library="rcl" deviceset="C-EU" device="C0805" value="470"/>
-<part name="R46" library="rcl" deviceset="R-EU_" device="M0805" value="12k"/>
-<part name="R47" library="rcl" deviceset="R-EU_" device="M0805" value="5k*"/>
+<part name="R46" library="rcl" deviceset="R-EU_" device="R0805" value="12k"/>
+<part name="R47" library="rcl" deviceset="R-EU_" device="R0805" value="5k*"/>
 <part name="P+20" library="supply1v" deviceset="+5V" device=""/>
 <part name="C25" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND65" library="supply1" deviceset="GND" device=""/>
 <part name="C28" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="470m"/>
 <part name="GND70" library="supply1" deviceset="GND" device=""/>
-<part name="R48" library="rcl" deviceset="R-EU_" device="M1206" value="1"/>
+<part name="R48" library="rcl" deviceset="R-EU_" device="R1206" value="1"/>
 <part name="D9" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
-<part name="R49" library="rcl" deviceset="R-EU_" device="M0805" value="180"/>
+<part name="R49" library="rcl" deviceset="R-EU_" device="R0805" value="180"/>
 <part name="L2" library="rcl" deviceset="L-US" device="TFI0410"/>
 <part name="C8T" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="DA1T" library="555,556" deviceset="*555" device=""/>
-<part name="R15T" library="rcl" deviceset="R-EU_" device="M0805" value="47k"/>
-<part name="R13T" library="rcl" deviceset="R-EU_" device="M0805" value="91k"/>
-<part name="R11T" library="rcl" deviceset="R-EU_" device="M0805" value="15k"/>
-<part name="R14T" library="rcl" deviceset="R-EU_" device="M0805" value="200"/>
+<part name="R15T" library="rcl" deviceset="R-EU_" device="R0805" value="47k"/>
+<part name="R13T" library="rcl" deviceset="R-EU_" device="R0805" value="91k"/>
+<part name="R11T" library="rcl" deviceset="R-EU_" device="R0805" value="15k"/>
+<part name="R14T" library="rcl" deviceset="R-EU_" device="R0805" value="200"/>
 <part name="T10" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="T3" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="DA3" library="linear" deviceset="LM358" device="D" value="AZ358"/>
 <part name="JP6" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-2X30" device=""/>
-<part name="R11T1" library="rcl" deviceset="R-EU_" device="M0805" value="4k7"/>
+<part name="R11T1" library="rcl" deviceset="R-EU_" device="R0805" value="4k7"/>
 <part name="C33F" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="C23F" library="b0_C" deviceset="C" device="@V" value="1m"/>
-<part name="R5T3" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
+<part name="R5T3" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="C24F" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="DA4F" library="555,556-v2" deviceset="*555" device="N" value="КР1006ВИ1"/>
 <part name="IC1" library="4052(f2v)" deviceset="4052" device="D"/>
 <part name="GND78" library="supply1v" deviceset="GND" device=""/>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="R19" library="rcl" deviceset="R-EU_" device="M0805" value="120"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
 <part name="DA13" library="linear" deviceset="LM358" device="D" value="TL072"/>
 <part name="C21" library="rcl" deviceset="C-EU" device="C1206" value="4m7"/>
-<part name="R26" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
-<part name="R39" library="rcl" deviceset="R-EU_" device="M0805" value="5k1"/>
+<part name="R26" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R39" library="rcl" deviceset="R-EU_" device="R0805" value="5k1"/>
 <part name="C22" library="rcl" deviceset="CPOL-EU" device="E2.5-6"/>
-<part name="R40" library="rcl" deviceset="R-EU_" device="M0805" value="5k1"/>
-<part name="R42" library="rcl" deviceset="R-EU_" device="M0805" value="5k1"/>
+<part name="R40" library="rcl" deviceset="R-EU_" device="R0805" value="5k1"/>
+<part name="R42" library="rcl" deviceset="R-EU_" device="R0805" value="5k1"/>
 <part name="GND80" library="supply1v" deviceset="GND" device=""/>
 <part name="C23" library="rcl" deviceset="C-EU" device="C1206" value="4m7"/>
-<part name="R43" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
-<part name="R44" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R43" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R44" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND81" library="supply1v" deviceset="GND" device=""/>
-<part name="R50" library="rcl" deviceset="R-EU_" device="M0805" value="47k"/>
+<part name="R50" library="rcl" deviceset="R-EU_" device="R0805" value="47k"/>
 <part name="C24" library="rcl" deviceset="CPOL-EU" device="E2.5-6"/>
 <part name="IC8" library="74xx-eu" deviceset="74*74" device="D" technology="HC"/>
 <part name="FIN" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="VOUT" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="F5V" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="F5V-" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
-<part name="R5T5" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R5T5" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C22F" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="C27F" library="b0_C" deviceset="C" device="@H" value="1m"/>
-<part name="R5T6" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
+<part name="R5T6" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="C28F" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="DA5F" library="555,556-v2" deviceset="*555" device="N" value="КР1006ВИ1"/>
 <part name="R52" library="rcl" deviceset="R-TRIMM" device="3314G" value="75k*"/>
-<part name="R5T7" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R5T7" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C26F" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="C31F" library="b0_C" deviceset="C" device="@H" value="1m"/>
-<part name="R5T8" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
+<part name="R5T8" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="C32F" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="DA6F" library="555,556-v2" deviceset="*555" device="N" value="КР1006ВИ1"/>
 <part name="R53" library="rcl" deviceset="R-TRIMM" device="3314G" value="20k*"/>
-<part name="R5T9" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R5T9" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C30F" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="P+26" library="supply1v" deviceset="+5V" device=""/>
 <part name="C26" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="100m16v"/>
 <part name="JP7" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X2" device=""/>
 <part name="JP8" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X5" device=""/>
-<part name="R54" library="rcl" deviceset="R-EU_" device="M0805" value="1k2"/>
+<part name="R54" library="rcl" deviceset="R-EU_" device="R0805" value="1k2"/>
 <part name="OK1" library="optocoupler" deviceset="PC817" device=""/>
 <part name="C27" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="R55" library="rcl" deviceset="R-EU_" device="M0805" value="560"/>
+<part name="R55" library="rcl" deviceset="R-EU_" device="R0805" value="560"/>
 <part name="P+27" library="supply1v" deviceset="+5V" device=""/>
-<part name="R56" library="rcl" deviceset="R-EU_" device="M0805" value="5k*"/>
+<part name="R56" library="rcl" deviceset="R-EU_" device="R0805" value="5k*"/>
 <part name="KT10" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="KT7" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="KT8" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
@@ -33726,8 +33657,8 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="Q2" library="crystal" deviceset="CRYSTAL" device="HC49S"/>
 <part name="C29" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="C30" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="R57" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R58" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="R57" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R58" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="JT1B" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="JMISO" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="JSCK" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
@@ -33738,9 +33669,9 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="JSCL" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="JSDA" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="JRESET" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
-<part name="R59" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R60" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R61" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="R59" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R60" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R61" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="JVTAHO" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="JP9" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X8" device=""/>
 <part name="JP10" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X8" device=""/>
@@ -33751,7 +33682,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="JICP1" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="JT0B" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="JINT1" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
-<part name="R64" library="rcl" deviceset="R-EU_" device="M0805" value="68"/>
+<part name="R64" library="rcl" deviceset="R-EU_" device="R0805" value="68"/>
 <part name="BT3" library="SparkFun-Batteries" deviceset="BATTERY" device="-20MM_PTH"/>
 <part name="JTX" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="JAREF" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
@@ -33760,18 +33691,18 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="GND33" library="supply1v" deviceset="GND" device=""/>
 <part name="VT23" library="m_transistor" deviceset="BJT_PNP" device="_TO-92_CBE" value="КТ502Е(88)"/>
 <part name="P+22" library="supply1v" deviceset="+5V" device=""/>
-<part name="R5T1" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R5T1" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND72" library="supply1v" deviceset="GND" device=""/>
 <part name="C1T1" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="R2T1" library="rcl" deviceset="R-EU_" device="M0805" value="5k"/>
+<part name="R2T1" library="rcl" deviceset="R-EU_" device="R0805" value="5k"/>
 <part name="TAHOIN1" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="D16" library="diode" deviceset="ZENER-DIODE" device="SOD80C" value="5v6"/>
-<part name="R2T2" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R2T2" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+29" library="supply1v" deviceset="+5V" device=""/>
 <part name="DA100" library="525" deviceset="525ПС3" device="A" value="КМ525ПС3Б"/>
-<part name="R5T13" library="rcl" deviceset="R-EU_" device="M0805" value="200k"/>
-<part name="R5T14" library="rcl" deviceset="R-EU_" device="M0805" value="200k"/>
-<part name="R5T15" library="rcl" deviceset="R-EU_" device="M0805" value="200k"/>
+<part name="R5T13" library="rcl" deviceset="R-EU_" device="R0805" value="200k"/>
+<part name="R5T14" library="rcl" deviceset="R-EU_" device="R0805" value="200k"/>
+<part name="R5T15" library="rcl" deviceset="R-EU_" device="R0805" value="200k"/>
 <part name="U$26" library="Рамка страницы" deviceset="A5_V" device=""/>
 <part name="P+4" library="supply1v" deviceset="+5V" device=""/>
 <part name="GND68" library="supply1v" deviceset="GND" device=""/>
@@ -33781,46 +33712,46 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="P+23" library="supply1v" deviceset="+5V" device=""/>
 <part name="GND69" library="supply1v" deviceset="GND" device=""/>
 <part name="GND71" library="supply1v" deviceset="GND" device=""/>
-<part name="R2T3" library="rcl" deviceset="R-EU_" device="M0805" value="2k7"/>
+<part name="R2T3" library="rcl" deviceset="R-EU_" device="R0805" value="2k7"/>
 <part name="GND75" library="supply1" deviceset="GND" device=""/>
 <part name="P+28" library="supply1v" deviceset="+15V" device=""/>
 <part name="P-3" library="supply1v" deviceset="-15V" device=""/>
 <part name="U$28" library="Рамка страницы" deviceset="A5_V" device=""/>
 <part name="U$29" library="Рамка страницы" deviceset="A5_V" device=""/>
 <part name="C11F" library="b0_C" deviceset="C" device="@H" value="1m"/>
-<part name="R14F" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
+<part name="R14F" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="C12F" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="DA1F" library="555,556-v2" deviceset="*555" device="N" value="КР1006ВИ1"/>
-<part name="R13F" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R13F" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="KT2" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
-<part name="R12F" library="rcl" deviceset="R-EU_" device="M0805" value="220k"/>
+<part name="R12F" library="rcl" deviceset="R-EU_" device="R0805" value="220k"/>
 <part name="GND76" library="supply1v" deviceset="GND" device=""/>
 <part name="P+30" library="supply1v" deviceset="+5V" device=""/>
 <part name="GND79" library="supply1v" deviceset="GND" device=""/>
 <part name="C10F" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
-<part name="R18F" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
+<part name="R18F" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="C16F" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="DA2F" library="555,556-v2" deviceset="*555" device="N" value="КР1006ВИ1"/>
 <part name="KT3" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
-<part name="R16F" library="rcl" deviceset="R-EU_" device="M0805" value="200k"/>
+<part name="R16F" library="rcl" deviceset="R-EU_" device="R0805" value="200k"/>
 <part name="GND82" library="supply1v" deviceset="GND" device=""/>
 <part name="P+31" library="supply1v" deviceset="+5V" device=""/>
 <part name="GND83" library="supply1v" deviceset="GND" device=""/>
 <part name="C14F" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="C19F" library="b0_C" deviceset="C" device="@H" value="1m"/>
-<part name="R22F" library="rcl" deviceset="R-EU_" device="M0805" value="1M"/>
+<part name="R22F" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="C20F" library="rcl" deviceset="C-EU" device="C0805" value="1m"/>
 <part name="DA3F" library="555,556-v2" deviceset="*555" device="N" value="КР1006ВИ1"/>
-<part name="R21F" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R21F" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="KT4" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
-<part name="R20F" library="rcl" deviceset="R-EU_" device="M0805" value="220k"/>
+<part name="R20F" library="rcl" deviceset="R-EU_" device="R0805" value="220k"/>
 <part name="P+32" library="supply1v" deviceset="+5V" device=""/>
 <part name="GND85" library="supply1v" deviceset="GND" device=""/>
 <part name="C18F" library="rcl" deviceset="C-EU" device="C0805" value="1n"/>
 <part name="KT1" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="LCD3" library="b0l2" deviceset="12864B" device="" value="LCD_128x64_ST7920"/>
 <part name="R11F" library="rcl" deviceset="R-EU_" device="0207/11" value="20k*"/>
-<part name="R51" library="rcl" deviceset="R-EU_" device="M0805" value="56k*"/>
+<part name="R51" library="rcl" deviceset="R-EU_" device="R0805" value="56k*"/>
 <part name="R15F" library="rcl" deviceset="R-EU_" device="0207/10" value="16k*"/>
 <part name="R19F" library="rcl" deviceset="R-EU_" device="0207/11" value="20k*"/>
 <part name="VT4" library="m_transistor" deviceset="BJT_NPN" device="_SOT23_BCE" value=""/>
@@ -33831,15 +33762,15 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="JP13" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-2X3" device="/90"/>
 <part name="KT5,KT6" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X2" device="/2"/>
 <part name="VD2T1" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
-<part name="R2T4" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R2T4" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+33" library="supply1v" deviceset="+5V" device=""/>
 <part name="R68" library="rcl" deviceset="R-TRIMM" device="3314G"/>
 <part name="VD2T2" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
 <part name="VD2T3" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
-<part name="R69" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
-<part name="R5T2" library="rcl" deviceset="R-EU_" device="M0805" value="0"/>
+<part name="R69" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R5T2" library="rcl" deviceset="R-EU_" device="R0805" value="0"/>
 <part name="P+36" library="supply1v" deviceset="+5V" device=""/>
-<part name="R17F" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R17F" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C15F" library="b0_C" deviceset="C" device="@H" value="1m"/>
 <part name="C13F" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="J1F" library="jumper" deviceset="SJ" device=""/>
@@ -33860,10 +33791,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="VD2T4" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
 <part name="VD2T5" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
 <part name="IC2" library="40xx" deviceset="4070" device="D"/>
-<part name="R13T1" library="rcl" deviceset="R-EU_" device="M0805" value="340k"/>
+<part name="R13T1" library="rcl" deviceset="R-EU_" device="R0805" value="340k"/>
 <part name="C8T1" library="rcl" deviceset="C-EU" device="C0805" value="220n"/>
 <part name="GND77" library="supply1v" deviceset="GND" device=""/>
-<part name="R13T2" library="rcl" deviceset="R-EU_" device="M0805" value="340k"/>
+<part name="R13T2" library="rcl" deviceset="R-EU_" device="R0805" value="340k"/>
 <part name="C8T2" library="rcl" deviceset="C-EU" device="C0805" value="22n"/>
 <part name="P+34" library="supply1v" deviceset="+5V" device=""/>
 <part name="I10" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
@@ -33877,25 +33808,25 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="KT5" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="KT6" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="KT11" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
-<part name="R65" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
+<part name="R65" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="U$22" library="LT1945" deviceset="LT1945" device=""/>
 <part name="L3" library="rcl" deviceset="L" device="0207/7"/>
 <part name="C35" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="D10" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD"/>
 <part name="D11" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD"/>
 <part name="C36" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="R66" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R70" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="R66" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R70" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="GND91" library="supply1v" deviceset="GND" device=""/>
 <part name="C37" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="L4" library="rcl" deviceset="L" device="0207/7"/>
 <part name="D12" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD"/>
 <part name="C38" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="R71" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R72" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="R71" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R72" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="DA148" library="1211eu1" deviceset="КР1211ЕУ1" device="" value="КP1211ЕУ1"/>
 <part name="GND89" library="supply1" deviceset="GND" device=""/>
-<part name="R73" library="rcl" deviceset="R-EU_" device="M0805" value="3k3"/>
+<part name="R73" library="rcl" deviceset="R-EU_" device="R0805" value="3k3"/>
 <part name="C39" library="rcl" deviceset="C-EU" device="C0805" value="100p"/>
 <part name="D17" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD"/>
 <part name="D18" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD"/>
@@ -33912,24 +33843,24 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="U$35" library="b0f" deviceset="T_PIN_NONAME" device=""/>
 <part name="P+35" library="supply1v" deviceset="+5V" device=""/>
 <part name="OK2" library="optocoupler" deviceset="LTV816" device=""/>
-<part name="R74" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R75" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="R74" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R75" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="DA20" library="TL431" deviceset="TL432" device="" value="TL432"/>
-<part name="Rнагр." library="rcl" deviceset="R-EU_" device="M0805" value="80ом для 8в.вх."/>
-<part name="R76" library="rcl" deviceset="R-EU_" device="M0805" value="3k3"/>
+<part name="Rнагр." library="rcl" deviceset="R-EU_" device="R0805" value="80ом для 8в.вх."/>
+<part name="R76" library="rcl" deviceset="R-EU_" device="R0805" value="3k3"/>
 <part name="VT10" library="m_transistor" deviceset="BJT_PNP" device="_SOT23_BCE" value=""/>
 <part name="GND90" library="supply1" deviceset="GND" device=""/>
 <part name="VT24" library="m_transistor" deviceset="MOSFET-N" device="_DPACK"/>
 <part name="VT25" library="m_transistor" deviceset="MOSFET-N" device="_DPACK"/>
 <part name="GND92" library="supply1" deviceset="GND" device=""/>
 <part name="R77" library="rcl" deviceset="R-EU_" device="0207/11"/>
-<part name="R78" library="rcl" deviceset="R-EU_" device="M0805"/>
+<part name="R78" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="JP15" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X2" device="/90"/>
 <part name="GND93" library="supply1" deviceset="GND" device=""/>
 <part name="P+37" library="supply1v" deviceset="+5V" device=""/>
 <part name="JP14" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X2" device="/90"/>
 <part name="JP16" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X2" device="/90"/>
-<part name="R79" library="rcl" deviceset="R-TRIMM" device="3314G"/>
+<part name="R79" library="rcl" deviceset="R-TRIMM" device="3314GJ" value="20k"/>
 <part name="R80" library="rcl" deviceset="R-TRIMM" device="3314G"/>
 <part name="R81" library="rcl" deviceset="R-TRIMM" device="3314G"/>
 <part name="R19F1" library="rcl" deviceset="R-EU_" device="0207/11" value="20k*"/>
@@ -38932,7 +38863,7 @@ Tic1=Tic2=Tic3</text>
 </instance>
 <instance part="R79" gate="G$1" x="-109.22" y="-48.26" smashed="yes">
 <attribute name="NAME" x="-107.95" y="-44.831" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-115.57" y="-44.45" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-107.95" y="-46.99" size="1.778" layer="96"/>
 </instance>
 <instance part="R80" gate="G$1" x="-55.88" y="-48.26" smashed="yes">
 <attribute name="NAME" x="-54.61" y="-44.831" size="1.778" layer="95"/>

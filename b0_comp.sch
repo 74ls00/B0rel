@@ -33812,14 +33812,14 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="DA1M" library="LT1945" deviceset="LT1945" device="" value="LT1945EMS"/>
 <part name="L2M" library="rcl" deviceset="L" device="0207/7" value="murata LQH3C100"/>
 <part name="C4M" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="VD2M" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD"/>
-<part name="VD3M" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD"/>
+<part name="VD2M" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD" value="SS34china"/>
+<part name="VD3M" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD" value="SS34china"/>
 <part name="C6M" library="rcl" deviceset="C-EU" device="C0805" value="100p"/>
 <part name="R66" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="R70" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="C5M" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="L1M" library="rcl" deviceset="L" device="0207/7"/>
-<part name="VD1M" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD"/>
+<part name="VD1M" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD" value="SS34china"/>
 <part name="C3M" library="rcl" deviceset="C-EU" device="C0805" value="4p7"/>
 <part name="R71" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="R72" library="rcl" deviceset="R-EU_" device="R0805"/>
@@ -33878,6 +33878,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <part name="OFB+" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="OFB-" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 <part name="I+5V" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
+<part name="+15VP" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
+<part name="-15VP" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
+<part name="GNDP" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
+<part name="NC1" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -42928,14 +42932,26 @@ II 42+42</text>
 <attribute name="NAME" x="-90.805" y="163.195" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-93.98" y="141.605" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="L2M" gate="G$1" x="-91.44" y="132.08"/>
+<instance part="L2M" gate="G$1" x="-91.44" y="132.08" smashed="yes">
+<attribute name="NAME" x="-93.98" y="135.89" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-101.6" y="130.81" size="1.778" layer="96" rot="MR180"/>
+</instance>
 <instance part="C4M" gate="G$1" x="-73.66" y="132.08" smashed="yes" rot="R270">
 <attribute name="NAME" x="-77.216" y="127.381" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-77.216" y="124.841" size="1.778" layer="96"/>
 </instance>
-<instance part="VD2M" gate="G$1" x="-68.58" y="139.7" rot="R90"/>
-<instance part="VD3M" gate="G$1" x="-63.5" y="132.08" rot="R180"/>
-<instance part="C6M" gate="G$1" x="-53.34" y="139.7"/>
+<instance part="VD2M" gate="G$1" x="-68.58" y="139.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="-70.485" y="137.414" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-62.611" y="134.874" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="VD3M" gate="G$1" x="-63.5" y="132.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="-58.674" y="130.175" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-68.326" y="126.111" size="1.778" layer="96"/>
+</instance>
+<instance part="C6M" gate="G$1" x="-53.34" y="139.7" smashed="yes">
+<attribute name="NAME" x="-51.816" y="140.081" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-51.816" y="135.001" size="1.778" layer="96"/>
+</instance>
 <instance part="R66" gate="G$1" x="-48.26" y="139.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="-44.45" y="133.5786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-51.562" y="143.51" size="1.778" layer="96" rot="R270"/>
@@ -42944,10 +42960,19 @@ II 42+42</text>
 <attribute name="NAME" x="-36.6014" y="148.59" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-41.402" y="148.59" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C5M" gate="G$1" x="-58.42" y="142.24"/>
+<instance part="C5M" gate="G$1" x="-58.42" y="142.24" smashed="yes">
+<attribute name="NAME" x="-56.896" y="142.621" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-56.896" y="137.541" size="1.778" layer="96"/>
+</instance>
 <instance part="L1M" gate="G$1" x="-91.44" y="172.72"/>
-<instance part="VD1M" gate="G$1" x="-73.66" y="172.72"/>
-<instance part="C3M" gate="G$1" x="-68.58" y="165.1" rot="MR0"/>
+<instance part="VD1M" gate="G$1" x="-73.66" y="172.72" smashed="yes">
+<attribute name="NAME" x="-75.946" y="177.165" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-78.486" y="174.371" size="1.778" layer="96"/>
+</instance>
+<instance part="C3M" gate="G$1" x="-68.58" y="165.1" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-70.104" y="168.021" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-70.104" y="165.481" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="R71" gate="G$1" x="-63.5" y="165.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="-62.0014" y="168.91" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-66.802" y="168.91" size="1.778" layer="96" rot="R270"/>
@@ -43040,7 +43065,10 @@ II 42+42</text>
 <instance part="P+37" gate="1" x="-160.02" y="96.52" rot="MR270"/>
 <instance part="JP14" gate="G$1" x="-172.72" y="50.8"/>
 <instance part="JP16" gate="G$1" x="-154.94" y="45.72"/>
-<instance part="C7M" gate="G$1" x="-45.72" y="162.56"/>
+<instance part="C7M" gate="G$1" x="-45.72" y="162.56" smashed="yes">
+<attribute name="NAME" x="-44.196" y="162.941" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-44.196" y="157.861" size="1.778" layer="96"/>
+</instance>
 <instance part="C2M" gate="G$1" x="-106.68" y="147.32" rot="MR0"/>
 <instance part="O+15V" gate="G$1" x="-35.56" y="172.72" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-34.29" y="175.895" size="1.778" layer="95" rot="MR0"/>
@@ -43065,6 +43093,22 @@ II 42+42</text>
 <instance part="I+5V" gate="G$1" x="-116.84" y="157.48" smashed="yes" rot="R180">
 <attribute name="NAME" x="-115.57" y="160.655" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-110.49" y="162.56" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="+15VP" gate="G$1" x="154.94" y="165.1" smashed="yes" rot="MR180">
+<attribute name="NAME" x="156.21" y="168.275" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="148.59" y="170.18" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="-15VP" gate="G$1" x="154.94" y="142.24" smashed="yes" rot="MR180">
+<attribute name="NAME" x="148.59" y="139.065" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="148.59" y="147.32" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="GNDP" gate="G$1" x="132.08" y="119.38" smashed="yes" rot="MR180">
+<attribute name="NAME" x="133.35" y="122.555" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="125.73" y="124.46" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="NC1" gate="G$1" x="-2.54" y="165.1" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-1.27" y="168.275" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-8.89" y="170.18" size="1.778" layer="96" rot="MR180"/>
 </instance>
 </instances>
 <busses>
@@ -43095,6 +43139,8 @@ II 42+42</text>
 <pinref part="GND88" gate="1" pin="GND"/>
 <wire x1="114.3" y1="134.62" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
 <junction x="114.3" y="137.16"/>
+<pinref part="GNDP" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="119.38" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND89" gate="1" pin="GND"/>
@@ -43182,6 +43228,8 @@ II 42+42</text>
 <wire x1="119.38" y1="154.94" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="147.32" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
 <junction x="119.38" y="154.94"/>
+<pinref part="+15VP" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="165.1" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-15V" class="0">
@@ -43193,6 +43241,8 @@ II 42+42</text>
 <wire x1="111.76" y1="149.86" x2="124.46" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="147.32" x2="111.76" y2="149.86" width="0.1524" layer="91"/>
 <junction x="111.76" y="149.86"/>
+<pinref part="-15VP" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="142.24" x2="111.76" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$360" class="0">
@@ -43245,13 +43295,13 @@ II 42+42</text>
 <segment>
 <pinref part="DA1M" gate="G$1" pin="SW2"/>
 <wire x1="-76.2" y1="160.02" x2="-73.66" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="160.02" x2="-73.66" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="160.02" x2="-73.66" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="L1M" gate="G$1" pin="2"/>
 <wire x1="-76.2" y1="172.72" x2="-78.74" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="VD1M" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="172.72" x2="-83.82" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="167.64" x2="-78.74" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="167.64" x2="-78.74" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="165.1" x2="-78.74" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="165.1" x2="-78.74" y2="172.72" width="0.1524" layer="91"/>
 <junction x="-78.74" y="172.72"/>
 </segment>
 </net>

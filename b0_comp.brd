@@ -6532,6 +6532,33 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 </package>
 </packages>
 </library>
+<library name="ic-package">
+<description>&lt;b&gt;IC Packages an Sockets&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DIL10">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="6.35" y1="2.921" x2="-6.35" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-2.921" x2="6.35" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="2.921" x2="6.35" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="2.921" x2="-6.35" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-2.921" x2="-6.35" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="1.016" x2="-6.35" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-6.604" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-4.953" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7538,14 +7565,14 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <element name="VD2M" library="diode" package="SMB" value="SS34china" x="-346.3925" y="240.03" rot="R270"/>
 <element name="VD3M" library="diode" package="SMB" value="SS34china" x="-346.3925" y="238.76" rot="MR0"/>
 <element name="C6M" library="rcl" package="C0805" value="100p" x="-347.0275" y="242.57" rot="MR270"/>
-<element name="R66" library="rcl" package="R0805" value="" x="-348.9325" y="242.57" rot="MR270"/>
-<element name="R70" library="rcl" package="R0805" value="" x="-347.6625" y="245.4275" rot="MR0"/>
+<element name="R66" library="rcl" package="R0805" value="120k" x="-348.9325" y="242.57" rot="MR270"/>
+<element name="R70" library="rcl" package="R0805" value="11k*" x="-347.6625" y="245.4275" rot="MR0"/>
 <element name="C5M" library="rcl" package="C0805" value="1m" x="-345.1225" y="242.57" rot="MR270"/>
 <element name="L1M" library="rcl" package="0207/7" value="" x="-347.345" y="250.5075" rot="MR180"/>
 <element name="VD1M" library="diode" package="SMB" value="SS34china" x="-346.075" y="254"/>
 <element name="C3M" library="rcl" package="C0805" value="4p7" x="-347.0275" y="254" rot="MR270"/>
-<element name="R71" library="rcl" package="R0805" value="" x="-348.9325" y="254" rot="MR270"/>
-<element name="R72" library="rcl" package="R0805" value="" x="-346.3925" y="250.5075" rot="MR0"/>
+<element name="R71" library="rcl" package="R0805" value="47k" x="-348.9325" y="254" rot="MR270"/>
+<element name="R72" library="rcl" package="R0805" value="4k3*" x="-346.3925" y="250.5075" rot="MR0"/>
 <element name="DA148" library="1211eu1" package="DIL8" value="КP1211ЕУ1" x="-498.475" y="39.37" rot="R270"/>
 <element name="R73" library="rcl" package="R0805" value="3k3" x="-497.205" y="40.3225" rot="MR270"/>
 <element name="C39" library="rcl" package="C0805" value="100p" x="-499.745" y="40.3225" rot="MR90"/>
@@ -7643,6 +7670,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <attribute name="VALUE" x="-352.425" y="254.9525" size="1.27" layer="27"/>
 </element>
 <element name="R82" library="rcl" package="0207/7" value="" x="-347.0275" y="266.7" rot="MR0"/>
+<element name="DA1M1" library="ic-package" package="DIL10" value="" x="-329.2475" y="251.46" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -11498,7 +11526,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <contactref element="O12" pad="1"/>
 <wire x1="-567.055" y1="102.235" x2="-564.1975" y2="97.155" width="0" layer="19" extent="16-16"/>
 </signal>
-<signal name="N$360">
+<signal name="LTSW1">
 <contactref element="L2M" pad="2"/>
 <contactref element="DA1M" pad="10"/>
 <contactref element="C4M" pad="2"/>
@@ -11506,6 +11534,8 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-343.535" y1="246.9675" x2="-344.31" y2="246.9675" width="0.3048" layer="16"/>
 <wire x1="-343.535" y1="245.4275" x2="-343.535" y2="244.155" width="0.4064" layer="16"/>
 <wire x1="-343.535" y1="244.155" x2="-343.2175" y2="243.52" width="0.4064" layer="16"/>
+<contactref element="DA1M1" pad="10"/>
+<wire x1="-333.0575" y1="246.38" x2="-343.535" y2="246.9675" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$365">
 <contactref element="VD2M" pad="A"/>
@@ -11517,7 +11547,7 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-343.2175" y1="241.62" x2="-343.2425" y2="240.35" width="0.4064" layer="16"/>
 <wire x1="-343.2425" y1="240.35" x2="-344.1925" y2="238.76" width="0.4064" layer="16"/>
 </signal>
-<signal name="N$369">
+<signal name="LTNFB1">
 <contactref element="R66" pad="1"/>
 <contactref element="DA1M" pad="1"/>
 <wire x1="-348.6125" y1="246.9675" x2="-349.11" y2="246.9675" width="0.3048" layer="16"/>
@@ -11527,10 +11557,12 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-348.6125" y1="246.9675" x2="-348.6125" y2="245.4275" width="0.3048" layer="16"/>
 <wire x1="-348.6125" y1="245.4275" x2="-348.615" y2="245.425" width="1.016" layer="16"/>
 <wire x1="-348.9325" y1="243.52" x2="-347.0275" y2="243.52" width="1.016" layer="16"/>
+<contactref element="DA1M1" pad="1"/>
 <wire x1="-348.9325" y1="243.52" x2="-351.155" y2="242.8875" width="0" layer="19" extent="16-16"/>
 <wire x1="-348.6125" y1="245.4275" x2="-348.9325" y2="243.52" width="0" layer="19" extent="16-16"/>
+<wire x1="-325.4375" y1="246.38" x2="-347.0275" y2="243.52" width="0" layer="19" extent="16-16"/>
 </signal>
-<signal name="N$370">
+<signal name="LTSW2">
 <contactref element="DA1M" pad="6"/>
 <contactref element="L1M" pad="2"/>
 <contactref element="VD1M" pad="A"/>
@@ -11538,8 +11570,10 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-343.535" y1="248.9675" x2="-344.31" y2="248.9675" width="0.3048" layer="16"/>
 <wire x1="-343.535" y1="250.5075" x2="-343.875" y2="251.165" width="1.016" layer="1"/>
 <wire x1="-343.875" y1="251.165" x2="-343.875" y2="254" width="1.016" layer="1"/>
+<contactref element="DA1M1" pad="6"/>
+<wire x1="-333.0575" y1="256.54" x2="-343.875" y2="254" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$372">
+<signal name="LTFB2">
 <contactref element="DA1M" pad="5"/>
 <contactref element="R71" pad="2"/>
 <contactref element="R72" pad="2"/>
@@ -11554,6 +11588,8 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-347.9325" y1="248.9675" x2="-347.345" y2="249.555" width="0.3048" layer="16"/>
 <wire x1="-347.345" y1="249.555" x2="-347.345" y2="250.505" width="0.3048" layer="16"/>
 <wire x1="-347.345" y1="250.505" x2="-347.3425" y2="250.5075" width="0.3048" layer="16"/>
+<contactref element="DA1M1" pad="5"/>
+<wire x1="-325.4375" y1="256.54" x2="-347.0275" y2="253.05" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$368">
 <contactref element="DA148" pad="7"/>
@@ -11713,15 +11749,21 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-344.31" y1="248.4675" x2="-345.305" y2="248.4675" width="0.3048" layer="16"/>
 <wire x1="-345.305" y1="248.4675" x2="-345.4425" y2="248.605" width="0.3048" layer="16"/>
 <wire x1="-345.4425" y1="248.605" x2="-345.4425" y2="250.5075" width="0.3048" layer="16"/>
+<wire x1="-351.155" y1="258.1275" x2="-337.82" y2="258.1275" width="1.016" layer="1"/>
+<wire x1="-337.82" y1="258.1275" x2="-337.82" y2="244.1575" width="1.016" layer="1"/>
+<contactref element="DA1M1" pad="7"/>
+<contactref element="DA1M1" pad="9"/>
+<contactref element="DA1M1" pad="3"/>
 <wire x1="-346.3925" y1="242.23" x2="-351.155" y2="237.8075" width="0" layer="19" extent="1-1"/>
 <wire x1="-345.1225" y1="243.52" x2="-346.3925" y2="242.23" width="0" layer="19" extent="1-16"/>
 <wire x1="-346.3925" y1="244.475" x2="-345.1225" y2="243.52" width="0" layer="19" extent="1-16"/>
 <wire x1="-346.7125" y1="245.4275" x2="-346.71" y2="245.11" width="0" layer="19" extent="1-16"/>
-<wire x1="-351.155" y1="258.1275" x2="-337.82" y2="258.1275" width="1.016" layer="1"/>
-<wire x1="-337.82" y1="258.1275" x2="-337.82" y2="244.1575" width="1.016" layer="1"/>
 <wire x1="-337.82" y1="244.1575" x2="-343.2175" y2="247.4675" width="0" layer="19" extent="1-16"/>
+<wire x1="-333.0575" y1="254" x2="-337.82" y2="258.1275" width="0" layer="19" extent="1-1"/>
+<wire x1="-333.0575" y1="248.92" x2="-333.0575" y2="254" width="0" layer="19" extent="1-1"/>
+<wire x1="-325.4375" y1="251.46" x2="-333.0575" y2="254" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$366">
+<signal name="LTV+">
 <contactref element="L1M" pad="1"/>
 <contactref element="L2M" pad="1"/>
 <contactref element="DA1M" pad="4"/>
@@ -11739,6 +11781,12 @@ Source: http://cache.national.com/ds/LM/LM5030.pdf</description>
 <wire x1="-350.3375" y1="248.4675" x2="-351.155" y2="247.9675" width="0.3048" layer="16"/>
 <wire x1="-351.155" y1="245.4275" x2="-351.155" y2="247.9675" width="1.016" layer="16"/>
 <wire x1="-351.155" y1="250.5075" x2="-351.155" y2="247.9675" width="1.016" layer="16"/>
+<contactref element="DA1M1" pad="2"/>
+<contactref element="DA1M1" pad="4"/>
+<contactref element="DA1M1" pad="8"/>
+<wire x1="-333.0575" y1="251.46" x2="-344.31" y2="247.9675" width="0" layer="19" extent="16-16"/>
+<wire x1="-325.4375" y1="248.92" x2="-333.0575" y2="251.46" width="0" layer="19" extent="1-1"/>
+<wire x1="-325.4375" y1="254" x2="-325.4375" y2="248.92" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

@@ -43048,7 +43048,7 @@ II 42+42</text>
 <instance part="L1M" gate="G$1" x="-93.98" y="172.72"/>
 <instance part="VD1M" gate="G$1" x="-76.2" y="172.72" smashed="yes">
 <attribute name="NAME" x="-78.486" y="177.165" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-88.646" y="174.371" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-83.566" y="174.371" size="1.778" layer="96"/>
 </instance>
 <instance part="C3M" gate="G$1" x="-71.12" y="165.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-72.644" y="168.021" size="1.778" layer="95" rot="MR0"/>
